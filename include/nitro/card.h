@@ -30,6 +30,19 @@ extern "C" {
 #define CARD_RESULT_NO_RESPONSE
 #define CARD_RESULT_ERROR
 
+#define CARD_ROM_PAGE_SIZE 0x200
+
+#define CARD_DATA_READY 0x800000
+
+#define CARD_CTL_CMD_MASK 0x7000000
+#define CARD_CTL_CMD_PAGE 0x1000000
+#define CARD_CTL_READ 0x20000000
+#define CARD_CTL_START 0x80000000
+
+#define CARD_CMD_ENCRYPTED_READ 0xb7
+
+#define CARDMST_ENABLE 0x80
+
 typedef u32 CARDBackupType;
 typedef u32 CARDResult;
 
@@ -41,9 +54,14 @@ CARDBackupType CARD_GetBackupType();
 #define CARD_IsBackupFlash() (CARD_GetBackupType() & 0xff) == CARD_BACKUP_TYPE_FLASH
 #define CARD_IsBackupFram() (CARD_GetBackupType() & 0xff) == CARD_BACKUP_TYPE_FRAM
 u32 CARD_GetBackupTotalSize(void);
-void CARD_ReadWriteBackupAsync(u32 offset, void *buf, u32 size, void *, void *, u32, u32, u32, u32);
+BOOL CARD_ReadWriteBackupAsync(u32 offset, void *buf, u32 size, void *, void *, u32, u32, u32, u32);
 void CARD_WaitBackupAsync(void);
 CARDResult CARD_GetResultCode(void);
+BOOL CARD_func_0033();
+void CARD_func_0034();
+
+void CARD_func_0010(u32);
+void CARD_func_0011(u32);
 
 inline void CARD_ReadEeprom(u32 offset, void *buf, u32 size) {
     // TODO: Implement from GameSpy ReadFromBackup
@@ -64,23 +82,23 @@ inline void CARD_WriteAndVerifyFram(u32 offset, void *buf, u32 size) {
     // TODO: Implement from GameSpy WriteToBackup
 }
 
-inline void CARD_ReadEepromAsync(u32 offset, void *buf, u32 size, void *param4, void *param5) {
-    CARD_ReadWriteBackupAsync(offset, buf, size, param4, param5, 1, 6, 1, 0);
+inline BOOL CARD_ReadEepromAsync(u32 offset, void *buf, u32 size, void *param4, void *param5) {
+    return CARD_ReadWriteBackupAsync(offset, buf, size, param4, param5, 1, 6, 1, 0);
 }
-inline void CARD_ReadFlashAsync(u32 offset, void *buf, u32 size, void *param4, void *param5) {
-    CARD_ReadWriteBackupAsync(offset, buf, size, param4, param5, 1, 6, 1, 0);
+inline BOOL CARD_ReadFlashAsync(u32 offset, void *buf, u32 size, void *param4, void *param5) {
+    return CARD_ReadWriteBackupAsync(offset, buf, size, param4, param5, 0, 6, 1, 0);
 }
-inline void CARD_ReadFramAsync(u32 offset, void *buf, u32 size, void *param4, void *param5) {
-    CARD_ReadWriteBackupAsync(offset, buf, size, param4, param5, 1, 6, 1, 0);
+inline BOOL CARD_ReadFramAsync(u32 offset, void *buf, u32 size, void *param4, void *param5) {
+    return CARD_ReadWriteBackupAsync(offset, buf, size, param4, param5, 1, 6, 1, 0);
 }
-inline void CARD_WriteAndVerifyEepromAsync(u32 offset, void *buf, u32 size, void *param4, void *param5) {
-    CARD_ReadWriteBackupAsync(offset, buf, size, param4, param5, 1, 8, 10, 2);
+inline BOOL CARD_WriteAndVerifyEepromAsync(u32 offset, void *buf, u32 size, void *param4, void *param5) {
+    return CARD_ReadWriteBackupAsync(offset, buf, size, param4, param5, 1, 8, 10, 2);
 }
-inline void CARD_WriteAndVerifyFlashAsync(u32 offset, void *buf, u32 size, void *param4, void *param5) {
-    CARD_ReadWriteBackupAsync(offset, buf, size, param4, param5, 1, 7, 10, 2);
+inline BOOL CARD_WriteAndVerifyFlashAsync(u32 offset, void *buf, u32 size, void *param4, void *param5) {
+    return CARD_ReadWriteBackupAsync(offset, buf, size, param4, param5, 0, 7, 10, 2);
 }
-inline void CARD_WriteAndVerifyFramAsync(u32 offset, void *buf, u32 size, void *param4, void *param5) {
-    CARD_ReadWriteBackupAsync(offset, buf, size, param4, param5, 1, 8, 10, 2);
+inline BOOL CARD_WriteAndVerifyFramAsync(u32 offset, void *buf, u32 size, void *param4, void *param5) {
+    return CARD_ReadWriteBackupAsync(offset, buf, size, param4, param5, 1, 8, 10, 2);
 }
 
 #ifdef __cplusplus

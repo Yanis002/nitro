@@ -9,13 +9,18 @@ extern "C" {
 #include "nitro/types.h"
 
 struct OSMutex;
-typedef struct OS_UnkStruct1 {
-    /* 00 */ struct OSMutex *unk_00;
-    /* 04 */ struct OSMutex *unk_04;
-    /* 08 */
-} OS_UnkStruct1;
-
 struct OSThread;
+
+typedef struct OSMutexQueue {
+    /* 0x00 */ struct OSMutex *head;
+    /* 0x04 */ struct OSMutex *tail;
+} OSMutexQueue;
+
+typedef struct OSMutexLinkedList {
+    /* 0x00 */ struct OSMutex *next;
+    /* 0x04 */ struct OSMutex *prev;
+} OSMutexLinkedList;
+
 typedef struct OS_Mutex_UnkStruct1 {
     /* 00 */ PAD(0x00, 0x04);
     /* 04 */ struct OSThread *unk_04;
@@ -26,16 +31,17 @@ typedef struct OSMutex {
     /* 00 */ OSLinkedList unk_00;
     /* 08 */ struct OSThread *unk_08;
     /* 0c */ vu32 unk_0c;
-    /* 10 */ struct OSMutex *unk_10;
-    /* 14 */ struct OSMutex *unk_14;
+    /* 10 */ OSMutexLinkedList list;
     /* 18 */
 } OSMutex;
 
 void OS_InitMutex(OSMutex *mutex);
 void OS_LockMutex(OSMutex *mutex);
 void OS_UnlockMutex(OSMutex *mutex);
+bool OS_TryLockMutex(OSMutex *mutex);
 
 void OSi_UnlockAllMutex(struct OSThread *param1);
+void OS_UnlockAllQueuedThreadMutex(struct OSThread *thread);
 
 #ifdef __cplusplus
 } // extern "C"

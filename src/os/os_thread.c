@@ -124,18 +124,18 @@ static OSThread *OSi_RemoveSpecifiedLinkFromQueue(OSLinkedList *list, OSThread *
     return iter;
 }
 
-OSMutex *OS_func_0039(OS_UnkStruct1 *param1) {
+OSMutex *OS_func_0039(OSMutexLinkedList *param1) {
     OSMutex *iVar1;
     OSMutex *iVar2;
 
-    iVar2 = param1->unk_00;
+    iVar2 = param1->next;
     if (iVar2 != NULL) {
         iVar1          = iVar2->unk_10;
-        param1->unk_00 = iVar1;
+        param1->next = iVar1;
         if (iVar1 != 0) {
             iVar1->unk_14 = 0;
         } else {
-            param1->unk_04 = NULL;
+            param1->prev = NULL;
         }
     }
     return iVar2;

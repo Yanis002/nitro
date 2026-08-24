@@ -338,6 +338,8 @@ void GX_BeginLoadTex(void);
 void GX_LoadTex(void *ptr, u32 offset, u32 size);
 void GX_EndLoadTex(void);
 
+void GX_func_0008(void *, s32, s32);
+
 extern u16 data_020a7088;
 extern u32 data_020a708c;
 
@@ -403,7 +405,15 @@ inline void GX_SetCapture(u32 size, u32 mode, u32 srcA, GXCaptureSrcB srcB, u32 
 }
 
 inline void GXS_SetOBJVRamModeBmp(u32 mode) {
-    REG_DISPCNT_SUB = REG_DISPCNT_SUB & ~0x60 | ((mode & 0x3) << 5);
+    REG_DISPCNT_SUB = (REG_DISPCNT_SUB & ~0x60) | ((mode & 0x3) << 5);
+}
+
+inline void GX_SetVisibleWindows(s32 windows) {
+    REG_DISPCNT = (REG_DISPCNT & ~0xE000) | (windows << 13);
+}
+
+inline void GXS_SetVisibleWindows(s32 windows) {
+    REG_DISPCNT_SUB = (REG_DISPCNT_SUB & ~0xE000) | (windows << 13);
 }
 
 #ifdef __cplusplus

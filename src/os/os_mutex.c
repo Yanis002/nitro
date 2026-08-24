@@ -132,10 +132,10 @@ static void OS_func_0067(OSThread *param1, OSMutex *mutex) {
     if (temp_r3 == NULL) {
         param1->unk_88.unk_00 = mutex;
     } else {
-        temp_r3->unk_10 = mutex;
+        temp_r3->list.next = mutex;
     }
-    mutex->unk_14         = temp_r3;
-    mutex->unk_10         = 0;
+    mutex->list.prev         = temp_r3;
+    mutex->list.next         = 0;
     param1->unk_88.unk_04 = mutex;
 }
 
@@ -143,16 +143,16 @@ static void OS_func_0068(OSThread *param1, OSMutex *mutex) {
     OSMutex *temp_r1;
     OSMutex *temp_r2;
 
-    temp_r2 = mutex->unk_10;
-    temp_r1 = mutex->unk_14;
+    temp_r2 = mutex->list.next;
+    temp_r1 = mutex->list.prev;
     if (temp_r2 == NULL) {
         param1->unk_88.unk_04 = temp_r1;
     } else {
-        temp_r2->unk_14 = temp_r1;
+        temp_r2->list.prev = temp_r1;
     }
     if (temp_r1 == NULL) {
         param1->unk_88.unk_00 = temp_r2;
     } else {
-        temp_r1->unk_10 = temp_r2;
+        temp_r1->list.next = temp_r2;
     }
 }
