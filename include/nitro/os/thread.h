@@ -8,7 +8,6 @@
 /// MARK: Types
 
 typedef struct OSThread OSThread;
-typedef struct OSMutex OSMutex;
 
 typedef void (*OSThreadSwitchCallback)(OSThread *oldThread, OSThread *newThread);
 typedef void (*OSThreadDtor)(void *);
