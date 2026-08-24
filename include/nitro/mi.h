@@ -22,7 +22,7 @@ void MI_CpuFill8(void *ptr, u8 value, u32 size);
 void MI_CpuCopy8(void *src, void *dst, u32 size);
 void MI_CpuCopy16(void *src, void *dst, u32 size);
 void MI_CpuCopy32(void *src, void *dst, u32 size);
-void MI_CpuFill16(int value, void *dst, size_t size);
+void MI_CpuFill16(u16 value, void *dst, size_t size);
 void MI_CpuFill32(u32 value, void *ptr, u32 size);
 void MI_Swap(u32 *a, u32 *b);
 

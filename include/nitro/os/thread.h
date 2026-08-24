@@ -3,7 +3,7 @@
 
 #include "nitro/os/context.h"
 #include "nitro/os/mutex.h"
-#include "nitro/os/cp.h"
+#include "nitro/os/alarm.h"
 
 /// MARK: Types
 
@@ -12,11 +12,6 @@ typedef struct OSMutex OSMutex;
 
 typedef void (*OSThreadSwitchCallback)(OSThread *oldThread, OSThread *newThread);
 typedef void (*OSThreadDtor)(void *);
-
-typedef struct OSThreadLinkedList {
-    /* 0x04 */ OSThread *prev;
-    /* 0x00 */ OSThread *next;
-} OSThreadLinkedList;
 
 typedef struct OSThreadQueue {
     /* 0x00 */ OSThread *head;
@@ -32,10 +27,7 @@ typedef struct OSThreadInfo {
 } OSThreadInfo;
 
 typedef struct OSThread {
-    /* 00 */ u32 cpsr;
-    /* 04 */ u32 regs[16];
-    /* 44 */ u32 sp;
-    /* 48 */ CPContext cpCtx;
+    /* 00 */ OSContext context;
     /* 64 */ u32 unk_64;
     /* 68 */ struct OSThread *nextPrio; // next thread with lower priority
     /* 6c */ u32 unk_6c;
@@ -45,11 +37,11 @@ typedef struct OSThread {
     /* 7c */ struct OSThread *prev;
     /* 80 */ struct OSThread *next;
     /* 84 */ OSMutex *unk_84;
-    /* 88 */ OSMutexLinkedList unk_88;
+    /* 88 */ OSMutexQueue unk_88;
     /* 90 */ void *stackLo;
     /* 94 */ void *stackHi;
     /* 98 */ u32 *unk_98;
-    /* 9c */ OSThreadLinkedList unk_9c;
+    /* 9c */ OSThreadQueue unk_9c;
     /* a4 */ u8 unk_a4[0xb0 - 0xa4];
     /* b0 */ OSAlarm *alarm;
     /* b4 */ OSThreadDtor destructor;
@@ -66,7 +58,7 @@ OSMutex *OS_RemoveMutexFromQueue(OSMutexQueue *queue);
 OSThread *OS_SelectThread(void);
 void OS_CreateThread(OSThread *thread, void (*threadFunc)(void *arg), void *arg, void *stackHi, u32 stackSize, u32 prio);
 void OS_ExitThread(void);
-void OS_WakeupThreadDirect(void *param1);
+void OS_WakeupThreadDirect(OSThread *param1);
 BOOL OS_IsThreadTerminated(const OSThread *thread);
 void OS_KillThread(OSThread *thread, void *);
 void OS_SleepThread(OSMutex *mutex); // sleeps current thread, mutex is optional
@@ -91,7 +83,7 @@ static inline void OS_SetCurrentThread(OSThread *thread) {
 }
 
 static inline u32 OS_GetThreadId(OSThread *thread) {
-    return thread->id;
+    return thread->unk_6c;
 }
 
 #endif // _NITRO_THREAD_H

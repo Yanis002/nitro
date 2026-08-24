@@ -121,7 +121,7 @@ void OS_CheckStack(OSThread *thread);
     #define OS_CheckStack(thread)
 #endif
 void OS_func_0044(void);
-s32 OS_func_0039(OSMutexQueue *param1);
+OSMutex* OS_func_0039(OSMutexQueue *param1);
 
 void OS_InitMessageQueue(OSMessageQueue *queue, OSMessage *buf, u32 bufLength);
 void OS_ReceiveMessage(OSMessageQueue *queue, OSMessage *message, u32 block);

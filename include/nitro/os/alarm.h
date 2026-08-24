@@ -1,5 +1,5 @@
-#ifndef _NITRO_OS_MUTEX_H
-#define _NITRO_OS_MUTEX_H
+#ifndef _NITRO_OS_ALARM_H
+#define _NITRO_OS_ALARM_H
 
 #ifdef __cplusplus
 extern "C" {

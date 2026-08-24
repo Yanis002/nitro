@@ -16,11 +16,6 @@ typedef struct OSMutexQueue {
     /* 0x04 */ struct OSMutex *tail;
 } OSMutexQueue;
 
-typedef struct OSMutexLinkedList {
-    /* 0x00 */ struct OSMutex *next;
-    /* 0x04 */ struct OSMutex *prev;
-} OSMutexLinkedList;
-
 typedef struct OS_Mutex_UnkStruct1 {
     /* 00 */ PAD(0x00, 0x04);
     /* 04 */ struct OSThread *unk_04;
@@ -31,7 +26,7 @@ typedef struct OSMutex {
     /* 00 */ OSLinkedList unk_00;
     /* 08 */ struct OSThread *unk_08;
     /* 0c */ vu32 unk_0c;
-    /* 10 */ OSMutexLinkedList list;
+    /* 10 */ OSMutexQueue queue;
     /* 18 */
 } OSMutex;
 
