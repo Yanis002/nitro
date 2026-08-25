@@ -58,7 +58,7 @@ typedef struct OSThread {
     /* 6c */ u32 unk_6c;
     /* 70 */ u32 prio;
     /* 74 */ u32 unk_74;
-    /* 78 */ OSMutex *unk_78;
+    /* 78 */ OSLinkedList *unk_78;
     /* 7c */ struct OSThread *prev;
     /* 80 */ struct OSThread *next;
     /* 84 */ OSMutex *unk_84;
@@ -147,11 +147,12 @@ void OS_Sleep(u32 time);
 
 void OS_CreateThread(OSThread *thread, void (*threadFunc)(void *arg), void *arg, void *stackHi, u32 stackSize,
                      u32 prio);
+void OS_WakeupThread(OSLinkedList *);
 void OS_WakeupThreadDirect(OSThread *thread);
 BOOL OS_IsThreadTerminated(const OSThread *thread);
 void OS_KillThread(OSThread *thread, void *);
 OSThread *OS_GetCurrentThread(void);
-void OS_SleepThread(OSMutex *mutex); // sleeps current thread, mutex is optional
+void OS_SleepThread(OSLinkedList *list); // sleeps current thread, list is optional
 #ifdef DEBUG
 void OS_CheckStack(OSThread *thread);
 #else
@@ -188,6 +189,8 @@ void OS_Halt(void);
 void OS_func_0013(s32, void (*)(u32), u32);
 
 void OS_func_0094(OSAlarm *timer, u64 time, void *callback, void *arg);
+
+u32 OS_func_0159(void);
 
 void OS_func_0167(void);
 void OS_func_0169(u32, void (*)(u32, u32, u32));

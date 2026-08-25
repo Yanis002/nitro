@@ -27,6 +27,7 @@ This table outlines the source of every symbol/macro name used in this decompila
 | CARDBackupType | Typedef | pm4, GameSpy
 | CARDResult     | Typedef | pm4
 ||
+| CARD_Init                      | Function | gtact
 | CARD_LockBackup                | Function | pm4, GameSpy
 | CARD_UnlockBackup              | Function | pm4, GameSpy
 | CARD_IdentifyBackup            | Function | pm4, GameSpy
@@ -51,6 +52,13 @@ This table outlines the source of every symbol/macro name used in this decompila
 | CARD_WriteAndVerifyFlashAsync  | Function | pm4
 | CARD_WriteAndVerifyFramAsync   | Function | pm4
 ||
+| CARD_LockRom     | Function | gtact
+| CARD_UnlockRom   | Function | gtact
+| CARD_IsPulledOut | Function | gtact
+||
+| CARDi_UnlockResource | Function | gtact
+| CARDi_ReadRom        | Function | gtact
+||
 | CP_SaveContext     | Function | gtact
 | CPi_RestoreContext | Function | gtact
 ||
@@ -62,29 +70,119 @@ This table outlines the source of every symbol/macro name used in this decompila
 | DC_InvalidateRange  | Function | diamondtrust
 | DC_DrainWriteBuffer | Function
 ||
+| FS_MAX_PATH | Macro
+||
 | FS_SEEK_SET | Macro | pm4, diamondtrust
 | FS_SEEK_CUR | Macro | pm4
 | FS_SEEK_END | Macro | gtpd
 ||
-| FS_FILE_FLAG_FILE | Macro
+| FS_FILE_FLAG_SEND_CMD | Macro
+| FS_FILE_FLAG_FILE     | Macro
+| FS_FILE_FLAG_DIR      | Macro
+| FS_FILE_FLAG_CMD_TYPE | Macro
 ||
 | FS_FILEMODE_R | Macro | diamondtrust
 ||
-| FSVolume       | Struct
+| FS_CMD_READ_FILE    | Macro
+| FS_CMD_WRITE_FILE   | Macro
+| FS_CMD_CLOSE_FILE   | Macro
+| FS_CMD_LOCK         | Macro
+| FS_CMD_UNLOCK       | Macro
+| FS_CMD_OPEN_FILE    | Macro
+| FS_CMD_SEEK_FILE    | Macro
+| FS_CMD_GET_LENGTH   | Macro
+| FS_CMD_GET_POSITION | Macro
+| FS_CMD_OPEN_DIR     | Macro
+| FS_CMD_CLOSE_DIR    | Macro
+| FS_CMD_COUNT        | Macro
+| FS_MAX_CMD_COUNT    | Macro
+||
+| FS_RESULT_SUCCESS         | Macro
+| FS_RESULT_FAILURE         | Macro
+| FS_RESULT_INVALID_COMMAND | Macro
+| FS_RESULT_INVALID_PARAM   | Macro
+| FS_RESULT_AWAIT_ASYNC     | Macro
+||
+| FS_FILE_PROC_READ   | Macro
+| FS_FILE_PROC_WRITE  | Macro
+| FS_FILE_PROC_CLOSE  | Macro
+| FS_FILE_PROC_SUSPEND   | Macro
+| FS_FILE_PROC_UNLOCK | Macro
+| FS_FILE_PROC_COUNT  | Macro
+||
+| FSiCmdReadFile  | Struct
+| FSiCmdSeekFile  | Struct
+| FSiCmdOpenFile  | Struct
+| FSiCmdGetLength | Struct
+||
+| FSFileProc       | Typedef
+| FSResult       | Typedef
+| FSArchive      | Struct | gtact
 | FSFile         | Struct | pm4, diamondtrust
 | FSFntDirectory | Struct
 | FSDirEntry     | Struct | diamondtrust
+| FSFileProcs      | Struct
+| FSArchiveFns   | Struct
 ||
-| FS_Init       | Function | pm4, diamondtrust
-| FS_InitFile   | Function | pm4, diamondtrust
-| FS_OpenFile   | Function | pm4
-| FS_OpenFileEx | Function | diamondtrust
-| FS_SeekFile   | Function | pm4, diamondtrust
-| FS_GetLength  | Function | diamondtrust, gtpd
-| FS_ReadFile   | Function | pm4, diamondtrust
-| FS_CloseFile  | Function | pm4, diamondtrust
-| FS_IsFile     | Function | pm4
+| FS_Init        | Function | pm4, diamondtrust
+| FS_InitFile    | Function | pm4, diamondtrust
+| FS_OpenFile    | Function | pm4
+| FS_OpenFileEx  | Function | diamondtrust
+| FS_SeekFile    | Function | pm4, diamondtrust
+| FS_GetLength   | Function | diamondtrust, gtpd
+| FS_GetPosition | Function | gtpd
+| FS_ReadFile    | Function | pm4, diamondtrust
+| FS_CloseFile   | Function | pm4, diamondtrust
+| FS_IsFile      | Function | pm4
 ||
+| FSi_InitRom             | Function | gtact
+| FSi_SendCommand         | Function | gtact
+| FSi_ReleaseCommand      | Function | gtact
+| FSi_NextCommand         | Function | gtact
+| FSi_ExecuteAsyncCommand | Function | gtact
+| FSi_ExecuteSyncCommand  | Function | gtact
+| FSi_TranslateCommand    | Function | gtact
+||
+| FS_InitArchive           | Function | gtact
+| FS_FindArchive           | Function | gtact
+| FS_RegisterArchiveName   | Function | gtact
+| FS_SetArchiveProc        | Function | gtact
+| FS_LoadArchive           | Function | gtact
+| FS_NotifyArchiveAsyncEnd | Function | gtact
+||
+| FSi_EmptyArchiveProc   | Function | gtact
+| FSi_ReadDummyCallback  | Function | gtact
+| FSi_WriteDummyCallback | Function | gtact
+| FSi_RomArchiveProc     | Function | gtact
+| FSi_ReadRomCallback    | Function | gtact
+| FSi_ReadMemCallback    | Function | gtact
+| FSi_WriteMemCallback   | Function | gtact
+| FSi_OnRomReadDone      | Function | gtact
+| FSi_GetPackedName      | Function | gtact
+||
+| FSi_RomReadFile    | Function
+| FSi_RomWriteFile   | Function
+| FSi_RomCloseFile   | Function
+| FSi_RomLock        | Function
+| FSi_RomUnlock      | Function
+| FSi_RomOpenFile    | Function
+| FSi_RomSeekFile    | Function
+| FSi_RomGetLength   | Function
+| FSi_RomGetPosition | Function
+| FSi_RomOpenDir     | Function
+| FSi_RomCloseDir    | Function
+||
+| FSi_GetLength          | Function
+| FSi_GetLengthFromRom   | Function
+| FSi_GetPosition        | Function
+| FSi_GetPositionFromRom | Function
+| FSi_SeekFileFromRom    | Function
+||
+| FSi_ExecuteFileProc     | Function
+| FSi_FileProcRead        | Function
+| FSi_FileProcWrite       | Function
+||
+| FSi_FileProcNop         | Function
 | FS_FindDir | Function | diamondtrust
 | FS_ReadDir | Function | diamondtrust
 | FS_CloseDirectory | Function | diamondtrust
@@ -610,22 +708,26 @@ This table outlines the source of every symbol/macro name used in this decompila
 | OSTime         | Typedef | pm4
 | OSIntrMode     | Typedef | diamondtrust
 ||
-| OS_Init | Function | pm4, diamondtrust
+| OS_Init       | Function | pm4, diamondtrust
 | OS_InitThread | Function | diamondtrust
-| OS_InitTick | Function | pm4, diamondtrust
-| OS_InitAlarm | Function | pm4, diamondtrust
-| OS_Terminate | Function | diamondtrust, gtpd
+| OS_InitTick   | Function | pm4, diamondtrust
+| OS_InitAlarm  | Function | pm4, diamondtrust
+| OS_Terminate  | Function | diamondtrust, gtpd
 ||
 | OS_SetIrqFunction | Function | pm4, diamondtrust
-| OS_EnableIrqMask | Function | pm4, diamondtrust
+| OS_EnableIrqMask  | Function | pm4, diamondtrust
 ||
 | OS_WaitVBlankIntr | Function | pm4, diamondtrust
-| _OS_SpinWait | Function
-| OS_SpinWait | Function | diamondtrust
+| _OS_SpinWait      | Function
+| OS_SpinWait       | Function | diamondtrust
 ||
-| OS_InitMutex | Function | pm4, diamondtrust
-| OS_LockMutex | Function | pm4, diamondtrust
+| OS_InitMutex   | Function | pm4, diamondtrust
+| OS_LockMutex   | Function | pm4, diamondtrust
 | OS_UnlockMutex | Function | pm4, diamondtrust
+||
+| OS_UnlockByWord | Function | gtact
+||
+| OSi_FreeCardBus | function | gtact
 ||
 | OS_TPrintf  | Function | pm4, diamondtrust
 | OS_Printf   | Function | pm4, diamondtrust
@@ -901,3 +1003,13 @@ This table outlines the source of every symbol/macro name used in this decompila
 ||
 | WM_ReadStatus | Function | diamondtrust
 ||
+
+## Sources
+
+| Abbreviation | Meaning |
+|--------------|---------|
+| diamondtrust | Diamond Trust of London (DS)
+| pm4 | Princess Maker 4: Special Edition (DS, Japan)
+| gtact | Grand Theft Auto: Chinatown Wars (DS, Europe)
+| gtpd | Ghost Trick: Phantom Detective (Windows)
+| gs456 | Apollo Justice: Ace Attorney Trilogy (Windows)

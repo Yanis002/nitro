@@ -22,7 +22,6 @@ static u32 OS_SaveContext(OSThread *thread);
 static void OS_LoadContext(OSThread *thread);
 static void OS_RescheduleThread(void);
 static u32 OS_DisableScheduler(void);
-static void OS_WakeupThread(OSLinkedList *);
 static u32 OS_EnableScheduler(void);
 static BOOL OS_SetThreadPriority(OSThread *thread, u32 prio);
 static u32 OS_GetThreadPriority(OSThread *thread);
@@ -301,15 +300,15 @@ static void OSi_ExitThread(void *arg) {
 }
 
 static void OSi_ExitThread_Destroy(void) {
-    OSMutex *mutex;
+    OSLinkedList *list;
     OSThread *thread;
 
     thread = *spCurrentThread;
     OS_DisableScheduler();
     OSi_UnlockAllMutex(thread);
-    mutex = thread->unk_78;
-    if (mutex != 0) {
-        OSi_RemoveSpecifiedLinkFromQueue(&mutex->unk_00, thread);
+    list = thread->unk_78;
+    if (list != 0) {
+        OSi_RemoveSpecifiedLinkFromQueue(list, thread);
     }
     OSi_RemoveThreadFromList(thread);
     thread->unk_64 = 2;
@@ -319,15 +318,15 @@ static void OSi_ExitThread_Destroy(void) {
     OS_Terminate();
 }
 
-void OS_SleepThread(OSMutex *mutex) {
+void OS_SleepThread(OSLinkedList *list) {
     s32 temp_r4;
     OSThread *temp_r5;
 
     temp_r4 = OS_DisableInterrupts();
     temp_r5 = *spCurrentThread;
-    if (mutex) {
-        temp_r5->unk_78 = mutex;
-        OSi_InsertLinkToQueue(&mutex->unk_00, temp_r5);
+    if (list) {
+        temp_r5->unk_78 = list;
+        OSi_InsertLinkToQueue(list, temp_r5);
     }
     temp_r5->unk_64 = 0;
     OSi_RescheduleThread();
