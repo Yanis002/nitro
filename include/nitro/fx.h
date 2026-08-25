@@ -47,10 +47,10 @@ typedef union VecFx32 {
 
 typedef union MtxFx22 {
     struct {
-        /* 00 */ fx32 x;
-        /* 04 */ fx32 y;
-        /* 08 */ fx32 z;
-        /* 0c */ fx32 w;
+        /* 00 */ fx32 _00;
+        /* 04 */ fx32 _01;
+        /* 08 */ fx32 _10;
+        /* 0c */ fx32 _11;
         /* 10 */
     };
     fx32 coords[4];

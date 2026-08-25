@@ -26,13 +26,13 @@ typedef float f32;
 typedef double f64;
 
 typedef volatile u64 vu64;
-typedef volatile u64 vulong;
+typedef volatile ulong vulong;
 typedef volatile u32 vu32;
 typedef volatile u16 vu16;
 typedef volatile u8 vu8;
 
 typedef volatile s64 vs64;
-typedef volatile s64 vslong;
+typedef volatile slong vslong;
 typedef volatile s32 vs32;
 typedef volatile s16 vs16;
 typedef volatile s8 vs8;
