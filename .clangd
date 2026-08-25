@@ -5,6 +5,7 @@ CompileFlags:
   - -Iinclude
   - -Ilibs/c/include
   - -Wno-c99-designator
+  - -Wall
 Diagnostics:
   Suppress:
   - asm_qualifier_ignored

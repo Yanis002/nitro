@@ -1549,9 +1549,9 @@ data_0207b90c kind:data(any) addr:0x0207b90c
 data_0207b914 kind:data(any) addr:0x0207b914
 data_0207bd14 kind:data(any) addr:0x0207bd14
 data_0207bd18 kind:data(any) addr:0x0207bd18
-FS_data_0001 kind:data(any) addr:0x0207bd20
-sFileProcs kind:data(any) addr:0x0207bd60
-sArchiveFns kind:data(any) addr:0x0207bd94
+FS_data_0001 kind:data(any) addr:0x0207bd20 local
+sFileProcs kind:data(any) addr:0x0207bd60 local
+sArchiveFns kind:data(any) addr:0x0207bd94 local
 data_0207be94 kind:data(any) addr:0x0207be94
 data_0207bea4 kind:data(any) addr:0x0207bea4
 data_0207bea6 kind:data(any) addr:0x0207bea6
@@ -2372,11 +2372,11 @@ data_02080ee4 kind:data(any) addr:0x02080ee4
 data_02080ee8 kind:data(any) addr:0x02080ee8
 data_02080ef0 kind:data(any) addr:0x02080ef0
 data_02080efc kind:data(any) addr:0x02080efc
-@1221 kind:data(any) addr:0x02080f04
-data_02080f08 kind:data(any) addr:0x02080f08
-@1906 kind:data(any) addr:0x02080f0c
-@903 kind:data(any) addr:0x02080f10
-@2570 kind:data(any) addr:0x02080f14
+@1221 kind:data(any) addr:0x02080f04 local
+@534 kind:data(any) addr:0x02080f08 local
+@1906 kind:data(any) addr:0x02080f0c local
+@903 kind:data(any) addr:0x02080f10 local
+@2570 kind:data(any) addr:0x02080f14 local
 data_02080f1c kind:data(any) addr:0x02080f1c
 data_02080f20 kind:data(any) addr:0x02080f20
 data_02080f24 kind:data(any) addr:0x02080f24
@@ -2735,13 +2735,13 @@ data_02137d74 kind:bss addr:0x02137d74
 data_02137d90 kind:bss addr:0x02137d90
 data_02137e20 kind:bss addr:0x02137e20
 data_02138020 kind:bss addr:0x02138020
-FS_data_0003 kind:bss addr:0x0213802c
-sLongArchiveNames kind:bss addr:0x0213803c
-FS_data_0004 kind:bss addr:0x0213813c
-FS_data_0002 kind:bss addr:0x02138240
-FS_data_0005 kind:bss addr:0x0213825c
-sRomArchive kind:bss addr:0x02138264
-FSi_Initialized kind:bss addr:0x021382c0
+FS_data_0003 kind:bss addr:0x0213802c local
+sLongArchiveNames kind:bss addr:0x0213803c local
+FS_data_0004 kind:bss addr:0x0213813c local
+FS_data_0002 kind:bss addr:0x02138240 local
+FS_data_0005 kind:bss addr:0x0213825c local
+sRomArchive kind:bss addr:0x02138264 local
+FSi_Initialized kind:bss addr:0x021382c0 local
 data_021382c4 kind:bss addr:0x021382c4
 data_021382c6 kind:bss addr:0x021382c6
 data_021382c8 kind:bss addr:0x021382c8

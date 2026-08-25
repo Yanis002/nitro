@@ -142,6 +142,12 @@ typedef struct FSArchive {
     /* 5c */
 } FSArchive;
 
+typedef struct FS_UnkStruct11 {
+    /* 00 */ FSArchive *archive;
+    /* 04 */ void *src;
+    /* 08 */
+} FS_UnkStruct11;
+
 typedef struct FS_UnkStruct13 {
     /* 000 */ u8 unk_00[4];
     /* 004 */ PAD(0x04, 0x10);
@@ -161,6 +167,11 @@ typedef struct FS_UnkStruct13 {
     /* 16c */ u32 unk_16c;
     /* 170 */
 } FS_UnkStruct13;
+
+typedef struct FS_UnkStruct14 {
+    /* 00 */ s32 pos;
+    /* 04 */
+} FS_UnkStruct14;
 
 typedef struct FS_UnkStruct15 {
     /* 00 */ u32 unk_00;
@@ -508,6 +519,11 @@ BOOL FS_SeekFile(FSFile *file, s32 pos, u32 mode);
 u32 FS_GetLength(FSFile *file);
 u32 FS_ReadFile(FSFile *file, void *buf, u32 size);
 BOOL FS_CloseFile(FSFile *file);
+s32 FS_func_0003(FS_UnkStruct11 *arg0, void *dst, s32 size);
+void FS_func_0060(void);
+void FS_func_0055(FSFile *file, FSArchive *archive, s32 arg2, s32 arg3, s32 arg4);
+s32 FSi_GetPosition(FSFile *file);
+s32 FS_func_0094(FSFile *file);
 inline BOOL FS_IsFile(FSFile *file) {
     return !!(file->flags & FS_FILE_FLAG_FILE);
 }
@@ -515,6 +531,33 @@ inline BOOL FS_IsFile(FSFile *file) {
 FSResult FS_FindDir(FSFile *file, const char *path);
 FSResult FS_ReadDir(FSFile *file, FSDirEntry *dir);
 FSResult FS_CloseDirectory(FSFile *file);
+
+BOOL FSi_SendCommand(FSFile *file, s32 cmdType, BOOL sync);
+FSResult FSi_TranslateCommand(FSFile *file, u8 cmdType);
+void FSi_ReleaseCommand(FSFile *file, FSResult result);
+FSFile *FSi_NextCommand(FSArchive *archive, BOOL arg1);
+void FSi_ExecuteAsyncCommand(FSFile *file);
+
+void FS_InitArchive(FSArchive *archive);
+s32 FS_RegisterArchiveName(FSArchive *archive, const char *name, u32 length);
+FSArchive *FS_FindArchive(const char *name, u32 length);
+FSArchive *FS_func_0046(const char *path, u32 *arg1, char (*arg2)[FS_MAX_PATH]);
+s32 FS_func_0052(char *path, s32 start);
+char *FSi_GetPackedName(FSArchive *archive);
+BOOL FS_func_0049(FSArchive *archive, FS_UnkStruct7 *arg1, const FSArchiveFns *fns);
+void FS_NotifyArchiveAsyncEnd(FSArchive *archive, FSResult result);
+BOOL FS_func_0044(char *arg0);
+void FS_SetArchiveProc(FSArchive *archive, FSResult (*proc)(FSFile *file, FSFileProc index), u32 overrideMask);
+void FS_LoadArchive(FSArchive *archive, s32 arg1, s32 arg2, s32 arg3, s32 arg4, s32 arg5,
+                    FSResult (*read)(FSArchive *, void *, void *, s32),
+                    FSResult (*write)(FSArchive *, void *, void *, s32));
+
+BOOL FSi_InitRom(s32 dmaCount);
+BOOL FSi_GetLengthFromRom(FSFile *file, FSiCmdGetLength *cmd);
+BOOL FSi_GetPositionFromRom(FSFile *file, FSiCmdGetPosition *cmd);
+BOOL FSi_SeekFileFromRom(FSFile *arg0, FS_UnkStruct14 arg1, s32 mode);
+
+FSResult FS_func_0037(FSFile *file, FSResult result);
 
 #ifdef __cplusplus
 } // extern "C"
