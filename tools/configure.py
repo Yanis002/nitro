@@ -31,6 +31,7 @@ OBJDIFF_VERSION = 'v3.7.1'
 MWCC_VERSION = {
     "pm4_jp": "2.0/sp1p5",
     "diamondtrust_us": "dsi/1.3p1",
+    "gtactw_eu": "dsi/1.3p1",
 }
 DECOMP_ME_COMPILER = "mwcc_30_131"
 CC_FLAGS = " ".join([
