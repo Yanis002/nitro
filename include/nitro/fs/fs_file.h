@@ -107,7 +107,7 @@ typedef struct FSFile {
         void *ptr;
     } cmd;
     /* 14 */ u32 unk_14;
-    /* 18 */ OSLinkedList unk_18;
+    /* 18 */ OSThreadQueue unk_18;
     /* 20 */ FS_UnkStruct8 unk_20;
     /* 2c */ union {
         void *unk_2cp;

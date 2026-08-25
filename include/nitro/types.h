@@ -8,12 +8,16 @@
 extern "C" {
 #endif
 
+// note: u32 and s32 should use long based on similar library decomps
+
 typedef unsigned long long u64;
+typedef unsigned long ulong;
 typedef unsigned int u32;
 typedef unsigned short u16;
 typedef unsigned char u8;
 
 typedef long long s64;
+typedef long long slong;
 typedef int s32;
 typedef short s16;
 typedef signed char s8;
@@ -22,11 +26,13 @@ typedef float f32;
 typedef double f64;
 
 typedef volatile u64 vu64;
+typedef volatile ulong vulong;
 typedef volatile u32 vu32;
 typedef volatile u16 vu16;
 typedef volatile u8 vu8;
 
 typedef volatile s64 vs64;
+typedef volatile slong vslong;
 typedef volatile s32 vs32;
 typedef volatile s16 vs16;
 typedef volatile s8 vs8;
@@ -34,11 +40,14 @@ typedef volatile s8 vs8;
 typedef volatile f32 vf32;
 typedef volatile f64 vf64;
 
-typedef u32 BOOL;
+typedef s32 BOOL;
+#define TRUE 1
+#define FALSE 0
 
 #define ATTRIBUTE_ALIGN(x) __attribute__((aligned(x)))
 
-#define ARRAY_LEN(arr) ((s32) (sizeof(arr) / sizeof(*(arr))))
+#define ARRAY_LEN(arr) (s32)((sizeof(arr) / sizeof(*arr)))
+#define ARRAY_LEN_U(arr) (u32)((sizeof(arr) / sizeof(*arr)))
 
 #define PAD(start, end) u8 unk_##start[end - start]
 

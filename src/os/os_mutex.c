@@ -43,7 +43,7 @@ void OSi_UnlockAllMutex(OSThread *param1) {
     OSMutex *mutex;
     u32 temp_r1;
 
-    while (param1->unk_88.unk_00 != NULL) {
+    while (param1->unk_88.head != NULL) {
         mutex         = OS_func_0039(&param1->unk_88);
         temp_r1       = mutex->unk_0c & 0xFF000000;
         mutex->unk_08 = 0;
@@ -127,31 +127,31 @@ static void OS_func_0125(OSMutex *mutex, u32 param2) {
 static void OS_func_0067(OSThread *param1, OSMutex *mutex) {
     OSMutex *temp_r3;
 
-    temp_r3 = param1->unk_88.unk_04;
+    temp_r3 = param1->unk_88.tail;
     if (temp_r3 == NULL) {
-        param1->unk_88.unk_00 = mutex;
+        param1->unk_88.head = mutex;
     } else {
-        temp_r3->unk_10 = mutex;
+        temp_r3->queue.head = mutex;
     }
-    mutex->unk_14         = temp_r3;
-    mutex->unk_10         = 0;
-    param1->unk_88.unk_04 = mutex;
+    mutex->queue.tail         = temp_r3;
+    mutex->queue.head         = 0;
+    param1->unk_88.tail = mutex;
 }
 
 static void OS_func_0068(OSThread *param1, OSMutex *mutex) {
     OSMutex *temp_r1;
     OSMutex *temp_r2;
 
-    temp_r2 = mutex->unk_10;
-    temp_r1 = mutex->unk_14;
+    temp_r2 = mutex->queue.head;
+    temp_r1 = mutex->queue.tail;
     if (temp_r2 == NULL) {
-        param1->unk_88.unk_04 = temp_r1;
+        param1->unk_88.tail = temp_r1;
     } else {
-        temp_r2->unk_14 = temp_r1;
+        temp_r2->queue.tail = temp_r1;
     }
     if (temp_r1 == NULL) {
-        param1->unk_88.unk_00 = temp_r2;
+        param1->unk_88.head = temp_r2;
     } else {
-        temp_r1->unk_10 = temp_r2;
+        temp_r1->queue.head = temp_r2;
     }
 }

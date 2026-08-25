@@ -53,7 +53,7 @@ static FSResult FSi_RomReadFile(FSArchive *archive, FSFile *file, u32 size, FSiC
 static FSResult FSi_RomWriteFile(FSArchive *archive, FSFile *file, u32 arg2, FSiCmd1 *cmd);
 static FSResult FS_func_0066(FSArchive *archive, FSFile *file, u32 arg2, u32 arg3);
 static FSResult FS_func_0067(FSArchive *archive, FSFile *file, FS_UnkStruct13 *arg2);
-static FSResult FS_func_0068(FSArchive *archive, u32 arg1, char *arg2, u32 *arg3, u32 arg4);
+static FSResult FS_func_0068(FSArchive *archive, u32 arg1, char *arg2, u32 *arg3, BOOL arg4);
 static FSResult FS_func_0069(FSArchive *archive, FSFile *file, u32 arg2, u32 arg3, u32 *arg4);
 static FSResult FS_func_0070(FSArchive *archive, FSFile *file, u32 arg2, u32 arg3);
 static FSResult FS_func_0071(FSArchive *archive, FSFile *file, u32 arg2, u32 arg3, FSiCmd7 *cmd);

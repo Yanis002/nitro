@@ -46,7 +46,7 @@ typedef struct FsArchiveFns {
             /* 04 */ FSResult (*write)(struct FSArchive *archive, struct FSFile *file, u32, FSiCmd1 *cmd);
             /* 08 */ FSResult (*unk_08)(struct FSArchive *archive, struct FSFile *file, u32, u32);
             /* 0c */ FSResult (*unk_0c)(struct FSArchive *archive, struct FSFile *file, FS_UnkStruct13 *);
-            /* 10 */ FSResult (*unk_10)(struct FSArchive *archive, u32, char *path, u32 *, u32);
+            /* 10 */ FSResult (*unk_10)(struct FSArchive *archive, u32, char *path, u32 *, BOOL);
             /* 14 */ FSResult (*unk_14)(struct FSArchive *archive, struct FSFile *file, u32, u32, u32 *);
             /* 18 */ FSResult (*unk_18)(struct FSArchive *archive, struct FSFile *file, u32, u32);
             /* 1c */ FSResult (*unk_1c)(struct FSArchive *archive, struct FSFile *file, u32, u32, FSiCmd7 *cmd);
@@ -89,7 +89,7 @@ typedef struct FSArchive {
     };
     /* 04 */ struct FSArchive *next;
     /* 08 */ struct FSFile *currentFile;
-    /* 0c */ OSLinkedList unk_0c;
+    /* 0c */ OSThreadQueue unk_0c;
     /* 10 */ vu32 flags;
     /* 18 */ u32 unk_18;
     /* 1c */ u32 unk_1c;

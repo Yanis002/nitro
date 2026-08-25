@@ -7,10 +7,13 @@ extern "C" {
 
 #include <stdarg.h>
 
+#include "nitro/os/alarm.h"
 #include "nitro/os/cache.h"
 #include "nitro/os/common.h"
-#include "nitro/os/cp.h"
+#include "nitro/os/context.h"
 #include "nitro/os/mutex.h"
+#include "nitro/os/owner.h"
+#include "nitro/os/thread.h"
 #include "nitro/reg.h"
 
 #define OS_IE_V_BLANK 1
@@ -31,47 +34,11 @@ extern "C" {
 
 #define OS_THREAD_LAUNCHER_PRIORITY 0x10
 
-typedef struct OSAlarm {
-    /* 00 */ u32 unk_00;
-    /* 04 */ u32 unk_04;
-    /* 08 */ u32 unk_08;
-    /* 0c */ u32 unk_0c;
-    /* 10 */ u32 unk_10;
-    /* 14 */ void *unk_14;
-    /* 18 */ void *unk_18;
-    /* 1c */ u32 unk_1c;
-    /* 20 */ u32 unk_20;
-    /* 24 */ u32 unk_24;
-    /* 28 */ u32 unk_28;
-    /* 2c */
-} OSAlarm;
+#define OS_EXMEM_CNT_NDS_SLOT_ACCESS_SHIFT 11
+#define OS_EXMEM_CNT_NDS_SLOT_ACCESS (1 << OS_EXMEM_CNT_NDS_SLOT_ACCESS_SHIFT)
 
-typedef void (*OSThreadDtor)(void *);
-
-typedef struct OSThread {
-    /* 00 */ u32 cpsr;
-    /* 04 */ u32 regs[16];
-    /* 44 */ u32 sp;
-    /* 48 */ CPContext cpCtx;
-    /* 64 */ u32 unk_64;
-    /* 68 */ struct OSThread *nextPrio; // next thread with lower priority
-    /* 6c */ u32 unk_6c;
-    /* 70 */ u32 prio;
-    /* 74 */ u32 unk_74;
-    /* 78 */ OSLinkedList *unk_78;
-    /* 7c */ struct OSThread *prev;
-    /* 80 */ struct OSThread *next;
-    /* 84 */ OSMutex *unk_84;
-    /* 88 */ OS_UnkStruct1 unk_88;
-    /* 90 */ void *stackLo;
-    /* 94 */ void *stackHi;
-    /* 98 */ u32 *unk_98;
-    /* 9c */ OSLinkedList unk_9c;
-    /* a4 */ u8 unk_a4[0xb0 - 0xa4];
-    /* b0 */ OSAlarm *alarm;
-    /* b4 */ OSThreadDtor destructor;
-    /* b8 */
-} ATTRIBUTE_ALIGN(32) OSThread;
+#define OS_CPU_ARM9 0
+#define OS_CPU_ARM7 1
 
 typedef struct OSMessageQueue {
     /* 00 */ OSLinkedList unk_00;
@@ -93,6 +60,7 @@ typedef struct OSDma {
     /* 08 */ vu32 cnt;
     /* 0c */
 } OSDma;
+
 typedef u32 OSHeapHandle;
 typedef u64 OSTime;
 
@@ -103,8 +71,8 @@ void OS_InitThread(void);
 void OS_InitTick(void);
 void OS_InitAlarm(void);
 void OS_Terminate(void);
-
 void OS_SetIrqFunction(u32 type, void (*function)());
+
 void OS_EnableIrqMask(u32 mask);
 
 void OS_WaitVBlankIntr(void);
@@ -112,6 +80,8 @@ void _OS_SpinWait(u32 param1);
 inline void OS_SpinWait(u32 param1) {
     _OS_SpinWait(param1 / 2);
 }
+
+void _OS_Panic();
 
 #ifdef DEBUG
 void OS_TPrintf(const char *format, ...) {}
@@ -145,21 +115,13 @@ u32 OS_CheckHeap(u32 arena, OSHeapHandle heap);
 
 void OS_Sleep(u32 time);
 
-void OS_CreateThread(OSThread *thread, void (*threadFunc)(void *arg), void *arg, void *stackHi, u32 stackSize,
-                     u32 prio);
-void OS_WakeupThread(OSLinkedList *);
-void OS_WakeupThreadDirect(OSThread *thread);
-BOOL OS_IsThreadTerminated(const OSThread *thread);
-void OS_KillThread(OSThread *thread, void *);
-OSThread *OS_GetCurrentThread(void);
-void OS_SleepThread(OSLinkedList *list); // sleeps current thread, list is optional
 #ifdef DEBUG
 void OS_CheckStack(OSThread *thread);
 #else
     #define OS_CheckStack(thread)
 #endif
-void OS_ExitThread(void);
-OSMutex *OS_func_0039(OS_UnkStruct1 *param1);
+void OS_func_0044(void);
+OSMutex *OS_func_0039(OSMutexQueue *param1);
 
 void OS_InitMessageQueue(OSMessageQueue *queue, OSMessage *buf, u32 bufLength);
 void OS_ReceiveMessage(OSMessageQueue *queue, OSMessage *message, u32 block);
@@ -176,12 +138,13 @@ u32 OS_GetConsoleType(void);
 u32 OS_GetLockID(void);
 
 OSIntrMode OS_DisableInterrupts(void);
-u32 OS_DisableInterrupts(void);
+u32 OS_DisableInterrupts_Irq(void);
 void OS_RestoreInterrupts(u32);
 void OS_EnableInterrupts(void);
 
 BOOL OS_func_0206d5ac(u16, u32);
 void OS_func_0206d66c(u16, u32);
+u32 OS_func_0206d3cc(void);
 u32 OS_GetProcMode(void);
 
 void OS_Halt(void);
@@ -197,6 +160,10 @@ void OS_func_0169(u32, void (*)(u32, u32, u32));
 BOOL OS_func_0170(u32, u32);
 s32 OS_func_0171(u32, u32, u32);
 s32 OS_func_0174(void);
+BOOL OS_func_0065(void);
+
+void OS_func_0176(u8 *);
+void OS_func_0178(u32);
 
 inline void OS_SetIrqCheckFlag(void) {
     REG_IRQ |= 1;
@@ -259,8 +226,15 @@ inline BOOL OS_IsRunOnTwl(void) {
 #ifndef IS_TWL
     return false;
 #else
-    // Probably checks some reg here
+        // Probably checks some reg here
+    #define REG_A9ROM_OFFSET 0x4000
+    #define REG_SCFG_A9ROM_SEC_MASK 1
+
 #endif
+}
+
+inline void OS_SetNdsSlotAccess(u32 processor) {
+    REG_EXMEM_CNT = (REG_EXMEM_CNT & ~OS_EXMEM_CNT_NDS_SLOT_ACCESS) | (processor << OS_EXMEM_CNT_NDS_SLOT_ACCESS_SHIFT);
 }
 
 #ifdef __cplusplus

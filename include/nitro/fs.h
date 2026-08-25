@@ -10,6 +10,7 @@ extern "C" {
 #include "nitro/fs/fs_common.h"
 #include "nitro/fs/fs_dir.h"
 #include "nitro/fs/fs_file.h"
+#include "nitro/fs/fs_overlay.h"
 #include "nitro/types.h"
 
 typedef struct FS_UnkStruct14 {
