@@ -1,27 +1,22 @@
 #ifndef _NITRO_OS_THREAD_H
 #define _NITRO_OS_THREAD_H
 
+#include "nitro/os/alarm.h"
 #include "nitro/os/context.h"
 #include "nitro/os/mutex.h"
-#include "nitro/os/alarm.h"
 
 /// MARK: Types
 
-typedef struct OSThread OSThread;
+struct OSThread;
 
-typedef void (*OSThreadSwitchCallback)(OSThread *oldThread, OSThread *newThread);
+typedef void (*OSThreadSwitchCallback)(struct OSThread *oldThread, struct OSThread *newThread);
 typedef void (*OSThreadDtor)(void *);
-
-typedef struct OSThreadQueue {
-    /* 0x00 */ OSThread *head;
-    /* 0x04 */ OSThread *tail;
-} OSThreadQueue;
 
 typedef struct OSThreadInfo {
     /* 0x00 */ u16 isSchedulerWaiting;
     /* 0x02 */ u16 irqDepth;
-    /* 0x10 */ OSThread *current;
-    /* 0x14 */ OSThread *list;
+    /* 0x10 */ struct OSThread *current;
+    /* 0x14 */ struct OSThread *list;
     /* 0x18 */ OSThreadSwitchCallback callback;
 } OSThreadInfo;
 
@@ -32,7 +27,7 @@ typedef struct OSThread {
     /* 6c */ u32 unk_6c;
     /* 70 */ u32 prio;
     /* 74 */ u32 unk_74;
-    /* 78 */ OSMutex *unk_78;
+    /* 78 */ OSThreadQueue *unk_78;
     /* 7c */ struct OSThread *prev;
     /* 80 */ struct OSThread *next;
     /* 84 */ OSMutex *unk_84;
@@ -55,12 +50,14 @@ void OS_PauseThread(OSThreadQueue *queue);
 void OS_UnpauseThread(OSThreadQueue *queue);
 OSMutex *OS_RemoveMutexFromQueue(OSMutexQueue *queue);
 OSThread *OS_SelectThread(void);
-void OS_CreateThread(OSThread *thread, void (*threadFunc)(void *arg), void *arg, void *stackHi, u32 stackSize, u32 prio);
+void OS_CreateThread(OSThread *thread, void (*threadFunc)(void *arg), void *arg, void *stackHi, u32 stackSize,
+                     u32 prio);
+void OS_WakeupThread(OSThreadQueue *);
 void OS_ExitThread(void);
 void OS_WakeupThreadDirect(OSThread *param1);
 BOOL OS_IsThreadTerminated(const OSThread *thread);
 void OS_KillThread(OSThread *thread, void *);
-void OS_SleepThread(OSMutex *mutex); // sleeps current thread, mutex is optional
+void OS_SleepThread(OSThreadQueue *list); // sleeps current thread, list is optional
 
 /// MARK: Inlines
 

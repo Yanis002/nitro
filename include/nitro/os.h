@@ -7,13 +7,13 @@ extern "C" {
 
 #include <stdarg.h>
 
-#include "nitro/os/common.h"
+#include "nitro/os/alarm.h"
 #include "nitro/os/cache.h"
+#include "nitro/os/common.h"
 #include "nitro/os/context.h"
 #include "nitro/os/mutex.h"
 #include "nitro/os/owner.h"
 #include "nitro/os/thread.h"
-#include "nitro/os/alarm.h"
 #include "nitro/reg.h"
 
 #define OS_IE_V_BLANK 1
@@ -121,7 +121,7 @@ void OS_CheckStack(OSThread *thread);
     #define OS_CheckStack(thread)
 #endif
 void OS_func_0044(void);
-OSMutex* OS_func_0039(OSMutexQueue *param1);
+OSMutex *OS_func_0039(OSMutexQueue *param1);
 
 void OS_InitMessageQueue(OSMessageQueue *queue, OSMessage *buf, u32 bufLength);
 void OS_ReceiveMessage(OSMessageQueue *queue, OSMessage *message, u32 block);
@@ -152,6 +152,8 @@ void OS_Halt(void);
 void OS_func_0013(s32, void (*)(u32), u32);
 
 void OS_func_0094(OSAlarm *timer, u64 time, void *callback, void *arg);
+
+u32 OS_func_0159(void);
 
 void OS_func_0167(void);
 void OS_func_0169(u32, void (*)(u32, u32, u32));

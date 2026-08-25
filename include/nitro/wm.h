@@ -5,6 +5,8 @@
 extern "C" {
 #endif
 
+#include "nitro/types.h"
+
 #define WM_SYSTEM_BUF_SIZE 0xf00
 
 #define WM_ERRCODE_SUCCESS 0
@@ -202,6 +204,10 @@ WMErrCode WM_EndScan(void (*callback)(void *arg));
 WMErrCode WM_MeasureChannel(void (*callback)(void *arg), u32 param2, u32 param3, u16 channel, u32 param5);
 
 void WM_ReadStatus(WMStatus *status);
+
+void WM_func_0007(void *dst, const void *src, u32 size);
+u32 WM_func_0008(void);
+s32 WM_func_0009(const void *a, const void *b, u32 size);
 
 #ifdef __cplusplus
 } // extern "C"

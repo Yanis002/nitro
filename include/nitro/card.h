@@ -46,6 +46,23 @@ extern "C" {
 typedef u32 CARDBackupType;
 typedef u32 CARDResult;
 
+typedef struct CARD_UnkStruct1 {
+    /* 00 */ PAD(0x00, 0x40);
+    /* 40 */ u32 unk_40;
+    /* 44 */ u32 unk_44;
+    /* 48 */ u32 unk_48;
+    /* 4c */ u32 unk_4c;
+    /* 50 */
+} CARD_UnkStruct1;
+
+typedef struct CARD_UnkStruct2 {
+    /* 00 */ PAD(0x00, 0x80);
+    /* 80 */ u32 unk_80;
+    /* 84 */
+} CARD_UnkStruct2;
+
+void CARD_Init(void);
+
 void CARD_LockBackup(u16 cardId);
 void CARD_UnlockBackup(u16 cardId);
 BOOL CARD_IdentifyBackup(CARDBackupType type);
@@ -62,6 +79,14 @@ void CARD_func_0034();
 
 void CARD_func_0010(u32);
 void CARD_func_0011(u32);
+
+void CARD_LockRom(u16 lock);
+void CARD_UnlockRom(u16 lock);
+BOOL CARD_IsPulledOut(void);
+void CARDi_ReadRom(u32 arg0, void *arg1, void *arg2, void (*callback)(void *param), void *param, u32 arg5);
+
+CARD_UnkStruct2 *CARD_func_0058(void);
+CARD_UnkStruct1 *CARD_func_0059(void);
 
 inline void CARD_ReadEeprom(u32 offset, void *buf, u32 size) {
     // TODO: Implement from GameSpy ReadFromBackup

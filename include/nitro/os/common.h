@@ -13,6 +13,12 @@ typedef struct OSLinkedList {
     /* 08 */
 } OSLinkedList;
 
+struct OSThread;
+typedef struct OSThreadQueue {
+    /* 0x00 */ struct OSThread *head;
+    /* 0x04 */ struct OSThread *tail;
+} OSThreadQueue;
+
 #ifdef __cplusplus
 } // extern "C"
 #endif

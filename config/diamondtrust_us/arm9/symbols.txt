@@ -618,16 +618,16 @@ _Z11autoSprintfPKcz kind:function(arm,size=0x12c) addr:0x020229fc
 func_02022b28 kind:function(arm,size=0x22c) addr:0x02022b28
 CARD_func_0056 kind:function(arm,size=0x58) addr:0x02022d54
 CARD_func_0057 kind:function(arm,size=0x1c) addr:0x02022dac
-CARD_func_0004 kind:function(arm,size=0xf4) addr:0x02022dc8
+CARD_Init kind:function(arm,size=0xf4) addr:0x02022dc8
 CARD_func_0005 kind:function(arm,size=0x10) addr:0x02022ebc
 CARD_func_0006 kind:function(arm,size=0x18) addr:0x02022ecc
 CARD_func_0007 kind:function(arm,size=0x10) addr:0x02022ee4
 CARD_func_0058 kind:function(arm,size=0xc) addr:0x02022ef4
 CARD_func_0059 kind:function(arm,size=0xc) addr:0x02022f00
-CARD_func_0060 kind:function(arm,size=0x70) addr:0x02022f0c
-CARD_func_0011 kind:function(arm,size=0x1c) addr:0x02022f7c
+CARD_LockRom kind:function(arm,size=0x70) addr:0x02022f0c
+CARD_UnlockRom kind:function(arm,size=0x1c) addr:0x02022f7c
 CARD_LockBackup kind:function(arm,size=0x78) addr:0x02022f98
-CARD_func_0003 kind:function(arm,size=0x80) addr:0x02023010
+CARDi_UnlockResource kind:function(arm,size=0x80) addr:0x02023010
 CARD_func_0061 kind:function(arm,size=0x18) addr:0x02023090
 CARD_func_0062 kind:function(arm,size=0x20) addr:0x020230a8
 CARD_func_0063 kind:function(arm,size=0x28) addr:0x020230c8
@@ -653,35 +653,35 @@ CARD_func_0080 kind:function(arm,size=0x7c) addr:0x020237f4
 CARD_func_0081 kind:function(arm,size=0x30) addr:0x02023870
 CARD_func_0082 kind:function(arm,size=0xb4) addr:0x020238a0
 CARD_func_0083 kind:function(arm,size=0x4c) addr:0x02023954
-CARD_func_0084 kind:function(arm,size=0x188) addr:0x020239a0
+CARDi_ReadRom kind:function(arm,size=0x188) addr:0x020239a0
 CARD_func_0085 kind:function(arm,size=0x78) addr:0x02023b28
 CARD_func_0086 kind:function(arm,size=0xc) addr:0x02023ba0
 CARD_func_0087 kind:function(arm,size=0xc) addr:0x02023bac
 CARD_func_0088 kind:function(arm,size=0x34) addr:0x02023bb8
 CARD_func_0032 kind:function(arm,size=0x90) addr:0x02023bec
-CARD_func_0033 kind:function(arm,size=0x10) addr:0x02023c7c
+CARD_IsPulledOut kind:function(arm,size=0x10) addr:0x02023c7c
 CARD_func_0089 kind:function(arm,size=0x38) addr:0x02023c8c
 CARD_func_0090 kind:function(arm,size=0x50) addr:0x02023cc4
 CARD_func_0036 kind:function(arm,size=0x50) addr:0x02023d14
 CP_SaveContext kind:function(arm,size=0x40) addr:0x02023d64
 CPi_RestoreContext kind:function(arm,size=0x3c) addr:0x02023da4
 FS_func_0035 kind:function(arm,size=0x28) addr:0x02023de0
-FS_func_0036 kind:function(arm,size=0xa4) addr:0x02023e08
+FSi_ReleaseCommand kind:function(arm,size=0xa4) addr:0x02023e08
 FS_func_0037 kind:function(arm,size=0x58) addr:0x02023eac
-FS_func_0038 kind:function(arm,size=0x380) addr:0x02023f04
-FS_func_0039 kind:function(arm,size=0x1ac) addr:0x02024284
-FS_func_0040 kind:function(arm,size=0x84) addr:0x02024430
-FS_func_0041 kind:function(arm,size=0x84) addr:0x020244b4
-FS_func_0042 kind:function(arm,size=0x138) addr:0x02024538
-FS_func_0043 kind:function(arm,size=0x8c) addr:0x02024670
+FSi_TranslateCommand kind:function(arm,size=0x380) addr:0x02023f04
+FSi_NextCommand kind:function(arm,size=0x1ac) addr:0x02024284
+FSi_ExecuteAsyncCommand kind:function(arm,size=0x84) addr:0x02024430
+FSi_ExecuteSyncCommand kind:function(arm,size=0x84) addr:0x020244b4
+FSi_SendCommand kind:function(arm,size=0x138) addr:0x02024538
+FS_FindArchive kind:function(arm,size=0x8c) addr:0x02024670
 FS_func_0044 kind:function(arm,size=0xd4) addr:0x020246fc
 FS_func_0045 kind:function(arm,size=0x60) addr:0x020247d0
 FS_func_0046 kind:function(arm,size=0x2e8) addr:0x02024830
-FS_func_0020 kind:function(arm,size=0x24) addr:0x02024b18
-FS_func_0047 kind:function(arm,size=0x100) addr:0x02024b3c
-FS_func_0048 kind:function(arm,size=0x10) addr:0x02024c3c
+FS_InitArchive kind:function(arm,size=0x24) addr:0x02024b18
+FS_RegisterArchiveName kind:function(arm,size=0x100) addr:0x02024b3c
+FSi_GetPackedName kind:function(arm,size=0x10) addr:0x02024c3c
 FS_func_0049 kind:function(arm,size=0x48) addr:0x02024c4c
-FS_func_0050 kind:function(arm,size=0x6c) addr:0x02024c94
+FS_NotifyArchiveAsyncEnd kind:function(arm,size=0x6c) addr:0x02024c94
 FS_func_0051 kind:function(arm,size=0x40) addr:0x02024d00
 FS_func_0052 kind:function(arm,size=0x54) addr:0x02024d40
 FS_func_0053 kind:function(arm,size=0x34) addr:0x02024d94
@@ -690,8 +690,8 @@ FS_InitFile kind:function(arm,size=0x2c) addr:0x02024e0c
 FS_func_0055 kind:function(arm,size=0x40) addr:0x02024e38
 FS_OpenFileEx kind:function(arm,size=0x84) addr:0x02024e78
 FS_CloseFile kind:function(arm,size=0x14) addr:0x02024efc
-FS_func_0056 kind:function(arm,size=0x58) addr:0x02024f10
-FS_func_0100 kind:function(arm,size=0x58) addr:0x02024f68
+FSi_GetLength kind:function(arm,size=0x58) addr:0x02024f10
+FSi_GetPosition kind:function(arm,size=0x58) addr:0x02024f68
 FS_SeekFile kind:function(arm,size=0x4c) addr:0x02024fc0
 FS_ReadFile kind:function(arm,size=0x58) addr:0x0202500c
 FS_func_0057 kind:function(arm,size=0x84) addr:0x02025064
@@ -710,52 +710,52 @@ FS_func_0009 kind:function(arm,size=0x214) addr:0x02025534
 FS_func_0010 kind:function(arm,size=0x37c) addr:0x02025748
 FS_func_0011 kind:function(arm,size=0x88) addr:0x02025ac4
 FS_func_0012 kind:function(arm,size=0x24) addr:0x02025b4c
-FS_func_0005 kind:function(arm,size=0x30) addr:0x02025b70
-FS_func_0006 kind:function(arm,size=0x30) addr:0x02025ba0
-FS_func_0013 kind:function(arm,size=0x8) addr:0x02025bd0
-FS_func_0002 kind:function(arm,size=0xd0) addr:0x02025bd8
-FS_func_0064 kind:function(arm,size=0x44) addr:0x02025ca8
-FS_func_0065 kind:function(arm,size=0x44) addr:0x02025cec
+FSi_FileProcRead kind:function(arm,size=0x30) addr:0x02025b70
+FSi_FileProcWrite kind:function(arm,size=0x30) addr:0x02025ba0
+FSi_FileProcNop kind:function(arm,size=0x8) addr:0x02025bd0
+FSi_ExecuteFileProc kind:function(arm,size=0xd0) addr:0x02025bd8
+FSi_RomReadFile kind:function(arm,size=0x44) addr:0x02025ca8
+FSi_RomWriteFile kind:function(arm,size=0x44) addr:0x02025cec
 FS_func_0066 kind:function(arm,size=0x58) addr:0x02025d30
 FS_func_0067 kind:function(arm,size=0x128) addr:0x02025d88
 FS_func_0068 kind:function(arm,size=0x8c) addr:0x02025eb0
 FS_func_0069 kind:function(arm,size=0x44) addr:0x02025f3c
 FS_func_0070 kind:function(arm,size=0x48) addr:0x02025f80
 FS_func_0071 kind:function(arm,size=0x54) addr:0x02025fc8
-FS_func_0072 kind:function(arm,size=0x30) addr:0x0202601c
-FS_func_0073 kind:function(arm,size=0x34) addr:0x0202604c
-FS_func_0074 kind:function(arm,size=0x34) addr:0x02026080
+FSi_RomCloseFile kind:function(arm,size=0x30) addr:0x0202601c
+FSi_RomLock kind:function(arm,size=0x34) addr:0x0202604c
+FSi_RomUnlock kind:function(arm,size=0x34) addr:0x02026080
 FS_func_0075 kind:function(arm,size=0x34) addr:0x020260b4
 FS_func_0076 kind:function(arm,size=0x34) addr:0x020260e8
-FS_func_0101 kind:function(arm,size=0x50) addr:0x0202611c
-FS_func_0077 kind:function(arm,size=0x6c) addr:0x0202616c
-FS_func_0078 kind:function(arm,size=0x1c) addr:0x020261d8
-FS_func_0079 kind:function(arm,size=0x1c) addr:0x020261f4
+FSi_RomOpenFile kind:function(arm,size=0x50) addr:0x0202611c
+FSi_RomSeekFile kind:function(arm,size=0x6c) addr:0x0202616c
+FSi_RomGetLength kind:function(arm,size=0x1c) addr:0x020261d8
+FSi_RomGetPosition kind:function(arm,size=0x1c) addr:0x020261f4
 FS_func_0080 kind:function(arm,size=0x30) addr:0x02026210
 FS_func_0081 kind:function(arm,size=0xc) addr:0x02026240
-FS_func_0082 kind:function(arm,size=0x58) addr:0x0202624c
-FS_func_0083 kind:function(arm,size=0x18) addr:0x020262a4
+FSi_RomOpenDir kind:function(arm,size=0x58) addr:0x0202624c
+FSi_RomCloseDir kind:function(arm,size=0x18) addr:0x020262a4
 FS_func_0084 kind:function(arm,size=0x12c) addr:0x020262bc
 FS_func_0085 kind:function(arm,size=0x50) addr:0x020263e8
-FS_func_0086 kind:function(arm,size=0x28) addr:0x02026438
-FS_func_0087 kind:function(arm,size=0x2c) addr:0x02026460
-FS_func_0088 kind:function(arm,size=0x6c) addr:0x0202648c
-FS_func_0089 kind:function(arm,size=0x40) addr:0x020264f8
-FS_func_0090 kind:function(arm,size=0x40) addr:0x02026538
-FS_func_0091 kind:function(arm,size=0x64) addr:0x02026578
-FS_func_0021 kind:function(arm,size=0x20) addr:0x020265dc
+FSi_ReadMemCallback kind:function(arm,size=0x28) addr:0x02026438
+FSi_WriteMemCallback kind:function(arm,size=0x2c) addr:0x02026460
+FS_LoadArchive kind:function(arm,size=0x6c) addr:0x0202648c
+FSi_GetLengthFromRom kind:function(arm,size=0x40) addr:0x020264f8
+FSi_GetPositionFromRom kind:function(arm,size=0x40) addr:0x02026538
+FSi_SeekFileFromRom kind:function(arm,size=0x64) addr:0x02026578
+FS_SetArchiveProc kind:function(arm,size=0x20) addr:0x020265dc
 FS_func_0092 kind:function(arm,size=0x10) addr:0x020265fc
 FS_func_0093 kind:function(arm,size=0x14) addr:0x0202660c
 FS_func_0094 kind:function(arm,size=0x8) addr:0x02026620
 FS_func_0095 kind:function(arm,size=0x8) addr:0x02026628
-FS_func_0029 kind:function(arm,size=0x24) addr:0x02026630
-FS_func_0030 kind:function(arm,size=0x48) addr:0x02026654
-FS_func_0032 kind:function(arm,size=0x70) addr:0x0202669c
-FS_func_0096 kind:function(arm,size=0x14) addr:0x0202670c
-FS_func_0097 kind:function(arm,size=0x8) addr:0x02026720
-FS_func_0098 kind:function(arm,size=0x8) addr:0x02026728
+FSi_OnRomReadDone kind:function(arm,size=0x24) addr:0x02026630
+FSi_ReadRomCallback kind:function(arm,size=0x48) addr:0x02026654
+FSi_RomArchiveProc kind:function(arm,size=0x70) addr:0x0202669c
+FSi_EmptyArchiveProc kind:function(arm,size=0x14) addr:0x0202670c
+FSi_ReadDummyCallback kind:function(arm,size=0x8) addr:0x02026720
+FSi_WriteDummyCallback kind:function(arm,size=0x8) addr:0x02026728
 FS_func_0099 kind:function(arm,size=0x8) addr:0x02026730
-FS_AddRomVolume kind:function(arm,size=0x154) addr:0x02026738
+FSi_InitRom kind:function(arm,size=0x154) addr:0x02026738
 FS_Init kind:function(arm,size=0x2c) addr:0x0202688c
 MTX_func_0001 kind:function(arm,size=0x114) addr:0x020268b8
 MTX_func_0002 kind:function(arm,size=0x214) addr:0x020269cc
@@ -946,7 +946,7 @@ OS_func_0019 kind:function(arm,size=0xd0) addr:0x0202dba8
 OS_func_0020 kind:function(arm,size=0x4c) addr:0x0202dc78
 OS_func_0021 kind:function(arm,size=0x10) addr:0x0202dcc4
 OS_func_0022 kind:function(arm,size=0x74) addr:0x0202dcd4
-OS_func_0175 kind:function(arm,size=0x10) addr:0x0202dd48
+OSi_FreeCardBus kind:function(arm,size=0x10) addr:0x0202dd48
 OS_func_0024 kind:function(arm,size=0x6c) addr:0x0202dd58
 OS_func_0119 kind:function(arm,size=0x10) addr:0x0202ddc4
 OS_func_0025 kind:function(arm,size=0x20) addr:0x0202ddd4
@@ -954,10 +954,10 @@ OS_func_0026 kind:function(arm,size=0xc) addr:0x0202ddf4
 OS_func_0027 kind:function(arm,size=0x20) addr:0x0202de00
 OS_func_0028 kind:function(arm,size=0x18) addr:0x0202de20
 OS_func_0029 kind:function(arm,size=0x18) addr:0x0202de38
-OS_func_0031 kind:function(arm,size=0x1c) addr:0x0202de50
+OS_UnlockCard kind:function(arm,size=0x1c) addr:0x0202de50
 OS_func_0120 kind:function(arm,size=0x1c) addr:0x0202de6c
 OS_func_0032 kind:function(arm,size=0x18) addr:0x0202de88
-OS_func_0033 kind:function(arm,size=0x18) addr:0x0202dea0
+OS_UnlockByWord kind:function(arm,size=0x18) addr:0x0202dea0
 OS_func_0034 kind:function(arm,size=0x8) addr:0x0202deb8
 OS_GetLockID kind:function(arm,size=0x58) addr:0x0202dec0
 OS_func_0173 kind:function(arm,size=0x30) addr:0x0202df18
@@ -1549,9 +1549,9 @@ data_0207b90c kind:data(any) addr:0x0207b90c
 data_0207b914 kind:data(any) addr:0x0207b914
 data_0207bd14 kind:data(any) addr:0x0207bd14
 data_0207bd18 kind:data(any) addr:0x0207bd18
-data_0207bd20 kind:data(any) addr:0x0207bd20
-data_0207bd60 kind:data(any) addr:0x0207bd60
-data_0207bd94 kind:data(any) addr:0x0207bd94
+FS_data_0001 kind:data(any) addr:0x0207bd20 local
+sFileProcs kind:data(any) addr:0x0207bd60 local
+sArchiveFns kind:data(any) addr:0x0207bd94 local
 data_0207be94 kind:data(any) addr:0x0207be94
 data_0207bea4 kind:data(any) addr:0x0207bea4
 data_0207bea6 kind:data(any) addr:0x0207bea6
@@ -2372,11 +2372,11 @@ data_02080ee4 kind:data(any) addr:0x02080ee4
 data_02080ee8 kind:data(any) addr:0x02080ee8
 data_02080ef0 kind:data(any) addr:0x02080ef0
 data_02080efc kind:data(any) addr:0x02080efc
-data_02080f04 kind:data(any) addr:0x02080f04
-data_02080f08 kind:data(any) addr:0x02080f08
-data_02080f0c kind:data(any) addr:0x02080f0c
-data_02080f10 kind:data(any) addr:0x02080f10
-data_02080f14 kind:data(any) addr:0x02080f14
+@1221 kind:data(any) addr:0x02080f04 local
+@534 kind:data(any) addr:0x02080f08 local
+@1906 kind:data(any) addr:0x02080f0c local
+@903 kind:data(any) addr:0x02080f10 local
+@2570 kind:data(any) addr:0x02080f14 local
 data_02080f1c kind:data(any) addr:0x02080f1c
 data_02080f20 kind:data(any) addr:0x02080f20
 data_02080f24 kind:data(any) addr:0x02080f24
@@ -2735,13 +2735,13 @@ data_02137d74 kind:bss addr:0x02137d74
 data_02137d90 kind:bss addr:0x02137d90
 data_02137e20 kind:bss addr:0x02137e20
 data_02138020 kind:bss addr:0x02138020
-data_0213802c kind:bss addr:0x0213802c
-data_0213803c kind:bss addr:0x0213803c
-data_0213813c kind:bss addr:0x0213813c
-data_02138240 kind:bss addr:0x02138240
-data_0213825c kind:bss addr:0x0213825c
-data_02138264 kind:bss addr:0x02138264
-data_021382c0 kind:bss addr:0x021382c0
+FS_data_0003 kind:bss addr:0x0213802c local
+sLongArchiveNames kind:bss addr:0x0213803c local
+FS_data_0004 kind:bss addr:0x0213813c local
+FS_data_0002 kind:bss addr:0x02138240 local
+FS_data_0005 kind:bss addr:0x0213825c local
+sRomArchive kind:bss addr:0x02138264 local
+FSi_Initialized kind:bss addr:0x021382c0 local
 data_021382c4 kind:bss addr:0x021382c4
 data_021382c6 kind:bss addr:0x021382c6
 data_021382c8 kind:bss addr:0x021382c8

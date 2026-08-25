@@ -1,7 +1,6 @@
 #include "nitro/os.h"
 #include "nitro/os/mutex.h"
 
-static void OS_WakeupThread(OSMutex *mutex);
 static void OS_func_0067(OSThread *param1, OSMutex *mutex);
 static void OS_func_0068(OSThread *param1, OSMutex *mutex);
 static BOOL OS_func_0124(OSMutex *mutex);
@@ -30,7 +29,7 @@ extern void OS_LockMutex(OSMutex *mutex) {
             break;
         }
         temp_r6->unk_84 = mutex;
-        OS_SleepThread(mutex);
+        OS_SleepThread(&mutex->unk_00);
         temp_r6->unk_84 = NULL;
     }
     OS_RestoreInterrupts(irq);
@@ -49,7 +48,7 @@ void OSi_UnlockAllMutex(OSThread *param1) {
         temp_r1       = mutex->unk_0c & 0xFF000000;
         mutex->unk_08 = 0;
         mutex->unk_0c = (s32) (temp_r1 & ~0xFF000000);
-        OS_WakeupThread(mutex);
+        OS_WakeupThread(&mutex->unk_00);
     }
 }
 
@@ -119,7 +118,7 @@ static void OS_func_0125(OSMutex *mutex, u32 param2) {
         OS_func_0068(temp_r0_1, mutex);
         mutex->unk_08 = NULL;
         mutex->unk_0c = (s32) (mutex->unk_0c & ~0xFF000000);
-        OS_WakeupThread(mutex);
+        OS_WakeupThread(&mutex->unk_00);
     }
     OS_RestoreInterrupts(irq);
     return;

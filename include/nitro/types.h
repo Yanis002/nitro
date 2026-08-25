@@ -20,7 +20,7 @@ typedef long long s64;
 typedef long long slong;
 typedef int s32;
 typedef short s16;
-typedef char s8;
+typedef signed char s8;
 
 typedef float f32;
 typedef double f64;

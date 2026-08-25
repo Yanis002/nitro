@@ -21,7 +21,6 @@ static u32 OS_SaveContext(OSThread *thread);
 static void OS_LoadContext(OSThread *thread);
 static void OS_RescheduleThread(void);
 static u32 OS_DisableScheduler(void);
-static void OS_WakeupThread(OSThreadQueue *);
 static u32 OS_EnableScheduler(void);
 static BOOL OS_SetThreadPriority(OSThread *thread, u32 prio);
 static u32 OS_GetThreadPriority(OSThread *thread);
@@ -49,7 +48,7 @@ static u32 OSi_GetUnusedThreadId(void) {
     return ++sLatestThreadId;
 }
 
-static void OSi_InsertLinkToQueue(OSLinkedList *list, OSThread *thread) {
+static void OSi_InsertLinkToQueue(OSThreadQueue *list, OSThread *thread) {
     OSThread *it;
     for (it = list->head; it != NULL && it->prio <= thread->prio; it = it->next) {
         if (it == thread) {
@@ -94,7 +93,7 @@ static OSThread *OSi_RemoveLinkFromQueue(OSLinkedList *list) {
     return removed;
 }
 
-static OSThread *OSi_RemoveSpecifiedLinkFromQueue(OSLinkedList *list, OSThread *thread) {
+static OSThread *OSi_RemoveSpecifiedLinkFromQueue(OSThreadQueue *list, OSThread *thread) {
     OSThread *iter;
     OSThread *next;
     OSThread *head = list->head;
@@ -300,15 +299,15 @@ static void OSi_ExitThread(void *arg) {
 }
 
 static void OSi_ExitThread_Destroy(void) {
-    OSMutex *mutex;
+    OSThreadQueue *list;
     OSThread *thread;
 
     thread = *spCurrentThread;
     OS_DisableScheduler();
     OSi_UnlockAllMutex(thread);
-    mutex = thread->unk_78;
-    if (mutex != 0) {
-        OSi_RemoveSpecifiedLinkFromQueue(&mutex->unk_00, thread);
+    list = thread->unk_78;
+    if (list != 0) {
+        OSi_RemoveSpecifiedLinkFromQueue(list, thread);
     }
     OSi_RemoveThreadFromList(thread);
     thread->unk_64 = 2;
@@ -318,15 +317,15 @@ static void OSi_ExitThread_Destroy(void) {
     OS_Terminate();
 }
 
-void OS_SleepThread(OSMutex *mutex) {
+void OS_SleepThread(OSThreadQueue *list) {
     s32 temp_r4;
     OSThread *temp_r5;
 
     temp_r4 = OS_DisableInterrupts();
     temp_r5 = *spCurrentThread;
-    if (mutex) {
-        temp_r5->unk_78 = mutex;
-        OSi_InsertLinkToQueue(&mutex->unk_00, temp_r5);
+    if (list) {
+        temp_r5->unk_78 = list;
+        OSi_InsertLinkToQueue(list, temp_r5);
     }
     temp_r5->unk_64 = 0;
     OSi_RescheduleThread();

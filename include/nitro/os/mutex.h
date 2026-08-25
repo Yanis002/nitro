@@ -23,7 +23,7 @@ typedef struct OS_Mutex_UnkStruct1 {
 } OS_Mutex_UnkStruct1;
 
 typedef struct OSMutex {
-    /* 00 */ OSLinkedList unk_00;
+    /* 00 */ OSThreadQueue unk_00;
     /* 08 */ struct OSThread *unk_08;
     /* 0c */ vu32 unk_0c;
     /* 10 */ OSMutexQueue queue;

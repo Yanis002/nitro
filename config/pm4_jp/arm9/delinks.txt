@@ -60,8 +60,20 @@ src/mi/mi_unk1.c:
 src/snd/snd.c:
     .text       start:0x0206deec end:0x0206f2e4
 
-src/fs.c:
-    .text       start:0x0206f2e4 end:0x02070c90
+src/fs/fs_proc.c:
+    .text       start:0x0206f2e4 end:0x0206fe70
+
+src/fs/fs_archive.c:
+    .text       start:0x0206fe70 end:0x020705c8
+
+src/fs/fs_init.c:
+    .text       start:0x020705c8 end:0x020705f0
+
+src/fs/fs_file.c:
+    .text       start:0x020705f0 end:0x02070a58
+
+src/fs/fs_rom.c:
+    .text       start:0x02070a58 end:0x02070c90
 
 src/os/os_cp.c:
     .text       start:0x02070c90 end:0x02070d0c

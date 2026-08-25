@@ -36,7 +36,7 @@ DECOMP_ME_COMPILER = "mwcc_30_131"
 CC_FLAGS = " ".join([
     "-O4,p",                # Optimize maximally for performance
     "-enum int",            # Use int-sized enums
-    "-char unsigned",       # Char type is unsigned
+    "-char signed",         # Char type is signed
     "-str reuse",           # Reuse strings
     "-proc arm946e",        # Target processor
     "-gccext,on",           # Enable GCC extensions
