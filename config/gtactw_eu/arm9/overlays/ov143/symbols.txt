@@ -1,10 +1,10 @@
-func_ov143_02234cc0 kind:function(thumb,size=0x18) addr:0x02234cc0
-func_ov143_02234cd8 kind:function(thumb,size=0xc) addr:0x02234cd8
-func_ov143_02234ce4 kind:function(thumb,size=0x18) addr:0x02234ce4
-func_ov143_02234cfc kind:function(thumb,size=0x174) addr:0x02234cfc
-func_ov143_02234e70 kind:function(thumb,size=0x18) addr:0x02234e70
-func_ov143_02234e88 kind:function(thumb,size=0x78) addr:0x02234e88
-func_ov143_02234f00 kind:function(thumb,size=0x64) addr:0x02234f00
+_ZN3Gui27cNetworkDisconnectionScreenC1Ev kind:function(thumb,size=0x18) addr:0x02234cc0
+_ZN3Gui27cNetworkDisconnectionScreenD1Ev kind:function(thumb,size=0xc) addr:0x02234cd8
+_ZN3Gui27cNetworkDisconnectionScreenD0Ev kind:function(thumb,size=0x18) addr:0x02234ce4
+_ZN3Gui27cNetworkDisconnectionScreen4InitEv kind:function(thumb,size=0x174) addr:0x02234cfc
+_ZN3Gui27cNetworkDisconnectionScreen6DeInitEv kind:function(thumb,size=0x18) addr:0x02234e70
+_ZN3Gui27cNetworkDisconnectionScreen21MessageBoxDismissedCBEPv kind:function(thumb,size=0x78) addr:0x02234e88
+_ZN3Gui27cNetworkDisconnectionScreen33MessageBoxDismissedCB_RestartComsEPv kind:function(thumb,size=0x64) addr:0x02234f00
 data_ov143_02234f88 kind:data(any) addr:0x02234f88
 data_ov143_02235008 kind:data(any) addr:0x02235008
 data_ov143_0223501c kind:data(any) addr:0x0223501c

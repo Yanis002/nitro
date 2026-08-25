@@ -1,10 +1,10 @@
-func_ov189_02234cc0 kind:function(thumb,size=0x20) addr:0x02234cc0
-func_ov189_02234ce0 kind:function(thumb,size=0xc) addr:0x02234ce0
-func_ov189_02234cec kind:function(thumb,size=0x18) addr:0x02234cec
-func_ov189_02234d04 kind:function(thumb,size=0x1f4) addr:0x02234d04
-func_ov189_02234ef8 kind:function(thumb,size=0x6c) addr:0x02234ef8
-func_ov189_02234f64 kind:function(thumb,size=0x8) addr:0x02234f64
-func_ov189_02234f6c kind:function(thumb,size=0x6c) addr:0x02234f6c
+_ZN3Gui15cDeathArrestAppC1Ev kind:function(thumb,size=0x20) addr:0x02234cc0
+_ZN3Gui15cDeathArrestAppD1Ev kind:function(thumb,size=0xc) addr:0x02234ce0
+_ZN3Gui15cDeathArrestAppD0Ev kind:function(thumb,size=0x18) addr:0x02234cec
+_ZN3Gui15cDeathArrestApp4InitEv kind:function(thumb,size=0x1f4) addr:0x02234d04
+_ZN3Gui15cDeathArrestApp6DeInitEv kind:function(thumb,size=0x6c) addr:0x02234ef8
+_ZN3Gui15cDeathArrestApp8ShutdownEv kind:function(thumb,size=0x8) addr:0x02234f64
+_ZN3Gui15cDeathArrestApp7ProcessEv kind:function(thumb,size=0x6c) addr:0x02234f6c
 data_ov189_02234fe8 kind:data(any) addr:0x02234fe8
 data_ov189_02235068 kind:data(any) addr:0x02235068
 data_ov189_02235080 kind:data(any) addr:0x02235080

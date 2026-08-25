@@ -1,9 +1,9 @@
-func_ov142_02234cc0 kind:function(thumb,size=0x30) addr:0x02234cc0
-func_ov142_02234cf0 kind:function(thumb,size=0xc) addr:0x02234cf0
-func_ov142_02234cfc kind:function(thumb,size=0x18) addr:0x02234cfc
-func_ov142_02234d14 kind:function(thumb,size=0x1f0) addr:0x02234d14
-func_ov142_02234f04 kind:function(thumb,size=0x9c) addr:0x02234f04
-func_ov142_02234fa0 kind:function(thumb,size=0x20) addr:0x02234fa0
+_ZN3Gui15cRaceResultsAppC1Ev kind:function(thumb,size=0x30) addr:0x02234cc0
+_ZN3Gui15cRaceResultsAppD1Ev kind:function(thumb,size=0xc) addr:0x02234cf0
+_ZN3Gui15cRaceResultsAppD0Ev kind:function(thumb,size=0x18) addr:0x02234cfc
+_ZN3Gui15cRaceResultsApp4InitEv kind:function(thumb,size=0x1f0) addr:0x02234d14
+_ZN3Gui15cRaceResultsApp6DeInitEv kind:function(thumb,size=0x9c) addr:0x02234f04
+_ZN3Gui15cRaceResultsApp10Ok_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x20) addr:0x02234fa0
 data_ov142_02234fe8 kind:data(any) addr:0x02234fe8
 data_ov142_02235068 kind:data(any) addr:0x02235068
 data_ov142_0223507c kind:data(any) addr:0x0223507c
