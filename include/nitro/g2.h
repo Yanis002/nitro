@@ -16,6 +16,7 @@ void _G2_SetBlend(u32 *reg, u32 srcPlane, u32 dstPlane, u32 srcAlpha, u32 dstAlp
 
 void *G2_GetBG2ScrPtr(void);
 void *G2_GetBG3ScrPtr(void);
+void *G2S_func_0001();
 
 inline void G2_SetBG0Priority(u32 value) {
     REG_BG0CNT = (REG_BG0CNT & ~0x3) | (value);
@@ -183,6 +184,14 @@ inline void G2_SetBG2Affine(MtxFx22 *mtx, u32 param2, u32 param3, u32 param4, u3
 
 inline void G2_SetBG3Affine(MtxFx22 *mtx, u32 param2, u32 param3, u32 param4, u32 param5) {
     G2_SetBGAffine((u32 *) &REG_BG3PA, mtx, param2, param3, param4, param5);
+}
+
+inline void G2S_SetBG2Affine(MtxFx22 *mtx, u32 param2, u32 param3, u32 param4, u32 param5) {
+    G2_SetBGAffine((u32 *) &REG_BG2PA_SUB, mtx, param2, param3, param4, param5);
+}
+
+inline void G2S_SetBG3Affine(MtxFx22 *mtx, u32 param2, u32 param3, u32 param4, u32 param5) {
+    G2_SetBGAffine((u32 *) &REG_BG3PA_SUB, mtx, param2, param3, param4, param5);
 }
 
 inline void G2_ChangeBlendAlpha(u32 param1, u32 param2) {

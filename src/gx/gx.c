@@ -430,7 +430,7 @@ static void *G2_func_0001(void) {
     return ((REG_DISPCNT & 0x38000000) >> 27 << 16) + HW_BG_VRAM + (cnt << 11);
 }
 
-static void *G2S_func_0001(void) {
+void *G2S_func_0001(void) {
     return ((REG_BG0CNT_SUB & 0x1f00) >> 8 << 11) + HW_DB_BG_VRAM;
 }
 

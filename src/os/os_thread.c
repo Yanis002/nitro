@@ -13,7 +13,6 @@ typedef void (*OSSwitchThreadCallback)(OSThread *, OSThread *);
 static void OSi_ExitThread_ArgSpecified(OSThread *thread, void *arg);
 static void OSi_ExitThread(void *);
 static void OSi_ExitThread_Destroy(void);
-static OSThread *OS_SelectThread(void);
 static OSSwitchThreadCallback OS_SetSwitchThreadCallback(OSSwitchThreadCallback callback);
 static void OSi_IdleThreadProc(void *);
 static void OS_SetThreadDestructor(OSThread *thread, OSThreadDtor dtor);
@@ -22,7 +21,7 @@ static u32 OS_SaveContext(OSThread *thread);
 static void OS_LoadContext(OSThread *thread);
 static void OS_RescheduleThread(void);
 static u32 OS_DisableScheduler(void);
-static void OS_WakeupThread(OSLinkedList *);
+static void OS_WakeupThread(OSThreadQueue *);
 static u32 OS_EnableScheduler(void);
 static BOOL OS_SetThreadPriority(OSThread *thread, u32 prio);
 static u32 OS_GetThreadPriority(OSThread *thread);
@@ -124,18 +123,18 @@ static OSThread *OSi_RemoveSpecifiedLinkFromQueue(OSLinkedList *list, OSThread *
     return iter;
 }
 
-OSMutex *OS_func_0039(OS_UnkStruct1 *param1) {
+OSMutex *OS_func_0039(OSMutexQueue *param1) {
     OSMutex *iVar1;
     OSMutex *iVar2;
 
-    iVar2 = param1->unk_00;
+    iVar2 = param1->head;
     if (iVar2 != NULL) {
-        iVar1          = iVar2->unk_10;
-        param1->unk_00 = iVar1;
+        iVar1        = iVar2->queue.head;
+        param1->head = iVar1;
         if (iVar1 != 0) {
-            iVar1->unk_14 = 0;
+            iVar1->queue.tail = NULL;
         } else {
-            param1->unk_04 = NULL;
+            param1->tail = NULL;
         }
     }
     return iVar2;
@@ -258,12 +257,12 @@ void OS_CreateThread(OSThread *thread, void (*threadFunc)(void *arg), void *arg,
     thread->unk_9c.tail            = NULL;
     thread->unk_9c.head            = NULL;
     OS_InitContext(thread, threadFunc, stackHi - 8);
-    thread->regs[0]  = (u32) arg; // set first argument to threadFunc
-    thread->regs[14] = (u32) OS_ExitThread; // set return address
+    thread->context.regs[0]  = (u32) arg; // set first argument to threadFunc
+    thread->context.regs[14] = (u32) OS_ExitThread; // set return address
     MI_CpuFill32(0, stackHi - stackSize + 4, stackSize - 12);
-    thread->unk_84        = 0;
-    thread->unk_88.unk_00 = 0;
-    thread->unk_88.unk_04 = 0;
+    thread->unk_84      = 0;
+    thread->unk_88.head = NULL;
+    thread->unk_88.tail = NULL;
     OS_SetThreadDestructor(thread, NULL);
     thread->unk_78 = 0;
     thread->next   = 0;
@@ -281,8 +280,8 @@ void OS_ExitThread(void) {
 static void OSi_ExitThread_ArgSpecified(OSThread *thread, void *arg) {
     if (sThreadExitStack != 0) {
         OS_InitContext(thread, OSi_ExitThread, sThreadExitStack);
-        thread->regs[0] = (u32) arg; // set first argument to OSi_ExitThread
-        thread->cpsr |= 0x80;
+        thread->context.regs[0] = (u32) arg; // set first argument to OSi_ExitThread
+        thread->context.cpsr |= 0x80;
         thread->unk_64 = 1;
         OS_LoadContext(thread);
     } else {
@@ -334,14 +333,14 @@ void OS_SleepThread(OSMutex *mutex) {
     OS_RestoreInterrupts(temp_r4);
 }
 
-void OS_WakeupThread(OSLinkedList *list) {
+void OS_WakeupThread(OSThreadQueue *list) {
     OSIntrMode irq;
     OSThread *thread;
 
     irq = OS_DisableInterrupts();
     if (list->head != NULL) {
         while (list->head != NULL) {
-            thread         = OSi_RemoveLinkFromQueue(list);
+            thread         = OSi_RemoveLinkFromQueue((OSLinkedList *) list);
             thread->unk_64 = 1;
             thread->unk_78 = NULL;
             thread->next   = NULL;
@@ -363,7 +362,7 @@ void OS_WakeupThreadDirect(OSThread *thread) {
     OS_RestoreInterrupts(irq);
 }
 
-static OSThread *OS_SelectThread(void) {
+OSThread *OS_SelectThread(void) {
     OSThread *thread;
 
     for (thread = gHighestPriorityThread; thread != NULL && thread->unk_64 != 1; thread = thread->nextPrio) {
@@ -493,30 +492,30 @@ static void OS_InitContext(OSThread *thread, void (*threadFunc)(void *arg), void
     u32 var_r2;
     BOOL thumb;
 
-    threadFunc       = threadFunc + 4;
-    thread->regs[15] = (u32) threadFunc; // set PC to threadFunc
-    thread->sp       = (u32) sp;
-    var_r2           = (u32) sp - 0x40;
+    threadFunc               = threadFunc + 4;
+    thread->context.regs[15] = (u32) threadFunc; // set PC to threadFunc
+    thread->context.sp       = (u32) sp;
+    var_r2                   = (u32) sp - 0x40;
     if ((u32) var_r2 & 4) {
         var_r2 -= 4;
     }
-    thread->regs[14] = var_r2;
-    thumb            = (u32) threadFunc & 1;
-    thread->cpsr     = thumb ? 0x3F : 0x1F;
-    thread->regs[0]  = 0;
-    thread->regs[1]  = 0;
-    thread->regs[2]  = 0;
-    thread->regs[3]  = 0;
-    thread->regs[4]  = 0;
-    thread->regs[5]  = 0;
-    thread->regs[6]  = 0;
-    thread->regs[7]  = 0;
-    thread->regs[8]  = 0;
-    thread->regs[9]  = 0;
-    thread->regs[10] = 0;
-    thread->regs[11] = 0;
-    thread->regs[12] = 0;
-    thread->regs[13] = 0;
+    thread->context.regs[14] = var_r2;
+    thumb                    = (u32) threadFunc & 1;
+    thread->context.cpsr     = thumb ? 0x3F : 0x1F;
+    thread->context.regs[0]  = 0;
+    thread->context.regs[1]  = 0;
+    thread->context.regs[2]  = 0;
+    thread->context.regs[3]  = 0;
+    thread->context.regs[4]  = 0;
+    thread->context.regs[5]  = 0;
+    thread->context.regs[6]  = 0;
+    thread->context.regs[7]  = 0;
+    thread->context.regs[8]  = 0;
+    thread->context.regs[9]  = 0;
+    thread->context.regs[10] = 0;
+    thread->context.regs[11] = 0;
+    thread->context.regs[12] = 0;
+    thread->context.regs[13] = 0;
 }
 
 // clang-format off

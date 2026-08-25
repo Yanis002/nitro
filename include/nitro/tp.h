@@ -43,6 +43,7 @@ void TP_SetCalibrateParam(const TPCalibrateParam *calibrate);
 
 void func_020711c0(void);
 BOOL func_02071254(TPData *data);
+BOOL TP_GetData(TPData *data);
 
 void TP_GetCalibratedPoint(TPData *, TPData *);
 

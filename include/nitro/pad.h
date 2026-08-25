@@ -8,18 +8,18 @@ extern "C" {
 #include "nitro/reg.h"
 #include "nitro/types.h"
 
-#define PAD_BUTTON_A 0x1
-#define PAD_BUTTON_B 0x2
-#define PAD_BUTTON_SELECT 0x4
-#define PAD_BUTTON_START 0x8
-#define PAD_KEY_RIGHT 0x10
-#define PAD_KEY_LEFT 0x20
-#define PAD_KEY_UP 0x40
-#define PAD_KEY_DOWN 0x80
-#define PAD_BUTTON_R 0x100
-#define PAD_BUTTON_L 0x200
-#define PAD_BUTTON_X 0x400
-#define PAD_BUTTON_Y 0x800
+#define PAD_BUTTON_A (1 << 0)      // 0x0001
+#define PAD_BUTTON_B (1 << 1)      // 0x0002
+#define PAD_BUTTON_SELECT (1 << 2) // 0x0004
+#define PAD_BUTTON_START (1 << 3)  // 0x0008
+#define PAD_KEY_RIGHT (1 << 4)     // 0x0010
+#define PAD_KEY_LEFT (1 << 5)      // 0x0020
+#define PAD_KEY_UP (1 << 6)        // 0x0040
+#define PAD_KEY_DOWN (1 << 7)      // 0x0080
+#define PAD_BUTTON_R (1 << 8)      // 0x0100
+#define PAD_BUTTON_L (1 << 9)      // 0x0200
+#define PAD_BUTTON_X (1 << 10)     // 0x0400
+#define PAD_BUTTON_Y (1 << 11)     // 0x0800
 
 #define PAD_BUTTON_ALL                                                                                                 \
     (PAD_BUTTON_A | PAD_BUTTON_B | PAD_BUTTON_SELECT | PAD_BUTTON_START | PAD_BUTTON_R | PAD_BUTTON_L | PAD_BUTTON_X | \

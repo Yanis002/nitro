@@ -110,10 +110,19 @@ inline BOOL G3X_IsGeometryBusy(void) {
 }
 
 inline void G3X_AntiAlias(BOOL param1) {
-    REG_DISP3DCNT = REG_DISP3DCNT & ~0x3000 | (param1 << 0x4);
+    REG_DISP3DCNT = REG_DISP3DCNT & ~0x3000 | (param1 << 4);
 }
+
 inline void G3X_AlphaBlend(BOOL param1) {
-    REG_DISP3DCNT = REG_DISP3DCNT & ~0x3000 | (param1 << 0x3);
+    REG_DISP3DCNT = REG_DISP3DCNT & ~0x3000 | (param1 << 3);
+}
+
+inline void G3X_Unk1(unk32 param1) {
+    REG_DISP3DCNT = REG_DISP3DCNT & ~(0x3000 | (param1 << 1));
+}
+
+inline void G3X_Unk2(unk32 param1) {
+    REG_DISP3DCNT &= ~(0x3000 | (param1 << 5));
 }
 
 #ifdef __cplusplus

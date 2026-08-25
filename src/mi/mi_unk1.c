@@ -16,7 +16,6 @@ void MI_func_0016(s32 param1, u32 param2, void *param3, BOOL param4, void (*para
 void MI_func_0017(s32 param1, void *param2, u32 param3, BOOL param4, void (*param5)(u32), u32 param6, BOOL param7);
 void MI_func_0018(s32 param1);
 void MI_func_0020(void);
-void MI_CpuFill16(u16 value, void *buf, u32 size);
 
 inline u32 MI_DmaBusyFlag(u32 dmaChannel) {
     return *(vu32 *) &(&REG_DMA0SAD)[dmaChannel * 3 + 2] & 0x80000000;
