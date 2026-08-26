@@ -37,8 +37,10 @@ extern "C" {
 #define OS_EXMEM_CNT_NDS_SLOT_ACCESS_SHIFT 11
 #define OS_EXMEM_CNT_NDS_SLOT_ACCESS (1 << OS_EXMEM_CNT_NDS_SLOT_ACCESS_SHIFT)
 
-#define OS_CPU_ARM9 0
-#define OS_CPU_ARM7 1
+#define OS_CPU_ARM9 ((OSCpu) 0)
+#define OS_CPU_ARM7 ((OSCpu) 1)
+
+typedef u32 OSCpu;
 
 typedef struct OSMessageQueue {
     /* 00 */ OSLinkedList unk_00;

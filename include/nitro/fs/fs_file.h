@@ -123,9 +123,17 @@ typedef struct FSFile {
 
 typedef FSResult (*const FSFileProcs[FS_FILE_PROC_COUNT])(struct FSFile *file);
 
+typedef struct FS_UnkStruct21 {
+    /* 00 */ FSArchive *archive;
+    /* 04 */ u32 fileId;
+    /* 08 */
+} FS_UnkStruct21;
+
 void FS_Init(u32 dmaCount);
 void FS_InitFile(FSFile *file);
 BOOL FS_OpenFile(FSFile *file, const char *path);
+BOOL FS_OpenFileFast(FSFile *file, FS_UnkStruct21 arg1);
+BOOL FS_OpenFileDirect(FSFile *file, FSArchive *archive, u32 start, u32 end, u32);
 BOOL FS_OpenFileEx(FSFile *file, const char *path, u32 flags);
 BOOL FS_SeekFile(FSFile *file, s32 pos, u32 mode);
 u32 FS_GetLength(FSFile *file);
@@ -139,6 +147,8 @@ s32 FS_func_0094(FSFile *file);
 inline BOOL FS_IsFile(FSFile *file) {
     return !!(file->flags & FS_FILE_FLAG_FILE);
 }
+
+extern const u8 FS_data_0001[64];
 
 #ifdef __cplusplus
 } // extern "C"

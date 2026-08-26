@@ -11791,7 +11791,7 @@ func_02147224 kind:function(arm,size=0x48) addr:0x02147224
 func_0214726c kind:function(arm,size=0x20) addr:0x0214726c
 func_0214728c kind:function(arm,size=0x30) addr:0x0214728c
 func_021472bc kind:function(arm,size=0x30) addr:0x021472bc
-func_021472ec kind:function(arm,size=0x20c) addr:0x021472ec
+_s32_div_f kind:function(arm,size=0x20c) addr:0x021472ec
 func_021474f8 kind:function(arm,size=0x1e4) addr:0x021474f8
 .L_02147500 kind:label(arm) addr:0x02147500
 func_021476f4 kind:function(arm,size=0x544) addr:0x021476f4
@@ -14148,7 +14148,7 @@ data_02170cc8 kind:data(any) addr:0x02170cc8
 data_02170cd8 kind:data(any) addr:0x02170cd8
 data_02170cdc kind:data(any) addr:0x02170cdc
 data_02170ce0 kind:data(any) addr:0x02170ce0
-data_02170ce4 kind:data(any) addr:0x02170ce4
+sHmacKey kind:data(any) addr:0x02170ce4
 data_02170cec kind:data(any) addr:0x02170cec
 data_02170cf0 kind:data(any) addr:0x02170cf0
 data_02170db0 kind:data(any) addr:0x02170db0
@@ -15334,9 +15334,9 @@ data_021fb428 kind:bss addr:0x021fb428
 data_021fb42c kind:bss addr:0x021fb42c
 data_021fb438 kind:bss addr:0x021fb438
 data_021fb43c kind:bss addr:0x021fb43c
-data_021fb444 kind:bss addr:0x021fb444
-data_021fb44c kind:bss addr:0x021fb44c
-data_021fb454 kind:bss addr:0x021fb454
+sArm9OverlayTable kind:bss addr:0x021fb444
+sArm7OverlayTable kind:bss addr:0x021fb44c
+FS_romArchive kind:bss addr:0x021fb454
 data_021fb4b0 kind:bss addr:0x021fb4b0
 data_021fb4cc kind:bss addr:0x021fb4cc
 data_021fb4ec kind:bss addr:0x021fb4ec
@@ -15402,4 +15402,4 @@ data_021fd500 kind:bss addr:0x021fd500
 data_021fd600 kind:bss addr:0x021fd600
 data_021fd700 kind:bss addr:0x021fd700
 data_021fd704 kind:bss addr:0x021fd704
-data_021fd720 kind:bss addr:0x021fd720
+__global_destructor_chain kind:bss addr:0x021fd720

@@ -113,6 +113,8 @@ void FS_LoadArchive(FSArchive *archive, s32 arg1, s32 arg2, s32 arg3, s32 arg4, 
                     FSResult (*read)(FSArchive *, void *, void *, s32),
                     FSResult (*write)(FSArchive *, void *, void *, s32));
 
+extern FSArchive FS_romArchive;
+
 #ifdef __cplusplus
 } // extern "C"
 #endif

@@ -78,10 +78,7 @@ typedef struct DivParam {
 #define REG_027FFDE8 (*(u32 *) (_BIOS_REG_BASE | 0xDE8))
 #define REG_027FFDEA (*(u16 *) (_BIOS_REG_BASE | 0xDEA))
 #define REG_027FFDEC (*(u32 *) (_BIOS_REG_BASE | 0xDEC))
-#define REG_FNT_ROM_OFFSET (*(u32 *) (_BIOS_REG_BASE | 0xE40))
-#define REG_FNT_SIZE (*(u32 *) (_BIOS_REG_BASE | 0xE44))
-#define REG_FAT_ROM_OFFSET (*(u32 *) (_BIOS_REG_BASE | 0xE48))
-#define REG_FAT_SIZE (*(u32 *) (_BIOS_REG_BASE | 0xE4C))
+#define REG_ROM_HEADER (*(RomHeader *) (_BIOS_REG_BASE | 0xE00))
 #define REG_027FFF9C (*(u32 *) (_BIOS_REG_BASE | 0xF9C))
 #define REG_027FFFA0 (*(u32 *) (_BIOS_REG_BASE | 0xFA0))
 
@@ -204,6 +201,66 @@ extern u32 __DTCM_LO;
 #define REG_A9ROM (*(vu16 *) (REG_BASE | REG_A9ROM_OFFSET))
 
 #define REG_04FFF200 (*(vu32 *) (REG_BASE | 0xFFF200))
+
+// TODO: Move these structs somewhere else
+typedef struct ProgramOffset {
+    /* 00 */ u32 offset;
+    /* 04 */ u32 entry;
+    /* 08 */ u32 baseAddress;
+    /* 0c */ u32 size;
+    /* 10 */
+} ProgramOffset;
+
+typedef struct TableOffset {
+    /* 00 */ u32 offset;
+    /* 04 */ u32 size;
+    /* 08 */
+} TableOffset;
+
+typedef struct RomHeader {
+    /* 000 */ char title[0xc];
+    /* 00c */ char gamecode[0x4];
+    /* 010 */ char makercode[0x2];
+    /* 012 */ u8 unitcode;
+    /* 013 */ u8 seedSelect;
+    /* 014 */ u8 capacity;
+    /* 015 */ PAD(0x015, 0x01c);
+    /* 01c */ u8 dsiFlags;
+    /* 01d */ u8 dsFlags;
+    /* 01e */ u8 romVersion;
+    /* 01f */ u8 autostart;
+    /* 020 */ ProgramOffset arm9;
+    /* 030 */ ProgramOffset arm7;
+    /* 040 */ TableOffset fnt;
+    /* 048 */ TableOffset fat;
+    /* 050 */ TableOffset arm9ovt;
+    /* 058 */ TableOffset arm7ovt;
+    /* 060 */ u32 normalCmdSetting;
+    /* 064 */ u32 key1CmdSetting;
+    /* 068 */ u32 bannerOffset;
+    /* 06c */ u16 secureAreaCrc;
+    /* 06e */ u16 secureAreaDelay;
+    /* 070 */ u32 arm9AutoloadCallback;
+    /* 074 */ u32 arm7AutoloadCallback;
+    /* 078 */ u64 secureAreaDisable;
+    /* 080 */ u32 romSizeDs;
+    /* 084 */ u32 headerSize;
+    /* 088 */ u32 arm9BuildInfoOffset;
+    /* 08c */ u32 arm7BuildInfoOffset;
+    /* 090 */ u16 dsRomRegionEnd;
+    /* 092 */ u16 dsiRomRegionEnd;
+    /* 094 */ u16 romNandEnd;
+    /* 096 */ u16 rwNandEnd;
+    /* 098 */ PAD(0x098, 0x0c0);
+    /* 0c0 */ u8 logo[0x9c];
+    /* 15c */ u16 logoCrc;
+    /* 15e */ u16 headerCrc;
+    /* 160 */ u32 debugRomOffset;
+    /* 164 */ u32 debugSize;
+    /* 168 */ u32 debugRamAddr;
+    /* 16c */ PAD(0x16c, 0x170);
+    /* 170 */
+} RomHeader;
 
 #ifdef __cplusplus
 } // extern "C"

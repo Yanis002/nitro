@@ -8,7 +8,7 @@ typedef struct FS_UnkStruct3 {
     /* 08 */
 } FS_UnkStruct3;
 
-static FSArchive sRomArchive;
+FSArchive FS_romArchive;
 static FS_UnkStruct3 FS_data_0005;
 
 static void FSi_OnRomReadDone(void *archive) {
@@ -60,25 +60,25 @@ BOOL FSi_InitRom(s32 dmaCount) {
     CARD_Init();
     FS_data_0005.dmaCount = dmaCount;
     FS_data_0005.lock     = OS_GetLockID();
-    FS_InitArchive(&sRomArchive);
-    FS_RegisterArchiveName(&sRomArchive, "rom", 3U);
+    FS_InitArchive(&FS_romArchive);
+    FS_RegisterArchiveName(&FS_romArchive, "rom", 3U);
     if (OS_func_0159() == 1) {
         temp_r6 = CARD_func_0059();
         temp_r5 = CARD_func_0059();
-        FS_SetArchiveProc(&sRomArchive, FSi_RomArchiveProc,
+        FS_SetArchiveProc(&FS_romArchive, FSi_RomArchiveProc,
                           (1 << FS_FILE_PROC_WRITE) | (1 << FS_FILE_PROC_7) | (1 << FS_FILE_PROC_SUSPEND) |
                               (1 << FS_FILE_PROC_UNLOCK));
         temp_r1 = temp_r6->unk_40;
         if ((temp_r1 != -1) && (temp_r1 != 0) && (temp_r2 = temp_r5->unk_48, (temp_r2 != -1)) && (temp_r2 != 0)) {
-            FS_LoadArchive(&sRomArchive, 0, temp_r2, temp_r5->unk_4c, temp_r1, temp_r6->unk_44, FSi_ReadRomCallback,
+            FS_LoadArchive(&FS_romArchive, 0, temp_r2, temp_r5->unk_4c, temp_r1, temp_r6->unk_44, FSi_ReadRomCallback,
                            NULL);
         }
     } else {
-        FS_func_0099(&sRomArchive);
+        FS_func_0099(&FS_romArchive);
     }
-    if (!!(sRomArchive.flags & FS_ARCHIVE_FLAG_0x2) == false) {
-        FS_SetArchiveProc(&sRomArchive, FSi_EmptyArchiveProc, -1);
-        FS_LoadArchive(&sRomArchive, 0, 0, 0, 0, 0, FSi_ReadDummyCallback, FSi_WriteDummyCallback);
+    if (!!(FS_romArchive.flags & FS_ARCHIVE_FLAG_0x2) == false) {
+        FS_SetArchiveProc(&FS_romArchive, FSi_EmptyArchiveProc, -1);
+        FS_LoadArchive(&FS_romArchive, 0, 0, 0, 0, 0, FSi_ReadDummyCallback, FSi_WriteDummyCallback);
     }
     return FS_func_0044("rom:");
 }

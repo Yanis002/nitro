@@ -2,12 +2,15 @@
 #include <stddef.h>
 
 #include "nitro/card.h"
-#include "nitro/dc.h"
+#include "nitro/dgt.h"
 #include "nitro/fs.h"
 #include "nitro/fx.h"
 #include "nitro/g2.h"
+#include "nitro/g3.h"
 #include "nitro/gx.h"
 #include "nitro/hw.h"
+#include "nitro/math.h"
+#include "nitro/mb.h"
 #include "nitro/mi.h"
 #include "nitro/os.h"
 #include "nitro/pad.h"
@@ -19,3 +22,4 @@
 #include "nitro/svc.h"
 #include "nitro/tp.h"
 #include "nitro/types.h"
+#include "nitro/wm.h"

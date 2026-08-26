@@ -4,6 +4,9 @@
 
 #define OS_CACHE_INS(ins) asm(ins);
 
+#pragma push
+#pragma thumb off
+
 void OS_Halt(void) {
 #ifdef NITRO_NO_ASM
     u32 zero = 0;
@@ -13,3 +16,5 @@ void OS_Halt(void) {
     OS_CACHE_INS(OS_WAIT_FOR_INTERRUPT(r0));
 #endif
 }
+
+#pragma pop

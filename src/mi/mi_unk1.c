@@ -208,6 +208,8 @@ void MI_CpuFill16(u16 value, void *inBuf, u32 size) {
     }
 #else
     u32 i = 0;
+    #pragma push
+    #pragma thumb off
     asm {
     loop:
         cmp i, size
@@ -215,10 +217,11 @@ void MI_CpuFill16(u16 value, void *inBuf, u32 size) {
         addlt i, i, #0x2
         blt loop
     }
+    #pragma pop
 #endif
 }
 
-void MI_CpuCopy16(void *inSrc, void *inDst, u32 size) {
+void MI_CpuCopy16(const void *inSrc, void *inDst, u32 size) {
     u16 *src = inSrc;
     u16 *dst = inDst;
 #ifdef NITRO_NO_ASM
@@ -228,6 +231,8 @@ void MI_CpuCopy16(void *inSrc, void *inDst, u32 size) {
 #else
     u32 tmp;
     u32 i = 0;
+    #pragma push
+    #pragma thumb off
     asm {
     loop:
         cmp i, size
@@ -236,6 +241,7 @@ void MI_CpuCopy16(void *inSrc, void *inDst, u32 size) {
         addlt i, i, #0x2
         blt loop
     }
+    #pragma pop
 #endif
 }
 
@@ -247,6 +253,8 @@ void MI_CpuFill32(u32 value, void *inBuf, u32 size) {
     }
 #else
     // clang-format off
+    #pragma push
+    #pragma thumb off
     asm {
         add ip, inBuf, size
     loop:
@@ -254,11 +262,12 @@ void MI_CpuFill32(u32 value, void *inBuf, u32 size) {
         stmltia buf!, {r0}
         blt loop
     }
+    #pragma pop
     // clang-format on
 #endif
 }
 
-void MI_CpuCopy32(void *inSrc, void *inDst, u32 size) {
+void MI_CpuCopy32(const void *inSrc, void *inDst, u32 size) {
     u32 *src = inSrc;
     u32 *dst = inDst;
 #ifdef NITRO_NO_ASM
@@ -267,6 +276,8 @@ void MI_CpuCopy32(void *inSrc, void *inDst, u32 size) {
     }
 #else
     // clang-format off
+    #pragma push
+    #pragma thumb off
     asm {
         add ip, inDst, size
     loop:
@@ -275,6 +286,7 @@ void MI_CpuCopy32(void *inSrc, void *inDst, u32 size) {
         stmltia dst!, {r2}
         blt loop
     }
+    #pragma pop
     // clang-format on
 #endif
 }
@@ -300,6 +312,8 @@ void _MI_CpuFill(u32 value, void *inBuf, u32 size) {
 #else
 // clang-format off
 asm void _MI_CpuFill(u32 value, void *inBuf, u32 size) {
+    #pragma push
+    #pragma thumb off
     stmdb sp!, {r4-r9}
     add r9, r1, r2
     mov ip, r2, lsr #0x5
@@ -322,6 +336,7 @@ remainderLoop:
 end:
     ldmia sp!, {r4-r9}
     bx lr
+    #pragma pop
 }
 // clang-format on
 #endif
@@ -347,6 +362,8 @@ void MI_func_0007(void *inSrc, void *inDst, u32 size) {
 #else
 // clang-format off
 asm void MI_func_0007(void *inSrc, void *inDst, u32 size) {
+    #pragma push
+    #pragma thumb off
     stmdb sp!, {r4-r10}
     add r10, r1, r2
     mov ip, r2, lsr #0x5
@@ -364,6 +381,7 @@ remainderLoop:
 end:
     ldmia sp!, {r4-r10}
     bx lr
+    #pragma pop
 }
 #endif
 // clang-format on
@@ -411,7 +429,7 @@ void MI_CpuFill8(void *inBuf, u8 inValue, u32 size) {
     }
 }
 
-void MI_CpuCopy8(void *inSrc, void *inDst, u32 size) {
+void MI_CpuCopy8(const void *inSrc, void *inDst, u32 size) {
     u32 temp_ip;
     u32 temp_r3;
     u32 src;
@@ -502,9 +520,12 @@ void MI_Swap(u32 *a, u32 *b) {
     *b      = *a;
     *a      = tmp;
 #else
+    #pragma push
+    #pragma thumb off
     asm {
         swp a, a, [b]
     }
+    #pragma pop
 #endif
 }
 

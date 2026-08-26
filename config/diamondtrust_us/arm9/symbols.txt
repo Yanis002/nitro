@@ -2740,7 +2740,7 @@ sLongArchiveNames kind:bss addr:0x0213803c local
 FS_data_0004 kind:bss addr:0x0213813c local
 FS_data_0002 kind:bss addr:0x02138240 local
 FS_data_0005 kind:bss addr:0x0213825c local
-sRomArchive kind:bss addr:0x02138264 local
+FS_romArchive kind:bss addr:0x02138264 local
 FSi_Initialized kind:bss addr:0x021382c0 local
 data_021382c4 kind:bss addr:0x021382c4
 data_021382c6 kind:bss addr:0x021382c6

@@ -4,6 +4,7 @@ CompileFlags:
   - -nostdinc
   - -Iinclude
   - -Ilibs/c/include
+  - -Ilibs/cpp/include
   - -Wno-c99-designator
   - -Wall
 Diagnostics:

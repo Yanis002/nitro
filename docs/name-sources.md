@@ -27,7 +27,7 @@ This table outlines the source of every symbol/macro name used in this decompila
 | CARDBackupType | Typedef | pm4, GameSpy
 | CARDResult     | Typedef | pm4
 ||
-| CARD_Init                      | Function | gtact
+| CARD_Init                      | Function | gtactw
 | CARD_LockBackup                | Function | pm4, GameSpy
 | CARD_UnlockBackup              | Function | pm4, GameSpy
 | CARD_IdentifyBackup            | Function | pm4, GameSpy
@@ -52,15 +52,15 @@ This table outlines the source of every symbol/macro name used in this decompila
 | CARD_WriteAndVerifyFlashAsync  | Function | pm4
 | CARD_WriteAndVerifyFramAsync   | Function | pm4
 ||
-| CARD_LockRom     | Function | gtact
-| CARD_UnlockRom   | Function | gtact
-| CARD_IsPulledOut | Function | gtact
+| CARD_LockRom     | Function | gtactw
+| CARD_UnlockRom   | Function | gtactw
+| CARD_IsPulledOut | Function | gtactw
 ||
-| CARDi_UnlockResource | Function | gtact
-| CARDi_ReadRom        | Function | gtact
+| CARDi_UnlockResource | Function | gtactw
+| CARDi_ReadRom        | Function | gtactw
 ||
-| CP_SaveContext     | Function | gtact
-| CPi_RestoreContext | Function | gtact
+| CP_SaveContext     | Function | gtactw
+| CPi_RestoreContext | Function | gtactw
 ||
 | DC_StoreAll         | Function | pm4
 | DC_StoreRange       | Function | pm4
@@ -117,7 +117,7 @@ This table outlines the source of every symbol/macro name used in this decompila
 ||
 | FSFileProc       | Typedef
 | FSResult       | Typedef
-| FSArchive      | Struct | gtact
+| FSArchive      | Struct | gtactw
 | FSFile         | Struct | pm4, diamondtrust
 | FSFntDirectory | Struct
 | FSDirEntry     | Struct | diamondtrust
@@ -135,30 +135,30 @@ This table outlines the source of every symbol/macro name used in this decompila
 | FS_CloseFile   | Function | pm4, diamondtrust
 | FS_IsFile      | Function | pm4
 ||
-| FSi_InitRom             | Function | gtact
-| FSi_SendCommand         | Function | gtact
-| FSi_ReleaseCommand      | Function | gtact
-| FSi_NextCommand         | Function | gtact
-| FSi_ExecuteAsyncCommand | Function | gtact
-| FSi_ExecuteSyncCommand  | Function | gtact
-| FSi_TranslateCommand    | Function | gtact
+| FSi_InitRom             | Function | gtactw
+| FSi_SendCommand         | Function | gtactw
+| FSi_ReleaseCommand      | Function | gtactw
+| FSi_NextCommand         | Function | gtactw
+| FSi_ExecuteAsyncCommand | Function | gtactw
+| FSi_ExecuteSyncCommand  | Function | gtactw
+| FSi_TranslateCommand    | Function | gtactw
 ||
-| FS_InitArchive           | Function | gtact
-| FS_FindArchive           | Function | gtact
-| FS_RegisterArchiveName   | Function | gtact
-| FS_SetArchiveProc        | Function | gtact
-| FS_LoadArchive           | Function | gtact
-| FS_NotifyArchiveAsyncEnd | Function | gtact
+| FS_InitArchive           | Function | gtactw
+| FS_FindArchive           | Function | gtactw
+| FS_RegisterArchiveName   | Function | gtactw
+| FS_SetArchiveProc        | Function | gtactw
+| FS_LoadArchive           | Function | gtactw
+| FS_NotifyArchiveAsyncEnd | Function | gtactw
 ||
-| FSi_EmptyArchiveProc   | Function | gtact
-| FSi_ReadDummyCallback  | Function | gtact
-| FSi_WriteDummyCallback | Function | gtact
-| FSi_RomArchiveProc     | Function | gtact
-| FSi_ReadRomCallback    | Function | gtact
-| FSi_ReadMemCallback    | Function | gtact
-| FSi_WriteMemCallback   | Function | gtact
-| FSi_OnRomReadDone      | Function | gtact
-| FSi_GetPackedName      | Function | gtact
+| FSi_EmptyArchiveProc   | Function | gtactw
+| FSi_ReadDummyCallback  | Function | gtactw
+| FSi_WriteDummyCallback | Function | gtactw
+| FSi_RomArchiveProc     | Function | gtactw
+| FSi_ReadRomCallback    | Function | gtactw
+| FSi_ReadMemCallback    | Function | gtactw
+| FSi_WriteMemCallback   | Function | gtactw
+| FSi_OnRomReadDone      | Function | gtactw
+| FSi_GetPackedName      | Function | gtactw
 ||
 | FSi_RomReadFile    | Function
 | FSi_RomWriteFile   | Function
@@ -186,6 +186,11 @@ This table outlines the source of every symbol/macro name used in this decompila
 | FS_FindDir | Function | diamondtrust
 | FS_ReadDir | Function | diamondtrust
 | FS_CloseDirectory | Function | diamondtrust
+||
+| FSOverlay     | Struct | | Deduced from FS_LoadOverlay
+| FSOverlayInfo | Struct | | Deduced from FS_LoadOverlayInfo
+||
+| FS_LoadOverlay | Function | gtactw
 ||
 | FX32_SHIFT | Macro | diamondtrust, gtpd, gs456
 | FX16_SHIFT | Macro | diamondtrust, gtpd
@@ -533,14 +538,14 @@ This table outlines the source of every symbol/macro name used in this decompila
 | GXCaptureSrcB | Typedef | diamondtrust
 ||
 | GX_Init        | Function | pm4, diamondtrust
-| GX_InitGXState | Function | gtact
+| GX_InitGXState | Function | gtactw
 | GX_DispOff     | Function | pm4, diamondtrust
 | GX_DispOn      | Function | pm4, diamondtrust
 ||
 | GX_VBlankIntr | Function | pm4, diamondtrust
 | GX_HBlankIntr | Function | pm4
 ||
-| GX_VRAMCNT_SetLCDC_ | Function | gtact
+| GX_VRAMCNT_SetLCDC_ | Function | gtactw
 ||
 | GX_SetBankForLCDC | Function | pm4, diamondtrust
 | GX_DisableBankForLCDC | Function | pm4, diamondtrust
@@ -704,6 +709,7 @@ This table outlines the source of every symbol/macro name used in this decompila
 | OSMutex        | Struct | pm4, diamondtrust
 | OSDma          | Struct
 ||
+| OSCpu          | Typedef
 | OSHeapHandle   | Typedef | pm4, diamondtrust
 | OSTime         | Typedef | pm4
 | OSIntrMode     | Typedef | diamondtrust
@@ -725,16 +731,16 @@ This table outlines the source of every symbol/macro name used in this decompila
 | OS_LockMutex   | Function | pm4, diamondtrust
 | OS_UnlockMutex | Function | pm4, diamondtrust
 ||
-| OS_UnlockByWord | Function | gtact
+| OS_UnlockByWord | Function | gtactw
 ||
-| OSi_FreeCardBus | function | gtact
+| OSi_FreeCardBus | function | gtactw
 ||
 | OS_TPrintf  | Function | pm4, diamondtrust
 | OS_Printf   | Function | pm4, diamondtrust
 | OS_TVPrintf | Function | diamondtrust
 | OS_TPanic   | Function | diamondtrust
 | OS_Panic    | Function | pm4, diamondtrust, gtpd
-| OS_Halt     | Function | gtact
+| OS_Halt     | Function | gtactw
 ||
 | OS_ResetSystem | Function | pm4
 ||
@@ -753,39 +759,39 @@ This table outlines the source of every symbol/macro name used in this decompila
 | OS_Sleep | Function | pm4, diamondtrust
 ||
 | OS_CreateThread            | Function | pm4, diamondtrust
-| OS_WakeupThread            | Function | gtact
+| OS_WakeupThread            | Function | gtactw
 | OS_WakeupThreadDirect      | Function | pm4, diamondtrust
 | OS_IsThreadTerminated      | Function | pm4
 | OS_KillThread              | Function | pm4
 | OS_GetCurrentThread        | Function | pm4
 | OS_SleepThread             | Function | diamondtrust
 | OS_CheckStack              | Function | pm4
-| OS_SetSwitchThreadCallback | Function | gtact
-| OSSwitchThreadCallback     | Typedef  | gtact | Deduced from OS_SetSwitchThreadCallback
-| OS_InitContext             | Function | gtact
-| OS_SaveContext             | Function | gtact
-| OS_LoadContext             | Function | gtact
-| OS_SetThreadDestructor     | Function | gtact
-| OS_ExitThread              | Function | gtact
-| OS_DisableScheduler        | Function | gtact
-| OS_EnableScheduler         | Function | gtact
-| OS_RescheduleThread        | Function | gtact
-| OS_SelectThread            | Function | gtact
-| OS_SetThreadPriority       | Function | gtact
-| OS_GetThreadPriority       | Function | gtact
+| OS_SetSwitchThreadCallback | Function | gtactw
+| OSSwitchThreadCallback     | Typedef  | gtactw | Deduced from OS_SetSwitchThreadCallback
+| OS_InitContext             | Function | gtactw
+| OS_SaveContext             | Function | gtactw
+| OS_LoadContext             | Function | gtactw
+| OS_SetThreadDestructor     | Function | gtactw
+| OS_ExitThread              | Function | gtactw
+| OS_DisableScheduler        | Function | gtactw
+| OS_EnableScheduler         | Function | gtactw
+| OS_RescheduleThread        | Function | gtactw
+| OS_SelectThread            | Function | gtactw
+| OS_SetThreadPriority       | Function | gtactw
+| OS_GetThreadPriority       | Function | gtactw
 ||
-| OSi_IdleThreadProc               | Function | gtact
-| OSi_InsertLinkToQueue            | Function | gtact
-| OSi_RemoveLinkFromQueue          | Function | gtact
-| OSi_RemoveSpecifiedLinkFromQueue | Function | gtact
-| OSi_RescheduleThread             | Function | gtact
-| OSi_GetUnusedThreadId            | Function | gtact
-| OSi_InsertThreadToList           | Function | gtact
-| OSi_RemoveThreadFromList         | Function | gtact
-| OSi_ExitThread_ArgSpecified      | Function | gtact
-| OSi_ExitThread                   | Function | gtact
-| OSi_ExitThread_Destroy           | Function | gtact
-| OSi_UnlockAllMutex               | Function | gtact
+| OSi_IdleThreadProc               | Function | gtactw
+| OSi_InsertLinkToQueue            | Function | gtactw
+| OSi_RemoveLinkFromQueue          | Function | gtactw
+| OSi_RemoveSpecifiedLinkFromQueue | Function | gtactw
+| OSi_RescheduleThread             | Function | gtactw
+| OSi_GetUnusedThreadId            | Function | gtactw
+| OSi_InsertThreadToList           | Function | gtactw
+| OSi_RemoveThreadFromList         | Function | gtactw
+| OSi_ExitThread_ArgSpecified      | Function | gtactw
+| OSi_ExitThread                   | Function | gtactw
+| OSi_ExitThread_Destroy           | Function | gtactw
+| OSi_UnlockAllMutex               | Function | gtactw
 ||
 | OS_InitMessageQueue | Function | pm4, diamondtrust
 | OS_ReceiveMessage   | Function | pm4, diamondtrust
@@ -795,7 +801,7 @@ This table outlines the source of every symbol/macro name used in this decompila
 | OS_SetPeriodicAlarm | Function | pm4
 | OS_CancelAlarm      | Function | pm4
 ||
-| OSi_SleepAlarmCallback | Function | gtact
+| OSi_SleepAlarmCallback | Function | gtactw
 ||
 | OS_GetTick | Function | pm4, diamondtrust
 ||
@@ -824,7 +830,7 @@ This table outlines the source of every symbol/macro name used in this decompila
 | OS_MicroSecondsToTicks | Function | pm4
 | OS_TicksToMilliSeconds | Function | diamondtrust
 ||
-| OS_GetProcMode | Function | gtact
+| OS_GetProcMode | Function | gtactw
 ||
 | OS_IsRunOnTwl | Function | diamondtrust
 ||
@@ -1009,7 +1015,7 @@ This table outlines the source of every symbol/macro name used in this decompila
 | Abbreviation | Meaning |
 |--------------|---------|
 | diamondtrust | Diamond Trust of London (DS)
-| pm4 | Princess Maker 4: Special Edition (DS, Japan)
-| gtact | Grand Theft Auto: Chinatown Wars (DS, Europe)
-| gtpd | Ghost Trick: Phantom Detective (Windows)
-| gs456 | Apollo Justice: Ace Attorney Trilogy (Windows)
+| pm4          | Princess Maker 4: Special Edition (DS, Japan)
+| gtactw       | Grand Theft Auto: Chinatown Wars (DS, Europe)
+| gtpd         | Ghost Trick: Phantom Detective (Windows)
+| gs456        | Apollo Justice: Ace Attorney Trilogy (Windows)

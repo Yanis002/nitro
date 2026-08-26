@@ -24,14 +24,27 @@ parser.add_argument('name', help='Game name and version')
 args = parser.parse_args()
 
 
+class Game:
+    def __init__(self, *, mwcc_version: str, cc_flags: str | None = None):
+        self.mwcc_version = mwcc_version
+        self.cc_flags = cc_flags or ""
+
+
 # Config
 DSD_VERSION = 'v0.12.0'
 WIBO_VERSION = '0.6.16'
 OBJDIFF_VERSION = 'v3.7.1'
-MWCC_VERSION = {
-    "pm4_jp": "2.0/sp1p5",
-    "diamondtrust_us": "dsi/1.3p1",
-    "gtactw_eu": "dsi/1.3p1",
+GAMES = {
+    "pm4_jp": Game(
+        mwcc_version="2.0/sp1p5",
+    ),
+    "diamondtrust_us": Game(
+        mwcc_version="dsi/1.3p1",
+    ),
+    "gtactw_eu": Game(
+        mwcc_version="2.0/sp2p3",
+        cc_flags="-thumb",
+    ),
 }
 DECOMP_ME_COMPILER = "mwcc_30_131"
 CC_FLAGS = " ".join([
@@ -64,10 +77,10 @@ LD_FLAGS = " ".join([
     "-m Entry",             # Set entry function
 ])
 DSD_OBJDIFF_ARGS = " ".join([
-    "--scratch",                        # Metadata for creating decomp.me scratches
-    f"--compiler {DECOMP_ME_COMPILER}", # decomp.me compiler name
-    f'--c-flags "{CC_FLAGS}"',          # decomp.me compiler flags
-    "--custom-make ninja",              # Command for rebuilding files
+    "--scratch",                                           # Metadata for creating decomp.me scratches
+    f"--compiler {DECOMP_ME_COMPILER}",                    # decomp.me compiler name
+    f'--c-flags "{CC_FLAGS} {GAMES[args.name].cc_flags}"', # decomp.me compiler flags
+    "--custom-make ninja",                                 # Command for rebuilding files
 ])
 DSD_BASE_FLAGS = " ".join([
     "--force-color", # Force color output
@@ -138,7 +151,7 @@ class Project:
         self.symbols_files = get_config_files(self.game_config, "symbols.txt")
         '''Paths to every symbols.txt file'''
         
-        mwcc_path        = mwcc_root / MWCC_VERSION[args.name]
+        mwcc_path        = mwcc_root / GAMES[args.name].mwcc_version
         self.cc = os.path.join('.', str(mwcc_path / "mwccarm.exe"))
         self.ld = os.path.join('.', str(mwcc_path / "mwldarm.exe"))
 
@@ -266,7 +279,7 @@ def main():
         n.newline()
 
         # -MMD excludes all includes instead of just system includes for some reason, so use -MD instead.
-        mwcc_cmd = f'{WINE} "{project.cc}" {CC_FLAGS} {CC_INCLUDES} $cc_flags -d $game_version -MD -c $in -o $basedir'
+        mwcc_cmd = f'{WINE} "{project.cc}" {CC_FLAGS} {GAMES[args.name].cc_flags} {CC_INCLUDES} $cc_flags -d $game_version -MD -c $in -o $basedir'
         mwcc_implicit = [project.cc]
         if platform.system != "windows":
             transform_dep = "tools/transform_dep.py"

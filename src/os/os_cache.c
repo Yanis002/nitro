@@ -24,6 +24,9 @@
 
 #define OS_CACHE_INS(ins) asm(ins);
 
+#pragma push
+#pragma thumb off
+
 void DC_InvalidateAll(void *ptr, u32 size) {
 #ifdef NITRO_NO_ASM
     s32 zero = 0;
@@ -195,3 +198,5 @@ void IC_InvalidateRange(void *ptr, u32 size) {
         ptr += OS_CACHE_LINE_SIZE;
     } while ((s32) ptr < end);
 }
+
+#pragma pop

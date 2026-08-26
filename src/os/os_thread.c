@@ -519,6 +519,8 @@ static void OS_InitContext(OSThread *thread, void (*threadFunc)(void *arg), void
 
 // clang-format off
 static asm u32 OS_SaveContext(OSThread *thread) {
+    #pragma push
+    #pragma thumb off
     stmdb sp!, {r0, lr}
     add r0, r0, 0x48
     lda r1, CP_SaveContext
@@ -537,11 +539,14 @@ static asm u32 OS_SaveContext(OSThread *thread) {
     str r0, [r1, 0x3c]
     mov r0, 0
     bx lr
+    #pragma pop
 }
 // clang-format on
 
 // clang-format off
 static asm void OS_LoadContext(OSThread *thread) {
+    #pragma push
+    #pragma thumb off
     stmdb sp!, {r0, lr}
     add r0, r0, 0x48
     lda r1, CPi_RestoreContext
@@ -558,4 +563,5 @@ static asm void OS_LoadContext(OSThread *thread) {
     ldmia r0, {r0-r14}^
     mov r0, r0
     subs pc, lr, 4
+    #pragma pop
 }// clang-format on
