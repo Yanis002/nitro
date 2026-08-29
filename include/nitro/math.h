@@ -9,7 +9,6 @@ extern "C" {
 #endif
 
 #define INT_TO_FX32(n) ((s32) ((n) << FX32_SHIFT))
-#define FLOAT_TO_FX32(n) ((s32) (((n) * 8192 + 1) / 2))
 #define ROUND_FX32(n) (((s32) (n) + 0x800) >> FX32_SHIFT)
 #define DIV_FX32(a, b) (((a) << FX32_SHIFT) / (b))
 

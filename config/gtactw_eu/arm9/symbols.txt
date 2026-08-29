@@ -12150,8 +12150,8 @@ data_0215774c kind:data(any) addr:0x0215774c
 data_02157758 kind:data(any) addr:0x02157758
 data_02157764 kind:data(any) addr:0x02157764
 data_02157784 kind:data(any) addr:0x02157784
-data_021577c4 kind:data(any) addr:0x021577c4
-data_021578c8 kind:data(any) addr:0x021578c8
+sAtanTable kind:data(any) addr:0x021577c4
+sAtanIdxTable kind:data(any) addr:0x021578c8
 data_02157acc kind:data(any) addr:0x02157acc
 data_021581cc kind:data(any) addr:0x021581cc
 data_021584a0 kind:data(any) addr:0x021584a0

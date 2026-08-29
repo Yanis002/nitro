@@ -1,6 +1,8 @@
 #ifndef _NITRO_FX_H
 #define _NITRO_FX_H
 
+#include <math.h>
+
 #include "nitro/types.h"
 
 #ifdef __cplusplus
@@ -13,6 +15,8 @@ extern "C" {
 
 #define FX32_ONE ((fx32) 1 << FX32_SHIFT)
 #define FX16_ONE ((fx16) 1 << FX16_SHIFT)
+
+#define FX_F32_TO_FX32(n) ((s32) (((n) * 8192 + 1) / 2))
 
 #define FX_MUL(a, b) (fx32)((((s64) (a)) * ((s64) (b)) + 0x800) >> FX32_SHIFT)
 #define FX_MUL32x64C(a, b) (fx32)((((s64) (a)) * ((s64) (b)) + 0x80000000) >> FX64C_SHIFT)
@@ -99,6 +103,7 @@ typedef union MtxFx44 {
         /* 18 */ fx32 _12;
         /* 1c */ fx32 _13;
         /* 20 */ fx32 _20;
+#define FX_F32_TO_FX32(n) ((s32) (((n) * 8192 + 1) / 2))
         /* 24 */ fx32 _21;
         /* 28 */ fx32 _22;
         /* 2c */ fx32 _23;
@@ -121,6 +126,10 @@ fx32 FX_GetDivResult(void);
 fx64c FX_GetDivResultFx64c(void);
 fx32 FX_Inv(fx32 denom);
 void FX_InvAsync(fx32 denom);
+
+s16 FX_Atan2(fx32 y, fx32 x);
+u16 FX_AtanIdx(s32 tan);
+u16 FX_Atan2Idx(fx32 y, fx32 x);
 
 void MTX_Transpose33_(const MtxFx33 *src, MtxFx33 *dst);
 void MTX_RotX33_(MtxFx33 *mtx, fx32 sin, fx32 cos);

@@ -200,6 +200,8 @@ This table outlines the source of every symbol/macro name used in this decompila
 ||
 | FX_MUL | Macro | gtpd
 ||
+| FX_F32_TO_FX32 | Macro | gs456
+||
 | fx64 | Typedef
 | fx32 | Typedef | gtpd
 | fx16 | Typedef | gtpd
