@@ -75,7 +75,11 @@ typedef struct FS_UnkStruct11 {
 
 typedef struct FSFile {
     /* 00 */ struct FSFile *next;
+#if NITRO_VERSION >= 0x5057533
     /* 04 */ void *cursor;
+#else
+    /* 04 */ struct FSFile *prev;
+#endif
     /* 08 */ FSArchive *archive;
     /* 0c */ vu32 flags;
     /* 10 */ union {
@@ -149,6 +153,7 @@ inline BOOL FS_IsFile(FSFile *file) {
 }
 
 extern const u8 FS_data_0001[64];
+extern const FSFileProcs FS_fileProcs;
 
 #ifdef __cplusplus
 } // extern "C"

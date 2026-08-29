@@ -63,14 +63,14 @@ typedef struct DivParam {
 } DivParam;
 
 #define REG_DIV_CNT (*(vu16 *) (REG_BASE | 0x280))
-#define REG_DIV (*(volatile DivParam *) (REG_BASE | 0x290))
-#define REG_DIV_NUMER (*(vu64 *) (REG_BASE | 0x290))
-#define REG_DIV_DENOM (*(vu64 *) (REG_BASE | 0x298))
+#define REG_DIV (*(DivParam *) (REG_BASE | 0x290))
+#define REG_DIV_NUMER (*(u64 *) (REG_BASE | 0x290))
+#define REG_DIV_DENOM (*(u64 *) (REG_BASE | 0x298))
 #define REG_DIV_RESULT (*(vu64 *) (REG_BASE | 0x2a0))
 #define REG_REM_RESULT (*(vu64 *) (REG_BASE | 0x2a8))
 #define REG_SQRT_CNT (*(vu16 *) (REG_BASE | 0x2b0))
 #define REG_SQRT_RESULT (*(vu32 *) (REG_BASE | 0x2b4))
-#define REG_SQRT_PARAM (*(vu64 *) (REG_BASE | 0x2b8))
+#define REG_SQRT_PARAM (*(u64 *) (REG_BASE | 0x2b8))
 
 #define REG_FRAME_COUNTER (*(u32 *) (_BIOS_REG_BASE | 0xC3C))
 #define REG_027FFC40 (*(u16 *) (_BIOS_REG_BASE | 0xC40))

@@ -1550,7 +1550,7 @@ data_0207b914 kind:data(any) addr:0x0207b914
 data_0207bd14 kind:data(any) addr:0x0207bd14
 data_0207bd18 kind:data(any) addr:0x0207bd18
 FS_data_0001 kind:data(any) addr:0x0207bd20 local
-sFileProcs kind:data(any) addr:0x0207bd60 local
+FS_fileProcs kind:data(any) addr:0x0207bd60 local
 sArchiveFns kind:data(any) addr:0x0207bd94 local
 data_0207be94 kind:data(any) addr:0x0207be94
 data_0207bea4 kind:data(any) addr:0x0207bea4

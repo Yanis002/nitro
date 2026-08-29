@@ -15,6 +15,7 @@ extern "C" {
 #define FS_RESULT_0x5 ((FSResult) 0x5)
 #define FS_RESULT_INVALID_COMMAND ((FSResult) 0x4)
 #define FS_RESULT_INVALID_PARAM ((FSResult) 0x6)
+#define FS_RESULT_0x8 ((FSResult) 0x8)
 #define FS_RESULT_0xB ((FSResult) 0xb)
 #define FS_RESULT_AWAIT_ASYNC ((FSResult) 0x100)
 #define FS_RESULT_0x101 ((FSResult) 0x101)

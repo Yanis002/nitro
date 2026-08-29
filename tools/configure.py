@@ -25,9 +25,10 @@ args = parser.parse_args()
 
 
 class Game:
-    def __init__(self, *, mwcc_version: str, cc_flags: str | None = None):
+    def __init__(self, *, mwcc_version: str, cc_flags: str | None = None, sdk_version: str):
         self.mwcc_version = mwcc_version
         self.cc_flags = cc_flags or ""
+        self.sdk_version = sdk_version
 
 
 # Config
@@ -37,13 +38,16 @@ OBJDIFF_VERSION = 'v3.7.1'
 GAMES = {
     "pm4_jp": Game(
         mwcc_version="2.0/sp1p5",
+        sdk_version="0x4027531",
     ),
     "diamondtrust_us": Game(
         mwcc_version="dsi/1.3p1",
+        sdk_version="0x5057533",
     ),
     "gtactw_eu": Game(
         mwcc_version="2.0/sp2p3",
         cc_flags="-thumb",
+        sdk_version="0x4027531",
     ),
 }
 DECOMP_ME_COMPILER = "mwcc_30_131"
@@ -64,6 +68,7 @@ CC_FLAGS = " ".join([
     "-gccinc",              # Interpret #include "..." and #include <...> equally
     "-nolink",              # Do not link
     "-msgstyle gcc",        # Use GCC-like messages (some IDEs will make file names clickable)
+    f"-d NITRO_VERSION={GAMES[args.name].sdk_version}" # SDK version macro
 ])
 CC_FLAG_OVERRIDES: dict[str, list[str]] = {}
 # Passed to all modules and final arm9.o link

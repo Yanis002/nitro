@@ -198,13 +198,32 @@ This table outlines the source of every symbol/macro name used in this decompila
 | FX32_ONE | Macro | pm4, diamondtrust, gtpd, gs456
 | FX16_ONE | Macro | diamondtrust, gtpd
 ||
+| FX_MUL | Macro | gtpd
+||
+| fx64 | Typedef
 | fx32 | Typedef | gtpd
 | fx16 | Typedef | gtpd
 ||
 | VecFx32 | Struct | diamondtrust, gtpd
 | MtxFx22 | Struct | pm4, gtpd
+| MtxFx33 | Struct | gtactw | Deduced from MTX_Transpose33_
+| MtxFx43 | Struct | gtactw | Deduced from MTX_Identity43_
 ||
 | FX_Init | Function | pm4, diamondtrust
+||
+| FX_Div               | Function | gtactw
+| FX_GetDivResult      | Function | gtactw
+| FX_GetDivResultFx64c | Function | gtactw
+| FX_InvAsync          | Function | gtactw
+||
+| VEC_DotProduct | Function | gtpd
+| VEC_Set        | Macro    | gtpd
+||
+| MTX_Transpose33_ | Function | gtactw
+| MTX_RotX33_      | Function | gtactw
+| MTX_RotZ33_      | Function | gtactw
+| MTX_Concat33     | Function | gtactw
+| MTX_Identity43_  | Function | gtactw
 ||
 | G2_SetBGAffine | Function | pm4 | Deduced from G2_SetBG2Affine and G2_SetBG3Affine
 ||
@@ -679,7 +698,7 @@ This table outlines the source of every symbol/macro name used in this decompila
 | MI_Swap | Function
 ||
 | MI_CpuClearFast | Function | pm4, diamondtrust, gtpd
-| MI_CpuFillFast | Function | pm4, diamondtrust
+| MI_CpuFillFast  | Function | pm4, diamondtrust
 ||
 | OS_CACHE_LINE_SIZE | Macro
 ||

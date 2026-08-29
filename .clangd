@@ -7,6 +7,7 @@ CompileFlags:
   - -Ilibs/cpp/include
   - -Wno-c99-designator
   - -Wall
+  - -D__CLANGD__
 Diagnostics:
   Suppress:
   - asm_qualifier_ignored

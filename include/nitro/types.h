@@ -8,17 +8,14 @@
 extern "C" {
 #endif
 
-// note: u32 and s32 should use long based on similar library decomps
-
 typedef unsigned long long u64;
-typedef unsigned long ulong;
-typedef unsigned int u32;
+typedef unsigned long u32;
+typedef unsigned int uint;
 typedef unsigned short u16;
 typedef unsigned char u8;
 
 typedef long long s64;
-typedef long long slong;
-typedef int s32;
+typedef long s32;
 typedef short s16;
 typedef signed char s8;
 
@@ -26,14 +23,14 @@ typedef float f32;
 typedef double f64;
 
 typedef volatile u64 vu64;
-typedef volatile ulong vulong;
 typedef volatile u32 vu32;
+typedef volatile uint vuint;
 typedef volatile u16 vu16;
 typedef volatile u8 vu8;
 
 typedef volatile s64 vs64;
-typedef volatile slong vslong;
 typedef volatile s32 vs32;
+typedef volatile int vints;
 typedef volatile s16 vs16;
 typedef volatile s8 vs8;
 
@@ -50,6 +47,18 @@ typedef s32 BOOL;
 #define ARRAY_LEN_U(arr) (u32)((sizeof(arr) / sizeof(*arr)))
 
 #define PAD(start, end) u8 unk_##start[end - start]
+
+#if !defined(NITRO_NO_ASM) && !defined(__MWERKS__) && !defined(__CLANGD__)
+    #error NITRO_NO_ASM is required for compilers other than mwccarm
+#endif
+
+#ifdef __MWERKS__
+    #define THUMB_DISABLE _Pragma("push") _Pragma("thumb off")
+    #define THUMB_ENABLE _Pragma("pop")
+#else
+    #define THUMB_DISABLE
+    #define THUMB_ENABLE
+#endif
 
 #ifdef __cplusplus
 } // extern "C"
