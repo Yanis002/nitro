@@ -16,6 +16,9 @@ src/fx/fx_div.c:
 src/fx/fx_trig.c:
     .text       start:0x02133154 end:0x021333d0
 
+src/fx/fx_init.c:
+    .text       start:0x021333d0 end:0x021333d4
+
 src/fs/fs_command.c:
     .text       start:0x02137ea0 end:0x021389a0
 
