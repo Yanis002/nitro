@@ -117,11 +117,11 @@ inline void G3X_AlphaBlend(BOOL param1) {
     REG_DISP3DCNT = REG_DISP3DCNT & ~0x3000 | (param1 << 3);
 }
 
-inline void G3X_Unk1(unk32 param1) {
+inline void G3X_Unk1(u32 param1) {
     REG_DISP3DCNT = REG_DISP3DCNT & ~(0x3000 | (param1 << 1));
 }
 
-inline void G3X_Unk2(unk32 param1) {
+inline void G3X_Unk2(u32 param1) {
     REG_DISP3DCNT &= ~(0x3000 | (param1 << 5));
 }
 

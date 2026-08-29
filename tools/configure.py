@@ -63,6 +63,7 @@ CC_FLAGS = " ".join([
     "-lang=c",              # Set language to C
     "-Cpp_exceptions off",  # Disable C++ exceptions
     "-interworking",        # Enable ARM/Thumb interworking
+    "-ipa file",            # Enable inter-procedural analysis
     "-requireprotos",       # Require function prototypes
     "-sym on",              # Debug info, including line numbers
     "-gccinc",              # Interpret #include "..." and #include <...> equally

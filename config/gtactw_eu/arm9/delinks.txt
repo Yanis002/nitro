@@ -36,3 +36,10 @@ src/fs/fs_rom.c:
 
 src/fs/fs_overlay.c:
     .text       start:0x02139260 end:0x02139644
+
+src/mic/mic.c:
+    .text       start:0x0213a814 end:0x0213ab4c
+    .bss        start:0x021fb4ec end:0x021fb50c
+
+src/mic/mic_wait.c:
+    .text       start:0x0213ab4c end:0x0213ab64

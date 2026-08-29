@@ -85,6 +85,7 @@ typedef struct DivParam {
 #define REG_027FFDEA (*(u16 *) (_BIOS_REG_BASE | 0xDEA))
 #define REG_027FFDEC (*(u32 *) (_BIOS_REG_BASE | 0xDEC))
 #define REG_ROM_HEADER (*(RomHeader *) (_BIOS_REG_BASE | 0xE00))
+#define REG_027FFF90 (*(u32 *) (_BIOS_REG_BASE | 0xF90))
 #define REG_027FFF9C (*(u32 *) (_BIOS_REG_BASE | 0xF9C))
 #define REG_027FFFA0 (*(u32 *) (_BIOS_REG_BASE | 0xFA0))
 

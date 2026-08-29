@@ -15339,8 +15339,14 @@ sArm7OverlayTable kind:bss addr:0x021fb44c
 FS_romArchive kind:bss addr:0x021fb454
 data_021fb4b0 kind:bss addr:0x021fb4b0
 data_021fb4cc kind:bss addr:0x021fb4cc
-data_021fb4ec kind:bss addr:0x021fb4ec
+data_021fb4ec kind:bss(size=0x2) addr:0x021fb4ec
 data_021fb4f0 kind:bss addr:0x021fb4f0
+data_021fb4f4 kind:bss addr:0x021fb4f4
+data_021fb4f8 kind:bss addr:0x021fb4f8
+data_021fb4fc kind:bss addr:0x021fb4fc
+data_021fb500 kind:bss addr:0x021fb500
+data_021fb504 kind:bss addr:0x021fb504
+data_021fb508 kind:bss addr:0x021fb508
 data_021fb50c kind:bss addr:0x021fb50c
 data_021fb518 kind:bss addr:0x021fb518
 data_021fb524 kind:bss addr:0x021fb524
