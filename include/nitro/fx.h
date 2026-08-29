@@ -114,8 +114,12 @@ typedef union MtxFx44 {
 void FX_Init(void);
 
 fx32 FX_Div(fx32 numer, fx32 denom);
+void FX_DivAsync(fx32 numer, fx32 denom);
+s32 FX_DivS32(s32 numer, s32 denom);
+s32 FX_ModS32(s32 numer, s32 denom);
 fx32 FX_GetDivResult(void);
 fx64c FX_GetDivResultFx64c(void);
+fx32 FX_Inv(fx32 denom);
 void FX_InvAsync(fx32 denom);
 
 void MTX_Transpose33_(const MtxFx33 *src, MtxFx33 *dst);

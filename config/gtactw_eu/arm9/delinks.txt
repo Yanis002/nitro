@@ -10,6 +10,9 @@
 src/fx/fx_mtx.c:
     .text       start:0x02132a74 end:0x02133060
 
+src/fx/fx_div.c:
+    .text       start:0x02133060 end:0x02133154
+
 src/fs/fs_command.c:
     .text       start:0x02137ea0 end:0x021389a0
 

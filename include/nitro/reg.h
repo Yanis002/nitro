@@ -58,7 +58,13 @@ extern "C" {
 #define REG_CARD_DATA (*(vu32 *) (REG_BASE | REG_CARD_DATA_OFFSET))
 
 typedef struct DivParam {
-    u64 numer;
+    union {
+        u64 numer;
+        struct {
+            u32 numerLo;
+            u32 numerHi;
+        };
+    };
     u64 denom;
 } DivParam;
 
@@ -66,8 +72,8 @@ typedef struct DivParam {
 #define REG_DIV (*(DivParam *) (REG_BASE | 0x290))
 #define REG_DIV_NUMER (*(u64 *) (REG_BASE | 0x290))
 #define REG_DIV_DENOM (*(u64 *) (REG_BASE | 0x298))
-#define REG_DIV_RESULT (*(vu64 *) (REG_BASE | 0x2a0))
-#define REG_REM_RESULT (*(vu64 *) (REG_BASE | 0x2a8))
+#define REG_DIV_RESULT (*(u64 *) (REG_BASE | 0x2a0))
+#define REG_REM_RESULT (*(u64 *) (REG_BASE | 0x2a8))
 #define REG_SQRT_CNT (*(vu16 *) (REG_BASE | 0x2b0))
 #define REG_SQRT_RESULT (*(vu32 *) (REG_BASE | 0x2b4))
 #define REG_SQRT_PARAM (*(u64 *) (REG_BASE | 0x2b8))
