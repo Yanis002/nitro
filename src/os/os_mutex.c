@@ -1,5 +1,5 @@
+#include "nitro/os/os_mutex.h"
 #include "nitro/os.h"
-#include "nitro/os/mutex.h"
 
 static void OS_func_0067(OSThread *param1, OSMutex *mutex);
 static void OS_func_0068(OSThread *param1, OSMutex *mutex);
@@ -133,8 +133,8 @@ static void OS_func_0067(OSThread *param1, OSMutex *mutex) {
     } else {
         temp_r3->queue.head = mutex;
     }
-    mutex->queue.tail         = temp_r3;
-    mutex->queue.head         = 0;
+    mutex->queue.tail   = temp_r3;
+    mutex->queue.head   = 0;
     param1->unk_88.tail = mutex;
 }
 

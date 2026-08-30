@@ -85,6 +85,7 @@ typedef struct DivParam {
 #define REG_027FFDEA (*(u16 *) (_BIOS_REG_BASE | 0xDEA))
 #define REG_027FFDEC (*(u32 *) (_BIOS_REG_BASE | 0xDEC))
 #define REG_ROM_HEADER (*(RomHeader *) (_BIOS_REG_BASE | 0xE00))
+#define REG_IPC_FIFO_RECV_CALLBACKS (*(u32 *) (_BIOS_REG_BASE | 0xF88))
 #define REG_027FFF90 (*(u32 *) (_BIOS_REG_BASE | 0xF90))
 #define REG_027FFF9C (*(u32 *) (_BIOS_REG_BASE | 0xF9C))
 #define REG_027FFFA0 (*(u32 *) (_BIOS_REG_BASE | 0xFA0))
@@ -109,6 +110,11 @@ typedef struct DivParam {
 #define REG_GFX_FIFO_POLYGONS_END (*(vu32 *) (REG_BASE | 0x504))
 #define REG_GFX_FIFO_SWAP_BUFFERS (*(vu32 *) (REG_BASE | 0x540))
 #define REG_GFX_FIFO_VIEWPORT (*(vu32 *) (REG_BASE | 0x580))
+
+#define REG_IPC_SYNC (*(vu16 *) (REG_BASE | 0x180))
+#define REG_IPC_FIFO_CNT (*(vu16 *) (REG_BASE | 0x184))
+#define REG_IPC_FIFO_SEND (*(PXI_UnkStruct1 *) (REG_BASE | 0x188))
+#define REG_04100000 (*(PXI_UnkStruct1 *) (REG_BASE | 0x100000))
 
 extern u32 __DTCM_LO;
 #define DTCM_LO ((u8 *) &__DTCM_LO)

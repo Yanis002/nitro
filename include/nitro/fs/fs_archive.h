@@ -7,7 +7,7 @@ extern "C" {
 
 #include "nitro/fs/fs_command.h"
 #include "nitro/fs/fs_common.h"
-#include "nitro/os/common.h"
+#include "nitro/os/os_common.h"
 #include "nitro/types.h"
 
 #define FS_ARCHIVE_FLAG_0x1 0x1

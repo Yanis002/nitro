@@ -1,4 +1,4 @@
-#include "nitro/os/cache.h"
+#include "nitro/os/os_cache.h"
 
 #define DC_DRAIN_WRITE_BUFFER(zero) mcr p15, 0, zero, c7, c10, 4
 

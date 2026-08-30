@@ -1,6 +1,6 @@
 #include "nitro/mi.h"
 #include "nitro/os.h"
-#include "nitro/os/mutex.h"
+#include "nitro/os/os_mutex.h"
 
 typedef struct OS_UnkStruct2 {
     /* 00 */ u16 unk_00;

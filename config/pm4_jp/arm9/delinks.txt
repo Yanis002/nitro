@@ -4,7 +4,7 @@
     .data       start:0x02091400 end:0x020a74a0 kind:data align:32
     .bss        start:0x020a74a0 end:0x0216d1a0 kind:bss align:32
 
-src/fx.c:
+src/fx/fx_init.c:
     .text       start:0x02068a64 end:0x02068a68
 
 src/gx/gx_init.c:

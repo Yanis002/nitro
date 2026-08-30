@@ -44,7 +44,7 @@ src/fs/fs_init.c:
     .bss        start:0x021382c0 end:0x021382c4
     complete
 
-src/fx.c:
+src/fx/fx_init.c:
     .text       start:0x020268b8 end:0x02026e04
 
 src/gx/gx_init.c:

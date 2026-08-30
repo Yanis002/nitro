@@ -15328,8 +15328,8 @@ data_021fb2e0 kind:bss addr:0x021fb2e0
 data_021fb328 kind:bss addr:0x021fb328
 data_021fb340 kind:bss addr:0x021fb340
 data_021fb3a0 kind:bss addr:0x021fb3a0
-data_021fb3a4 kind:bss addr:0x021fb3a4
-data_021fb3a8 kind:bss addr:0x021fb3a8
+PXIi_fifoInitialized kind:bss addr:0x021fb3a4
+sFifoRecvCallbacks kind:bss addr:0x021fb3a8
 data_021fb428 kind:bss addr:0x021fb428
 data_021fb42c kind:bss addr:0x021fb42c
 data_021fb438 kind:bss addr:0x021fb438

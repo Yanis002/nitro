@@ -1,7 +1,7 @@
 #ifndef _NITRO_OS_CONTEXT_H
 #define _NITRO_OS_CONTEXT_H
 
-#include "nitro/os/cp.h"
+#include "nitro/os/os_cp.h"
 #include "nitro/types.h"
 
 typedef struct OSContext {

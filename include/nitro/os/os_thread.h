@@ -1,9 +1,9 @@
 #ifndef _NITRO_OS_THREAD_H
 #define _NITRO_OS_THREAD_H
 
-#include "nitro/os/alarm.h"
-#include "nitro/os/context.h"
-#include "nitro/os/mutex.h"
+#include "nitro/os/os_alarm.h"
+#include "nitro/os/os_context.h"
+#include "nitro/os/os_mutex.h"
 
 /// MARK: Types
 

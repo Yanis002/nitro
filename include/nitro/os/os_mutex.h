@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-#include "nitro/os/common.h"
+#include "nitro/os/os_common.h"
 #include "nitro/types.h"
 
 struct OSMutex;

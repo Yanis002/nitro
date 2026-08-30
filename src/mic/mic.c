@@ -4,7 +4,7 @@
 #include "nitro/reg.h"
 #include "nitro/types.h"
 
-static void MicCommonCallback(u32 arg0, u8 arg1, s32 arg2);
+static void MicCommonCallback(u32 arg0, u32 arg1, u32 arg2);
 static BOOL MicStartAutoSampling(u32 arg0, u32 arg1, u32 arg2, u8 arg3);
 static BOOL MicStopAutoSampling(void);
 static void MicGetResultCallback(s32 arg0, s32 arg1);
@@ -136,7 +136,7 @@ s32 MIC_GetLastSamplingAddress(void) {
     return REG_027FFF90;
 }
 
-static void MicCommonCallback(u32 arg0, u8 arg1, s32 arg2) {
+static void MicCommonCallback(u32 arg0, u32 arg1, u32 arg2) {
     void (*temp_r2)(s32, s32);
     void (*temp_r3)(s32, s32);
     s32 var_r0;
