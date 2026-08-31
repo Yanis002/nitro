@@ -7,11 +7,13 @@ from:0x0200089c kind:arm_call to:0x020009fc module:main
 from:0x020008f8 kind:arm_call to:0x02147c38 module:main
 from:0x020008fc kind:arm_call to:0x02000b60 module:main
 from:0x02000900 kind:arm_call_thumb to:0x021489cc module:main
-from:0x02000918 kind:load to:0x027e0000 module:dtcm
+from:0x02000918 kind:link_time_const(__DTCM_LO)
+from:0x02000928 kind:load to:0x02000b68 module:main
 from:0x02000930 kind:load to:0x01fff868 module:itcm
 from:0x02000934 kind:load to:0x02000c35 module:main
-from:0x02000b3c kind:load to:0x027e0021 module:dtcm
-from:0x02000b44 kind:load to:0x027e0000 module:dtcm
+from:0x02000a6c kind:arm_branch to:0x02000a74 module:main
+from:0x02000a70 kind:load to:0x02000b68 module:main
+from:0x02000b44 kind:link_time_const(__DTCM_LO) module:dtcm
 from:0x02000b68 kind:load to:0x02179280 module:main
 from:0x02000b6c kind:load to:0x02179298 module:main
 from:0x02000b70 kind:load to:0x021714a0 module:main

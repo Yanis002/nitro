@@ -10,7 +10,7 @@ extern "C" {
 #define REG_BASE 0x4000000
 
 #define REG_POWER_CNT (*(vu16 *) (REG_BASE | 0x304))
-#define REG_IME (*(vu16 *) (REG_BASE | 0x208))
+#define REG_IME (*(vu32 *) (REG_BASE | 0x208))
 
 #define REG_DISPSTAT (*(vu16 *) (REG_BASE | 0x4))
 #define REG_VCOUNT (*(vu16 *) (REG_BASE | 0x6))
@@ -87,7 +87,8 @@ typedef struct DivParam {
 #define REG_ROM_HEADER (*(RomHeader *) (_BIOS_REG_BASE | 0xE00))
 #define REG_IPC_FIFO_RECV_CALLBACKS (*(u32 *) (_BIOS_REG_BASE | 0xF88))
 #define REG_027FFF90 (*(u32 *) (_BIOS_REG_BASE | 0xF90))
-#define REG_027FFF9C (*(u32 *) (_BIOS_REG_BASE | 0xF9C))
+#define REG_027FFF9C_ADDR (_BIOS_REG_BASE | 0xF9C)
+#define REG_027FFF9C (*(u32 *) REG_027FFF9C_ADDR)
 #define REG_027FFFA0 (*(u32 *) (_BIOS_REG_BASE | 0xFA0))
 
 #define REG_GFX_FIFO (*(vu32 *) (REG_BASE | 0x400))

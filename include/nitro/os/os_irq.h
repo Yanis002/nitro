@@ -10,6 +10,7 @@ extern "C" {
 
 typedef u32 OSIntrMode;
 
+void OS_IrqHandler(void);
 void OS_SetIrqFunction(u32 type, void (*function)());
 void OS_EnableIrqMask(u32 mask);
 void OS_ResetRequestIrqMask(u32 mask);

@@ -7,6 +7,9 @@
     .data       start:0x02158800 end:0x021714a0 kind:data align:32
     .bss        start:0x021714a0 end:0x021fd740 kind:bss align:32
 
+src/_start.c:
+    .text       start:0x02000800 end:0x02000b68
+
 src/fx/fx_mtx.c:
     .text       start:0x02132a74 end:0x02133060
 
