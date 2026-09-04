@@ -1,4 +1,4 @@
-_ZN13cActStructure16IsMissionRunningEv kind:function(thumb,size=0x24) addr:0x02234cc0
+_ZN13cActStructure16IsMissionRunningEv kind:function(thumb,size=0x24) addr:0x02234cc0 local
 _ZN3Gui7cMapAppC1Ev kind:function(thumb,size=0x274) addr:0x02234ce4
 _ZN3Gui7cMapAppD1Ev kind:function(thumb,size=0x6c) addr:0x02234f58
 _ZN3Gui7cMapAppD0Ev kind:function(thumb,size=0x78) addr:0x02234fc4
@@ -13,7 +13,7 @@ _ZN3Gui4cPda17ActivePdaTutorialEv kind:function(thumb,size=0xc) addr:0x0223563c
 _ZN3Gui4cPda11HelpManagerEv kind:function(thumb,size=0xc) addr:0x02235648
 _ZN3Gui4cPda13GPSLockStatusEv kind:function(thumb,size=0xc) addr:0x02235654
 _ZN3Gui7cMapApp12SetupButtonsEv kind:function(thumb,size=0x410) addr:0x02235660
-_ZN5Gfx2d7cSprite16SetSpritePaletteEm kind:function(thumb,size=0x10) addr:0x02235a70
+_ZN5Gfx2d7cSprite16SetSpritePaletteEm kind:function(thumb,size=0x10) addr:0x02235a70 local
 _ZN3Gui7cMapApp6DeInitEv kind:function(thumb,size=0x1e8) addr:0x02235a80
 _ZNK3Gui7cMapApp13GetSpriteDataEPN5Gfx2d14cSpriteDataSetEt kind:function(thumb,size=0x14) addr:0x02235c68
 _ZN3Gui7cMapApp8ShutdownEv kind:function(thumb,size=0x18) addr:0x02235c7c

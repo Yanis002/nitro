@@ -37,12 +37,9 @@ void FSi_ReleaseCommand(FSFile *file, FSResult result) {
     OSIntrMode irq;
     u8 cmdType;
     FSArchive *archive;
-    FSFile *next;
-    FSFile *prev;
 
     irq = OS_DisableInterrupts();
 
-#if NITRO_VERSION >= 0x5057533
     archive = file->archive;
     if (archive != NULL) {
         var_r0 = archive->currentFile;
@@ -65,22 +62,6 @@ void FSi_ReleaseCommand(FSFile *file, FSResult result) {
     file->unk_14 = result;
     file->flags  = (u32) (file->flags & ~(FS_FILE_FLAG_SEND_CMD | FS_FILE_FLAG_0x2 | FS_FILE_FLAG_AWAIT_SYNC |
                                           FS_FILE_FLAG_0x8 | FS_FILE_FLAG_0x40 | FS_FILE_FLAG_0x80));
-#else
-    next = file->next;
-    prev = file->prev;
-    if (next != NULL) {
-        next->prev = prev;
-    }
-    if (prev != NULL) {
-        prev->next = next;
-    }
-    file->next = NULL;
-    file->prev = NULL;
-
-    file->flags &=
-        ~(FS_FILE_FLAG_SEND_CMD | FS_FILE_FLAG_0x2 | FS_FILE_FLAG_AWAIT_SYNC | FS_FILE_FLAG_0x8 | FS_FILE_FLAG_0x40);
-    file->unk_14 = result;
-#endif
 
     OS_WakeupThread(&file->unk_18);
     OS_RestoreInterrupts(irq);

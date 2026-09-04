@@ -1,11 +1,11 @@
 _ZN3Gui17cSinkingCarBubble8IsActiveEv kind:function(thumb,size=0xe) addr:0x02234cc0
 _ZN3Gui17cSinkingCarBubble5ResetEv kind:function(thumb,size=0x6) addr:0x02234cd0
 _ZN3Gui17cSinkingCarBubble6LaunchEiiPN5Gfx2d11cSpriteDataE kind:function(thumb,size=0x98) addr:0x02234cd8
-_ZN4tv2dI6cFixedILm20ELm12EEEaSERKS1_ kind:function(thumb,size=0xa) addr:0x02234d70
-_ZN4tv2dI6cFixedILm20ELm12EEEC1ES1_S1_ kind:function(thumb,size=0xa) addr:0x02234d7c
+_ZN4tv2dI6cFixedILm20ELm12EEEaSERKS1_ kind:function(thumb,size=0xa) addr:0x02234d70 local
+_ZN4tv2dI6cFixedILm20ELm12EEEC1ES1_S1_ kind:function(thumb,size=0xa) addr:0x02234d7c local
 _ZN5Gfx2d20cGlobalSpriteManager13AddSpriteImplEPNS_11cSpriteDataEii18eScreenRestrictionmPNS_7cSpriteES5_ kind:function(thumb,size=0x32) addr:0x02234d88
 _Z19GlobalSpriteManagerv kind:function(thumb,size=0x8) addr:0x02234dbc
-_ZN5Gfx2d7cSprite16SetSpritePaletteEm kind:function(thumb,size=0x10) addr:0x02234dc4
+_ZN5Gfx2d7cSprite16SetSpritePaletteEm kind:function(thumb,size=0x10) addr:0x02234dc4 local
 _ZN3Gui17cSinkingCarBubble7ProcessEv kind:function(thumb,size=0x17c) addr:0x02234dd4
 _ZN3Gui17cSinkingCarBubble4KillEv kind:function(thumb,size=0x1c) addr:0x02234f50
 _ZN3Gui17cSinkingCarBubble13PlayBubbleSfxEv kind:function(thumb,size=0x64) addr:0x02234f6c

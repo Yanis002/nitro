@@ -5,12 +5,12 @@ _ZN12cZoneManager17SetupDefaultZonesEv kind:function(thumb,size=0x4f4) addr:0x02
 _ZN12cZoneManager17DefinePopProfilesEv kind:function(thumb,size=0x3ae) addr:0x022225a0
 _ZN17PopulationProfileaSERKS_ kind:function(thumb,size=0x1a) addr:0x02222950
 _ZN11CScriptInitC1Ev kind:function(thumb,size=0x14) addr:0x0222296c
-_ZN6ScriptC2Ev kind:function(thumb,size=0x14) addr:0x02222980
-_ZN6ScriptD2Ev kind:function(thumb,size=0xc) addr:0x02222994
+_ZN6ScriptC2Ev kind:function(thumb,size=0x14) addr:0x02222980 local
+_ZN6ScriptD2Ev kind:function(thumb,size=0xc) addr:0x02222994 local
 _ZN11CScriptInitD1Ev kind:function(thumb,size=0xc) addr:0x022229a0
 _ZN11CScriptInit4InitEv kind:function(thumb,size=0x4) addr:0x022229ac
-_ZN6ScriptD1Ev kind:function(thumb,size=0xc) addr:0x022229b0
-_ZN6ScriptD0Ev kind:function(thumb,size=0x12) addr:0x022229bc
+_ZN6ScriptD1Ev kind:function(thumb,size=0xc) addr:0x022229b0 local
+_ZN6ScriptD0Ev kind:function(thumb,size=0x12) addr:0x022229bc local
 _ZN11CScriptInitD0Ev kind:function(thumb,size=0x12) addr:0x022229d0
 __sinit_ov008_022229e4 kind:function(thumb,size=0x20) addr:0x022229e4
 .p__sinit_ov008_022229e4 kind:data(word) addr:0x02222a04

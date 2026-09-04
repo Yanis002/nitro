@@ -6,7 +6,6 @@ static void MI_func_0001(u8 param1);
 static void MI_func_0004(s32 dmaChannel);
 static void MI_func_0005(s32 dmaChannel, u32 param2);
 static void MI_func_0006(s32 dmaChannel, void *param2, s32 param3, s32 param4);
-static s32 MI_func_0010(s32 dmaChannel, void *param2, u32 param3, u32 param4, u32 param5);
 
 void MI_func_0007(void *inSrc, void *inDst, u32 size);
 void MI_func_0013(s32 dmaChannel, u32 param2, void *param3, BOOL param4, BOOL param5);

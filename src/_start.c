@@ -1,7 +1,6 @@
 #include "nitro/hw.h"
 #include "nitro/mi.h"
-#include "nitro/os/os_cache.h"
-#include "nitro/os/os_irq.h"
+#include "nitro/os.h"
 #include "nitro/reg.h"
 
 typedef struct INIT_AutoloadInfo {
@@ -33,7 +32,7 @@ static void init_cp15(void);
 static void NitroStartUp(void);
 static void do_autoload(void);
 static void INITi_CpuClear32(u32 value, s32 addr, u32 size);
-static void _start_AutoloadDoneCallback();
+void _start_AutoloadDoneCallback();
 
 THUMB_DISABLE
 #ifdef NITRO_NO_ASM
@@ -256,7 +255,7 @@ _end:
 THUMB_ENABLE
 
 THUMB_DISABLE
-static void _start_AutoloadDoneCallback(void) {}
+void _start_AutoloadDoneCallback(void) {}
 THUMB_ENABLE
 
 THUMB_DISABLE

@@ -142,6 +142,8 @@ u32 OS_GetProcMode(void);
 
 void OS_Halt(void);
 
+void OSi_ReferSymbol(void);
+
 void OS_func_0013(s32, void (*)(u32), u32);
 
 void OS_func_0094(OSAlarm *timer, u64 time, void *callback, void *arg);

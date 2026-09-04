@@ -21,6 +21,10 @@ typedef struct MIC_UnkStruct2 {
 void MIC_Init(void);
 s32 MIC_StartAutoSamplingAsync(MIC_UnkStruct2 *arg0, void (*arg1)(s32, s32), s32 arg2);
 s32 MIC_StartAutoSampling(MIC_UnkStruct2 *arg0);
+s32 MIC_StopAutoSamplingAsync(void (*arg0)(s32, s32), s32 arg1);
+s32 MIC_StopAutoSampling(void);
+s32 MIC_GetLastSamplingAddress(void);
+
 void MicWaitBusy(void);
 
 #ifdef __cplusplus

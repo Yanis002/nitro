@@ -1,4 +1,4 @@
-_ZN11DynamicPropC1Ev kind:function(thumb,size=0x14) addr:0x02220be0
+_ZN11DynamicPropC1Ev kind:function(thumb,size=0x14) addr:0x02220be0 local
 _ZN11multiplayer9cAILackieC1Ev kind:function(thumb,size=0x2c) addr:0x02220bf4
 _ZN11multiplayer9cAILackieD1Ev kind:function(thumb,size=0x1c) addr:0x02220c20
 _ZN11multiplayer9cAILackieD0Ev kind:function(thumb,size=0x22) addr:0x02220c3c
