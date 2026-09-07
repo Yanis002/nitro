@@ -1,0 +1,45 @@
+_ZN11SimpleMoverC2Ev kind:function(thumb,size=0x14) addr:0x02220be0 local
+_ZN8PhysicalC2Ev kind:function(thumb,size=0x14) addr:0x02220bf4 local
+fix_add_traits_20ul_12ul_20ul_12ul__type_cFixed_20ul_12ul__operator_add_20ul_12ul kind:function(thumb,size=0x1e) addr:0x02220c08 local
+_ZN11DynamicPropC1Ev kind:function(thumb,size=0x14) addr:0x02220c28 local
+_ZN13cScratchCards8FinishedEv kind:function(thumb,size=0x84) addr:0x02220c3c
+_ZN13cScratchCards7WalkOutEv kind:function(thumb,size=0x58) addr:0x02220cc0
+_ZN13cScratchCards9HandleBuyEv kind:function(thumb,size=0x1b4) addr:0x02220d18
+_ZN13cScratchCards16SetupForMiniGameEv kind:function(thumb,size=0x40) addr:0x02220ecc
+_ZN13cScratchCards6WalkInEv kind:function(thumb,size=0x98) addr:0x02220f0c
+_ZN13cScratchCards5StartEv kind:function(thumb,size=0x74) addr:0x02220fa4
+_ZN12cDoorHandlerD1Ev kind:function(thumb,size=0x24) addr:0x02221018 local
+_ZN12cDoorHandlerD0Ev kind:function(thumb,size=0x2a) addr:0x0222103c local
+_ZN13CScratchCardsC1Ev kind:function(thumb,size=0x1c) addr:0x02221068
+_ZN6ScriptC2Ev kind:function(thumb,size=0x14) addr:0x02221084 local
+_ZN6ScriptD2Ev kind:function(thumb,size=0xc) addr:0x02221098 local
+_ZN13cScratchCardsC1Ev kind:function(thumb,size=0x24) addr:0x022210a4
+_ZN12cDoorHandlerC1Ev kind:function(thumb,size=0x40) addr:0x022210c8 local
+_ZN9cDoorInfoC1Ev kind:function(thumb,size=0x36) addr:0x02221108 local
+_ZN13cScratchCardsD1Ev kind:function(thumb,size=0x14) addr:0x02221140
+_ZN13CScratchCardsD1Ev kind:function(thumb,size=0x14) addr:0x02221154
+_ZN13CScratchCards4InitEv kind:function(thumb,size=0xc) addr:0x02221168
+_ZN13cScratchCards4InitEv kind:function(thumb,size=0x20) addr:0x02221174
+_ZN6ScriptD1Ev kind:function(thumb,size=0xc) addr:0x02221194 local
+_ZN6ScriptD0Ev kind:function(thumb,size=0x12) addr:0x022211a0 local
+_ZN13cScratchCardsD0Ev kind:function(thumb,size=0x1a) addr:0x022211b4
+_ZN13CScratchCardsD0Ev kind:function(thumb,size=0x1a) addr:0x022211d0
+data_ov026_022211ec kind:data(any) addr:0x022211ec
+data_ov026_02221284 kind:data(any) addr:0x02221284
+data_ov026_0222144c kind:data(any) addr:0x0222144c
+data_ov026_022214ec kind:data(any) addr:0x022214ec ambiguous
+__sinit_ov026_02221614 kind:function(thumb,size=0x20) addr:0x02221614
+.p__sinit_ov026_02221614 kind:data(word) addr:0x02221634
+data_ov026_02221690 kind:data(any) addr:0x02221690
+data_ov026_02221698 kind:data(any) addr:0x02221698
+data_ov026_022216a0 kind:data(any) addr:0x022216a0
+data_ov026_022216a8 kind:data(any) addr:0x022216a8
+data_ov026_022216b0 kind:data(any) addr:0x022216b0
+data_ov026_022216b8 kind:data(any) addr:0x022216b8
+data_ov026_022216c8 kind:data(any) addr:0x022216c8
+data_ov026_022216e0 kind:data(any) addr:0x022216e0
+data_ov026_022216fc kind:data(any) addr:0x022216fc
+data_ov026_02221718 kind:data(any) addr:0x02221718
+data_ov026_02221750 kind:data(any) addr:0x02221750
+data_ov026_02221780 kind:bss addr:0x02221780
+data_ov026_0222178c kind:bss addr:0x0222178c

@@ -1,0 +1,270 @@
+_ZN11SimpleMoverC2Ev kind:function(thumb,size=0x14) addr:0x02220be0 local
+_ZN8PhysicalC2Ev kind:function(thumb,size=0x14) addr:0x02220bf4 local
+_ZN11DynamicPropC1Ev kind:function(thumb,size=0x14) addr:0x02220c08 local
+_ZN15cRandomFlatline5ClearEv kind:function(thumb,size=0x18) addr:0x02220c1c
+_ZN15cRandomFlatline14RandomFlatlineEv kind:function(thumb,size=0x78) addr:0x02220c34
+_ZN15cRandomFlatline5SetupEv kind:function(thumb,size=0x9c) addr:0x02220cac
+_ZN22cPickUpPatientHelpText21PickUpPatientHelpTextEv kind:function(thumb,size=0x28) addr:0x02220d48
+_ZN22cPickUpPatientHelpText26SetupPickUpPatientHelpTextEv kind:function(thumb,size=0x10) addr:0x02220d70
+_ZN17cFlatlineHelpText11ClearPrintsEv kind:function(thumb,size=0x24) addr:0x02220d80
+_ZN17cFlatlineHelpText16FlatlineHelpTextEv kind:function(thumb,size=0x68) addr:0x02220da4
+_ZN17cFlatlineHelpText21SetupFlatlineHelpTextEv kind:function(thumb,size=0x10) addr:0x02220e0c
+_ZN17cFlatlineHelpText5SetupEv kind:function(thumb,size=0x30) addr:0x02220e1c
+_ZN12cHealthMeter9OutOfTimeEv kind:function(thumb,size=0xc) addr:0x02220e4c
+_ZN12cHealthMeter20DecrementHealthMeterEv kind:function(thumb,size=0x68) addr:0x02220e58
+_ZN12cHealthMeter14StartCountdownEv kind:function(thumb,size=0x10) addr:0x02220ec0
+_ZN8cPatient5ClearEv kind:function(thumb,size=0x2) addr:0x02220ed0
+_ZN8cPatient14PatientCleanUpEv kind:function(thumb,size=0x3c) addr:0x02220ed4
+_ZN8cPatient20StillAtHospitalCheckEv kind:function(thumb,size=0x114) addr:0x02220f10
+_ZN8cPatient17SetupPatientSavedEv kind:function(thumb,size=0x10) addr:0x02221024
+_ZN8cPatient18PatientSavedBackupEv kind:function(thumb,size=0x2e) addr:0x02221034
+_ZN8cPatient14WalkToHospitalEv kind:function(thumb,size=0xd4) addr:0x02221064
+_ZN12cDoorHandler5StartE3Ped4tv3dI6cFixedILm20ELm12EEEi11eDoorAction9cCallBackb kind:function(thumb,size=0x44) addr:0x02221138 local
+_ZN8cPatient19SetupWalkToHospitalEv kind:function(thumb,size=0x10) addr:0x0222117c
+_ZN8cPatient19PatientResuscitatedEv kind:function(thumb,size=0x20) addr:0x0222118c
+_ZN8cPatient10AtHospitalEv kind:function(thumb,size=0xdc) addr:0x022211ac
+_ZN8cPatient15SetupAtHospitalEv kind:function(thumb,size=0x10) addr:0x02221288
+_ZN8cPatient17LeftPatientBehindEv kind:function(thumb,size=0x54) addr:0x02221298
+_ZN8cPatient18PatientInAmbulanceEv kind:function(thumb,size=0x98) addr:0x022212ec
+_ZN8cPatient23SetupPatientInAmbulanceEv kind:function(thumb,size=0x10) addr:0x02221384
+_ZN8cPatient22SetupLeftPatientBehindEv kind:function(thumb,size=0x10) addr:0x02221394
+_ZN8cPatient19AmbulanceHasArrivedEv kind:function(thumb,size=0xd8) addr:0x022213a4
+_ZN8cPatient11MaleCommentEv kind:function(thumb,size=0x11c) addr:0x0222147c
+_ZN8cPatient13FemaleCommentEv kind:function(thumb,size=0x11c) addr:0x02221598
+_ZN8cPatient24SetupAmbulanceHasArrivedEv kind:function(thumb,size=0x10) addr:0x022216b4
+_ZN8cPatient4WaveEv kind:function(thumb,size=0x78) addr:0x022216c4
+_ZN8cPatient9SetupWaveEv kind:function(thumb,size=0x10) addr:0x0222173c
+_ZN8cPatient15PatientOnscreenEv kind:function(thumb,size=0x54) addr:0x0222174c
+_ZN8cPatient20SetupPatientOnscreenEv kind:function(thumb,size=0x10) addr:0x022217a0
+_ZN8cPatient16WaitForAmbulanceEv kind:function(thumb,size=0x54) addr:0x022217b0
+_ZN8cPatient12GameCleansUpEv kind:function(thumb,size=0x26) addr:0x02221804
+_ZN8cPatient11PatientDeadEv kind:function(thumb,size=0x78) addr:0x0222182c
+_ZN8cPatient16SetupPatientDeadEv kind:function(thumb,size=0x10) addr:0x022218a4
+_ZN8cPatient17SetupGameCleansUpEv kind:function(thumb,size=0x10) addr:0x022218b4
+_ZN10cParamedic12DeadOrBustedEv kind:function(thumb,size=0xb4) addr:0x022218c4
+_ZN12cHealthMeter7CleanUpEv kind:function(thumb,size=0x28) addr:0x02221978
+_ZN8cPatient7IsValidEv kind:function(thumb,size=0xc) addr:0x022219a0
+_ZN5ArrayI8cPatientLi4EEixEi kind:function(thumb,size=0xa) addr:0x022219ac
+_ZN8cPatient7IsAliveEv kind:function(thumb,size=0xc) addr:0x022219b8
+_ZN8cPatient11KillPatientEv kind:function(thumb,size=0x24) addr:0x022219c4
+_ZN8cPatient10ReleasePedEv kind:function(thumb,size=0x1a) addr:0x022219e8
+_ZN14cAccidentScene12CleanUpSceneEv kind:function(thumb,size=0x30) addr:0x02221a04
+_ZN5ArrayI14cAccidentSceneLi4EEixEi kind:function(thumb,size=0x8) addr:0x02221a34
+_ZN10cParamedic10OddjobOverEv kind:function(thumb,size=0xd8) addr:0x02221a3c
+_ZN10cParamedic15SetupOddjobOverEv kind:function(thumb,size=0x40) addr:0x02221b14
+_ZN10cParamedic5ResetEv kind:function(thumb,size=0x9c) addr:0x02221b54
+_ZN10cParamedic10MedalDelayEv kind:function(thumb,size=0x2c) addr:0x02221bf0
+_ZN10cParamedic13CheckProgressEv kind:function(thumb,size=0x180) addr:0x02221c1c
+_ZN10cParamedic11PatientDeadEv kind:function(thumb,size=0xb0) addr:0x02221d9c
+_ZN10cParamedic26AreAllPatientsFinishedWithEv kind:function(thumb,size=0x20) addr:0x02221e4c
+_ZN10cParamedic11SaveAverageEv kind:function(thumb,size=0x30) addr:0x02221e6c
+_ZN10cParamedic18PatientInAmbulanceEv kind:function(thumb,size=0xec) addr:0x02221e9c
+_ZN8cPatient9ClearBlipEv kind:function(thumb,size=0x14) addr:0x02221f88
+_ZN8cPatient24SetInvisibleOutOfVehicleEv kind:function(thumb,size=0x72) addr:0x02221f9c
+_ZN8cPatient26ClearCallbacksOutOfVehicleEv kind:function(thumb,size=0x48) addr:0x02222010
+_ZN10cParamedic17PatientAtHospitalEv kind:function(thumb,size=0x3c) addr:0x02222058
+_ZN10cParamedic12PatientSavedEv kind:function(thumb,size=0x7c) addr:0x02222094
+_ZN10cParamedic9OutOfTimeEv kind:function(thumb,size=0x6a) addr:0x02222110
+_ZN10cParamedic18InitialisePatientsEv kind:function(thumb,size=0x154) addr:0x0222217c
+_ZN8cPatient7IsSavedEv kind:function(thumb,size=0x6) addr:0x022222d0
+_ZN8cPatient10SetVisibleEv kind:function(thumb,size=0x4c) addr:0x022222d8
+_ZN8cPatient7AddBlipEv kind:function(thumb,size=0x78) addr:0x02222324
+_ZN8cPatient9TurnPOIOnEv kind:function(thumb,size=0x40) addr:0x0222239c
+_ZN8cPatient6AddPOIEv kind:function(thumb,size=0x50) addr:0x022223dc
+_ZN8cPatient20SetupPatientCallbackERK9cCallBackS2_S2_S2_ kind:function(thumb,size=0x2e) addr:0x0222242c
+_ZN8cPatient20CallWaitForAmbulanceEv kind:function(thumb,size=0x10) addr:0x0222245c
+_ZN12cHealthMeter13SetupCallBackERK9cCallBack kind:function(thumb,size=0xc) addr:0x0222246c
+_ZN10cParamedic27InitialisePatientsFirstTimeEv kind:function(thumb,size=0x3c) addr:0x02222478
+_ZN12cHealthMeter4InitEi kind:function(thumb,size=0x4c) addr:0x022224b4
+_ZN10cParamedic14CreatePatientsEv kind:function(thumb,size=0x49c) addr:0x02222500
+_ZN5ArrayI11VehicleTypeLi5EEC1Ev kind:function(thumb,size=0x24) addr:0x0222299c local
+_ZNK10cResHandle7IsValidEv kind:function(thumb,size=0x14) addr:0x022229c0 local
+_ZN5ArrayI11VehicleTypeLi5EED1Ev kind:function(thumb,size=0x18) addr:0x022229d4 local
+_ZN5ArrayI11VehicleTypeLi5EEixEi kind:function(thumb,size=0x6) addr:0x022229ec local
+_ZN8cPatient13CreatePatientEi4tv3dI6cFixedILm20ELm12EEEiS2_S2_iS2_ kind:function(thumb,size=0x100) addr:0x022229f4
+_ZN5ArrayI4tv3dI6cFixedILm20ELm12EEELi4EEixEi kind:function(thumb,size=0x8) addr:0x02222af4
+_ZN5ArrayIiLi4EEixEi kind:function(thumb,size=0x6) addr:0x02222afc local
+_ZN11VehicleTypeC1ERKS_ kind:function(thumb,size=0x14) addr:0x02222b04 local
+_ZN10cResHandleC1ERKS_ kind:function(thumb,size=0x20) addr:0x02222b18 local
+_ZN8cPatient6GetPedEv kind:function(thumb,size=0xc) addr:0x02222b38
+_ZN14cAccidentScene13DefineVehicleE11VehicleType4tv3dI6cFixedILm20ELm12EEEib kind:function(thumb,size=0x24) addr:0x02222b44
+_ZN14cAccidentScene13CreateVehicleEv kind:function(thumb,size=0x178) addr:0x02222b68
+_ZN14cAccidentScene10GetVehicleEv kind:function(thumb,size=0xc) addr:0x02222ce0
+_ZN14cAccidentScene9DefinePedE8ePedType4tv3dI6cFixedILm20ELm12EEEi kind:function(thumb,size=0x14) addr:0x02222cec
+_ZN14cAccidentScene9CreatePedEv kind:function(thumb,size=0x58) addr:0x02222d00
+_ZN10cParamedic10StartStatsEv kind:function(thumb,size=0x24) addr:0x02222d58
+_ZN10cParamedic19SetupCreatePatientsEv kind:function(thumb,size=0x50) addr:0x02222d7c
+_ZN22cPickUpPatientHelpText5SetupEv kind:function(thumb,size=0x30) addr:0x02222dcc
+_ZN10cParamedic19CreatePatientsTimerEv kind:function(thumb,size=0x2c) addr:0x02222dfc
+_ZN10cParamedic7InRangeEv kind:function(thumb,size=0x10) addr:0x02222e28
+_ZN10cParamedic21HospitalBlipFirstTimeEv kind:function(thumb,size=0xd4) addr:0x02222e38
+_ZN10cParamedic26SetupHospitalBlipFirstTimeEv kind:function(thumb,size=0x10) addr:0x02222f0c
+_ZN10cParamedic24IsClosestHospitalInRangeEv kind:function(thumb,size=0x168) addr:0x02222f1c
+_ZN10cParamedic19FindClosestHospitalEv kind:function(thumb,size=0x184) addr:0x02223084
+_ZN5ArrayIiLi4EEC1Ev kind:function(thumb,size=0x2) addr:0x02223208 local
+_ZN5ArrayIiLi22EEixEi kind:function(thumb,size=0x6) addr:0x0222320c
+_ZN10cParamedic17SetupDeadOrBustedEv kind:function(thumb,size=0x10) addr:0x02223214
+_ZN10cParamedic15OddjobOverTimerEv kind:function(thumb,size=0x38) addr:0x02223224
+_ZN10cParamedic16AmbulanceCheckerEv kind:function(thumb,size=0x18) addr:0x0222325c
+_ZN10cParamedic15LoadedResourcesEv kind:function(thumb,size=0xc8) addr:0x02223274
+_ZN12cDoorHandlerD1Ev kind:function(thumb,size=0x24) addr:0x0222333c local
+_ZN12cDoorHandlerD0Ev kind:function(thumb,size=0x2a) addr:0x02223360 local
+_ZN10CParamedicC1Ev kind:function(thumb,size=0x1c) addr:0x0222338c
+_ZN6ScriptC2Ev kind:function(thumb,size=0x14) addr:0x022233a8 local
+_ZN6ScriptD2Ev kind:function(thumb,size=0xc) addr:0x022233bc local
+_ZN10cParamedicC1Ev kind:function(thumb,size=0xc4) addr:0x022233c8 local
+_ZN15cRandomFlatlineC1Ev kind:function(thumb,size=0x14) addr:0x0222348c
+_ZN15cRandomFlatlineD1Ev kind:function(thumb,size=0xc) addr:0x022234a0
+_ZN22cPickUpPatientHelpTextC1Ev kind:function(thumb,size=0x14) addr:0x022234ac
+_ZN22cPickUpPatientHelpTextD1Ev kind:function(thumb,size=0xc) addr:0x022234c0
+_ZN17cFlatlineHelpTextC1Ev kind:function(thumb,size=0x14) addr:0x022234cc
+_ZN17cFlatlineHelpTextD1Ev kind:function(thumb,size=0xc) addr:0x022234e0
+_ZN12cHealthMeterC1Ev kind:function(thumb,size=0x28) addr:0x022234ec
+_ZN12cHealthMeterD1Ev kind:function(thumb,size=0x1c) addr:0x02223514
+_ZN5ArrayI8cPatientLi4EEC1Ev kind:function(thumb,size=0x24) addr:0x02223530
+_ZN8cPatientC1Ev kind:function(thumb,size=0x94) addr:0x02223554
+_ZN12cDoorHandlerC1Ev kind:function(thumb,size=0x40) addr:0x022235e8 local
+_ZN9cDoorInfoC1Ev kind:function(thumb,size=0x36) addr:0x02223628 local
+_ZN8cPatientD1Ev kind:function(thumb,size=0x5c) addr:0x02223660
+_ZN5ArrayI8cPatientLi4EED1Ev kind:function(thumb,size=0x18) addr:0x022236bc
+_ZN5ArrayI4tv3dI6cFixedILm20ELm12EEELi4EEC1Ev kind:function(thumb,size=0x1a) addr:0x022236d4 local
+_ZN5ArrayIiLi22EEC1Ev kind:function(thumb,size=0x2) addr:0x022236f0
+_ZN5ArrayI14cAccidentSceneLi4EEC1Ev kind:function(thumb,size=0x24) addr:0x022236f4
+_ZN14cAccidentSceneC1Ev kind:function(thumb,size=0x3c) addr:0x02223718 local
+_ZN14cAccidentSceneD1Ev kind:function(thumb,size=0x24) addr:0x02223754 local
+_ZN5ArrayI14cAccidentSceneLi4EED1Ev kind:function(thumb,size=0x18) addr:0x02223778
+_ZN10cParamedicD1Ev kind:function(thumb,size=0x9c) addr:0x02223790 local
+_ZN10CParamedicD1Ev kind:function(thumb,size=0x14) addr:0x0222382c
+_ZN10CParamedic4InitEv kind:function(thumb,size=0xc) addr:0x02223840
+_ZN10cParamedic4InitEv kind:function(thumb,size=0xdc) addr:0x0222384c
+_ZN10cParamedic19SetDefaultCallbacksEv kind:function(thumb,size=0xb4) addr:0x02223928
+_ZN8cPatient19SetDefaultCallbacksEv kind:function(thumb,size=0x6c) addr:0x022239dc
+_ZN6ScriptD1Ev kind:function(thumb,size=0xc) addr:0x02223a48 local
+_ZN6ScriptD0Ev kind:function(thumb,size=0x12) addr:0x02223a54 local
+_ZN15cRandomFlatlineD0Ev kind:function(thumb,size=0x12) addr:0x02223a68
+_ZN22cPickUpPatientHelpTextD0Ev kind:function(thumb,size=0x12) addr:0x02223a7c
+_ZN17cFlatlineHelpTextD0Ev kind:function(thumb,size=0x12) addr:0x02223a90
+_ZN12cHealthMeterD0Ev kind:function(thumb,size=0x22) addr:0x02223aa4
+_ZN14cAccidentSceneD0Ev kind:function(thumb,size=0x2a) addr:0x02223ac8 local
+_ZN8cPatientD0Ev kind:function(thumb,size=0x62) addr:0x02223af4
+_ZN10cParamedicD0Ev kind:function(thumb,size=0xa0) addr:0x02223b58
+_ZN10CParamedicD0Ev kind:function(thumb,size=0x1a) addr:0x02223bf8
+data_ov012_02223c14 kind:data(any) addr:0x02223c14
+data_ov012_02223c24 kind:data(any) addr:0x02223c24
+data_ov012_02223c54 kind:data(any) addr:0x02223c54
+data_ov012_02223c84 kind:data(any) addr:0x02223c84
+data_ov012_02223cf0 kind:data(any) addr:0x02223cf0
+data_ov012_02223d48 kind:data(any) addr:0x02223d48
+data_ov012_02223da0 kind:data(any) addr:0x02223da0
+data_ov012_02223df8 kind:data(any) addr:0x02223df8
+data_ov012_02223e50 kind:data(any) addr:0x02223e50
+data_ov012_02223f58 kind:data(any) addr:0x02223f58
+data_ov012_02223fac kind:data(any) addr:0x02223fac ambiguous
+data_ov012_02224060 kind:data(any) addr:0x02224060
+data_ov012_02224168 kind:data(any) addr:0x02224168
+__sinit_ov012_02224270 kind:function(thumb,size=0x20) addr:0x02224270
+.p__sinit_ov012_02224270 kind:data(word) addr:0x02224290
+data_ov012_022242a0 kind:data(any) addr:0x022242a0
+data_ov012_02224328 kind:data(any) addr:0x02224328
+data_ov012_02224388 kind:data(any) addr:0x02224388
+data_ov012_02224390 kind:data(any) addr:0x02224390
+data_ov012_022243b8 kind:data(any) addr:0x022243b8
+data_ov012_022243c0 kind:data(any) addr:0x022243c0
+data_ov012_022243c8 kind:data(any) addr:0x022243c8
+data_ov012_022243d0 kind:data(any) addr:0x022243d0
+data_ov012_022243d8 kind:data(any) addr:0x022243d8
+data_ov012_022243e0 kind:data(any) addr:0x022243e0
+data_ov012_022243e8 kind:data(any) addr:0x022243e8
+data_ov012_022243f0 kind:data(any) addr:0x022243f0
+data_ov012_022243f8 kind:data(any) addr:0x022243f8
+data_ov012_02224408 kind:data(any) addr:0x02224408
+data_ov012_02224410 kind:data(any) addr:0x02224410
+data_ov012_02224418 kind:data(any) addr:0x02224418
+data_ov012_02224420 kind:data(any) addr:0x02224420
+data_ov012_02224428 kind:data(any) addr:0x02224428
+data_ov012_02224430 kind:data(any) addr:0x02224430
+data_ov012_02224438 kind:data(any) addr:0x02224438
+data_ov012_02224440 kind:data(any) addr:0x02224440
+data_ov012_02224448 kind:data(any) addr:0x02224448
+data_ov012_02224450 kind:data(any) addr:0x02224450
+data_ov012_02224458 kind:data(any) addr:0x02224458
+data_ov012_02224460 kind:data(any) addr:0x02224460
+data_ov012_02224468 kind:data(any) addr:0x02224468
+data_ov012_02224470 kind:data(any) addr:0x02224470
+data_ov012_02224498 kind:data(any) addr:0x02224498
+data_ov012_022244a8 kind:data(any) addr:0x022244a8
+data_ov012_022244b0 kind:data(any) addr:0x022244b0
+data_ov012_022244b8 kind:data(any) addr:0x022244b8
+data_ov012_022244c0 kind:data(any) addr:0x022244c0
+data_ov012_022244c8 kind:data(any) addr:0x022244c8
+data_ov012_022244d0 kind:data(any) addr:0x022244d0
+data_ov012_022244d8 kind:data(any) addr:0x022244d8
+data_ov012_022244e0 kind:data(any) addr:0x022244e0
+data_ov012_022244e8 kind:data(any) addr:0x022244e8
+data_ov012_022244f0 kind:data(any) addr:0x022244f0
+data_ov012_022244f8 kind:data(any) addr:0x022244f8
+data_ov012_02224500 kind:data(any) addr:0x02224500
+data_ov012_02224510 kind:data(any) addr:0x02224510
+data_ov012_02224518 kind:data(any) addr:0x02224518
+data_ov012_02224520 kind:data(any) addr:0x02224520
+data_ov012_02224528 kind:data(any) addr:0x02224528
+data_ov012_02224530 kind:data(any) addr:0x02224530
+data_ov012_02224538 kind:data(any) addr:0x02224538
+data_ov012_02224540 kind:data(any) addr:0x02224540
+data_ov012_02224548 kind:data(any) addr:0x02224548
+data_ov012_02224550 kind:data(any) addr:0x02224550
+data_ov012_02224558 kind:data(any) addr:0x02224558
+data_ov012_02224560 kind:data(any) addr:0x02224560
+data_ov012_02224568 kind:data(any) addr:0x02224568
+data_ov012_02224570 kind:data(any) addr:0x02224570
+data_ov012_02224580 kind:data(any) addr:0x02224580
+data_ov012_02224588 kind:data(any) addr:0x02224588
+data_ov012_02224590 kind:data(any) addr:0x02224590
+data_ov012_02224598 kind:data(any) addr:0x02224598
+data_ov012_022245a0 kind:data(any) addr:0x022245a0
+data_ov012_022245a8 kind:data(any) addr:0x022245a8
+data_ov012_022245b0 kind:data(any) addr:0x022245b0
+data_ov012_022245b8 kind:data(any) addr:0x022245b8
+data_ov012_022245c0 kind:data(any) addr:0x022245c0
+data_ov012_022245c8 kind:data(any) addr:0x022245c8
+data_ov012_022245d0 kind:data(any) addr:0x022245d0
+data_ov012_022245d8 kind:data(any) addr:0x022245d8
+data_ov012_022245e0 kind:data(any) addr:0x022245e0
+data_ov012_022245e8 kind:data(any) addr:0x022245e8
+data_ov012_022245f0 kind:data(any) addr:0x022245f0
+data_ov012_022245f8 kind:data(any) addr:0x022245f8
+data_ov012_02224600 kind:data(any) addr:0x02224600
+data_ov012_02224608 kind:data(any) addr:0x02224608
+data_ov012_02224610 kind:data(any) addr:0x02224610
+data_ov012_02224618 kind:data(any) addr:0x02224618
+data_ov012_02224620 kind:data(any) addr:0x02224620
+data_ov012_02224628 kind:data(any) addr:0x02224628
+data_ov012_02224630 kind:data(any) addr:0x02224630
+data_ov012_02224638 kind:data(any) addr:0x02224638
+data_ov012_02224640 kind:data(any) addr:0x02224640
+data_ov012_02224648 kind:data(any) addr:0x02224648
+data_ov012_02224650 kind:data(any) addr:0x02224650
+data_ov012_02224658 kind:data(any) addr:0x02224658
+data_ov012_02224660 kind:data(any) addr:0x02224660
+data_ov012_02224668 kind:data(any) addr:0x02224668
+data_ov012_02224678 kind:data(any) addr:0x02224678
+data_ov012_02224698 kind:data(any) addr:0x02224698
+data_ov012_022246a0 kind:data(any) addr:0x022246a0
+data_ov012_022246c0 kind:data(any) addr:0x022246c0
+data_ov012_022246f8 kind:data(any) addr:0x022246f8
+data_ov012_0222470c kind:data(any) addr:0x0222470c
+data_ov012_02224728 kind:data(any) addr:0x02224728
+data_ov012_02224744 kind:data(any) addr:0x02224744
+data_ov012_0222474c kind:data(any) addr:0x0222474c ambiguous
+data_ov012_0222477c kind:data(any) addr:0x0222477c
+data_ov012_022247b4 kind:data(any) addr:0x022247b4
+data_ov012_022247ec kind:data(any) addr:0x022247ec
+data_ov012_02224824 kind:data(any) addr:0x02224824
+data_ov012_0222485c kind:data(any) addr:0x0222485c
+data_ov012_02224894 kind:data(any) addr:0x02224894
+data_ov012_022248cc kind:data(any) addr:0x022248cc
+data_ov012_02224900 kind:bss addr:0x02224900
+data_ov012_0222490c kind:bss addr:0x0222490c
+data_ov012_02224a40 kind:bss addr:0x02224a40 ambiguous
+data_ov012_02224d94 kind:bss addr:0x02224d94 ambiguous
+data_ov012_02224ef8 kind:bss addr:0x02224ef8 ambiguous

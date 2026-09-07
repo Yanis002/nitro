@@ -1,0 +1,69 @@
+_ZN3Gui14cKeyboardMultiC1EhPNS_4cWndEPN5Gfx2d14cSpriteDataSetEll kind:function(thumb,size=0x264) addr:0x02234cc0 local
+_ZN3Gui14cKeyboardMultiD1Ev kind:function(thumb,size=0x1c0) addr:0x02234f24 local
+_ZN3Gui14cKeyboardMultiD0Ev kind:function(thumb,size=0x1cc) addr:0x022350e4 local
+_ZN3Gui14cKeyboardMulti4InitEv kind:function(thumb,size=0x514) addr:0x022352b0 local
+_ZN3Gui14cKeyboardMulti7VisibleEb kind:function(thumb,size=0x1a0) addr:0x022357c4 local
+_ZN3Gui14cKeyboardMulti4ModeENS0_6KbModeE kind:function(thumb,size=0x240) addr:0x02235964 local
+_ZN3Gui14cKeyboardMulti18ClearMessageBufferEv kind:function(thumb,size=0x18) addr:0x02235ba4 local
+_ZN3Gui14cKeyboardMulti7ProcessEv kind:function(thumb,size=0x18c) addr:0x02235bbc local
+_ZN3Gui14cKeyboardMulti7AddKeysEv kind:function(thumb,size=0x198) addr:0x02235d48 local
+_ZN3Gui14cKeyboardMulti9LabelKeysEv kind:function(thumb,size=0x138) addr:0x02235ee0 local
+_ZN3Gui14cKeyboardMulti13CreateAllKeysEv kind:function(thumb,size=0xb0) addr:0x02236018 local
+_ZN3Gui14cKeyboardMulti14DestroyAllKeysEv kind:function(thumb,size=0x2a) addr:0x022360c8 local
+_ZN3Gui14cKeyboardMulti12LoadCodePageEv kind:function(thumb,size=0x198) addr:0x022360f4 local
+_ZNK3Gui14cKeyboardMulti12KeyRowNumberEm kind:function(thumb,size=0xa8) addr:0x0223628c local
+_ZNK3Gui14cKeyboardMulti12GetButtonPosEm kind:function(thumb,size=0x132) addr:0x02236334 local
+_ZN3Gui14cKeyboardMulti11Key_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0xd0) addr:0x02236468 local
+_ZN3Gui14cKeyboardMulti17Backspace_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x64) addr:0x02236538 local
+_ZN3Gui14cKeyboardMulti14Return_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x5c) addr:0x0223659c local
+_ZN3Gui14cKeyboardMulti16CapsLock_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x6c) addr:0x022365f8 local
+_ZN3Gui14cKeyboardMulti12Mode_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x4c) addr:0x02236664 local
+_ZN3Gui14cKeyboardMulti15Dakuten_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0xd8) addr:0x022366b0 local
+_ZN3Gui14cKeyboardMulti12Kana_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0xd0) addr:0x02236788 local
+_ZN3Gui13cMessengerAppC1Ev kind:function(thumb,size=0x44) addr:0x02236858
+_ZN3Gui13cMessengerAppD1Ev kind:function(thumb,size=0x20) addr:0x0223689c
+_ZN3Gui13cMessengerAppD0Ev kind:function(thumb,size=0x2c) addr:0x022368bc
+_ZN3Gui13cMessengerApp4InitEv kind:function(thumb,size=0x2e0) addr:0x022368e8
+_ZN3Gui13cMessengerApp6DeInitEv kind:function(thumb,size=0x9c) addr:0x02236bc8
+_ZN3Gui13cMessengerApp12ClearSpritesEv kind:function(thumb,size=0x18) addr:0x02236c64
+_ZN3Gui13cMessengerApp7ProcessEv kind:function(thumb,size=0x160) addr:0x02236c7c
+_ZN3Gui13cMessengerApp8ShutdownEv kind:function(thumb,size=0x8) addr:0x02236ddc
+_ZN3Gui13cMessageEntryC1Ev kind:function(thumb,size=0x18) addr:0x02236de4
+_ZN3Gui13cMessageEntryD1Ev kind:function(thumb,size=0xc) addr:0x02236dfc
+_ZN3Gui13cMessageEntry5ClearEv kind:function(thumb,size=0x60) addr:0x02236e08
+_ZN3Gui13cMessageEntry3AddEllPtPN5Gfx2d14cSpriteDataSetEt kind:function(thumb,size=0x1e4) addr:0x02236e68
+_ZN3Gui13cMessageEntry11SetPositionEll kind:function(thumb,size=0x8c) addr:0x0223704c
+_ZN3Gui13cMessageEntry5WidthEv kind:function(thumb,size=0x32) addr:0x022370d8
+_ZN3Gui13cMessengerApp11OnSwipeLeftERKNS_18cOnSwipeLeftParamsE kind:function(thumb,size=0x1a) addr:0x0223710c
+_ZN3Gui13cMessengerApp12Back_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x1c) addr:0x02237128
+_ZN3Gui13cMessengerApp16KB_ReturnPressedEPv kind:function(thumb,size=0x2c) addr:0x02237144
+data_ov128_02237188 kind:data(any) addr:0x02237188
+data_ov128_022371f4 kind:data(any) addr:0x022371f4
+data_ov128_02237274 kind:data(any) addr:0x02237274
+data_ov128_02237278 kind:data(any) addr:0x02237278
+data_ov128_02237290 kind:data(any) addr:0x02237290
+data_ov128_022372a8 kind:data(any) addr:0x022372a8
+data_ov128_022372bc kind:data(any) addr:0x022372bc
+data_ov128_022372d0 kind:data(any) addr:0x022372d0
+data_ov128_022372e4 kind:data(any) addr:0x022372e4
+data_ov128_022372f8 kind:data(any) addr:0x022372f8
+data_ov128_02237310 kind:data(any) addr:0x02237310
+data_ov128_02237328 kind:data(any) addr:0x02237328
+data_ov128_02237334 kind:data(any) addr:0x02237334
+data_ov128_02237344 kind:data(any) addr:0x02237344
+data_ov128_02237358 kind:data(any) addr:0x02237358
+data_ov128_0223736c kind:data(any) addr:0x0223736c
+data_ov128_02237380 kind:data(any) addr:0x02237380
+data_ov128_02237394 kind:data(any) addr:0x02237394
+data_ov128_022373a8 kind:data(any) addr:0x022373a8
+data_ov128_022373bc kind:data(any) addr:0x022373bc
+data_ov128_022373d0 kind:data(any) addr:0x022373d0
+data_ov128_022373e4 kind:data(any) addr:0x022373e4
+data_ov128_022373f0 kind:data(any) addr:0x022373f0
+data_ov128_02237400 kind:data(any) addr:0x02237400
+data_ov128_02237414 kind:data(any) addr:0x02237414
+data_ov128_02237428 kind:data(any) addr:0x02237428
+data_ov128_02237444 kind:data(any) addr:0x02237444
+data_ov128_02237460 kind:data(any) addr:0x02237460
+data_ov128_02237480 kind:data(any) addr:0x02237480
+data_ov128_022374a0 kind:data(any) addr:0x022374a0

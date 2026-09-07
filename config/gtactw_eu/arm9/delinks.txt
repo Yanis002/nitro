@@ -1,0 +1,56 @@
+    .text       start:0x02000000 end:0x02148ed8 kind:code align:32
+    .exception  start:0x02148ed8 end:0x02148f90 kind:rodata align:1
+    .exceptix   start:0x02148f90 end:0x0214926c kind:rodata align:4
+    .init       start:0x0214926c end:0x0214c798 kind:code align:4
+    .rodata     start:0x0214c798 end:0x0215877c kind:rodata align:4
+    .ctor       start:0x0215877c end:0x021587fc kind:rodata align:4
+    .data       start:0x02158800 end:0x021714a0 kind:data align:32
+    .bss        start:0x021714a0 end:0x021fd740 kind:bss align:32
+
+src/_start.c:
+    .text       start:0x02000800 end:0x02000b68
+
+game/02000c34.c:
+    .text       start:0x02000c34 end:0x0210060c
+    .data       start:0x02158800 end:0x0216a4c8
+    .init       start:0x0214be10 end:0x0214c170
+
+src/fx/fx_mtx.c:
+    .text       start:0x02132a74 end:0x02133060
+
+src/fx/fx_div.c:
+    .text       start:0x02133060 end:0x02133154
+
+src/fx/fx_trig.c:
+    .text       start:0x02133154 end:0x021333d0
+
+src/fx/fx_init.c:
+    .text       start:0x021333d0 end:0x021333d4
+
+src/pxi/pxi.c:
+    .text       start:0x02137c4c end:0x02137ea0
+
+src/fs/fs_command.c:
+    .text       start:0x02137ea0 end:0x021389a0
+
+src/fs/fs_archive.c:
+    .text       start:0x021389a0 end:0x02138d9c
+
+src/fs/fs_init.c:
+    .text       start:0x02138d9c end:0x02138db4
+
+src/fs/fs_file.c:
+    .text       start:0x02138db4 end:0x021390f4
+
+src/fs/fs_rom.c:
+    .text       start:0x021390f4 end:0x02139260
+
+src/fs/fs_overlay.c:
+    .text       start:0x02139260 end:0x02139644
+
+src/mic/mic.c:
+    .text       start:0x0213a814 end:0x0213ab4c
+    .bss        start:0x021fb4ec end:0x021fb50c
+
+src/mic/mic_wait.c:
+    .text       start:0x0213ab4c end:0x0213ab64

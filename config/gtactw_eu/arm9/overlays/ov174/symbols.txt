@@ -1,0 +1,33 @@
+_ZN3Gui15cGateLockDebrisC1Ev kind:function(thumb,size=0xa) addr:0x02234cc0 local
+_ZN3Gui15cGateLockDebrisD1Ev kind:function(thumb,size=0x20) addr:0x02234ccc local
+_ZN3Gui15cGateLockDebris4InitEPN5Gfx2d11cSpriteDataE kind:function(thumb,size=0x48) addr:0x02234cec local
+_ZN3Gui15cGateLockDebris4EmitEiimPN5Gfx2d11cSpriteDataE kind:function(thumb,size=0x8c) addr:0x02234d34 local
+_ZN3Gui15cGateLockDebris6UpdateEv kind:function(thumb,size=0x7c) addr:0x02234dc0 local
+_ZN3Gui9cGateLockC1Ell kind:function(thumb,size=0x70) addr:0x02234e3c local
+_ZN3Gui9cGateLock4InitEPN5Gfx2d14cSpriteDataSetENS0_9eLockTypeE kind:function(thumb,size=0x118) addr:0x02234eac local
+_ZN3Gui9cGateLockD1Ev kind:function(thumb,size=0x44) addr:0x02234fc4 local
+_ZN3Gui9cGateLock7ProcessEv kind:function(thumb,size=0x64) addr:0x02235008 local
+_ZN3Gui9cGateLock17ProcessLockMotionEv kind:function(thumb,size=0xf8) addr:0x0223506c local
+_ZN3Gui9cGateLock15ProcessDraggingEv kind:function(thumb,size=0x1f0) addr:0x02235164 local
+_ZN3Gui9cGateLock16SetupSmashedLockE4tv2dI6cFixedILm20ELm12EEE kind:function(thumb,size=0x68) addr:0x02235354 local
+_ZN3Gui9cGateLock19ProcessLockSmashingEv kind:function(thumb,size=0x7c) addr:0x022353bc local
+_ZN3Gui9cGateLock9IsSmashedEv kind:function(thumb,size=0xc) addr:0x02235438 local
+_ZN3Gui9cGateLock11HasFinishedEv kind:function(thumb,size=0xc) addr:0x02235444 local
+_ZN3Gui9cGateLock9PlaySwingEv kind:function(thumb,size=0x30) addr:0x02235450 local
+_ZN3Gui9cGateLock7PlayHitEv kind:function(thumb,size=0x24) addr:0x02235480 local
+_ZN3Gui9cGateLock9PlayBreakEv kind:function(thumb,size=0x24) addr:0x022354a4 local
+_ZN3Gui19cLotechGateSmashAppC1Ev kind:function(thumb,size=0x40) addr:0x022354c8
+_ZN3Gui19cLotechGateSmashAppD1Ev kind:function(thumb,size=0xc) addr:0x02235508
+_ZN3Gui19cLotechGateSmashAppD0Ev kind:function(thumb,size=0x18) addr:0x02235514
+_ZN3Gui19cLotechGateSmashApp4InitEv kind:function(thumb,size=0x284) addr:0x0223552c
+_ZN3Gui19cLotechGateSmashApp6DeInitEv kind:function(thumb,size=0xec) addr:0x022357b0
+_ZN3Gui19cLotechGateSmashApp7ProcessEv kind:function(thumb,size=0x10c) addr:0x0223589c
+_ZNK3Gui19cLotechGateSmashApp10IsFinishedEv kind:function(thumb,size=0x6) addr:0x022359a8
+_ZNK3Gui19cLotechGateSmashApp10FinishCodeEv kind:function(thumb,size=0x6) addr:0x022359b0
+_ZN3Gui19cLotechGateSmashApp11SetFinishedEv kind:function(thumb,size=0x30) addr:0x022359b8
+data_ov174_02235a08 kind:data(any) addr:0x02235a08
+data_ov174_02235a88 kind:data(any) addr:0x02235a88
+data_ov174_02235aa4 kind:data(any) addr:0x02235aa4
+data_ov174_02235abc kind:data(any) addr:0x02235abc
+data_ov174_02235ad4 kind:data(any) addr:0x02235ad4
+data_ov174_02235aec kind:data(any) addr:0x02235aec

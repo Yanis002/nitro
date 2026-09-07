@@ -76,7 +76,7 @@ static s32 FS_func_0095(FSArchive *archive, u32 arg1);
 static BOOL FS_func_0093(FSArchive *arg0);
 static void *FS_func_0092(FSArchive *archive, void *arg1);
 
-static const FSFileProcs sFileProcs = {
+const FSFileProcs FS_fileProcs = {
     [FS_FILE_PROC_READ]    = FSi_FileProcRead, //
     [FS_FILE_PROC_WRITE]   = FSi_FileProcWrite, //
     [FS_FILE_PROC_2]       = FS_func_0007, //
@@ -525,7 +525,7 @@ static FSResult FSi_ExecuteFileProc(FSFile *file, FSFileProc proc, BOOL wait) {
         if (proc >= FS_FILE_PROC_COUNT) {
             result = FS_RESULT_INVALID_COMMAND;
         } else {
-            result = sFileProcs[proc](file);
+            result = FS_fileProcs[proc](file);
         }
     }
     if (wait) {

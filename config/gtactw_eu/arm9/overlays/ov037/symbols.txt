@@ -1,0 +1,540 @@
+_ZNK6cFixedILm20ELm12EEngEv kind:function(thumb,size=0x10) addr:0x02220be0 local
+cFixed_20ul_12ul__cFixed_long kind:function(thumb,size=0x4) addr:0x02220bf0 local
+_ZN11SimpleMoverC2Ev kind:function(thumb,size=0x14) addr:0x02220bf4 local
+_ZNK6cFixedILm20ELm12EE5ValueEv kind:function(thumb,size=0x4) addr:0x02220c08 local
+bool_cFixed_20ul_12ul__operator_eq_20ul_12ul kind:function(thumb,size=0x32) addr:0x02220c0c local
+_ZN8PhysicalC2Ev kind:function(thumb,size=0x14) addr:0x02220c40 local
+_ZNK6cFixedILm20ELm12EEleEi kind:function(thumb,size=0x24) addr:0x02220c54 local
+fix_add_traits_20ul_12ul_20ul_12ul__type_cFixed_20ul_12ul__operator_add_20ul_12ul kind:function(thumb,size=0x1e) addr:0x02220c78 local
+_ZNK6cFixedILm20ELm12EEneEi kind:function(thumb,size=0x24) addr:0x02220c98 local
+_ZN11DynamicPropC1Ev kind:function(thumb,size=0x14) addr:0x02220cbc local
+_ZN6cRacer14PROGRESS_AtVisEv kind:function(thumb,size=0x78) addr:0x02220cd0 local
+_ZN5cRace8VisCountEv kind:function(thumb,size=0x4) addr:0x02220d48 local
+_ZN5cRace8LapCountEv kind:function(thumb,size=0x4) addr:0x02220d4c local
+_ZN6cRacer8PROGRESSEv kind:function(thumb,size=0x188) addr:0x02220d50 local
+_ZN5cRace3VisEi kind:function(thumb,size=0x10) addr:0x02220ed8 local
+_ZN6cRacer12CreateMarkerEb6Marker kind:function(thumb,size=0x20c) addr:0x02220ee8 local
+_ZN5cRace9FinishDirEv kind:function(thumb,size=0x4) addr:0x022210f4 local
+_ZN6cRacer11SetFinishedEv kind:function(thumb,size=0x44) addr:0x022210f8 local
+_ZN6cRacer14EnableProgressEbb kind:function(thumb,size=0x74) addr:0x0222113c local
+_ZN5cRace11GetRaceTimeEv kind:function(thumb,size=0x1c) addr:0x022211b0 local
+_ZN9TimerImpl13GetFrameCountEv kind:function(thumb,size=0x10) addr:0x022211cc local
+_ZNK13cFrameCounter10FrameCountEv kind:function(thumb,size=0x4) addr:0x022211dc local
+_ZN6cRacer4RaceEv kind:function(thumb,size=0x4) addr:0x022211e0 local
+_ZN6cRacer7IsAliveEv kind:function(thumb,size=0x22) addr:0x022211e4 local
+_ZN5cRace20AlignAllRacersToGridEb kind:function(thumb,size=0x68) addr:0x02221208 local
+_ZN6cRacer11AlignToGridEb kind:function(thumb,size=0x8c) addr:0x02221270 local
+_ZN5cRace7GridPosEi kind:function(thumb,size=0x10) addr:0x022212fc local
+_ZN5cRace7GridRotEi kind:function(thumb,size=0x8) addr:0x0222130c local
+_ZN6cRacer6GetPedEv kind:function(thumb,size=0xc) addr:0x02221314 local
+_ZN5cRace10SortRacersEb kind:function(thumb,size=0x9c) addr:0x02221320 local
+_ZN6cRacer15HasDroppedPlaceEb kind:function(thumb,size=0x110) addr:0x022213bc local
+_ZNK5cRace10RacerCountEv kind:function(thumb,size=0x6) addr:0x022214cc local
+_ZN5cRace5PlaceEi kind:function(thumb,size=0x12) addr:0x022214d4 local
+_ZNK6cRacer11HasFinishedEv kind:function(thumb,size=0x6) addr:0x022214e8 local
+_ZNK6cRacer10HasRetiredEv kind:function(thumb,size=0x6) addr:0x022214f0 local
+_ZNK6cRacer5PlaceEv kind:function(thumb,size=0x4) addr:0x022214f8 local
+_ZN6cRacer8SetPlaceEi kind:function(thumb,size=0x50) addr:0x022214fc local
+_ZN5cRace8AddRacerEP6cRacerb kind:function(thumb,size=0x42) addr:0x0222154c local
+_ZN5cRace16CallRacerDamagedEv kind:function(thumb,size=0x14) addr:0x02221590 local
+_ZN5cRace16CallRacerRetiredEv kind:function(thumb,size=0x20) addr:0x022215a4 local
+_ZN5cRace17CallRacerFinishedEv kind:function(thumb,size=0x28) addr:0x022215c4 local
+_ZN6cRacer10SetRetiredEb kind:function(thumb,size=0x54) addr:0x022215ec local
+_ZN9cNpcRacer13DRIVE_CleanUpEv kind:function(thumb,size=0x8) addr:0x02221640 local
+_ZN9cNpcRacer17DRIVE_ElasticSlowEv kind:function(thumb,size=0x130) addr:0x02221648 local
+_ZN6cRacer18GetNextRacerBehindEb kind:function(thumb,size=0x62) addr:0x02221778 local
+_ZN5cRace12PaceCarRacerEv kind:function(thumb,size=0x1c) addr:0x022217dc local
+_ZN5cRace13NpcSlowDistAIEv kind:function(thumb,size=0xc) addr:0x022217f8 local
+_ZN6cRacer9IsAheadOfERS_ kind:function(thumb,size=0x1c) addr:0x02221804 local
+_ZN5cRace17NpcSlowDistPlayerEv kind:function(thumb,size=0xc) addr:0x02221820 local
+_ZN9cNpcRacer17DRIVE_ElasticFastEv kind:function(thumb,size=0x18) addr:0x0222182c local
+_ZN9cNpcRacer10DRIVE_DeadEv kind:function(thumb,size=0xc) addr:0x02221844 local
+_ZN9cNpcRacer11DRIVE_HitCpEv kind:function(thumb,size=0x4c) addr:0x02221850 local
+_ZN5cRace7CpCountEv kind:function(thumb,size=0x4) addr:0x0222189c local
+_ZN9cNpcRacer11DRIVE_StuckEv kind:function(thumb,size=0x2c) addr:0x022218a0 local
+_ZN9cNpcRacer19DRIVE_ChangesPlacesEv kind:function(thumb,size=0x10) addr:0x022218cc local
+_ZN9cNpcRacer14DRIVE_FinishesEv kind:function(thumb,size=0x8) addr:0x022218dc local
+_ZN9cNpcRacer15DRIVE_SpreadOffEv kind:function(thumb,size=0x20) addr:0x022218e4 local
+_ZN9cNpcRacer14DRIVE_SpreadOnEv kind:function(thumb,size=0x20) addr:0x02221904 local
+_ZN9cNpcRacer5DRIVEEv kind:function(thumb,size=0x800) addr:0x02221924 local
+_ZN5cRace13NpcConstSpeedEv kind:function(thumb,size=0x4) addr:0x02222124 local
+_ZN5cRace13NpcConstStyleEv kind:function(thumb,size=0x4) addr:0x02222128 local
+_ZN18cScriptProcessBase10SetCleanUpERK9cCallBack kind:function(thumb,size=0xc) addr:0x0222212c local
+_Z15SetBlipFriendly6Marker kind:function(thumb,size=0x34) addr:0x02222138 local
+_ZN5cRace8NpcDebugEv kind:function(thumb,size=0x6) addr:0x0222216c local
+_ZN5cRace10NpcElasticEv kind:function(thumb,size=0x6) addr:0x02222174 local
+_ZN5cRace22NpcDistPlayerRandomModEv kind:function(thumb,size=0xc) addr:0x0222217c local
+_ZN5cRace17NpcFastDistPlayerEv kind:function(thumb,size=0xc) addr:0x02222188 local
+_ZN5cRace13NpcFastDistAIEv kind:function(thumb,size=0xc) addr:0x02222194 local
+_ZN5cRace22NpcFastDistAIRandomModEv kind:function(thumb,size=0xc) addr:0x022221a0 local
+_ZN5cRace12NpcFastSpeedEv kind:function(thumb,size=0x4) addr:0x022221ac local
+_ZN5cRace12NpcFastStyleEv kind:function(thumb,size=0x4) addr:0x022221b0 local
+_ZN5cRace12NpcSlowSpeedEv kind:function(thumb,size=0x4) addr:0x022221b4 local
+_ZN5cRace12NpcSlowStyleEv kind:function(thumb,size=0x4) addr:0x022221b8 local
+_ZN5cRace2CpEi kind:function(thumb,size=0x10) addr:0x022221bc local
+_ZN5cRace17NpcAvoidanceWidthEv kind:function(thumb,size=0x4) addr:0x022221cc local
+_ZN5cRace16NpcSpreadDistMinEv kind:function(thumb,size=0xc) addr:0x022221d0 local
+_ZN5cRace16NpcSpreadDistMaxEv kind:function(thumb,size=0xc) addr:0x022221dc local
+_ZN6cRacer17WhenChangesPlacesE9cCallBack kind:function(thumb,size=0xc) addr:0x022221e8 local
+_ZN6cRacer12WhenFinishesE9cCallBack kind:function(thumb,size=0xc) addr:0x022221f4 local
+_ZN6cRacer17GetNextRacerAheadEb kind:function(thumb,size=0x46) addr:0x02222200 local
+_ZN6cRacer9SetSpreadEb kind:function(thumb,size=0x6) addr:0x02222248 local
+_ZN5cRace17NpcSpreadSpeedModEv kind:function(thumb,size=0xc) addr:0x02222250 local
+_ZNK6cRacer6SpreadEv kind:function(thumb,size=0x6) addr:0x0222225c local
+_ZN5cRace11NpcMinSpeedEv kind:function(thumb,size=0x4) addr:0x02222264 local
+_ZN9cNpcRacer15GRID_RaceStartsEv kind:function(thumb,size=0x60) addr:0x02222268 local
+_ZmlRK4tv3dI6cFixedILm20ELm12EEES1_ kind:function(thumb,size=0x1a) addr:0x022222c8 local
+_ZN9cNpcRacer9GRID_DeadEv kind:function(thumb,size=0xc) addr:0x022222e4 local
+_ZN9cNpcRacer12GRID_DamagedEv kind:function(thumb,size=0x4c) addr:0x022222f0 local
+_ZN6cRacer10SetDamagedEv kind:function(thumb,size=0x1e) addr:0x0222233c local
+_ZN9cNpcRacer14GLOBAL_PedDeadEv kind:function(thumb,size=0xc) addr:0x0222235c local
+_ZN9cNpcRacer14GLOBAL_RetiresEv kind:function(thumb,size=0x36) addr:0x02222368 local
+_ZN9cNpcRacer11GrabVehicleEv kind:function(thumb,size=0xb0) addr:0x022223a0 local
+_ZN5cRace20NpcVehiclePropertiesEv kind:function(thumb,size=0x4) addr:0x02222450 local
+_ZN9cNpcRacer11AttemptWarpE6cFixedILm20ELm12EE kind:function(thumb,size=0x2c4) addr:0x02222454 local
+_ZN5cRace11PlayerRacerEv kind:function(thumb,size=0x1c) addr:0x02222718 local
+_ZNK6cRacer3VisEv kind:function(thumb,size=0x4) addr:0x02222734 local
+_ZN9cNpcRacer4GRIDEv kind:function(thumb,size=0xc0) addr:0x02222738 local
+_ZN5cRace14WhenRaceStartsE9cCallBack kind:function(thumb,size=0xc) addr:0x022227f8 local
+_ZN12cPlayerRacer13ONFOOT_UpdateEv kind:function(thumb,size=0x3c) addr:0x02222804 local
+_ZN6cRacer19DisplayPlaceCounterEbii kind:function(thumb,size=0xac) addr:0x02222840 local
+_ZN12cPlayerRacer20ONFOOT_EntersVehicleEv kind:function(thumb,size=0x1c) addr:0x022228ec local
+_ZN12cPlayerRacer6ONFOOTEv kind:function(thumb,size=0x60) addr:0x02222908 local
+_ZN12cPlayerRacer22INVEHICLE_ExitsVehicleEv kind:function(thumb,size=0x10) addr:0x02222968 local
+_ZN12cPlayerRacer23INVEHICLE_ChangesPlacesEv kind:function(thumb,size=0x10) addr:0x02222978 local
+_ZN12cPlayerRacer17INVEHICLE_CleanUpEv kind:function(thumb,size=0x30) addr:0x02222988 local
+_ZN12cPlayerRacer9INVEHICLEEv kind:function(thumb,size=0xc0) addr:0x022229b8 local
+_ZN12cPlayerRacer15GRID_RaceStartsEv kind:function(thumb,size=0x3c) addr:0x02222a78 local
+_ZN6cRacer17CreateTimeCounterER7CounterRi kind:function(thumb,size=0x28) addr:0x02222ab4 local
+_ZN6cRacer16CreateLapCounterER7Counter kind:function(thumb,size=0x2a) addr:0x02222adc local
+_ZN12cPlayerRacer8FINISHEDEv kind:function(thumb,size=0x18) addr:0x02222b08 local
+_ZN12cPlayerRacer15GLOBAL_FinishesEv kind:function(thumb,size=0x10) addr:0x02222b20 local
+_ZN12cPlayerRacer14GLOBAL_RetiresEv kind:function(thumb,size=0x8) addr:0x02222b30 local
+_ZN12cPlayerRacer11GrabVehicleEv kind:function(thumb,size=0x54) addr:0x02222b38 local
+_ZN5cRace15ValidateVehicleE7Vehicle kind:function(thumb,size=0x20) addr:0x02222b8c local
+_ZN12cPlayerRacer4GRIDEv kind:function(thumb,size=0x30) addr:0x02222bac local
+_ZN17cRaceGridCutscene8FINISHEDEv kind:function(thumb,size=0x2a) addr:0x02222bdc local
+_ZN17cRaceGridCutscene14COUNTDOWN_LoopEv kind:function(thumb,size=0x24) addr:0x02222c08 local
+_ZN17cRaceGridCutscene9COUNTDOWNEv kind:function(thumb,size=0x74) addr:0x02222c2c local
+_ZN17cRaceGridCutscene13Start_FadedInEv kind:function(thumb,size=0x10) addr:0x02222ca0 local
+_ZN17cRaceGridCutscene10Start_WaitEv kind:function(thumb,size=0x38) addr:0x02222cb0 local
+_ZN17cRaceGridCutscene14Start_FadedOutEv kind:function(thumb,size=0x54) addr:0x02222ce8 local
+_ZN12cAmbRaceQuit18DisplayQuitMessageEv kind:function(thumb,size=0x1c) addr:0x02222d3c local
+_ZN12cAmbRaceQuit11ConfirmQuitEv kind:function(thumb,size=0xa0) addr:0x02222d58 local
+_ZN12cAmbRaceQuit4QuitEv kind:function(thumb,size=0x28) addr:0x02222df8 local
+_ZN12cAmbRaceQuit5SetupEv kind:function(thumb,size=0x54) addr:0x02222e20 local
+_ZN12cAmbRaceQuit9ResetQuitEv kind:function(thumb,size=0x20) addr:0x02222e74 local
+_ZN13cRacerMonitor18MONITOR_ResetStuckEv kind:function(thumb,size=0x10) addr:0x02222e94 local
+_ZN13cRacerMonitor15MONITOR_IsStuckEv kind:function(thumb,size=0x28) addr:0x02222ea4 local
+_ZN13cRacerMonitor7MONITOREv kind:function(thumb,size=0x70) addr:0x02222ecc local
+_ZN13cRacerMonitor11GLOBAL_DeadEv kind:function(thumb,size=0x8) addr:0x02222f3c local
+_ZN13cRacerMonitor15GLOBAL_FinishesEv kind:function(thumb,size=0x64) addr:0x02222f44 local
+_ZN13cRacerMonitor12ClearMonitorEv kind:function(thumb,size=0x24) addr:0x02222fa8 local
+_ZN8cAmbRace14ABANDONED_QuitEv kind:function(thumb,size=0xe0) addr:0x02222fcc local
+_ZN12cAmbRaceQuit7SuspendEv kind:function(thumb,size=0x8) addr:0x022230ac local
+_ZN12cPlayerRacer7SuspendEb kind:function(thumb,size=0x24) addr:0x022230b4 local
+_ZN12cPlayerRacer14RemoveCountersEv kind:function(thumb,size=0x2c) addr:0x022230d8 local
+_ZN8cAmbRace10RETRY_DoneEv kind:function(thumb,size=0x34) addr:0x02223104 local
+_ZN8cAmbRace13RETRY_FadeOutEv kind:function(thumb,size=0x28) addr:0x02223138 local
+_ZN8cAmbRace9QUIT_DoneEv kind:function(thumb,size=0x68) addr:0x02223160 local
+_ZN8cAmbRace10QUIT_DelayEv kind:function(thumb,size=0x2c) addr:0x022231c8 local
+_ZN8cAmbRace12QUIT_FadeOutEv kind:function(thumb,size=0x28) addr:0x022231f4 local
+_ZN8cAmbRace5RETRYEv kind:function(thumb,size=0x4c) addr:0x0222321c local
+_ZN8cAmbRace4QUITEv kind:function(thumb,size=0x4c) addr:0x02223268 local
+_ZN8cAmbRace18RESULTS_QuitButtonEv kind:function(thumb,size=0x10) addr:0x022232b4 local
+_ZN8cAmbRace19RESULTS_RetryButtonEv kind:function(thumb,size=0x10) addr:0x022232c4 local
+_ZN8cAmbRace19RESULTS_FlashUpdateEv kind:function(thumb,size=0x4c) addr:0x022232d4 local
+_ZN8cAmbRace22RESULTS_DisplayResultsEv kind:function(thumb,size=0x78) addr:0x02223320 local
+_ZN12cPlayerRacer5RacerEv kind:function(thumb,size=0x4) addr:0x02223398 local
+_ZNK5cRace13FinishedCountEv kind:function(thumb,size=0x6) addr:0x0222339c local
+_ZN8cAmbRace14RESULTS_ChoiceEv kind:function(thumb,size=0x70) addr:0x022233a4 local
+_ZN8cAmbRace15RESULTS_CleanUpEv kind:function(thumb,size=0x20) addr:0x02223414 local
+_ZN8cAmbRace15INWATER_CleanUpEv kind:function(thumb,size=0x30) addr:0x02223434 local
+_ZN12cAmbRaceQuit6ResumeEv kind:function(thumb,size=0x2c) addr:0x02223464 local
+_ZN8cAmbRace12INWATER_DoneEv kind:function(thumb,size=0x10) addr:0x02223490 local
+_ZN8cAmbRace7RESULTSEv kind:function(thumb,size=0x37c) addr:0x022234a0 local
+_ZNK6cRacer10FinishTimeEv kind:function(thumb,size=0x4) addr:0x0222381c local
+_ZN5cRace17WhenRacerFinishesE9cCallBack kind:function(thumb,size=0xc) addr:0x02223820 local
+_ZN8cAmbRace14INWATER_UpdateEv kind:function(thumb,size=0x3c) addr:0x0222382c local
+_ZN8cAmbRace22INWATER_PlayerFinishesEv kind:function(thumb,size=0x10) addr:0x02223868 local
+_ZN8cAmbRace20INWATER_RacerRetiresEv kind:function(thumb,size=0xc) addr:0x02223878 local
+_ZN8cAmbRace16INWATER_FadedOutEv kind:function(thumb,size=0x104) addr:0x02223884 local
+_ZN8cAmbRace15FLIPCAR_CleanUpEv kind:function(thumb,size=0x30) addr:0x02223988 local
+_ZN8cAmbRace12FLIPCAR_DoneEv kind:function(thumb,size=0x10) addr:0x022239b8 local
+_ZN8cAmbRace14FLIPCAR_UpdateEv kind:function(thumb,size=0x3c) addr:0x022239c8 local
+_ZN8cAmbRace22FLIPCAR_PlayerFinishesEv kind:function(thumb,size=0x10) addr:0x02223a04 local
+_ZN8cAmbRace20FLIPCAR_RacerRetiresEv kind:function(thumb,size=0xc) addr:0x02223a14 local
+_ZN8cAmbRace16FLIPCAR_FadedOutEv kind:function(thumb,size=0xc0) addr:0x02223a20 local
+_ZN8cAmbRace15NOCAR_CountDownEv kind:function(thumb,size=0xa8) addr:0x02223ae0 local
+_ZN8cAmbRace12NOCAR_UpdateEv kind:function(thumb,size=0x3c) addr:0x02223b88 local
+_ZN8cAmbRace25NOCAR_PlayerEntersVehicleEv kind:function(thumb,size=0x10) addr:0x02223bc4 local
+_ZN8cAmbRace18NOCAR_RacerRetiresEv kind:function(thumb,size=0xc) addr:0x02223bd4 local
+_ZN8cAmbRace13NOCAR_CleanUpEv kind:function(thumb,size=0x10) addr:0x02223be0 local
+_ZN8cAmbRace5NOCAREv kind:function(thumb,size=0xe8) addr:0x02223bf0 local
+_ZN5cRace16WhenRacerRetiresE9cCallBack kind:function(thumb,size=0xc) addr:0x02223cd8 local
+_ZN8cAmbRace7INWATEREv kind:function(thumb,size=0x94) addr:0x02223ce4 local
+_ZN8cAmbRace7FLIPCAREv kind:function(thumb,size=0x94) addr:0x02223d78 local
+_ZN8cAmbRace13DORACE_UpdateEv kind:function(thumb,size=0xbc) addr:0x02223e0c local
+_ZN8cAmbRace14DORACE_ResprayEv kind:function(thumb,size=0xc) addr:0x02223ec8 local
+_ZN8cAmbRace25DORACE_PlayerExitsVehicleEv kind:function(thumb,size=0x10) addr:0x02223ed4 local
+_ZN8cAmbRace21DORACE_PlayerFinishesEv kind:function(thumb,size=0x10) addr:0x02223ee4 local
+_ZN8cAmbRace19DORACE_RacerRetiresEv kind:function(thumb,size=0xc) addr:0x02223ef4 local
+_ZN8cAmbRace6DORACEEv kind:function(thumb,size=0x14c) addr:0x02223f00 local
+_ZN8cAmbRace15GRIDSCENE_SetupEv kind:function(thumb,size=0x3c) addr:0x0222404c local
+_ZN8cAmbRace14GRIDSCENE_DoneEv kind:function(thumb,size=0x38) addr:0x02224088 local
+_ZN5cRace9StartRaceEv kind:function(thumb,size=0x6c) addr:0x022240c0 local
+_ZN8cAmbRace9GRIDSCENEEv kind:function(thumb,size=0x50) addr:0x0222412c local
+_ZN17cRaceGridCutscene5StartE9cCallBackS0_i kind:function(thumb,size=0x4c) addr:0x0222417c local
+_ZN8cAmbRace17GOTOSTART_CleanUpEv kind:function(thumb,size=0x38) addr:0x022241c8 local
+_ZN8cAmbRace28GOTOSTART_PlayerExitsVehicleEv kind:function(thumb,size=0x14) addr:0x02224200 local
+_ZN8cAmbRace29GOTOSTART_PlayerEntersVehicleEv kind:function(thumb,size=0x90) addr:0x02224214 local
+_ZN12cPlayerRacer16IsInValidVehicleEv kind:function(thumb,size=0x48) addr:0x022242a4 local
+_ZN8cAmbRace16GOTOSTART_AtGridEv kind:function(thumb,size=0x44) addr:0x022242ec local
+_ZN8cAmbRace22GOTOSTART_RacerDamagedEv kind:function(thumb,size=0xc) addr:0x02224330 local
+_ZN8cAmbRace9GOTOSTARTEv kind:function(thumb,size=0x1b0) addr:0x0222433c local
+_ZN12cPlayerRacer7GridPosEv kind:function(thumb,size=0x24) addr:0x022244ec local
+_ZN6cRacer6HandleEv kind:function(thumb,size=0x4) addr:0x02224510 local
+_ZN5cRace9RespotPosEv kind:function(thumb,size=0xc) addr:0x02224514 local
+_ZN5cRace9RespotDirEv kind:function(thumb,size=0x4) addr:0x02224520 local
+_ZN5cRace16WhenRacerDamagedE9cCallBack kind:function(thumb,size=0xc) addr:0x02224524 local
+_ZN8cAmbRace20LOAD_ResourcesLoadedEv kind:function(thumb,size=0x84) addr:0x02224530 local
+_ZN11VehicleTypeC1ERKS_ kind:function(thumb,size=0x14) addr:0x022245b4 local
+_ZN10cResHandleC1ERKS_ kind:function(thumb,size=0x20) addr:0x022245c8 local
+_ZNK10cResHandle7IsValidEv kind:function(thumb,size=0x14) addr:0x022245e8 local
+_ZN9cNpcRacer6CreateER5cRace11VehicleTypebb kind:function(thumb,size=0x34) addr:0x022245fc local
+_ZN9cNpcRacer6CreateER5cRace8ePedType11ePedSubType11VehicleTypebb kind:function(thumb,size=0xb8) addr:0x02224630 local
+_ZN9cNpcRacer4InitER5cRace3Ped11VehicleTypebb kind:function(thumb,size=0x98) addr:0x022246e8 local
+_ZN6cRacer6CreateER5cRace3Ped kind:function(thumb,size=0x64) addr:0x02224780 local
+_ZN13cRacerMonitor10SetMonitorER9cNpcRacerb kind:function(thumb,size=0x50) addr:0x022247e4 local
+_ZN9cNpcRacer10GetVehicleEv kind:function(thumb,size=0xc) addr:0x02224834 local
+_ZN9cNpcRacer14AllowStuckWarpEb kind:function(thumb,size=0x6) addr:0x02224840 local
+_ZN12cPlayerRacer4InitER5cRaceb9ePlayerId kind:function(thumb,size=0x6c) addr:0x02224848 local
+_ZN6cRacer14EnablePlaceSFXEb kind:function(thumb,size=0x6) addr:0x022248b4 local
+_ZN5cRace10SetPaceCarEi kind:function(thumb,size=0x6) addr:0x022248bc local
+_ZN12cAmbRaceQuit4InitEv kind:function(thumb,size=0x18) addr:0x022248c4 local
+_ZN8cAmbRace19LOAD_CheckAppClosedEv kind:function(thumb,size=0x70) addr:0x022248dc local
+_ZN8cAmbRace21CANCEL_CheckAppClosedEv kind:function(thumb,size=0x78) addr:0x0222494c local
+_ZN8cAmbRace4LOADEv kind:function(thumb,size=0x1c) addr:0x022249c4 local
+_ZN24cSinglePlayerRaceManager20GetSelectedRaceIndexEv kind:function(thumb,size=0x6) addr:0x022249e0 local
+_ZN8cAmbRace6CANCELEv kind:function(thumb,size=0x8) addr:0x022249e8 local
+_ZN8cAmbRace17MENU_SelectButtonEv kind:function(thumb,size=0x10) addr:0x022249f0 local
+_ZN8cAmbRace17MENU_CancelButtonEv kind:function(thumb,size=0x10) addr:0x02224a00 local
+_ZN8cAmbRace20MENU_TimeToLoadWorldEv kind:function(thumb,size=0x60) addr:0x02224a10 local
+_ZN8cAmbRace4MENUEv kind:function(thumb,size=0xd4) addr:0x02224a70 local
+_ZN8cAmbRace6WASTEDEv kind:function(thumb,size=0x3c) addr:0x02224b44 local
+_ZN8cAmbRace27GLOBAL_PlayerWastedOrBustedEv kind:function(thumb,size=0x10) addr:0x02224b80 local
+_ZN8cAmbRace18GLOBAL_AmbientQuitEv kind:function(thumb,size=0xc) addr:0x02224b90 local
+_ZN8cAmbRace10GetRaceNumE15eAmbientMission kind:function(thumb,size=0x6) addr:0x02224b9c local
+_ZN8cAmbRace24RespotPlayerOnFinishLineEv kind:function(thumb,size=0xd0) addr:0x02224ba4 local
+_ZN8cAmbRace15PrintRecordTimeEb kind:function(thumb,size=0xa0) addr:0x02224c74 local
+_Z22BreakdownFramesForTextiRiS_S_S_S_ kind:function(thumb,size=0x20) addr:0x02224d14 local
+_Z22BreakdownFramesForTextiRiS_S_S_S_S_ kind:function(thumb,size=0x70) addr:0x02224d34 local
+_Z13CentreTextPosm kind:function(thumb,size=0xe) addr:0x02224da4 local
+_ZN8cAmbRace15PrintFinishTimeEi kind:function(thumb,size=0xbc) addr:0x02224db4 local
+_ZN8cAmbRace6DeleteEv kind:function(thumb,size=0xc) addr:0x02224e70 local
+_ZN8cAmbRace7ReleaseEv kind:function(thumb,size=0xc) addr:0x02224e7c local
+_ZN8cAmbRace9ABANDONEDEv kind:function(thumb,size=0x2c) addr:0x02224e88 local
+_ZN8cAmbRace7AbandonENS_14eAbandonReasonE kind:function(thumb,size=0x18) addr:0x02224eb4 local
+_ZN8cAmbRace17SetupWorldGlobalsEb kind:function(thumb,size=0x50) addr:0x02224ecc local
+_ZN8cAmbRace7CleanUpEb kind:function(thumb,size=0x94) addr:0x02224f1c local
+_ZN9cNpcRacer7IsValidEv kind:function(thumb,size=0xc) addr:0x02224fb0 local
+_ZN6cRacer7IsValidEv kind:function(thumb,size=0xe) addr:0x02224fbc local
+_ZN9cNpcRacer6RemoveEb kind:function(thumb,size=0x11a) addr:0x02224fcc local
+_ZN6cRacer7ReleaseEv kind:function(thumb,size=0xd0) addr:0x022250e8 local
+_ZN12cPlayerRacer7ReleaseEv kind:function(thumb,size=0xb8) addr:0x022251b8 local
+_ZN5cRace7ReleaseEv kind:function(thumb,size=0x4c) addr:0x02225270 local
+_ZN8cAmbRace14Start_FadedOutEv kind:function(thumb,size=0x10) addr:0x022252bc local
+_ZN12cRaces_North13SetupStartPosEv kind:function(thumb,size=0xcc) addr:0x022252cc
+_ZN8cAmbRace12EnsureCarGenE4tv3dI6cFixedILm20ELm12EEEi11VehicleType kind:function(thumb,size=0x94) addr:0x02225398 local
+_ZN12cRaces_North10LaunchMenuEv kind:function(thumb,size=0x4c) addr:0x0222542c
+_ZN12cRaces_North10SetupTrackEv kind:function(thumb,size=0x37c) addr:0x02225478
+_ZN8cAmbRace4RaceEv kind:function(thumb,size=0xc) addr:0x022257f4 local
+_ZN5cRace15SetNpcFastSpeedEim kind:function(thumb,size=0x6) addr:0x02225800 local
+_ZN5cRace15SetNpcSlowSpeedEim kind:function(thumb,size=0x6) addr:0x02225808 local
+_ZN5cRace16SetNpcDistPlayerE6cFixedILm20ELm12EES1_ kind:function(thumb,size=0x18) addr:0x02225810 local
+_ZN5cRace12SetNpcDistAIE6cFixedILm20ELm12EES1_ kind:function(thumb,size=0x18) addr:0x02225828 local
+_ZN5cRace25SetNpcFastDistAIRandomModE6cFixedILm20ELm12EE kind:function(thumb,size=0xc) addr:0x02225840 local
+_ZN5cRace25SetNpcDistPlayerRandomModE6cFixedILm20ELm12EE kind:function(thumb,size=0xc) addr:0x0222584c local
+_ZN5cRace14SetNpcMinSpeedEi kind:function(thumb,size=0x4) addr:0x02225858 local
+_ZN5cRace20SetNpcSpreadSpeedModE6cFixedILm20ELm12EE kind:function(thumb,size=0xc) addr:0x0222585c local
+_ZN5cRace16SetNpcSpreadDistE6cFixedILm20ELm12EES1_ kind:function(thumb,size=0x18) addr:0x02225868 local
+_ZN5cRace20SetNpcAvoidanceWidthEi kind:function(thumb,size=0x4) addr:0x02225880 local
+_ZN5cRace23SetNpcVehiclePropertiesE10eVehicleId kind:function(thumb,size=0x4) addr:0x02225884 local
+_ZN8cAmbRace14SetVehicleTypeE10eVehicleId kind:function(thumb,size=0x10) addr:0x02225888 local
+_ZN5cRace13SetNpcElasticEb kind:function(thumb,size=0x6) addr:0x02225898 local
+_ZN5cRace11SetLapCountEi kind:function(thumb,size=0x4) addr:0x022258a0 local
+_ZN8cAmbRace5SetIdE15eAmbientMission kind:function(thumb,size=0xc) addr:0x022258a4 local
+_ZN5cRace7SetGridEP4tv3dI6cFixedILm20ELm12EEEPii kind:function(thumb,size=0x8) addr:0x022258b0 local
+_ZN5cRace5SetCpEP4tv3dI6cFixedILm20ELm12EEEi kind:function(thumb,size=0x6) addr:0x022258b8 local
+_ZN5cRace6SetVisEP4tv3dI6cFixedILm20ELm12EEEi kind:function(thumb,size=0x6) addr:0x022258c0 local
+_ZN5cRace12SetFinishDirEi kind:function(thumb,size=0x4) addr:0x022258c8 local
+_ZN5cRace12SetRespotPosE4tv3dI6cFixedILm20ELm12EEEi kind:function(thumb,size=0x10) addr:0x022258cc local
+_Z23GenerateRectangularAreaR4AreaRK4tv3dI6cFixedILm20ELm12EEES4_ kind:function(thumb,size=0x5a) addr:0x022258dc local
+cFixed_20ul_12ul_tv3d_cFixed_20ul_12ul__operator_div_eq_int kind:function(thumb,size=0x20) addr:0x02225938 local
+_ZN6cFixedILm20ELm12EEdVEi kind:function(thumb,size=0x10) addr:0x02225958 local
+_ZN8cAmbRace8GridAreaEv kind:function(thumb,size=0xc) addr:0x02225968 local
+_ZN8cAmbRace15LimitFinishSkidEb kind:function(thumb,size=0xc) addr:0x02225974
+_ZN8cAmbRace13SetCarDensityEi kind:function(thumb,size=0xc) addr:0x02225980 local
+_ZN12cRaces_North7CleanUpEv kind:function(thumb,size=0x10) addr:0x0222598c
+_ZN12cRaces_North20Init_ResourcesLoadedEv kind:function(thumb,size=0x84) addr:0x0222599c
+_ZN8cAmbRace5StartE9cCallBackS0_S0_S0_ kind:function(thumb,size=0x94) addr:0x02225a20 local
+_ZN8cAmbRace19SetDefaultCallbacksEv kind:function(thumb,size=0x8) addr:0x02225ab4 local
+_ZN8cAmbRace6GLOBALEv kind:function(thumb,size=0x84) addr:0x02225abc local
+_ZN12cAmbRaceQuit11SetCallbackE9cCallBack kind:function(thumb,size=0xc) addr:0x02225b40 local
+_ZN13cRacerMonitorD1Ev kind:function(thumb,size=0x1c) addr:0x02225b4c local
+_ZN13cRacerMonitor19SetDefaultCallbacksEv kind:function(thumb,size=0x8) addr:0x02225b68 local
+_ZN13cRacerMonitor6GLOBALEv kind:function(thumb,size=0x70) addr:0x02225b70 local
+_ZN9cNpcRacer5RacerEv kind:function(thumb,size=0x4) addr:0x02225be0 local
+_ZN12cAmbRaceQuitD1Ev kind:function(thumb,size=0x14) addr:0x02225be4 local
+_ZN17cRaceGridCutsceneD1Ev kind:function(thumb,size=0x1c) addr:0x02225bf8 local
+_ZN12cPlayerRacerD1Ev kind:function(thumb,size=0x4c) addr:0x02225c14 local
+_ZN6cRacerD1Ev kind:function(thumb,size=0x64) addr:0x02225c60 local
+_ZN12cPlayerRacer19SetDefaultCallbacksEv kind:function(thumb,size=0x8) addr:0x02225cc4 local
+_ZN12cPlayerRacer6GLOBALEv kind:function(thumb,size=0x4c) addr:0x02225ccc local
+_ZN6cRacer11WhenRetiresE9cCallBack kind:function(thumb,size=0xc) addr:0x02225d18 local
+_ZN9cNpcRacerD1Ev kind:function(thumb,size=0x34) addr:0x02225d24 local
+_ZN9cNpcRacer19SetDefaultCallbacksEv kind:function(thumb,size=0x8) addr:0x02225d58 local
+_ZN9cNpcRacer6GLOBALEv kind:function(thumb,size=0xa8) addr:0x02225d60 local
+_ZN6cRacerD0Ev kind:function(thumb,size=0x6a) addr:0x02225e08 local
+_ZN9cNpcRacerD0Ev kind:function(thumb,size=0x3a) addr:0x02225e74 local
+_ZN12cPlayerRacerD0Ev kind:function(thumb,size=0x52) addr:0x02225eb0 local
+_ZN17cRaceGridCutsceneD0Ev kind:function(thumb,size=0x22) addr:0x02225f04 local
+_ZN12cAmbRaceQuitD0Ev kind:function(thumb,size=0x1a) addr:0x02225f28 local
+_ZN13cRacerMonitorD0Ev kind:function(thumb,size=0x22) addr:0x02225f44 local
+_ZN8cAmbRaceD1Ev kind:function(thumb,size=0xb4) addr:0x02225f68 local
+_ZN5cRaceD1Ev kind:function(thumb,size=0x26) addr:0x0222601c local
+_ZN8cAmbRaceD0Ev kind:function(thumb,size=0xb8) addr:0x02226044 local
+_ZN12CRaces_NorthC1Ev kind:function(thumb,size=0x1c) addr:0x022260fc
+_ZN6ScriptC2Ev kind:function(thumb,size=0x14) addr:0x02226118 local
+_ZN6ScriptD2Ev kind:function(thumb,size=0xc) addr:0x0222612c local
+_ZN12cRaces_NorthC1Ev kind:function(thumb,size=0x34) addr:0x02226138
+_ZN8cAmbRaceC1Ev kind:function(thumb,size=0xe4) addr:0x0222616c local
+_ZN12cPlayerRacerC1Ev kind:function(thumb,size=0x64) addr:0x02226250 local
+_ZN6cRacerC1Ev kind:function(thumb,size=0x74) addr:0x022262b4 local
+_ZN9cNpcRacerC1Ev kind:function(thumb,size=0x44) addr:0x02226328 local
+_ZN13cRacerMonitorC1Ev kind:function(thumb,size=0x28) addr:0x0222636c local
+_ZN5cRaceC1Ev kind:function(thumb,size=0x124) addr:0x02226394 local
+_ZN17cRaceGridCutsceneC1Ev kind:function(thumb,size=0x2c) addr:0x022264b8 local
+_ZN12cAmbRaceQuitC1Ev kind:function(thumb,size=0x20) addr:0x022264e4 local
+_ZN12cRaces_NorthD1Ev kind:function(thumb,size=0x30) addr:0x02226504
+_ZN12CRaces_NorthD1Ev kind:function(thumb,size=0x14) addr:0x02226534
+_ZN12CRaces_North4InitEv kind:function(thumb,size=0xc) addr:0x02226548
+_ZN12cRaces_North4InitEv kind:function(thumb,size=0x54) addr:0x02226554
+_ZN6ScriptD1Ev kind:function(thumb,size=0xc) addr:0x022265a8 local
+_ZN6ScriptD0Ev kind:function(thumb,size=0x12) addr:0x022265b4 local
+_ZN12cRaces_NorthD0Ev kind:function(thumb,size=0x34) addr:0x022265c8
+_ZN12CRaces_NorthD0Ev kind:function(thumb,size=0x1a) addr:0x022265fc
+data_ov037_02226618 kind:data(any) addr:0x02226618
+data_ov037_02226624 kind:data(any) addr:0x02226624
+data_ov037_02226630 kind:data(any) addr:0x02226630
+data_ov037_0222663c kind:data(any) addr:0x0222663c
+data_ov037_02226648 kind:data(any) addr:0x02226648
+data_ov037_02226654 kind:data(any) addr:0x02226654
+data_ov037_02226660 kind:data(any) addr:0x02226660
+data_ov037_0222666c kind:data(any) addr:0x0222666c
+data_ov037_02226678 kind:data(any) addr:0x02226678
+data_ov037_02226684 kind:data(any) addr:0x02226684
+data_ov037_02226690 kind:data(any) addr:0x02226690
+data_ov037_022266a0 kind:data(any) addr:0x022266a0
+data_ov037_022266b0 kind:data(any) addr:0x022266b0
+data_ov037_022266e0 kind:data(any) addr:0x022266e0
+data_ov037_0222674c kind:data(any) addr:0x0222674c
+data_ov037_02226798 kind:data(any) addr:0x02226798
+data_ov037_02226854 kind:data(any) addr:0x02226854 ambiguous
+data_ov037_0222686c kind:data(any) addr:0x0222686c ambiguous
+data_ov037_0222687c kind:data(any) addr:0x0222687c
+data_ov037_022268d8 kind:data(any) addr:0x022268d8 ambiguous
+data_ov037_022268f4 kind:data(any) addr:0x022268f4 ambiguous
+data_ov037_02226990 kind:data(any) addr:0x02226990
+data_ov037_02226a34 kind:data(any) addr:0x02226a34 ambiguous
+data_ov037_02226aa4 kind:data(any) addr:0x02226aa4
+data_ov037_02226ad4 kind:data(any) addr:0x02226ad4 ambiguous
+data_ov037_02226b78 kind:data(any) addr:0x02226b78 ambiguous
+data_ov037_02226c30 kind:data(any) addr:0x02226c30
+data_ov037_02226e64 kind:data(any) addr:0x02226e64
+data_ov037_02226e84 kind:data(any) addr:0x02226e84 ambiguous
+data_ov037_02226ff8 kind:data(any) addr:0x02226ff8 ambiguous
+__sinit_ov037_02227140 kind:function(thumb,size=0x20) addr:0x02227140
+.p__sinit_ov037_02227140 kind:data(word) addr:0x02227160
+data_ov037_02227180 kind:data(any) addr:0x02227180
+data_ov037_02227188 kind:data(any) addr:0x02227188
+data_ov037_02227190 kind:data(any) addr:0x02227190
+data_ov037_02227198 kind:data(any) addr:0x02227198
+data_ov037_022271c8 kind:data(any) addr:0x022271c8
+data_ov037_022271d0 kind:data(any) addr:0x022271d0
+data_ov037_022271e0 kind:data(any) addr:0x022271e0
+data_ov037_022271f0 kind:data(any) addr:0x022271f0
+data_ov037_02227220 kind:data(any) addr:0x02227220
+data_ov037_02227238 kind:data(any) addr:0x02227238
+data_ov037_02227258 kind:data(any) addr:0x02227258
+data_ov037_02227260 kind:data(any) addr:0x02227260
+data_ov037_02227268 kind:data(any) addr:0x02227268
+data_ov037_02227274 kind:data(any) addr:0x02227274 ambiguous
+data_ov037_02227278 kind:data(any) addr:0x02227278
+data_ov037_02227290 kind:data(any) addr:0x02227290
+data_ov037_02227294 kind:data(any) addr:0x02227294 ambiguous
+data_ov037_022272b8 kind:data(any) addr:0x022272b8
+data_ov037_022272c0 kind:data(any) addr:0x022272c0
+data_ov037_022272c8 kind:data(any) addr:0x022272c8
+data_ov037_022272cc kind:data(any) addr:0x022272cc ambiguous
+data_ov037_022272d0 kind:data(any) addr:0x022272d0
+data_ov037_022272d8 kind:data(any) addr:0x022272d8
+data_ov037_022272f0 kind:data(any) addr:0x022272f0
+data_ov037_022272f8 kind:data(any) addr:0x022272f8
+data_ov037_02227308 kind:data(any) addr:0x02227308
+data_ov037_02227310 kind:data(any) addr:0x02227310
+data_ov037_02227318 kind:data(any) addr:0x02227318
+data_ov037_02227320 kind:data(any) addr:0x02227320
+data_ov037_02227328 kind:data(any) addr:0x02227328
+data_ov037_02227330 kind:data(any) addr:0x02227330
+data_ov037_02227338 kind:data(any) addr:0x02227338
+data_ov037_02227340 kind:data(any) addr:0x02227340
+data_ov037_02227348 kind:data(any) addr:0x02227348
+data_ov037_02227350 kind:data(any) addr:0x02227350
+data_ov037_02227370 kind:data(any) addr:0x02227370
+data_ov037_02227378 kind:data(any) addr:0x02227378
+data_ov037_02227380 kind:data(any) addr:0x02227380
+data_ov037_02227388 kind:data(any) addr:0x02227388
+data_ov037_02227390 kind:data(any) addr:0x02227390
+data_ov037_02227398 kind:data(any) addr:0x02227398
+data_ov037_022273a0 kind:data(any) addr:0x022273a0
+data_ov037_022273a8 kind:data(any) addr:0x022273a8
+data_ov037_022273b0 kind:data(any) addr:0x022273b0
+data_ov037_022273b8 kind:data(any) addr:0x022273b8
+data_ov037_022273c0 kind:data(any) addr:0x022273c0
+data_ov037_022273c8 kind:data(any) addr:0x022273c8
+data_ov037_022273d0 kind:data(any) addr:0x022273d0
+data_ov037_022273d8 kind:data(any) addr:0x022273d8
+data_ov037_022273e0 kind:data(any) addr:0x022273e0
+data_ov037_022273e8 kind:data(any) addr:0x022273e8
+data_ov037_022273f0 kind:data(any) addr:0x022273f0
+data_ov037_022273f8 kind:data(any) addr:0x022273f8
+data_ov037_02227400 kind:data(any) addr:0x02227400
+data_ov037_02227408 kind:data(any) addr:0x02227408
+data_ov037_02227410 kind:data(any) addr:0x02227410
+data_ov037_02227418 kind:data(any) addr:0x02227418
+data_ov037_02227420 kind:data(any) addr:0x02227420
+data_ov037_02227428 kind:data(any) addr:0x02227428
+data_ov037_02227430 kind:data(any) addr:0x02227430
+data_ov037_02227438 kind:data(any) addr:0x02227438
+data_ov037_02227440 kind:data(any) addr:0x02227440
+data_ov037_02227448 kind:data(any) addr:0x02227448
+data_ov037_02227450 kind:data(any) addr:0x02227450
+data_ov037_02227458 kind:data(any) addr:0x02227458
+data_ov037_02227470 kind:data(any) addr:0x02227470
+data_ov037_02227488 kind:data(any) addr:0x02227488
+data_ov037_02227494 kind:data(any) addr:0x02227494 ambiguous
+data_ov037_022274a8 kind:data(any) addr:0x022274a8
+data_ov037_022274b0 kind:data(any) addr:0x022274b0
+data_ov037_022274b8 kind:data(any) addr:0x022274b8
+data_ov037_022274c0 kind:data(any) addr:0x022274c0
+data_ov037_022274c8 kind:data(any) addr:0x022274c8
+data_ov037_022274d0 kind:data(any) addr:0x022274d0
+data_ov037_022274d8 kind:data(any) addr:0x022274d8
+data_ov037_022274e0 kind:data(any) addr:0x022274e0
+data_ov037_022274e8 kind:data(any) addr:0x022274e8
+data_ov037_022274f0 kind:data(any) addr:0x022274f0
+data_ov037_022274f8 kind:data(any) addr:0x022274f8
+data_ov037_02227500 kind:data(any) addr:0x02227500
+data_ov037_02227508 kind:data(any) addr:0x02227508
+data_ov037_02227510 kind:data(any) addr:0x02227510
+data_ov037_02227518 kind:data(any) addr:0x02227518
+data_ov037_02227520 kind:data(any) addr:0x02227520
+data_ov037_02227528 kind:data(any) addr:0x02227528
+data_ov037_02227530 kind:data(any) addr:0x02227530
+data_ov037_02227538 kind:data(any) addr:0x02227538
+data_ov037_02227540 kind:data(any) addr:0x02227540
+data_ov037_02227548 kind:data(any) addr:0x02227548
+data_ov037_02227560 kind:data(any) addr:0x02227560
+data_ov037_02227568 kind:data(any) addr:0x02227568
+data_ov037_02227570 kind:data(any) addr:0x02227570
+data_ov037_02227578 kind:data(any) addr:0x02227578
+data_ov037_02227580 kind:data(any) addr:0x02227580
+data_ov037_02227588 kind:data(any) addr:0x02227588
+data_ov037_02227590 kind:data(any) addr:0x02227590
+data_ov037_02227598 kind:data(any) addr:0x02227598
+data_ov037_022275a0 kind:data(any) addr:0x022275a0
+data_ov037_022275a8 kind:data(any) addr:0x022275a8
+data_ov037_022275b8 kind:data(any) addr:0x022275b8
+data_ov037_022275c0 kind:data(any) addr:0x022275c0
+data_ov037_022275c8 kind:data(any) addr:0x022275c8
+data_ov037_022275d0 kind:data(any) addr:0x022275d0
+data_ov037_022275d8 kind:data(any) addr:0x022275d8
+data_ov037_022275e0 kind:data(any) addr:0x022275e0
+data_ov037_022275e8 kind:data(any) addr:0x022275e8
+data_ov037_022275f0 kind:data(any) addr:0x022275f0
+data_ov037_022275f8 kind:data(any) addr:0x022275f8
+data_ov037_02227600 kind:data(any) addr:0x02227600
+data_ov037_02227608 kind:data(any) addr:0x02227608
+data_ov037_02227610 kind:data(any) addr:0x02227610
+data_ov037_02227618 kind:data(any) addr:0x02227618
+data_ov037_02227620 kind:data(any) addr:0x02227620
+data_ov037_02227628 kind:data(any) addr:0x02227628
+data_ov037_02227630 kind:data(any) addr:0x02227630
+data_ov037_02227638 kind:data(any) addr:0x02227638
+data_ov037_02227640 kind:data(any) addr:0x02227640
+data_ov037_02227648 kind:data(any) addr:0x02227648
+data_ov037_02227650 kind:data(any) addr:0x02227650
+data_ov037_02227658 kind:data(any) addr:0x02227658
+data_ov037_02227660 kind:data(any) addr:0x02227660
+data_ov037_02227668 kind:data(any) addr:0x02227668
+data_ov037_02227670 kind:data(any) addr:0x02227670
+data_ov037_02227678 kind:data(any) addr:0x02227678
+data_ov037_02227680 kind:data(any) addr:0x02227680
+data_ov037_02227688 kind:data(any) addr:0x02227688
+data_ov037_02227690 kind:data(any) addr:0x02227690
+data_ov037_02227698 kind:data(any) addr:0x02227698
+data_ov037_022276a0 kind:data(any) addr:0x022276a0
+data_ov037_022276a8 kind:data(any) addr:0x022276a8
+data_ov037_022276b0 kind:data(any) addr:0x022276b0
+data_ov037_022276b8 kind:data(any) addr:0x022276b8
+data_ov037_022276c0 kind:data(any) addr:0x022276c0
+data_ov037_022276c8 kind:data(any) addr:0x022276c8
+data_ov037_022276d0 kind:data(any) addr:0x022276d0
+data_ov037_022276d8 kind:data(any) addr:0x022276d8
+data_ov037_022276e0 kind:data(any) addr:0x022276e0
+data_ov037_022276e8 kind:data(any) addr:0x022276e8
+data_ov037_022276f0 kind:data(any) addr:0x022276f0
+data_ov037_022276f8 kind:data(any) addr:0x022276f8
+data_ov037_02227700 kind:data(any) addr:0x02227700
+data_ov037_02227708 kind:data(any) addr:0x02227708
+data_ov037_02227710 kind:data(any) addr:0x02227710
+data_ov037_02227718 kind:data(any) addr:0x02227718
+data_ov037_02227720 kind:data(any) addr:0x02227720
+data_ov037_02227728 kind:data(any) addr:0x02227728
+data_ov037_02227730 kind:data(any) addr:0x02227730
+data_ov037_02227738 kind:data(any) addr:0x02227738
+data_ov037_02227740 kind:data(any) addr:0x02227740
+data_ov037_02227748 kind:data(any) addr:0x02227748
+data_ov037_02227750 kind:data(any) addr:0x02227750
+data_ov037_02227758 kind:data(any) addr:0x02227758
+data_ov037_02227768 kind:data(any) addr:0x02227768
+data_ov037_02227770 kind:data(any) addr:0x02227770
+data_ov037_02227778 kind:data(any) addr:0x02227778
+data_ov037_02227780 kind:data(any) addr:0x02227780
+data_ov037_02227788 kind:data(any) addr:0x02227788
+data_ov037_02227794 kind:data(any) addr:0x02227794
+data_ov037_022277a0 kind:data(any) addr:0x022277a0
+data_ov037_022277a4 kind:data(any) addr:0x022277a4 ambiguous
+data_ov037_022277b0 kind:data(any) addr:0x022277b0
+data_ov037_022277c8 kind:data(any) addr:0x022277c8
+data_ov037_022277e4 kind:data(any) addr:0x022277e4
+data_ov037_02227800 kind:data(any) addr:0x02227800
+data_ov037_02227838 kind:data(any) addr:0x02227838
+data_ov037_02227844 kind:data(any) addr:0x02227844 ambiguous
+data_ov037_0222784c kind:data(any) addr:0x0222784c ambiguous
+data_ov037_02227870 kind:data(any) addr:0x02227870
+data_ov037_022278a8 kind:data(any) addr:0x022278a8
+data_ov037_022278d8 kind:data(any) addr:0x022278d8 ambiguous
+data_ov037_022278e0 kind:data(any) addr:0x022278e0
+data_ov037_02227918 kind:data(any) addr:0x02227918
+data_ov037_02227950 kind:data(any) addr:0x02227950
+data_ov037_02227988 kind:data(any) addr:0x02227988
+data_ov037_022279c0 kind:bss addr:0x022279c0
+data_ov037_022279cc kind:bss addr:0x022279cc
+data_ov037_02227bac kind:bss addr:0x02227bac ambiguous
+data_ov037_02227c4c kind:bss addr:0x02227c4c ambiguous
+data_ov037_02227d38 kind:bss addr:0x02227d38 ambiguous
+data_ov037_02227d78 kind:bss addr:0x02227d78 ambiguous
+data_ov037_02227ecc kind:bss addr:0x02227ecc ambiguous
+data_ov037_02227fec kind:bss addr:0x02227fec ambiguous

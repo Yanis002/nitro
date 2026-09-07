@@ -1,4 +1,4 @@
-#include "nitro/os/cache.h"
+#include "nitro/os/os_cache.h"
 
 #define DC_DRAIN_WRITE_BUFFER(zero) mcr p15, 0, zero, c7, c10, 4
 
@@ -23,6 +23,9 @@
 #define IC_INVALIDATE(line) mcr p15, 0, line, c7, c5, 1
 
 #define OS_CACHE_INS(ins) asm(ins);
+
+#pragma push
+#pragma thumb off
 
 void DC_InvalidateAll(void *ptr, u32 size) {
 #ifdef NITRO_NO_ASM
@@ -195,3 +198,5 @@ void IC_InvalidateRange(void *ptr, u32 size) {
         ptr += OS_CACHE_LINE_SIZE;
     } while ((s32) ptr < end);
 }
+
+#pragma pop

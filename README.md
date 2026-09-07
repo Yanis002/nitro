@@ -3,8 +3,8 @@
 
 ## Setup
 1. Place a supported base ROM into the [`extract/`](/extract/) directory. The list of supported games is in [`extract/README.md`](/extract/).
-2. Run `python tools/configure.py <game_name>` to set up the Ninja build system. Replace `<game_name>` with the base ROM's file name without the file extension, e.g. `pm4_jp`.
-3. Run `ninja objdiff` to create an `objdiff.json` file and start decompiling.
+2. Run `python tools/configure.py` to set up the Ninja build system.
+3. Run `ninja` to create an `objdiff.json` file and start decompiling.
 
 ## LLM Contributions
 

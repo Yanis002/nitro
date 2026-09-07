@@ -1,0 +1,127 @@
+_ZN3Gui7cGraphsC1E7Vec2d16 kind:function(thumb,size=0x88) addr:0x02234cc0 local
+_ZN3Gui7cGraphsD1Ev kind:function(thumb,size=0x2) addr:0x02234d48 local
+_ZN3Gui7cGraphs4InitE7eScreenm kind:function(thumb,size=0x54) addr:0x02234d4c local
+_ZN3Gui7cGraphs10ClearGraphEv kind:function(thumb,size=0x68) addr:0x02234da0 local
+_ZN3Gui7cGraphs6DeInitEv kind:function(thumb,size=0x7c) addr:0x02234e08 local
+_ZN3Gui7cGraphs7ProcessEb kind:function(thumb,size=0x6c) addr:0x02234e84 local
+_ZN3Gui7cGraphs15ProcessFlashingEv kind:function(thumb,size=0x80) addr:0x02234ef0 local
+_ZN3Gui7cGraphs17ProcessTransitionEv kind:function(thumb,size=0x3c) addr:0x02234f70 local
+_ZN3Gui7cGraphs19InitialiseGraphTypeENS0_11eGraphTypesEl kind:function(thumb,size=0x6) addr:0x02234fac local
+_ZN3Gui7cGraphs8DrawLineEPlmm kind:function(thumb,size=0xb8) addr:0x02234fb4 local
+_ZN3Gui7cGraphs11SetBGAffineEv kind:function(thumb,size=0xd4) addr:0x0223506c local
+_ZN3Gui7cGraphs12AddAxisLabelE7Vec2d16Pt14eJustification kind:function(thumb,size=0x8c) addr:0x02235140 local
+_ZN3Gui7cGraphs25SetupTradeProfitLossGraphEb kind:function(thumb,size=0x488) addr:0x022351cc local
+_ZN3Gui7cGraphs23DrawLineTradeProfitLossEmb kind:function(thumb,size=0x114) addr:0x02235654 local
+_ZN3Gui7cGraphs24SetupTradeStockSoldGraphEv kind:function(thumb,size=0x382) addr:0x02235768 local
+_ZN3Gui7cGraphs10SetGraphBGEPN5Gfx2d11cSpriteDataE kind:function(thumb,size=0x5c) addr:0x02235aec local
+_ZN3Gui9cEmailAppC1Ev kind:function(thumb,size=0x2b8) addr:0x02235b48
+_ZN3Gui9cEmailAppD1Ev kind:function(thumb,size=0x6c) addr:0x02235e00
+_ZN3Gui9cEmailAppD0Ev kind:function(thumb,size=0x78) addr:0x02235e6c
+_ZN3Gui9cEmailApp4InitEv kind:function(thumb,size=0x680) addr:0x02235ee4
+_ZNK3Gui9cEmailApp13GetSpriteDataEt kind:function(thumb,size=0x18) addr:0x02236564
+_ZNK3Gui9cEmailApp25GetSpriteDataFromFilenameEPKt kind:function(thumb,size=0x4c) addr:0x0223657c
+_ZN3Gui9cEmailApp6DeInitEv kind:function(thumb,size=0x2bc) addr:0x022365c8
+_ZN3Gui9cEmailApp7ProcessEv kind:function(thumb,size=0x380) addr:0x02236884
+_ZN3Gui9cEmailApp8ShutdownEv kind:function(thumb,size=0x2c) addr:0x02236c04
+_ZN3Gui9cEmailApp12ProcessOutroEv kind:function(thumb,size=0x12) addr:0x02236c30
+_ZN3Gui9cEmailApp16InitialiseEmailsENS0_11eFilterTypeEb kind:function(thumb,size=0x280) addr:0x02236c44
+_ZN3Gui9cEmailApp28GenerateEmailFromSubjectTextERK7cUniStrP10sEmailDatab kind:function(thumb,size=0x174) addr:0x02236ec4
+_ZN3Gui9cEmailApp25CalculateFiltersAvailableEv kind:function(thumb,size=0xb4) addr:0x02237038
+_ZN3Gui9cEmailApp15FormatEmailBodyEP10sEmailData kind:function(thumb,size=0x4a4) addr:0x022370ec
+_ZN3Gui9cEmailApp25FormatEmailBody_SpriteTagEPtm kind:function(thumb,size=0x1ac) addr:0x02237590
+_ZN3Gui9cEmailApp17LoadEmailBodyTextEm kind:function(thumb,size=0x0,unknown) addr:0x0223773c
+_ZN3Gui9cEmailApp21FormatDealerTipEmailsEP10sEmailData kind:function(thumb,size=0x0,unknown) addr:0x02237848
+_ZN3Gui9cEmailApp31AddDynamicAmmozoneInfo_PurchaseEv kind:function(thumb,size=0x0,unknown) addr:0x02237a10
+_ZN3Gui9cEmailApp31AddDynamicAmmozoneInfo_NewOfferEv kind:function(thumb,size=0x0,unknown) addr:0x02237c44
+_ZN3Gui9cEmailApp31AddDynamicAmmozoneInfo_NewStockEv kind:function(thumb,size=0x0,unknown) addr:0x02237df0
+_ZN3Gui9cEmailApp32AddDynamicAmmozoneInfo_HyperLinkEb kind:function(thumb,size=0x0,unknown) addr:0x02237f44
+_ZN3Gui9cEmailApp28AddDealerTipHyperLinkAndNameEv kind:function(thumb,size=0x0,unknown) addr:0x02237fb8
+_ZN3Gui9cEmailApp19AddTurfMapHyperLinkEv kind:function(thumb,size=0x0,unknown) addr:0x02238174
+_ZN3Gui9cEmailApp19AddContactHyperLinkEP10sEmailData kind:function(thumb,size=0x0,unknown) addr:0x02238260
+_ZN3Gui9cEmailApp15SetupTradeEmailEP10sEmailData kind:function(thumb,size=0x0,unknown) addr:0x0223849c
+_ZN3Gui9cEmailApp16ClearContactInfoEv kind:function(thumb,size=0x0,unknown) addr:0x0223927c
+_ZN3Gui9cEmailApp10ClearGraphEv kind:function(thumb,size=0x0,unknown) addr:0x02239348
+_ZN3Gui9cEmailApp25TransitionEmailContentsOnEPNS_12cListBoxItemEP10sEmailData kind:function(thumb,size=0x0,unknown) addr:0x02239364
+_ZN3Gui9cEmailApp26TransitionEmailContentsOffEv kind:function(thumb,size=0x0,unknown) addr:0x02239ac4
+_ZN3Gui9cEmailApp25TransitionFilterOptionsOnEv kind:function(thumb,size=0x0,unknown) addr:0x02239edc
+_ZN3Gui9cEmailApp26TransitionFilterOptionsOffEv kind:function(thumb,size=0x0,unknown) addr:0x0223a184
+_ZN3Gui9cEmailApp28UpdateHighPriorityEmailAlertEv kind:function(thumb,size=0x0,unknown) addr:0x0223a44c
+_ZN3Gui9cEmailApp19ProcessPdaTutorialsEv kind:function(thumb,size=0x0,unknown) addr:0x0223a4a8
+_ZN3Gui9cEmailApp19FindEmailAlertEmailEv kind:function(thumb,size=0x0,unknown) addr:0x0223ab24
+data_ov115_0223ab99 kind:data(any) addr:0x0223ab99
+data_ov115_0223ac25 kind:data(any) addr:0x0223ac25
+data_ov115_0223adad kind:data(any) addr:0x0223adad
+data_ov115_0223ae99 kind:data(any) addr:0x0223ae99
+data_ov115_0223afdd kind:data(any) addr:0x0223afdd
+data_ov115_0223b00d kind:data(any) addr:0x0223b00d
+data_ov115_0223b169 kind:data(any) addr:0x0223b169
+data_ov115_0223b229 kind:data(any) addr:0x0223b229
+data_ov115_0223b22d kind:data(any) addr:0x0223b22d
+data_ov115_0223b299 kind:data(any) addr:0x0223b299
+data_ov115_0223b349 kind:data(any) addr:0x0223b349
+data_ov115_0223bc9d kind:data(any) addr:0x0223bc9d
+data_ov115_0223bcd1 kind:data(any) addr:0x0223bcd1
+data_ov115_0223bda1 kind:data(any) addr:0x0223bda1
+data_ov115_0223bdfd kind:data(any) addr:0x0223bdfd
+data_ov115_0223be25 kind:data(any) addr:0x0223be25
+data_ov115_0223bee5 kind:data(any) addr:0x0223bee5
+data_ov115_0223bf35 kind:data(any) addr:0x0223bf35
+data_ov115_0223bfad kind:data(any) addr:0x0223bfad
+data_ov115_0223c03d kind:data(any) addr:0x0223c03d
+data_ov115_0223c060 kind:data(any) addr:0x0223c060
+data_ov115_0223c078 kind:data(any) addr:0x0223c078
+data_ov115_0223c0c8 kind:data(any) addr:0x0223c0c8
+data_ov115_0223c120 kind:data(any) addr:0x0223c120
+data_ov115_0223c384 kind:data(any) addr:0x0223c384
+data_ov115_0223c3b4 kind:data(any) addr:0x0223c3b4
+data_ov115_0223c434 kind:data(any) addr:0x0223c434
+data_ov115_0223c438 kind:data(any) addr:0x0223c438
+data_ov115_0223c43c kind:data(any) addr:0x0223c43c
+data_ov115_0223c444 kind:data(any) addr:0x0223c444
+data_ov115_0223c448 kind:data(any) addr:0x0223c448
+data_ov115_0223c450 kind:data(any) addr:0x0223c450
+data_ov115_0223c458 kind:data(any) addr:0x0223c458
+data_ov115_0223c460 kind:data(any) addr:0x0223c460
+data_ov115_0223c470 kind:data(any) addr:0x0223c470
+data_ov115_0223c48c kind:data(any) addr:0x0223c48c
+data_ov115_0223c4a8 kind:data(any) addr:0x0223c4a8
+data_ov115_0223c4c4 kind:data(any) addr:0x0223c4c4
+data_ov115_0223c4d8 kind:data(any) addr:0x0223c4d8
+data_ov115_0223c4ec kind:data(any) addr:0x0223c4ec
+data_ov115_0223c504 kind:data(any) addr:0x0223c504
+data_ov115_0223c520 kind:data(any) addr:0x0223c520
+data_ov115_0223c53c kind:data(any) addr:0x0223c53c
+data_ov115_0223c558 kind:data(any) addr:0x0223c558
+data_ov115_0223c570 kind:data(any) addr:0x0223c570
+data_ov115_0223c58c kind:data(any) addr:0x0223c58c
+data_ov115_0223c5b4 kind:data(any) addr:0x0223c5b4
+data_ov115_0223c5d0 kind:data(any) addr:0x0223c5d0
+data_ov115_0223c5ec kind:data(any) addr:0x0223c5ec
+data_ov115_0223c5f0 kind:data(any) addr:0x0223c5f0
+data_ov115_0223c5f4 kind:data(any) addr:0x0223c5f4
+data_ov115_0223c5f8 kind:data(any) addr:0x0223c5f8
+data_ov115_0223c5fc kind:data(any) addr:0x0223c5fc
+data_ov115_0223c600 kind:data(any) addr:0x0223c600
+data_ov115_0223c608 kind:data(any) addr:0x0223c608
+data_ov115_0223c610 kind:data(any) addr:0x0223c610
+data_ov115_0223c618 kind:data(any) addr:0x0223c618
+data_ov115_0223c620 kind:data(any) addr:0x0223c620
+data_ov115_0223c628 kind:data(any) addr:0x0223c628
+data_ov115_0223c630 kind:data(any) addr:0x0223c630
+data_ov115_0223c638 kind:data(any) addr:0x0223c638
+data_ov115_0223c640 kind:data(any) addr:0x0223c640
+data_ov115_0223c648 kind:data(any) addr:0x0223c648
+data_ov115_0223c650 kind:data(any) addr:0x0223c650
+data_ov115_0223c658 kind:data(any) addr:0x0223c658
+data_ov115_0223c678 kind:data(any) addr:0x0223c678
+data_ov115_0223c69c kind:data(any) addr:0x0223c69c
+data_ov115_0223c6c0 kind:data(any) addr:0x0223c6c0
+data_ov115_0223c6d8 kind:data(any) addr:0x0223c6d8
+data_ov115_0223c6f0 kind:data(any) addr:0x0223c6f0
+data_ov115_0223c70c kind:data(any) addr:0x0223c70c
+data_ov115_0223c72c kind:data(any) addr:0x0223c72c
+data_ov115_0223c758 kind:data(any) addr:0x0223c758
+data_ov115_0223c778 kind:data(any) addr:0x0223c778
+data_ov115_0223c798 kind:data(any) addr:0x0223c798
+data_ov115_0223c7bc kind:data(any) addr:0x0223c7bc
+data_ov115_0223c7d1 kind:data(any) addr:0x0223c7d1 ambiguous

@@ -1,0 +1,103 @@
+_ZN3Gui7cGraphsC1E7Vec2d16 kind:function(thumb,size=0x88) addr:0x02234cc0 local
+_ZN3Gui7cGraphsD1Ev kind:function(thumb,size=0x2) addr:0x02234d48 local
+_ZN3Gui7cGraphs4InitE7eScreenm kind:function(thumb,size=0x54) addr:0x02234d4c local
+_ZN3Gui7cGraphs10ClearGraphEv kind:function(thumb,size=0x68) addr:0x02234da0 local
+_ZN3Gui7cGraphs6DeInitEv kind:function(thumb,size=0x7c) addr:0x02234e08 local
+_ZN3Gui7cGraphs7ProcessEb kind:function(thumb,size=0x6c) addr:0x02234e84 local
+_ZN3Gui7cGraphs15ProcessFlashingEv kind:function(thumb,size=0x80) addr:0x02234ef0 local
+_ZN3Gui7cGraphs17ProcessTransitionEv kind:function(thumb,size=0x3c) addr:0x02234f70 local
+_ZN3Gui7cGraphs13StartFlashingEv kind:function(thumb,size=0x10) addr:0x02234fac
+_ZN3Gui7cGraphs12StopFlashingEv kind:function(thumb,size=0xa) addr:0x02234fbc
+_ZN3Gui7cGraphs19InitialiseGraphTypeENS0_11eGraphTypesEl kind:function(thumb,size=0x6) addr:0x02234fc8 local
+_ZN3Gui7cGraphs8DrawLineEPlmm kind:function(thumb,size=0xb8) addr:0x02234fd0 local
+_ZN3Gui7cGraphs11SetBGAffineEv kind:function(thumb,size=0xd4) addr:0x02235088 local
+_ZN3Gui7cGraphs12AddAxisLabelE7Vec2d16Pt14eJustification kind:function(thumb,size=0x8c) addr:0x0223515c local
+_ZN3Gui7cGraphs25SetupTradeProfitLossGraphEb kind:function(thumb,size=0x488) addr:0x022351e8 local
+_ZN3Gui7cGraphs23DrawLineTradeProfitLossEmb kind:function(thumb,size=0x114) addr:0x02235670 local
+_ZN3Gui7cGraphs24SetupTradeStockSoldGraphEv kind:function(thumb,size=0x382) addr:0x02235784 local
+_ZN3Gui7cGraphs22TransitionStockSoldBarEv kind:function(thumb,size=0x20) addr:0x02235b08
+_ZN3Gui7cGraphs10SetGraphBGEPN5Gfx2d11cSpriteDataE kind:function(thumb,size=0x5c) addr:0x02235b28 local
+_ZN3Gui14cTradeStatsAppC1Ev kind:function(thumb,size=0x204) addr:0x02235b84
+_ZN3Gui14cTradeStatsAppD1Ev kind:function(thumb,size=0x34) addr:0x02235d88
+_ZN3Gui14cTradeStatsAppD0Ev kind:function(thumb,size=0x40) addr:0x02235dbc
+_ZN3Gui14cTradeStatsApp4InitEv kind:function(thumb,size=0x464) addr:0x02235dfc
+_ZN3Gui14cTradeStatsApp12SetupSpritesEv kind:function(thumb,size=0x21c) addr:0x02236260
+_ZN3Gui14cTradeStatsApp6DeInitEv kind:function(thumb,size=0xe4) addr:0x0223647c
+_ZN3Gui14cTradeStatsApp13DeinitSpritesEv kind:function(thumb,size=0xe4) addr:0x02236560
+_ZN3Gui14cTradeStatsApp7ProcessEv kind:function(thumb,size=0x3f4) addr:0x02236644
+_ZN3Gui14cTradeStatsApp8ShutdownEv kind:function(thumb,size=0x4c) addr:0x02236a38
+_ZNK3Gui14cTradeStatsApp13GetSpriteDataEPN5Gfx2d14cSpriteDataSetEt kind:function(thumb,size=0x14) addr:0x02236a84
+_ZN3Gui14cTradeStatsApp13SetupItemListEv kind:function(thumb,size=0x44) addr:0x02236a98
+_ZN3Gui14cTradeStatsApp14AddItemsToListEv kind:function(thumb,size=0x1d8) addr:0x02236adc
+_ZN3Gui14cTradeStatsApp14SetupInventoryEv kind:function(thumb,size=0x6d0) addr:0x02236cb4
+_ZN3Gui14cTradeStatsApp22RemoveInventorySpritesEv kind:function(thumb,size=0x118) addr:0x02237384
+_ZN3Gui14cTradeStatsApp20RemoveTurfMapSpritesEb kind:function(thumb,size=0xc4) addr:0x0223749c
+_ZN3Gui14cTradeStatsApp15SetupDealerTipsEv kind:function(thumb,size=0x35c) addr:0x02237560
+_ZN3Gui14cTradeStatsApp25GetDrugBlipFromDrugStringEm kind:function(thumb,size=0x34) addr:0x022378bc
+_ZN3Gui14cTradeStatsApp12ProcessIntroEv kind:function(thumb,size=0x30) addr:0x022378f0
+_ZN3Gui14cTradeStatsApp12ProcessOutroEv kind:function(thumb,size=0x28) addr:0x02237920
+_ZN3Gui14cTradeStatsApp18ProcessTransitionsEv kind:function(thumb,size=0xf9c) addr:0x02237948
+.L_0223889a kind:label(thumb) addr:0x0223889a local
+_ZN3Gui14cTradeStatsApp28TransitionTopScreenInventoryEll kind:function(thumb,size=0xc8) addr:0x022388e4
+_ZN3Gui14cTradeStatsApp10SetupGraphENS_7cGraphs11eGraphTypesE kind:function(thumb,size=0x66) addr:0x022389ac
+_ZN3Gui14cTradeStatsApp20SetGraphLineFlashingEm kind:function(thumb,size=0x4c) addr:0x02238a14
+_ZN3Gui14cTradeStatsApp26SwitchCategoryActiveStatusEm kind:function(thumb,size=0x7c) addr:0x02238a60
+_ZN3Gui14cTradeStatsApp12ShowDrugDataEm kind:function(thumb,size=0x344) addr:0x02238adc
+_ZN3Gui14cTradeStatsApp19ProcessPdaTutorialsEv kind:function(thumb,size=0x1c) addr:0x02238e20
+_ZN3Gui14cTradeStatsApp18SetupTurfZonesListEb kind:function(thumb,size=0x6b0) addr:0x02238e3c
+_ZN3Gui14cTradeStatsApp14SetupTurfZonesEv kind:function(thumb,size=0x70c) addr:0x022394ec
+_ZN3Gui14cTradeStatsApp20SetupTurfZoneDealersEv kind:function(thumb,size=0x170) addr:0x02239bf8
+_ZN3Gui14cTradeStatsApp19RenderPolyTurfZonesEv kind:function(thumb,size=0x2e4) addr:0x02239d68
+_ZN3Gui14cTradeStatsApp17RenderTurfCirclesEl4tv2dI6cFixedILm20ELm12EEEst kind:function(thumb,size=0x14c) addr:0x0223a04c
+_ZN3Gui14cTradeStatsApp16SetupTurfPaletteEv kind:function(thumb,size=0x7c) addr:0x0223a198
+_ZN3Gui14cTradeStatsApp25SwitchTopScreenBoxSpritesEv kind:function(thumb,size=0x3f4) addr:0x0223a214
+_ZN3Gui14cTradeStatsApp19SetupSelectedDealerEll kind:function(thumb,size=0x178) addr:0x0223a608
+_ZN3Gui14cTradeStatsApp13SetupZoneTextE4tv3dI6cFixedILm20ELm12EEE kind:function(thumb,size=0x9c) addr:0x0223a780
+_ZN3Gui14cTradeStatsApp12PlotGPSRouteEPNS0_13sListTurfDataE kind:function(thumb,size=0x110) addr:0x0223a81c
+_ZN3Gui14cTradeStatsApp16GetDealerTipInfoElPtPmS1_S2_ kind:function(thumb,size=0x11c) addr:0x0223a92c
+_ZN3Gui14cTradeStatsApp12Back_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x130) addr:0x0223aa48
+_ZN3Gui14cTradeStatsApp17ProfitLoss_ActionEv kind:function(thumb,size=0xf0) addr:0x0223ab78
+_ZN3Gui14cTradeStatsApp16StockSold_ActionEv kind:function(thumb,size=0xec) addr:0x0223ac68
+_ZN3Gui14cTradeStatsApp16Inventory_ActionEv kind:function(thumb,size=0xd8) addr:0x0223ad54
+_ZN3Gui14cTradeStatsApp14TurfMap_ActionEv kind:function(thumb,size=0xa8) addr:0x0223ae2c
+_ZN3Gui14cTradeStatsApp16ItemList_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x188) addr:0x0223aed4
+_ZN3Gui14cTradeStatsApp16ItemList_OnPressERKNS_14cMessageParamsE kind:function(thumb,size=0x44) addr:0x0223b05c
+_ZN3Gui14cTradeStatsApp11OnSwipeLeftERKNS_18cOnSwipeLeftParamsE kind:function(thumb,size=0x128) addr:0x0223b0a0
+_ZN3Gui14cTradeStatsApp23PdaHelpRestorePaletteCBEPv kind:function(thumb,size=0x48) addr:0x0223b1c8
+_ZN3Gui14cTradeStatsApp38GetTradeStatsDrugIconFromTradeDrugIconEm kind:function(thumb,size=0x38) addr:0x0223b210
+_ZN3Gui14cTradeStatsApp38GetTradeStatsDrugBlipFromTradeDrugIconEm kind:function(thumb,size=0x38) addr:0x0223b248
+_ZN3Gui14cTradeStatsApp31MessageBox_InstallationCallbackEPv kind:function(thumb,size=0x70) addr:0x0223b280
+_ZN3Gui14cTradeStatsApp12Home_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x28) addr:0x0223b2f0
+_ZN3Gui14cTradeStatsApp17OnHighlightChangeEPNS_12cListBoxItemE kind:function(thumb,size=0x18) addr:0x0223b318
+_ZN3Gui14cTradeStatsApp25EmailSubscription_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x90) addr:0x0223b330
+_ZN3Gui14cTradeStatsApp30MessageBox_UnsubscribeCallbackEPv kind:function(thumb,size=0xe0) addr:0x0223b3c0
+data_ov153_0223b4a0 kind:data(any) addr:0x0223b4a0
+data_ov153_0223b4bc kind:data(any) addr:0x0223b4bc
+data_ov153_0223b4c8 kind:data(any) addr:0x0223b4c8
+data_ov153_0223b4d8 kind:data(any) addr:0x0223b4d8
+data_ov153_0223b4f8 kind:data(any) addr:0x0223b4f8
+data_ov153_0223b508 kind:data(any) addr:0x0223b508
+data_ov153_0223b51c kind:data(any) addr:0x0223b51c
+data_ov153_0223b540 kind:data(any) addr:0x0223b540
+data_ov153_0223b564 kind:data(any) addr:0x0223b564
+data_ov153_0223b594 kind:data(any) addr:0x0223b594
+data_ov153_0223b628 kind:data(any) addr:0x0223b628
+data_ov153_0223b6a8 kind:data(any) addr:0x0223b6a8
+data_ov153_0223b6ac kind:data(any) addr:0x0223b6ac
+data_ov153_0223b6b0 kind:data(any) addr:0x0223b6b0
+data_ov153_0223b6b8 kind:data(any) addr:0x0223b6b8
+data_ov153_0223b6bc kind:data(any) addr:0x0223b6bc
+data_ov153_0223b6c4 kind:data(any) addr:0x0223b6c4
+data_ov153_0223b6d8 kind:data(any) addr:0x0223b6d8
+data_ov153_0223b6e8 kind:data(any) addr:0x0223b6e8
+data_ov153_0223b700 kind:data(any) addr:0x0223b700
+data_ov153_0223b71c kind:data(any) addr:0x0223b71c
+data_ov153_0223b730 kind:data(any) addr:0x0223b730
+data_ov153_0223b744 kind:data(any) addr:0x0223b744
+data_ov153_0223b760 kind:data(any) addr:0x0223b760
+data_ov153_0223b77c kind:data(any) addr:0x0223b77c
+data_ov153_0223b798 kind:data(any) addr:0x0223b798
+data_ov153_0223b7b4 kind:data(any) addr:0x0223b7b4
+data_ov153_0223b7bc kind:data(any) addr:0x0223b7bc
+data_ov153_0223b7c4 kind:data(any) addr:0x0223b7c4
+data_ov153_0223b7e8 kind:data(any) addr:0x0223b7e8

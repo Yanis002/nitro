@@ -1,0 +1,469 @@
+_ZNK6cFixedILm20ELm12EEngEv kind:function(thumb,size=0x10) addr:0x02220be0 local
+cFixed_20ul_12ul__cFixed_long kind:function(thumb,size=0x4) addr:0x02220bf0 local
+_ZN11SimpleMoverC2Ev kind:function(thumb,size=0x14) addr:0x02220bf4 local
+_ZN8PhysicalC2Ev kind:function(thumb,size=0x14) addr:0x02220c08 local
+_ZNK6cFixedILm20ELm12EEleEi kind:function(thumb,size=0x24) addr:0x02220c1c local
+_ZN11DynamicPropC1Ev kind:function(thumb,size=0x14) addr:0x02220c40 local
+_Z23AnimTextCalculateCenterm5eFonti kind:function(thumb,size=0x44) addr:0x02220c54 local
+_ZN13cAnimatedText19Callback_UpdateTextEv kind:function(thumb,size=0xa0) addr:0x02220c98 local
+_ZN13cAnimatedText11CleanupTextEv kind:function(thumb,size=0x24) addr:0x02220d38 local
+_ZN7cTTProp16State_DeActivateEv kind:function(thumb,size=0x28) addr:0x02220d5c local
+_ZN7cTTProp14Update_SeaMineEv kind:function(thumb,size=0x190) addr:0x02220d84 local
+_ZN7cTTProp20Event_SeaMineExplodeEv kind:function(thumb,size=0x54) addr:0x02220f14 local
+_Z8MakeFp16l kind:function(thumb,size=0xc) addr:0x02220f68 local
+cFixed_4ul_12ul__cFixed_long kind:function(thumb,size=0x4) addr:0x02220f74 local
+_ZN7cTTProp14Event_DeactiveEv kind:function(thumb,size=0x10) addr:0x02220f78 local
+_ZN7cTTProp12State_ActiveEv kind:function(thumb,size=0x88) addr:0x02220f88 local
+_ZN18cTTCourseDataArray15IsCoursePreviewEv kind:function(thumb,size=0x6) addr:0x02221010 local
+_ZN14cTTPropHandler17Update_ActiveListEv kind:function(thumb,size=0x134) addr:0x02221018 local
+_ZN7cTTProp8IsActiveEv kind:function(thumb,size=0x4) addr:0x0222114c local
+_ZN7cTTProp11IsDestroyedEv kind:function(thumb,size=0x6) addr:0x02221150 local
+_ZN7cTTProp8ActivateE10ePropModel6cFixedILm20ELm12EE kind:function(thumb,size=0xdc) addr:0x02221158 local
+_ZN5ArrayI7cTTPropLi48EEixEi kind:function(thumb,size=0x6) addr:0x02221234 local
+_ZN14cTTPropHandler21Event_PropDeActivatedEv kind:function(thumb,size=0xc) addr:0x0222123c local
+_Z14IsTTRaceTimeOKi kind:function(thumb,size=0x1c) addr:0x02221248 local
+_ZN16cTTCoursePreview6UpdateEv kind:function(thumb,size=0x164) addr:0x02221264 local
+_ZmlRK4tv3dI6cFixedILm20ELm12EEES1_ kind:function(thumb,size=0x1a) addr:0x022213c8 local
+_ZN16cTTCoursePreview13IncreaseIndexERi kind:function(thumb,size=0x12) addr:0x022213e4 local
+_ZN16cTTCoursePreview23GetFramesNeededToTravelE4tv3dI6cFixedILm20ELm12EEES2_PS2_S4_ kind:function(thumb,size=0x8e) addr:0x022213f8 local
+_ZN12cTTCountdown9State_EndEv kind:function(thumb,size=0x7c) addr:0x02221488 local
+_ZN12cTTCountdown19Event_SpecialGoDoneEv kind:function(thumb,size=0x18) addr:0x02221504 local
+_ZN12cTTCountdown12State_Scene1Ev kind:function(thumb,size=0x1bc) addr:0x0222151c local
+_ZN12cTTCountdown16Event_Scene1DoneEv kind:function(thumb,size=0x10) addr:0x022216d8 local
+_ZN12cTTCountdown12Event_Scene1Ev kind:function(thumb,size=0x10) addr:0x022216e8 local
+_ZN12cTTCountdown17Event_ReallyStartEv kind:function(thumb,size=0x28) addr:0x022216f8 local
+_ZN12cTTCountdown15State_SpecialGoEv kind:function(thumb,size=0x8c) addr:0x02221720 local
+_ZN12cTTCountdown11ReallyStartEv kind:function(thumb,size=0x50) addr:0x022217ac local
+_ZN12cTTCountdown16Event_SceneSetupEv kind:function(thumb,size=0x16) addr:0x022217fc local
+_ZN12cTTCountdown7CleanupEv kind:function(thumb,size=0x18) addr:0x02221814 local
+_ZN10cTTRaceHUD13Event_TimeOutEv kind:function(thumb,size=0x28) addr:0x0222182c local
+_ZN10cTTRaceHUD7CleanupEv kind:function(thumb,size=0x50) addr:0x02221854 local
+_ZN14cTTRaceResults13Event_CleanupEv kind:function(thumb,size=0x8c) addr:0x022218a4 local
+_ZN5ArrayI6SpriteLi5EEixEi kind:function(thumb,size=0x6) addr:0x02221930 local
+_ZNK5ArrayI6SpriteLi5EE4SizeEv kind:function(thumb,size=0x4) addr:0x02221938 local
+_ZN14cTTRaceResults20Event_FadeOutCleanupEv kind:function(thumb,size=0x28) addr:0x0222193c local
+_ZN14cTTRaceResults20State_FadeOutAndExitEv kind:function(thumb,size=0xc0) addr:0x02221964 local
+_ZN18cTTCourseDataArray14SaveCourseDataEv kind:function(thumb,size=0x6c) addr:0x02221a24 local
+_ZN5ArrayI13cTTCourseDataLi4EEixEi kind:function(thumb,size=0x8) addr:0x02221a90 local
+_ZN14cTTRaceResults20Event_FadeOutAndExitEv kind:function(thumb,size=0x10) addr:0x02221a98 local
+_ZN14cTTRaceResults12State_Scene5Ev kind:function(thumb,size=0x98) addr:0x02221aa8 local
+_ZN18cTTCourseDataArray13GetMaxCoursesEv kind:function(thumb,size=0x4) addr:0x02221b40 local
+_ZN14cTTRaceResults12DisplayMedalEiii kind:function(thumb,size=0x128) addr:0x02221b44 local
+_ZN18cTTCourseDataArray8GetMedalEi kind:function(thumb,size=0x20) addr:0x02221c6c local
+_ZN6SpriteaSERKS_ kind:function(thumb,size=0x6) addr:0x02221c8c local
+_ZN6Sprite10SetPaletteEm kind:function(thumb,size=0xc) addr:0x02221c94 local
+_ZN5Gfx2d7cSprite16SetSpritePaletteEm kind:function(thumb,size=0x18) addr:0x02221ca0 local
+const_unsigned_char_Assign_unsigned_char_unsigned_long kind:function(thumb,size=0x4) addr:0x02221cb8 local
+_ZN14cTTRaceResults12Event_Scene5Ev kind:function(thumb,size=0x10) addr:0x02221cbc local
+_ZN14cTTRaceResults12State_Scene4Ev kind:function(thumb,size=0xdc) addr:0x02221ccc local
+_ZN13cAnimatedText5StartEimiimi5eFont kind:function(thumb,size=0x108) addr:0x02221da8 local
+_ZN14cTTRaceResults12Event_Scene4Ev kind:function(thumb,size=0x20) addr:0x02221eb0 local
+_ZN14cTTRaceResults12State_Scene3Ev kind:function(thumb,size=0x164) addr:0x02221ed0 local
+_ZN14cTTRaceResults10CheckMedalEv kind:function(thumb,size=0x104) addr:0x02222034 local
+_ZN18cTTCourseDataArray22GetAmbient1stMissionIDEv kind:function(thumb,size=0x4) addr:0x02222138 local
+_ZN13cTTCourseData16GetGoldMedalTimeEv kind:function(thumb,size=0xe) addr:0x0222213c local
+_ZN5ArrayIiLi3EEixEi kind:function(thumb,size=0x6) addr:0x0222214c local
+_ZN14cTTRaceResults9AwardCashE6eMedalS0_ kind:function(thumb,size=0x58) addr:0x02222154 local
+_ZN13cTTCourseData18GetSilverMedalTimeEv kind:function(thumb,size=0xe) addr:0x022221ac local
+_ZN13cTTCourseData18GetBronzeMedalTimeEv kind:function(thumb,size=0xe) addr:0x022221bc local
+_Z22BreakdownFramesForTextiRiS_S_S_S_ kind:function(thumb,size=0x20) addr:0x022221cc local
+_Z22BreakdownFramesForTextiRiS_S_S_S_S_ kind:function(thumb,size=0x70) addr:0x022221ec local
+_ZN18cTTCourseDataArray16GetGoldMedalTimeEi kind:function(thumb,size=0x1e) addr:0x0222225c local
+_ZN18cTTCourseDataArray18GetSilverMedalTimeEi kind:function(thumb,size=0x1e) addr:0x0222227c local
+_ZN14cTTRaceResults12Event_Scene3Ev kind:function(thumb,size=0x10) addr:0x0222229c local
+_ZN14cTTRaceResults12State_Scene2Ev kind:function(thumb,size=0x1b8) addr:0x022222ac local
+_ZN18cTTCourseDataArray18GetBronzeMedalTimeEi kind:function(thumb,size=0x1e) addr:0x02222464 local
+_ZN14cTTRaceResults12Event_Scene2Ev kind:function(thumb,size=0x10) addr:0x02222484 local
+_ZN14cTTRaceResults12State_Scene1Ev kind:function(thumb,size=0x1ac) addr:0x02222494 local
+_ZN13cAnimatedText19StartMSClockReadOutEimiiiiiimi5eFont kind:function(thumb,size=0xe0) addr:0x02222640 local
+_ZN14cTTRaceResults12CheckQualifyEv kind:function(thumb,size=0xe8) addr:0x02222720 local
+_ZN18cTTCourseDataArray14SetBestLapTimeEii kind:function(thumb,size=0x4e) addr:0x02222808 local
+_ZN18cTTCourseDataArray17SetBestCourseTimeEii kind:function(thumb,size=0x3c) addr:0x02222858 local
+_ZN18cTTCourseDataArray10IsCompleteEv kind:function(thumb,size=0x6) addr:0x02222894 local
+_ZN18cTTCourseDataArray11SetCompleteEv kind:function(thumb,size=0x18) addr:0x0222289c local
+_ZN18cTTCourseDataArray12UnlockCourseEi kind:function(thumb,size=0x2e) addr:0x022228b4 local
+_ZN14cTTRaceResults16ShouldWeAutoSaveEv kind:function(thumb,size=0x6) addr:0x022228e4 local
+_ZN14cTTRaceResults19IsAllClearFirstTimeEv kind:function(thumb,size=0x8) addr:0x022228ec local
+_ZN14cTTRaceResults17Event_Scene1StartEv kind:function(thumb,size=0x10) addr:0x022228f4 local
+_ZN14cTTBeachedBoat6UpdateEv kind:function(thumb,size=0x90) addr:0x02222904 local
+_ZN14cTTBeachedBoat15Event_OverWaterEv kind:function(thumb,size=0x18) addr:0x02222994 local
+_ZN14cTTBeachedBoat7CleanupEv kind:function(thumb,size=0x20) addr:0x022229ac local
+_ZN7cTTRace27Event_HandleFailureCompleteEv kind:function(thumb,size=0x24) addr:0x022229cc local
+_ZN7cTTRace14Handle_FailureEv kind:function(thumb,size=0x100) addr:0x022229f0 local
+_ZN7cTTRace17Event_ResultsDoneEv kind:function(thumb,size=0x2c) addr:0x02222af0 local
+_ZN7cTTRace18Event_StartResultsEv kind:function(thumb,size=0x78) addr:0x02222b1c local
+_ZN7cTTRace15ShowCheckPointsEb kind:function(thumb,size=0xfc) addr:0x02222b94 local
+_ZN7cTTRace12CreateMarkerEb6Marker kind:function(thumb,size=0x2c0) addr:0x02222c90 local
+_ZN14cTTRaceResults5SetupEP11cTTRaceData kind:function(thumb,size=0x4) addr:0x02222f50 local
+_ZN14cTTRaceResults5StartE9cCallBackS0_ kind:function(thumb,size=0x84) addr:0x02222f54 local
+_ZN18cTTCourseDataArray13GetCourseDataEi kind:function(thumb,size=0x16) addr:0x02222fd8 local
+_ZN14cTTRaceResults16Event_SceneSetupEv kind:function(thumb,size=0x38) addr:0x02222ff0 local
+_ZN7cTTRace23Event_FadeOutForResultsEv kind:function(thumb,size=0x1c) addr:0x02223028 local
+_ZN7cTTRace13State_ResultsEv kind:function(thumb,size=0xf4) addr:0x02223044 local
+_ZN5ArrayIiLi5EEixEi kind:function(thumb,size=0x6) addr:0x02223138 local
+_ZN10cTTRaceHUD5PauseEv kind:function(thumb,size=0x18) addr:0x02223140 local
+_ZN7cTTRace10State_QuitEv kind:function(thumb,size=0x7c) addr:0x02223158 local
+_ZN7cTTRace10Event_QuitEv kind:function(thumb,size=0x10) addr:0x022231d4 local
+_ZN7cTTRace18Event_RespotFadeInEv kind:function(thumb,size=0x88) addr:0x022231e4 local
+_ZN14cTTBeachedBoat5StartE7Vehicle9cCallBack kind:function(thumb,size=0x64) addr:0x0222326c local
+_ZN12cTTCountdown11RespotStartEv kind:function(thumb,size=0x10) addr:0x022232d0 local
+_ZN7cTTRace18State_RespotFadeInEv kind:function(thumb,size=0x28) addr:0x022232e0 local
+_ZN7cTTRace19Event_RespotFadeOutEv kind:function(thumb,size=0xc4) addr:0x02223308 local
+_ZN7cTTRace12State_RespotEv kind:function(thumb,size=0x30) addr:0x022233cc local
+_ZN7cTTRace12Event_RespotEv kind:function(thumb,size=0x20) addr:0x022233fc local
+_ZN7cTTRace19State_HitCheckPointEv kind:function(thumb,size=0xa0) addr:0x0222341c local
+_ZN7cTTRace26RegisterLapAndRaceCompleteEv kind:function(thumb,size=0x210) addr:0x022234bc local
+_ZN9TimerImpl13GetFrameCountEv kind:function(thumb,size=0x10) addr:0x022236cc local
+_ZNK13cFrameCounter10FrameCountEv kind:function(thumb,size=0x4) addr:0x022236dc local
+_ZN10cTTRaceHUD16GetElapsedFramesEv kind:function(thumb,size=0xc) addr:0x022236e0 local
+_ZN10cTTRaceHUD13UpdateLapDataEv kind:function(thumb,size=0x78) addr:0x022236ec local
+_ZN7cTTRace12Event_PassedEv kind:function(thumb,size=0x20) addr:0x02223764 local
+_ZN7cTTRace19Event_HitCheckPointEv kind:function(thumb,size=0x10) addr:0x02223784 local
+_ZN7cTTRace20State_CheckPointRaceEv kind:function(thumb,size=0x34) addr:0x02223794 local
+_ZN7cTTRace12State_FailedEv kind:function(thumb,size=0x88) addr:0x022237c8 local
+_ZN7cTTRace27Update_ExitRaceVehicleTimerEv kind:function(thumb,size=0x9c) addr:0x02223850 local
+_ZN7cTTRace20Event_EnteredVehicleEv kind:function(thumb,size=0x50) addr:0x022238ec local
+_ZN7cTTRace23State_ExitedRaceVehicleEv kind:function(thumb,size=0x88) addr:0x0222393c local
+_Z15SetBlipFriendly6Marker kind:function(thumb,size=0x34) addr:0x022239c4 local
+_ZN7cTTRace13Event_TimeOutEv kind:function(thumb,size=0x18) addr:0x022239f8 local
+_ZN7cTTRace19State_EmergencyFailEv kind:function(thumb,size=0x2a) addr:0x02223a10 local
+_ZN7cTTRace22Event_PlayerDeadBustedEv kind:function(thumb,size=0x18) addr:0x02223a3c local
+_ZN7cTTRace17Event_VehicleDeadEv kind:function(thumb,size=0x18) addr:0x02223a54 local
+_ZN7cTTRace23Event_ExitedRaceVehicleEv kind:function(thumb,size=0x10) addr:0x02223a6c local
+_ZN7cTTRace30Event_PlayerEnteredWarningAreaEv kind:function(thumb,size=0x8) addr:0x02223a7c local
+_ZN7cTTRace27Event_PlayerLeftWarningAreaEv kind:function(thumb,size=0x38) addr:0x02223a84 local
+_ZN7cTTRace20Event_PlayerLeftAreaEv kind:function(thumb,size=0x18) addr:0x02223abc local
+_ZN7cTTRace12PreRaceSetupEv kind:function(thumb,size=0x1f4) addr:0x02223ad4 local
+_ZN18cTTCourseDataArray11GetCarColorEv kind:function(thumb,size=0x4) addr:0x02223cc8 local
+_ZN7cTTRace21CalculateBoundaryAreaEv kind:function(thumb,size=0x140) addr:0x02223ccc local
+_Z23GenerateRectangularAreaR4AreaRK4tv3dI6cFixedILm20ELm12EEES4_ kind:function(thumb,size=0x5a) addr:0x02223e0c local
+cFixed_20ul_12ul_tv3d_cFixed_20ul_12ul__operator_div_eq_int kind:function(thumb,size=0x20) addr:0x02223e68 local
+_ZN6cFixedILm20ELm12EEdVEi kind:function(thumb,size=0x10) addr:0x02223e88 local
+_ZN7cTTRace9RaceStartEv kind:function(thumb,size=0x1b8) addr:0x02223e98 local
+_ZN10cTTRaceHUD5StartEP11cTTRaceData9cCallBacki kind:function(thumb,size=0x158) addr:0x02224050 local
+_ZN18cTTCourseDataArray13GetCourseTimeEi kind:function(thumb,size=0x16) addr:0x022241a8 local
+_ZN7cTTRace7CleanupEv kind:function(thumb,size=0xb4) addr:0x022241c0 local
+_ZN15cTTCourseSelect10Event_QuitEv kind:function(thumb,size=0x10) addr:0x02224274 local
+_ZN15cTTCourseSelect18Event_CallFinishedEv kind:function(thumb,size=0x10) addr:0x02224284 local
+_ZN15cTTCourseSelect13Event_CleanupEv kind:function(thumb,size=0x258) addr:0x02224294 local
+_ZN16cTTCoursePreview7CleanupEv kind:function(thumb,size=0x8) addr:0x022244ec local
+_ZN15cTTCourseSelect16ClearDisplayTextEv kind:function(thumb,size=0x78) addr:0x022244f4 local
+_ZN18cTTCourseDataArray11GetTTNumberEv kind:function(thumb,size=0x4) addr:0x0222456c local
+_ZN18cTTCourseDataArray20SetCoursePreviewModeEb kind:function(thumb,size=0x6) addr:0x02224570 local
+_ZN15cTTCourseSelect35Event_SwitchRouteMoverSetupCompleteEv kind:function(thumb,size=0x34) addr:0x02224578 local
+_ZN15cTTCourseSelect27State_SwitchRouteMoverSetupEv kind:function(thumb,size=0x90) addr:0x022245ac local
+_ZN15cTTCourseSelect20ClearCurrentRaceAreaEv kind:function(thumb,size=0x184) addr:0x0222463c local
+Array_const_tv3d_cFixed_20ul_12ul_4__operator_index kind:function(thumb,size=0x6) addr:0x022247c0 local
+_ZN5ArrayIiLi4EEixEi kind:function(thumb,size=0x6) addr:0x022247c8 local
+_ZN16cTTCoursePreview5StartEPK4tv3dI6cFixedILm20ELm12EEEiPKiS2_ kind:function(thumb,size=0x16c) addr:0x022247d0 local
+Array_const_int_4__operator_index kind:function(thumb,size=0x6) addr:0x0222493c local
+_ZN15cTTCourseSelect27Event_SwitchRouteMoverSetupEv kind:function(thumb,size=0x10) addr:0x02224944 local
+_ZN15cTTCourseSelect20State_FadeOutAndExitEv kind:function(thumb,size=0x28) addr:0x02224954 local
+_ZN15cTTCourseSelect17State_SwitchRouteEv kind:function(thumb,size=0x28) addr:0x0222497c local
+_ZN15cTTCourseSelect17Event_OnMenuRightEv kind:function(thumb,size=0x30) addr:0x022249a4 local
+_ZN15cTTCourseSelect16Event_OnMenuLeftEv kind:function(thumb,size=0x2c) addr:0x022249d4 local
+_ZN15cTTCourseSelect14Event_OnCancelEv kind:function(thumb,size=0x18) addr:0x02224a00 local
+_ZN15cTTCourseSelect14Event_OnSelectEv kind:function(thumb,size=0x6c) addr:0x02224a18 local
+_ZN18cTTCourseDataArray10IsUnlockedEi kind:function(thumb,size=0x14) addr:0x02224a84 local
+_ZN15cTTCourseSelect12DisplayMedalEv kind:function(thumb,size=0x128) addr:0x02224a98 local
+_ZN15cTTCourseSelect15State_StartMenuEv kind:function(thumb,size=0xdc) addr:0x02224bc0 local
+_ZN15cTTCourseSelect25DisplayButtonInstructionsEv kind:function(thumb,size=0xe4) addr:0x02224c9c local
+_ZN15cTTCourseSelect17DisplayCourseDataEv kind:function(thumb,size=0x1e0) addr:0x02224d80 local
+_ZN18cTTCourseDataArray14GetBestLapTimeEi kind:function(thumb,size=0x16) addr:0x02224f60 local
+_ZN15cTTCourseSelect15Event_StartMenuEv kind:function(thumb,size=0x10) addr:0x02224f78 local
+_ZN15cTTCourseSelect24Event_MoverSetupCompleteEv kind:function(thumb,size=0x34) addr:0x02224f88 local
+_ZN15cTTCourseSelect16State_MoverSetupEv kind:function(thumb,size=0x15c) addr:0x02224fbc local
+_ZN18cTTCourseDataArray11SetCarColorE11eVehiclePal kind:function(thumb,size=0x4) addr:0x02225118 local
+_ZN15cTTCourseSelect16Event_MoverSetupEv kind:function(thumb,size=0x10) addr:0x0222511c local
+_ZN15cTTCourseSelect16State_StartSetupEv kind:function(thumb,size=0x40) addr:0x0222512c local
+_ZN12cTimeTrial0116Event_RaceFailedEv kind:function(thumb,size=0x10) addr:0x0222516c
+_ZN12cTimeTrial0115Event_PropSetupEv kind:function(thumb,size=0xdc) addr:0x0222517c
+_ZN14cTTPropHandler7CleanupEv kind:function(thumb,size=0x38) addr:0x02225258 local
+_ZN7cTTProp7CleanupEv kind:function(thumb,size=0x24) addr:0x02225290 local
+_ZNK5ArrayI7cTTPropLi48EE4SizeEv kind:function(thumb,size=0x4) addr:0x022252b4 local
+_ZN15cTTCourseSelect17GetSelectedCourseEv kind:function(thumb,size=0x4) addr:0x022252b8 local
+_ZN14cTTPropHandler16SetupWithHeadingE10ePropModelPK4tv3dI6cFixedILm20ELm12EEEPKiii kind:function(thumb,size=0x1f8) addr:0x022252bc
+_ZN7cTTProp16SetupWithHeadingEPK4tv3dI6cFixedILm20ELm12EEEi9cCallBack kind:function(thumb,size=0x1c) addr:0x022254b4
+_ZN12cTimeTrial0123Event_CourseSelectSetupEv kind:function(thumb,size=0x10) addr:0x022254d0
+_ZN12cTimeTrial0115Event_SetupRaceEv kind:function(thumb,size=0x19c) addr:0x022254e0
+_ZN11VehicleTypeC1ERKS_ kind:function(thumb,size=0x14) addr:0x0222567c local
+_ZN10cResHandleC1ERKS_ kind:function(thumb,size=0x20) addr:0x02225690 local
+_ZNK10cResHandle7IsValidEv kind:function(thumb,size=0x14) addr:0x022256b0 local
+_ZN7cTTRace5SetupEi11VehicleTypePK4tv3dI6cFixedILm20ELm12EEEiiS3_ kind:function(thumb,size=0x128) addr:0x022256c4 local
+_ZNK5ArrayIiLi5EE4SizeEv kind:function(thumb,size=0x4) addr:0x022257ec local
+_ZN7cTTRace5StartE9cCallBackS0_S0_ kind:function(thumb,size=0xcc) addr:0x022257f0 local
+_ZN12cTTCountdown5StartE9cCallBackS0_ kind:function(thumb,size=0xc8) addr:0x022258bc local
+_ZN12cTimeTrial0122Event_CourseSelectQuitEv kind:function(thumb,size=0x10) addr:0x02225984
+_ZN12cTimeTrial0118State_CourseSelectEv kind:function(thumb,size=0x104) addr:0x02225994
+_ZN18cTTCourseDataArray14LoadCourseDataE15eAmbientMissionii kind:function(thumb,size=0x9c) addr:0x02225a98 local
+_ZN13cTTCourseData4ZeroEv kind:function(thumb,size=0x1a) addr:0x02225b34 local
+_ZN13cTTCourseData22SetMedalTimesInSecondsEiii kind:function(thumb,size=0x3a) addr:0x02225b50 local
+_ZNK5ArrayI13cTTCourseDataLi4EE4SizeEv kind:function(thumb,size=0x4) addr:0x02225b8c local
+_ZN18cTTCourseDataArray15SetupMedalTimesEv kind:function(thumb,size=0x178) addr:0x02225b90 local
+_ZN15cTTCourseSelect23SetCourseSwitchCallBackE9cCallBack kind:function(thumb,size=0x10) addr:0x02225d08 local
+_ZN15cTTCourseSelect18AddCoursePointListEPK4tv3dI6cFixedILm20ELm12EEEiPKi kind:function(thumb,size=0x48) addr:0x02225d18 local
+_ZN15cTTCourseSelect5StartE11VehicleType9cCallBackS1_S1_6cFixedILm20ELm12EE kind:function(thumb,size=0x7c) addr:0x02225d60 local
+_ZN18cTTCourseDataArray20GetLastUnlockedIndexEv kind:function(thumb,size=0x2a) addr:0x02225ddc local
+_Zdv6cFixedILm20ELm12EEi kind:function(thumb,size=0x16) addr:0x02225e08 local
+_ZN12cTimeTrial0118Event_CourseSelectEv kind:function(thumb,size=0x10) addr:0x02225e20
+_ZN12cTimeTrial0116MissionCancelledEv kind:function(thumb,size=0x20) addr:0x02225e30
+_ZN12cTimeTrial0113MissionFailedEv kind:function(thumb,size=0x80) addr:0x02225e50
+_ZN7cTTRace13GetFailReasonEv kind:function(thumb,size=0x6) addr:0x02225ed0 local
+_ZN12cTimeTrial0114MissionCleanupEv kind:function(thumb,size=0x18) addr:0x02225ed8
+_ZN14cTTPropHandler12ReleasePropsEv kind:function(thumb,size=0x38) addr:0x02225ef0 local
+_ZN7cTTProp11ReleasePropEv kind:function(thumb,size=0x28) addr:0x02225f28 local
+_ZN12cTimeTrial0117DoneLoadResourcesEv kind:function(thumb,size=0x10) addr:0x02225f50
+_ZN16cTTCoursePreviewD1Ev kind:function(thumb,size=0xc) addr:0x02225f60 local
+_ZN7cTTPropD1Ev kind:function(thumb,size=0x1c) addr:0x02225f6c local
+_ZN13cAnimatedTextD1Ev kind:function(thumb,size=0x14) addr:0x02225f88 local
+_ZN13cAnimatedTextD0Ev kind:function(thumb,size=0x1a) addr:0x02225f9c local
+_ZN7cTTPropD0Ev kind:function(thumb,size=0x22) addr:0x02225fb8 local
+_ZN14cTTPropHandlerD1Ev kind:function(thumb,size=0x14) addr:0x02225fdc local
+_ZN5ArrayI7cTTPropLi48EED1Ev kind:function(thumb,size=0x18) addr:0x02225ff0 local
+_ZN14cTTPropHandlerD0Ev kind:function(thumb,size=0x1a) addr:0x02226008 local
+_ZN16cTTCoursePreviewD0Ev kind:function(thumb,size=0x12) addr:0x02226024 local
+_ZN12cTTCountdownD1Ev kind:function(thumb,size=0x24) addr:0x02226038 local
+_ZN12cTTCountdownD0Ev kind:function(thumb,size=0x2a) addr:0x0222605c local
+_ZN14cTTRaceResultsD1Ev kind:function(thumb,size=0x54) addr:0x02226088 local
+_ZN5ArrayI10ScriptTextLi5EED1Ev kind:function(thumb,size=0x18) addr:0x022260dc local
+_ZN5ArrayI6SpriteLi5EED1Ev kind:function(thumb,size=0x18) addr:0x022260f4 local
+_ZN14cTTRaceResultsD0Ev kind:function(thumb,size=0x5a) addr:0x0222610c local
+_ZN15cTTCourseSelectD1Ev kind:function(thumb,size=0x82) addr:0x02226168 local
+_ZN15cTTCourseSelectD0Ev kind:function(thumb,size=0x88) addr:0x022261ec local
+_ZN18cTTCourseDataArrayC1Ev kind:function(thumb,size=0x1e) addr:0x02226274 local
+_ZN5ArrayI13cTTCourseDataLi4EEC1Ev kind:function(thumb,size=0x1a) addr:0x02226294 local
+_ZN13cTTCourseDataC1Ev kind:function(thumb,size=0x14) addr:0x022262b0 local
+_ZN5ArrayIiLi3EEC1Ev kind:function(thumb,size=0x2) addr:0x022262c4 local
+_ZN12CTimeTrial01C1Ev kind:function(thumb,size=0x1c) addr:0x022262c8
+_ZN6ScriptC2Ev kind:function(thumb,size=0x14) addr:0x022262e4 local
+_ZN6ScriptD2Ev kind:function(thumb,size=0xc) addr:0x022262f8 local
+_ZN12cTimeTrial01C1Ev kind:function(thumb,size=0x3c) addr:0x02226304
+_ZN7cTTRaceC1Ev kind:function(thumb,size=0xcc) addr:0x02226340 local
+_ZN11cTTRaceDataC1Ev kind:function(thumb,size=0xc) addr:0x0222640c local
+_ZN5ArrayIiLi5EEC1Ev kind:function(thumb,size=0x2) addr:0x02226418 local
+_ZN10cTTRaceHUDC1Ev kind:function(thumb,size=0x38) addr:0x0222641c local
+_ZN10cTTRaceHUDD1Ev kind:function(thumb,size=0x2c) addr:0x02226454 local
+_ZN12cTTCountdownC1Ev kind:function(thumb,size=0x34) addr:0x02226480 local
+_ZN14cTTBeachedBoatC1Ev kind:function(thumb,size=0x28) addr:0x022264b4 local
+_ZN14cTTBeachedBoatD1Ev kind:function(thumb,size=0x1c) addr:0x022264dc local
+_ZN12cAmbientQuitC1Ev kind:function(thumb,size=0x20) addr:0x022264f8 local
+_ZN12cAmbientQuitD1Ev kind:function(thumb,size=0x14) addr:0x02226518 local
+_ZN14cTTRaceResultsC1Ev kind:function(thumb,size=0x78) addr:0x0222652c local
+_ZN13cAnimatedTextC1Ev kind:function(thumb,size=0x24) addr:0x022265a4 local
+_ZN5ArrayI6SpriteLi5EEC1Ev kind:function(thumb,size=0x24) addr:0x022265c8 local
+_ZN5ArrayI10ScriptTextLi5EEC1Ev kind:function(thumb,size=0x24) addr:0x022265ec local
+_ZN7cTTRaceD1Ev kind:function(thumb,size=0xaa) addr:0x02226610 local
+_ZN14cTTPropHandlerC1Ev kind:function(thumb,size=0x34) addr:0x022266bc local
+_ZN5ArrayI7cTTPropLi48EEC1Ev kind:function(thumb,size=0x24) addr:0x022266f0 local
+_ZN7cTTPropC1Ev kind:function(thumb,size=0x40) addr:0x02226714 local
+_ZN15cTTCourseSelectC1Ev kind:function(thumb,size=0xcc) addr:0x02226754 local
+Array_const_tv3d_cFixed_20ul_12ul_4__Array kind:function(thumb,size=0x2) addr:0x02226820 local
+Array_const_int_4__Array kind:function(thumb,size=0x2) addr:0x02226824 local
+_ZN5ArrayIiLi4EEC1Ev kind:function(thumb,size=0x2) addr:0x02226828 local
+_ZN16cTTCoursePreviewC1Ev kind:function(thumb,size=0x80) addr:0x0222682c local
+_ZN12cTimeTrial01D1Ev kind:function(thumb,size=0x34) addr:0x022268ac
+_ZN12CTimeTrial01D1Ev kind:function(thumb,size=0x14) addr:0x022268e0
+_ZN12CTimeTrial014InitEv kind:function(thumb,size=0xc) addr:0x022268f4
+_ZN12cTimeTrial014InitEv kind:function(thumb,size=0x64) addr:0x02226900
+_ZN12cTimeTrial0113LoadResourcesEv kind:function(thumb,size=0x34) addr:0x02226964
+_ZN7cTTRace19SetDefaultCallbacksEv kind:function(thumb,size=0x1ac) addr:0x02226998 local
+_ZN7cTTRace22IsVehicleAliveAndValidEv kind:function(thumb,size=0x1c) addr:0x02226b44 local
+_ZN12cAmbientQuit11SetCallbackE9cCallBack kind:function(thumb,size=0xc) addr:0x02226b60 local
+_ZN14cTTBeachedBoat23SetNotOverWaterCallBackE9cCallBack kind:function(thumb,size=0xc) addr:0x02226b6c local
+_ZN10cTTRaceHUD18SetTimeOutCallBackE9cCallBack kind:function(thumb,size=0xc) addr:0x02226b78 local
+_ZN6ScriptD1Ev kind:function(thumb,size=0xc) addr:0x02226b84 local
+_ZN6ScriptD0Ev kind:function(thumb,size=0x12) addr:0x02226b90 local
+_ZN12cAmbientQuitD0Ev kind:function(thumb,size=0x1a) addr:0x02226ba4 local
+_ZN10cTTRaceHUDD0Ev kind:function(thumb,size=0x32) addr:0x02226bc0 local
+_ZN14cTTBeachedBoatD0Ev kind:function(thumb,size=0x22) addr:0x02226bf4 local
+_ZN7cTTRaceD0Ev kind:function(thumb,size=0xb0) addr:0x02226c18 local
+_ZN12cTimeTrial01D0Ev kind:function(thumb,size=0x3c) addr:0x02226cc8
+_ZN12CTimeTrial01D0Ev kind:function(thumb,size=0x1a) addr:0x02226d04
+data_ov014_02226d20 kind:data(any) addr:0x02226d20
+data_ov014_02226d70 kind:data(any) addr:0x02226d70
+data_ov014_02226dac kind:data(any) addr:0x02226dac
+data_ov014_02226de8 kind:data(any) addr:0x02226de8
+data_ov014_02226e38 kind:data(any) addr:0x02226e38
+data_ov014_02226e84 kind:data(any) addr:0x02226e84 ambiguous
+data_ov014_02226e90 kind:data(any) addr:0x02226e90
+data_ov014_02226ef0 kind:data(any) addr:0x02226ef0
+data_ov014_02226f6c kind:data(any) addr:0x02226f6c
+data_ov014_02226ff8 kind:data(any) addr:0x02226ff8 ambiguous
+data_ov014_02227008 kind:data(any) addr:0x02227008
+data_ov014_022270a4 kind:data(any) addr:0x022270a4
+data_ov014_0222714c kind:data(any) addr:0x0222714c
+data_ov014_02227224 kind:data(any) addr:0x02227224
+data_ov014_02227274 kind:data(any) addr:0x02227274 ambiguous
+data_ov014_02227294 kind:data(any) addr:0x02227294 ambiguous
+data_ov014_022272cc kind:data(any) addr:0x022272cc ambiguous
+data_ov014_02227314 kind:data(any) addr:0x02227314
+data_ov014_0222741c kind:data(any) addr:0x0222741c
+data_ov014_02227494 kind:data(any) addr:0x02227494 ambiguous
+data_ov014_02227590 kind:data(any) addr:0x02227590
+data_ov014_02227758 kind:data(any) addr:0x02227758 ambiguous
+__sinit_ov014_02227764 kind:function(thumb,size=0x2c) addr:0x02227764
+.p__sinit_ov014_02227764 kind:data(word) addr:0x02227790
+data_ov014_022277a0 kind:data(any) addr:0x022277a0
+data_ov014_022277a4 kind:data(any) addr:0x022277a4 ambiguous
+data_ov014_022277a8 kind:data(any) addr:0x022277a8
+data_ov014_022277b0 kind:data(any) addr:0x022277b0
+data_ov014_022277c8 kind:data(any) addr:0x022277c8
+data_ov014_022277f8 kind:data(any) addr:0x022277f8
+data_ov014_02227800 kind:data(any) addr:0x02227800
+data_ov014_02227810 kind:data(any) addr:0x02227810
+data_ov014_02227820 kind:data(any) addr:0x02227820
+data_ov014_02227844 kind:data(any) addr:0x02227844 ambiguous
+data_ov014_0222784c kind:data(any) addr:0x0222784c ambiguous
+data_ov014_02227880 kind:data(any) addr:0x02227880
+data_ov014_02227888 kind:data(any) addr:0x02227888
+data_ov014_02227890 kind:data(any) addr:0x02227890
+data_ov014_022278d8 kind:data(any) addr:0x022278d8
+data_ov014_022278e0 kind:data(any) addr:0x022278e0
+data_ov014_022278e8 kind:data(any) addr:0x022278e8
+data_ov014_02227908 kind:data(any) addr:0x02227908
+data_ov014_02227910 kind:data(any) addr:0x02227910
+data_ov014_02227918 kind:data(any) addr:0x02227918
+data_ov014_02227920 kind:data(any) addr:0x02227920
+data_ov014_02227928 kind:data(any) addr:0x02227928
+data_ov014_02227930 kind:data(any) addr:0x02227930
+data_ov014_02227938 kind:data(any) addr:0x02227938
+data_ov014_02227940 kind:data(any) addr:0x02227940
+data_ov014_02227948 kind:data(any) addr:0x02227948
+data_ov014_02227950 kind:data(any) addr:0x02227950
+data_ov014_02227960 kind:data(any) addr:0x02227960
+data_ov014_02227968 kind:data(any) addr:0x02227968
+data_ov014_02227970 kind:data(any) addr:0x02227970
+data_ov014_02227978 kind:data(any) addr:0x02227978
+data_ov014_02227980 kind:data(any) addr:0x02227980
+data_ov014_02227988 kind:data(any) addr:0x02227988
+data_ov014_02227998 kind:data(any) addr:0x02227998
+data_ov014_022279a0 kind:data(any) addr:0x022279a0
+data_ov014_022279a8 kind:data(any) addr:0x022279a8
+data_ov014_022279b0 kind:data(any) addr:0x022279b0
+data_ov014_022279b8 kind:data(any) addr:0x022279b8
+data_ov014_022279c0 kind:data(any) addr:0x022279c0
+data_ov014_022279c8 kind:data(any) addr:0x022279c8
+data_ov014_022279cc kind:data(any) addr:0x022279cc ambiguous
+data_ov014_022279d0 kind:data(any) addr:0x022279d0
+data_ov014_022279d8 kind:data(any) addr:0x022279d8
+data_ov014_022279e0 kind:data(any) addr:0x022279e0
+data_ov014_022279e8 kind:data(any) addr:0x022279e8
+data_ov014_022279f0 kind:data(any) addr:0x022279f0
+data_ov014_022279f8 kind:data(any) addr:0x022279f8
+data_ov014_02227a08 kind:data(any) addr:0x02227a08
+data_ov014_02227a10 kind:data(any) addr:0x02227a10
+data_ov014_02227a18 kind:data(any) addr:0x02227a18
+data_ov014_02227a20 kind:data(any) addr:0x02227a20
+data_ov014_02227a28 kind:data(any) addr:0x02227a28
+data_ov014_02227a30 kind:data(any) addr:0x02227a30
+data_ov014_02227a38 kind:data(any) addr:0x02227a38
+data_ov014_02227a40 kind:data(any) addr:0x02227a40
+data_ov014_02227a48 kind:data(any) addr:0x02227a48
+data_ov014_02227a50 kind:data(any) addr:0x02227a50
+data_ov014_02227a60 kind:data(any) addr:0x02227a60
+data_ov014_02227a80 kind:data(any) addr:0x02227a80
+data_ov014_02227a88 kind:data(any) addr:0x02227a88
+data_ov014_02227a90 kind:data(any) addr:0x02227a90
+data_ov014_02227a98 kind:data(any) addr:0x02227a98
+data_ov014_02227aa0 kind:data(any) addr:0x02227aa0
+data_ov014_02227aa8 kind:data(any) addr:0x02227aa8
+data_ov014_02227ab0 kind:data(any) addr:0x02227ab0
+data_ov014_02227ab8 kind:data(any) addr:0x02227ab8
+data_ov014_02227ac0 kind:data(any) addr:0x02227ac0
+data_ov014_02227ac8 kind:data(any) addr:0x02227ac8
+data_ov014_02227ad0 kind:data(any) addr:0x02227ad0
+data_ov014_02227ad8 kind:data(any) addr:0x02227ad8
+data_ov014_02227ae0 kind:data(any) addr:0x02227ae0
+data_ov014_02227ae8 kind:data(any) addr:0x02227ae8
+data_ov014_02227af0 kind:data(any) addr:0x02227af0
+data_ov014_02227af8 kind:data(any) addr:0x02227af8
+data_ov014_02227b00 kind:data(any) addr:0x02227b00
+data_ov014_02227b08 kind:data(any) addr:0x02227b08
+data_ov014_02227b10 kind:data(any) addr:0x02227b10
+data_ov014_02227b18 kind:data(any) addr:0x02227b18
+data_ov014_02227b20 kind:data(any) addr:0x02227b20
+data_ov014_02227b30 kind:data(any) addr:0x02227b30
+data_ov014_02227b38 kind:data(any) addr:0x02227b38
+data_ov014_02227b40 kind:data(any) addr:0x02227b40
+data_ov014_02227b48 kind:data(any) addr:0x02227b48
+data_ov014_02227b50 kind:data(any) addr:0x02227b50
+data_ov014_02227b58 kind:data(any) addr:0x02227b58
+data_ov014_02227b60 kind:data(any) addr:0x02227b60
+data_ov014_02227b68 kind:data(any) addr:0x02227b68
+data_ov014_02227b70 kind:data(any) addr:0x02227b70
+data_ov014_02227b78 kind:data(any) addr:0x02227b78
+data_ov014_02227b88 kind:data(any) addr:0x02227b88
+data_ov014_02227b90 kind:data(any) addr:0x02227b90
+data_ov014_02227b98 kind:data(any) addr:0x02227b98
+data_ov014_02227ba0 kind:data(any) addr:0x02227ba0
+data_ov014_02227ba8 kind:data(any) addr:0x02227ba8
+data_ov014_02227bac kind:data(any) addr:0x02227bac ambiguous
+data_ov014_02227bb0 kind:data(any) addr:0x02227bb0
+data_ov014_02227bb8 kind:data(any) addr:0x02227bb8
+data_ov014_02227bc0 kind:data(any) addr:0x02227bc0
+data_ov014_02227bc8 kind:data(any) addr:0x02227bc8
+data_ov014_02227bd0 kind:data(any) addr:0x02227bd0
+data_ov014_02227bd8 kind:data(any) addr:0x02227bd8
+data_ov014_02227be0 kind:data(any) addr:0x02227be0
+data_ov014_02227be8 kind:data(any) addr:0x02227be8
+data_ov014_02227bf0 kind:data(any) addr:0x02227bf0
+data_ov014_02227bf8 kind:data(any) addr:0x02227bf8
+data_ov014_02227c00 kind:data(any) addr:0x02227c00
+data_ov014_02227c08 kind:data(any) addr:0x02227c08
+data_ov014_02227c10 kind:data(any) addr:0x02227c10
+data_ov014_02227c18 kind:data(any) addr:0x02227c18
+data_ov014_02227c20 kind:data(any) addr:0x02227c20
+data_ov014_02227c28 kind:data(any) addr:0x02227c28
+data_ov014_02227c30 kind:data(any) addr:0x02227c30
+data_ov014_02227c38 kind:data(any) addr:0x02227c38
+data_ov014_02227c40 kind:data(any) addr:0x02227c40
+data_ov014_02227c48 kind:data(any) addr:0x02227c48
+data_ov014_02227c4c kind:data(any) addr:0x02227c4c ambiguous
+data_ov014_02227c50 kind:data(any) addr:0x02227c50
+data_ov014_02227c58 kind:data(any) addr:0x02227c58
+data_ov014_02227c60 kind:data(any) addr:0x02227c60
+data_ov014_02227c68 kind:data(any) addr:0x02227c68
+data_ov014_02227c78 kind:data(any) addr:0x02227c78
+data_ov014_02227c80 kind:data(any) addr:0x02227c80
+data_ov014_02227c88 kind:data(any) addr:0x02227c88
+data_ov014_02227c90 kind:data(any) addr:0x02227c90
+data_ov014_02227c98 kind:data(any) addr:0x02227c98
+data_ov014_02227ca0 kind:data(any) addr:0x02227ca0
+data_ov014_02227ca8 kind:data(any) addr:0x02227ca8
+data_ov014_02227cb0 kind:data(any) addr:0x02227cb0
+data_ov014_02227cb8 kind:data(any) addr:0x02227cb8
+data_ov014_02227cc0 kind:data(any) addr:0x02227cc0
+data_ov014_02227cc8 kind:data(any) addr:0x02227cc8
+data_ov014_02227cd0 kind:data(any) addr:0x02227cd0
+data_ov014_02227cd8 kind:data(any) addr:0x02227cd8
+data_ov014_02227ce0 kind:data(any) addr:0x02227ce0
+data_ov014_02227ce8 kind:data(any) addr:0x02227ce8
+data_ov014_02227d20 kind:data(any) addr:0x02227d20
+data_ov014_02227d38 kind:data(any) addr:0x02227d38
+data_ov014_02227d54 kind:data(any) addr:0x02227d54
+data_ov014_02227d70 kind:data(any) addr:0x02227d70
+data_ov014_02227d78 kind:data(any) addr:0x02227d78 ambiguous
+data_ov014_02227da8 kind:data(any) addr:0x02227da8
+data_ov014_02227de0 kind:data(any) addr:0x02227de0
+data_ov014_02227e18 kind:data(any) addr:0x02227e18
+data_ov014_02227e50 kind:data(any) addr:0x02227e50
+data_ov014_02227e88 kind:data(any) addr:0x02227e88
+data_ov014_02227ec0 kind:data(any) addr:0x02227ec0
+data_ov014_02227ecc kind:data(any) addr:0x02227ecc ambiguous
+data_ov014_02227ef8 kind:data(any) addr:0x02227ef8
+data_ov014_02227f30 kind:data(any) addr:0x02227f30
+data_ov014_02227f68 kind:data(any) addr:0x02227f68
+data_ov014_02227fa0 kind:data(any) addr:0x02227fa0
+data_ov014_02227fd8 kind:data(any) addr:0x02227fd8
+data_ov014_02227fec kind:data(any) addr:0x02227fec ambiguous
+data_ov014_02228020 kind:bss addr:0x02228020
+data_ov014_0222802c kind:bss addr:0x0222802c
+data_ov014_022280a4 kind:bss addr:0x022280a4
+data_ov014_02228314 kind:bss addr:0x02228314 ambiguous
+data_ov014_02228318 kind:bss addr:0x02228318 ambiguous
+data_ov014_02228338 kind:bss addr:0x02228338 ambiguous
+data_ov014_0222852c kind:bss addr:0x0222852c ambiguous
+data_ov014_02228b44 kind:bss addr:0x02228b44 ambiguous
+data_ov014_02228b98 kind:bss addr:0x02228b98 ambiguous
+data_ov014_02228c18 kind:bss addr:0x02228c18 ambiguous
+data_ov014_02228f34 kind:bss addr:0x02228f34 ambiguous

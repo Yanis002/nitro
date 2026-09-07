@@ -1,0 +1,79 @@
+_ZN3Gui14cKeyboardMultiC1EhPNS_4cWndEPN5Gfx2d14cSpriteDataSetEll kind:function(thumb,size=0x264) addr:0x02234cc0 local
+_ZN3Gui14cKeyboardMultiD1Ev kind:function(thumb,size=0x1c0) addr:0x02234f24 local
+_ZN3Gui14cKeyboardMultiD0Ev kind:function(thumb,size=0x1cc) addr:0x022350e4 local
+_ZN3Gui14cKeyboardMulti4InitEv kind:function(thumb,size=0x514) addr:0x022352b0 local
+_ZN3Gui14cKeyboardMulti7VisibleEb kind:function(thumb,size=0x1a0) addr:0x022357c4 local
+_ZN3Gui14cKeyboardMulti4ModeENS0_6KbModeE kind:function(thumb,size=0x240) addr:0x02235964 local
+_ZN3Gui14cKeyboardMulti18ClearMessageBufferEv kind:function(thumb,size=0x18) addr:0x02235ba4 local
+_ZN3Gui14cKeyboardMulti7ProcessEv kind:function(thumb,size=0x18c) addr:0x02235bbc local
+_ZN3Gui14cKeyboardMulti7AddKeysEv kind:function(thumb,size=0x198) addr:0x02235d48 local
+_ZN3Gui14cKeyboardMulti9LabelKeysEv kind:function(thumb,size=0x138) addr:0x02235ee0 local
+_ZN3Gui14cKeyboardMulti13CreateAllKeysEv kind:function(thumb,size=0xb0) addr:0x02236018 local
+_ZN3Gui14cKeyboardMulti14DestroyAllKeysEv kind:function(thumb,size=0x2a) addr:0x022360c8 local
+_ZN3Gui14cKeyboardMulti12LoadCodePageEv kind:function(thumb,size=0x198) addr:0x022360f4 local
+_ZNK3Gui14cKeyboardMulti12KeyRowNumberEm kind:function(thumb,size=0xa8) addr:0x0223628c local
+_ZNK3Gui14cKeyboardMulti12GetButtonPosEm kind:function(thumb,size=0x132) addr:0x02236334 local
+_ZN3Gui14cKeyboardMulti11Key_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0xd0) addr:0x02236468 local
+_ZN3Gui14cKeyboardMulti17Backspace_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x64) addr:0x02236538 local
+_ZN3Gui14cKeyboardMulti14Return_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x5c) addr:0x0223659c local
+_ZN3Gui14cKeyboardMulti16CapsLock_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x6c) addr:0x022365f8 local
+_ZN3Gui14cKeyboardMulti12Mode_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x4c) addr:0x02236664 local
+_ZN3Gui14cKeyboardMulti15Dakuten_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0xd8) addr:0x022366b0 local
+_ZN3Gui14cKeyboardMulti12Kana_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0xd0) addr:0x02236788 local
+_ZN3Gui14cFriendListAppC1Ev kind:function(thumb,size=0x18c) addr:0x02236858
+_ZN3Gui14cFriendListAppD1Ev kind:function(thumb,size=0x4c) addr:0x022369e4
+_ZN3Gui14cFriendListAppD0Ev kind:function(thumb,size=0x58) addr:0x02236a30
+_ZN3Gui14cFriendListApp4InitEv kind:function(thumb,size=0x36c) addr:0x02236a88
+_ZN3Gui14cFriendListApp6DeInitEv kind:function(thumb,size=0x10c) addr:0x02236df4
+_ZN3Gui14cFriendListApp4ModeENS0_9FListModeE kind:function(thumb,size=0x3ac) addr:0x02236f00
+_ZN3Gui14cFriendListApp7ProcessEv kind:function(thumb,size=0x678) addr:0x022372ac
+_ZN3Gui14cFriendListApp11OnSwipeLeftERKNS_18cOnSwipeLeftParamsE kind:function(thumb,size=0x1a) addr:0x02237924
+_ZN3Gui14cFriendListApp7OnPressERKNS_14cOnClickParamsE kind:function(thumb,size=0x30) addr:0x02237940
+_ZN3Gui14cFriendListApp12RefreshStatsEm kind:function(thumb,size=0x1ac) addr:0x02237970
+_ZN3Gui14cFriendListApp10ClearStatsEv kind:function(thumb,size=0x30) addr:0x02237b1c
+_ZN3Gui14cFriendListApp9ShowStatsEb kind:function(thumb,size=0x24) addr:0x02237b4c
+_ZN3Gui14cFriendListApp12Back_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x88) addr:0x02237b70
+_ZN3Gui14cFriendListApp12Home_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x7c) addr:0x02237bf8
+_ZN3Gui14cFriendListApp29MessageBoxDismissedCB_ExitAppEPv kind:function(thumb,size=0x5c) addr:0x02237c74
+_ZN3Gui14cFriendListApp22OnNewFriendHighlightedEPNS_12cListBoxItemE kind:function(thumb,size=0x18) addr:0x02237cd0
+_ZN3Gui14cFriendListApp35MessageBoxDismissedCB_PlayerConnectEPv kind:function(thumb,size=0x24) addr:0x02237ce8
+_ZN3Gui14cFriendListApp38MessageBoxDismissedCB_DisconnectFriendEPv kind:function(thumb,size=0x30) addr:0x02237d0c
+_ZN3Gui14cFriendListApp31MessageBoxDismissedCB_DelFriendEPv kind:function(thumb,size=0xe0) addr:0x02237d3c
+_ZN3Gui14cFriendListApp31CancelConnectionRequest_OnClickEPv kind:function(thumb,size=0x28) addr:0x02237e1c
+_ZN3Gui14cFriendListApp16KB_ReturnPressedEPv kind:function(thumb,size=0x1d4) addr:0x02237e44
+_ZN3Gui14cFriendListApp25MessageBoxCloseConnectionEPv kind:function(thumb,size=0x30) addr:0x02238018
+_ZN3Gui14cFriendListApp14Friend_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x244) addr:0x02238048
+_ZN3Gui14cFriendListApp9AddFriendERKNS_14cMessageParamsE kind:function(thumb,size=0x64) addr:0x0223828c
+_ZN3Gui14cFriendListApp12DeleteFriendERKNS_14cMessageParamsE kind:function(thumb,size=0x64) addr:0x022382f0
+_ZN3Gui14cFriendListApp18Disconnect_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0xd4) addr:0x02238354
+data_ov113_02238448 kind:data(any) addr:0x02238448
+data_ov113_022384b4 kind:data(any) addr:0x022384b4
+data_ov113_02238534 kind:data(any) addr:0x02238534
+data_ov113_02238538 kind:data(any) addr:0x02238538
+data_ov113_02238550 kind:data(any) addr:0x02238550
+data_ov113_02238568 kind:data(any) addr:0x02238568
+data_ov113_0223857c kind:data(any) addr:0x0223857c
+data_ov113_02238590 kind:data(any) addr:0x02238590
+data_ov113_022385a4 kind:data(any) addr:0x022385a4
+data_ov113_022385b8 kind:data(any) addr:0x022385b8
+data_ov113_022385d0 kind:data(any) addr:0x022385d0
+data_ov113_022385e8 kind:data(any) addr:0x022385e8
+data_ov113_022385f4 kind:data(any) addr:0x022385f4
+data_ov113_02238604 kind:data(any) addr:0x02238604
+data_ov113_02238618 kind:data(any) addr:0x02238618
+data_ov113_0223862c kind:data(any) addr:0x0223862c
+data_ov113_02238640 kind:data(any) addr:0x02238640
+data_ov113_02238654 kind:data(any) addr:0x02238654
+data_ov113_02238668 kind:data(any) addr:0x02238668
+data_ov113_0223867c kind:data(any) addr:0x0223867c
+data_ov113_02238690 kind:data(any) addr:0x02238690
+data_ov113_022386a4 kind:data(any) addr:0x022386a4
+data_ov113_022386b0 kind:data(any) addr:0x022386b0
+data_ov113_022386c0 kind:data(any) addr:0x022386c0
+data_ov113_022386d0 kind:data(any) addr:0x022386d0
+data_ov113_022386ec kind:data(any) addr:0x022386ec
+data_ov113_02238708 kind:data(any) addr:0x02238708
+data_ov113_02238724 kind:data(any) addr:0x02238724
+data_ov113_02238740 kind:data(any) addr:0x02238740
+data_ov113_02238760 kind:data(any) addr:0x02238760
+data_ov113_02238780 kind:data(any) addr:0x02238780

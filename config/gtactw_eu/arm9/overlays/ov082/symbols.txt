@@ -1,0 +1,511 @@
+_ZNK6cFixedILm20ELm12EEngEv kind:function(thumb,size=0x10) addr:0x02220be0 local
+cFixed_20ul_12ul__cFixed_long kind:function(thumb,size=0x4) addr:0x02220bf0 local
+_ZN11SimpleMoverC1Ev kind:function(thumb,size=0x14) addr:0x02220bf4 local
+_ZNK8cWeakPtrI13cEventHandlerE3GetEv kind:function(thumb,size=0xc) addr:0x02220c08 local
+_ZN8cWeakRef3GetEv kind:function(thumb,size=0x4) addr:0x02220c14 local
+_ZNK11cWeakRefPtrptEv kind:function(thumb,size=0x4) addr:0x02220c18 local
+_ZN11SimpleMoverC2Ev kind:function(thumb,size=0x14) addr:0x02220c1c local
+_ZNK6cFixedILm20ELm12EE5ValueEv kind:function(thumb,size=0x4) addr:0x02220c30 local
+_Zml6cFixedILm20ELm12EEi kind:function(thumb,size=0x1a) addr:0x02220c34 local
+fix_mult_traits_20ul_12ul_32ul_0ul__type_cFixed_20ul_12ul__operator_mul_32ul_0ul kind:function(thumb,size=0x3e) addr:0x02220c50 local
+cFixed_52ul_12ul__cFixed_long_long kind:function(thumb,size=0x6) addr:0x02220c90 local
+_ZN6cFixedILm32ELm0EEC1ERKS0_ kind:function(thumb,size=0x6) addr:0x02220c98 local
+_ZNK6cFixedILm32ELm0EE5ValueEv kind:function(thumb,size=0x4) addr:0x02220ca0 local
+_ZN6cFixedILm32ELm0EEC1Ei kind:function(thumb,size=0xc) addr:0x02220ca4 local
+_ZN6cFixedILm32ELm0EEaSEi kind:function(thumb,size=0x1e) addr:0x02220cb0 local
+cFixed_32ul_0ul__cFixed_int kind:function(thumb,size=0x8) addr:0x02220cd0 local
+_ZN6cFixedILm32ELm0EEaSERKS0_ kind:function(thumb,size=0x6) addr:0x02220cd8 local
+bool_cFixed_20ul_12ul__operator_eq_20ul_12ul kind:function(thumb,size=0x32) addr:0x02220ce0 local
+_ZN8PhysicalC2Ev kind:function(thumb,size=0x14) addr:0x02220d14 local
+_ZNK6cFixedILm20ELm12EEleEi kind:function(thumb,size=0x24) addr:0x02220d28 local
+fix_add_traits_20ul_12ul_20ul_12ul__type_cFixed_20ul_12ul__operator_add_20ul_12ul kind:function(thumb,size=0x1e) addr:0x02220d4c local
+_ZN5cGate4InitEv kind:function(thumb,size=0x280) addr:0x02220d6c local
+_Zpli6cFixedILm20ELm12EE kind:function(thumb,size=0x26) addr:0x02220fec local
+_ZN5cGate10NearPlayerE4tv3dI6cFixedILm20ELm12EEE kind:function(thumb,size=0x34) addr:0x02221014 local
+_ZN5cGate11SetOverrideE14eGateOverrides kind:function(thumb,size=0xf4) addr:0x02221048 local
+_ZN5cGate7CleanupEv kind:function(thumb,size=0x56) addr:0x0222113c local
+_ZN5cGate6DoOpenEv kind:function(thumb,size=0x228) addr:0x02221194 local
+_ZN5cGate7DoCloseEv kind:function(thumb,size=0x278) addr:0x022213bc local
+_ZNK4tv3dI6cFixedILm20ELm12EEErsEi kind:function(thumb,size=0x50) addr:0x02221634 local
+_Zrs6cFixedILm20ELm12EEl kind:function(thumb,size=0x16) addr:0x02221684 local
+_ZN6cFixedILm20ELm12EErSEl kind:function(thumb,size=0x8) addr:0x0222169c local
+_ZN5cGate13HandleAudioFXEb kind:function(thumb,size=0x7c) addr:0x022216a4 local
+bool_cFixed_20ul_12ul__operator_ge_20ul_12ul kind:function(thumb,size=0x12) addr:0x02221720 local
+_ZNK6cFixedILm20ELm12EEneEi kind:function(thumb,size=0x24) addr:0x02221734 local
+_ZN11DynamicPropC1Ev kind:function(thumb,size=0x14) addr:0x02221758 local
+_ZN16FadeOutAndFadeIn8FinishedEv kind:function(thumb,size=0x18) addr:0x0222176c local
+_ZN16FadeOutAndFadeIn13DoneFadeingInEv kind:function(thumb,size=0x10) addr:0x02221784 local
+_ZN16FadeOutAndFadeIn16WaitedFadeBackInEv kind:function(thumb,size=0x50) addr:0x02221794 local
+_ZN16FadeOutAndFadeIn6WaitedEv kind:function(thumb,size=0x10) addr:0x022217e4 local
+_ZN16FadeOutAndFadeIn10FadeBackInEv kind:function(thumb,size=0x48) addr:0x022217f4 local
+_ZN16FadeOutAndFadeIn11DoneWaitingEv kind:function(thumb,size=0x10) addr:0x0222183c local
+_ZN16FadeOutAndFadeIn4WaitEv kind:function(thumb,size=0x48) addr:0x0222184c local
+_ZN16FadeOutAndFadeIn11DoneFadeOutEv kind:function(thumb,size=0x10) addr:0x02221894 local
+_ZN16FadeOutAndFadeIn5StartEv kind:function(thumb,size=0x4c) addr:0x022218a4 local
+_ZNK10cResHandle7IsValidEv kind:function(thumb,size=0x14) addr:0x022218f0 local
+_ZN16cCutsceneBookend8ContinueEv kind:function(thumb,size=0x40) addr:0x02221904 local
+_ZN16cCutsceneBookend9FadedDownEv kind:function(thumb,size=0x12) addr:0x02221944 local
+_ZN16cCutsceneBookend18SetEntityPositionsEv kind:function(thumb,size=0x11a) addr:0x02221958 local
+tv3d_cFixed_20ul_12ul_operator_mul_int kind:function(thumb,size=0x68) addr:0x02221a74 local
+_ZN16cCutsceneBookend8DoneFadeEv kind:function(thumb,size=0x10) addr:0x02221adc local
+_ZN16cCutsceneBookend9FailCheckEv kind:function(thumb,size=0x80) addr:0x02221aec local
+_ZN16FadeOutAndFadeIn4InitE9cCallBackS0_bbi kind:function(thumb,size=0x3c) addr:0x02221b6c local
+_ZN16cCutsceneBookend13CheckEntitiesEv kind:function(thumb,size=0x188) addr:0x02221ba8 local
+_ZN16cCutsceneBookend26SomebodyHasJumpedIntoWaterEv kind:function(thumb,size=0x10) addr:0x02221d30 local
+_ZN16cCutsceneBookend27LetsGoSeeWhoIsAtTheDoorThenEv kind:function(thumb,size=0x5c) addr:0x02221d40 local
+_ZN16cCutsceneBookend18StartEntityWalkingEi kind:function(thumb,size=0xf0) addr:0x02221d9c local
+_ZN16cCutsceneBookend10TimeRunOutEv kind:function(thumb,size=0x40) addr:0x02221e8c local
+_ZN16cCutsceneBookend16CameraInPositionEv kind:function(thumb,size=0xa) addr:0x02221ecc local
+_ZN16cCutsceneBookend5BeginEv kind:function(thumb,size=0x164) addr:0x02221ed8 local
+_ZN16cCutsceneBookend20StartEntitiesWalkingEv kind:function(thumb,size=0x32) addr:0x0222203c local
+_ZN16cCutsceneBookend24StartDoorEntitiesWalkingEv kind:function(thumb,size=0x32) addr:0x02222070 local
+_ZN16cCutsceneBookend15PrepareToSetOffEi kind:function(thumb,size=0x98) addr:0x022220a4 local
+_ZN12cDoorHandler5StartE3Ped4tv3dI6cFixedILm20ELm12EEEi11eDoorAction9cCallBackb kind:function(thumb,size=0x44) addr:0x0222213c local
+_ZN16cCutsceneBookend9CheckAreaEb kind:function(thumb,size=0x340) addr:0x02222180 local
+_ZN16cCutsceneBookend22MoveLastPlayersVehicleE4Area kind:function(thumb,size=0x44) addr:0x022224c0 local
+_ZN16cCutsceneBookend33IsLastPlayerVehicleValidToBeMovedEv kind:function(thumb,size=0x36) addr:0x02222504 local
+_ZN16cCutsceneBookend9CallBeginEv kind:function(thumb,size=0x10) addr:0x0222253c local
+_ZN6cIntro6FinishEv kind:function(thumb,size=0xc) addr:0x0222254c local
+_ZN6cIntro16IntroEndFinishedEv kind:function(thumb,size=0x3c) addr:0x02222558 local
+_ZN16cCutsceneBookend18ReleaseAllEntitiesEv kind:function(thumb,size=0x42) addr:0x02222594 local
+_ZN6cIntro3EndEv kind:function(thumb,size=0x10) addr:0x022225d8 local
+_ZN6cIntro13IntroFinishedEv kind:function(thumb,size=0x4c) addr:0x022225e8 local
+_ZN16cCutsceneBookend8GetFadedEv kind:function(thumb,size=0xc) addr:0x02222634 local
+_ZN6cIntro7WalkOffEv kind:function(thumb,size=0x74) addr:0x02222640 local
+_ZN6cIntro11SequenceEndEv kind:function(thumb,size=0x10) addr:0x022226b4 local
+_ZN6cIntro19ReadyToPlaySequenceEv kind:function(thumb,size=0x1b8) addr:0x022226c4 local
+_Z23GenerateRectangularAreaR4AreaRK4tv3dI6cFixedILm20ELm12EEES4_ kind:function(thumb,size=0x5a) addr:0x0222287c local
+cFixed_20ul_12ul_tv3d_cFixed_20ul_12ul__operator_div_eq_int kind:function(thumb,size=0x20) addr:0x022228d8 local
+_ZN6cFixedILm20ELm12EEdVEi kind:function(thumb,size=0x10) addr:0x022228f8 local
+_ZN16cCutsceneBookend11SetSequenceEP19cScriptSequenceBasePi kind:function(thumb,size=0xc) addr:0x02222908 local
+_ZN16cCutsceneBookend20SetCarRespotPositionE4tv3dI6cFixedILm20ELm12EEEi kind:function(thumb,size=0x18) addr:0x02222914 local
+_ZN16cCutsceneBookend9AddEntityE11SimpleMoverRK4tv3dI6cFixedILm20ELm12EEEibi kind:function(thumb,size=0xd2) addr:0x0222292c local
+_ZN16cCutsceneBookend7AddAreaE4tv3dI6cFixedILm20ELm12EEES2_ kind:function(thumb,size=0x22) addr:0x02222a00 local
+_ZN16cCutsceneBookend7AddDoorEi4tv3dI6cFixedILm20ELm12EEEib kind:function(thumb,size=0x26) addr:0x02222a24 local
+_ZN16cCutsceneBookend5StartE9cCallBackibibbb kind:function(thumb,size=0xf4) addr:0x02222a4c local
+_ZN16cCutsceneBookend16SetCheckingAtEndEv kind:function(thumb,size=0x2a) addr:0x02222b40 local
+_ZN6cIntro5BeginEv kind:function(thumb,size=0xa8) addr:0x02222b6c local
+_ZN12cScriptClock13HandleResprayEv kind:function(thumb,size=0x34) addr:0x02222c14 local
+_ZN12cScriptClock13State_MonitorEv kind:function(thumb,size=0x15c) addr:0x02222c48 local
+_ZNK9cCallBackneERKS_ kind:function(thumb,size=0x12) addr:0x02222da4 local
+_ZNK9cCallBackeqERKS_ kind:function(thumb,size=0x2c) addr:0x02222db8 local
+_ZN12cScriptClock13State_KickOffEv kind:function(thumb,size=0xb8) addr:0x02222de4 local
+_ZN12cScriptClock7CleanupEv kind:function(thumb,size=0x3c) addr:0x02222e9c local
+_ZN8cCamHelp14DisplayCamHelpEv kind:function(thumb,size=0x1c) addr:0x02222ed8
+_ZN8cCamHelp19SetupDisplayCamHelpEv kind:function(thumb,size=0x10) addr:0x02222ef4
+_ZN6cGoods9CrateDeadEv kind:function(thumb,size=0x26) addr:0x02222f04
+_ZN11cMissionCar7CarDeadEv kind:function(thumb,size=0x28) addr:0x02222f2c
+_ZN11cMissionCar10CarInWaterEv kind:function(thumb,size=0x7c) addr:0x02222f54
+_ZN17cMissionBulldozer7InWaterEv kind:function(thumb,size=0x14) addr:0x02222fd0
+_ZN8cJAO_B0316ResetPassedTimerEv kind:function(thumb,size=0x10) addr:0x02222fe4
+_ZN8cJAO_B036PassedEv kind:function(thumb,size=0x20) addr:0x02222ff4
+_ZN8cJAO_B0316StartPassedTimerEv kind:function(thumb,size=0x74) addr:0x02223014
+_ZN8cJAO_B036FailedEv kind:function(thumb,size=0x24) addr:0x02223088
+_ZN8cJAO_B0313FailedCleanUpEv kind:function(thumb,size=0x2c) addr:0x022230ac
+_ZN8cJAO_B0311SetupFadeInEv kind:function(thumb,size=0x30) addr:0x022230d8
+_ZN8cJAO_B0318EndCraneBeforeFailEv kind:function(thumb,size=0x114) addr:0x02223108
+_ZN12cContextHelp19SuppressContextHelpEb kind:function(thumb,size=0x58) addr:0x0222321c local
+_ZN12cGateManager15SetGateOverrideE4tv3dI6cFixedILm20ELm12EEE14eGateOverrides kind:function(thumb,size=0xb0) addr:0x02223274 local
+_ZNK5cGate6GetPosEv kind:function(thumb,size=0x4) addr:0x02223324 local
+_ZN8cJAO_B037CleanUpEv kind:function(thumb,size=0x1d8) addr:0x02223328
+_ZN6cGoods10RemoveBlipEv kind:function(thumb,size=0x1a) addr:0x02223500
+_ZN6cGoods7ReleaseEv kind:function(thumb,size=0x20) addr:0x0222351c
+_ZN11cMissionCar10RemoveBlipEv kind:function(thumb,size=0x1a) addr:0x0222353c
+_ZN11cMissionCar7ReleaseEv kind:function(thumb,size=0x52) addr:0x02223558
+_ZN17cMissionBulldozer7ReleaseEv kind:function(thumb,size=0x20) addr:0x022235ac
+_ZN5ArrayI4AreaLi4EEixEi kind:function(thumb,size=0x6) addr:0x022235cc local
+_ZN5ArrayI6cGoodsLi4EEixEi kind:function(thumb,size=0x8) addr:0x022235d4
+_ZN5ArrayI11cMissionCarLi4EEixEi kind:function(thumb,size=0x8) addr:0x022235dc
+_ZN5ArrayI11cMissionCarLi6EEixEi kind:function(thumb,size=0x8) addr:0x022235e4
+_ZN5ArrayI17cMissionBulldozerLi2EEixEi kind:function(thumb,size=0x8) addr:0x022235ec
+_ZN8cJAO_B038InWater2Ev kind:function(thumb,size=0x80) addr:0x022235f4
+_ZN5ArrayIbLi4EEixEi kind:function(thumb,size=0x4) addr:0x02223674 local
+_ZN8cJAO_B0312DestroyCars2Ev kind:function(thumb,size=0x3c) addr:0x02223678
+_ZN11cMissionCar21DeadOrInWaterCallBackERK9cCallBack kind:function(thumb,size=0x60) addr:0x022236b4
+_ZN8cJAO_B0313EnteringCars2Ev kind:function(thumb,size=0x254) addr:0x02223714
+_ZN5ArrayI6MarkerLi4EEixEi kind:function(thumb,size=0x8) addr:0x02223968 local
+_ZN11VehicleTypeC1ERKS_ kind:function(thumb,size=0x14) addr:0x02223970 local
+_ZN10cResHandleC1ERKS_ kind:function(thumb,size=0x20) addr:0x02223984 local
+_ZN11cMissionCar6DefineE11VehicleType4tv3dI6cFixedILm20ELm12EEEi11eVehiclePalb kind:function(thumb,size=0x28) addr:0x022239a4
+_ZN11cMissionCar6CreateEv kind:function(thumb,size=0xfc) addr:0x022239cc
+_ZN17cMissionBulldozer6DefineE11VehicleType4tv3dI6cFixedILm20ELm12EEEi kind:function(thumb,size=0x1c) addr:0x02223ac8
+_ZN17cMissionBulldozer6CreateEv kind:function(thumb,size=0x6c) addr:0x02223ae4
+_ZN8cCamHelp17SetupCamHelpTimerEv kind:function(thumb,size=0x30) addr:0x02223b50
+_ZN8cJAO_B0313CraneCompleteEv kind:function(thumb,size=0x84) addr:0x02223b80
+_ZN12cScriptClock10EnableTextEb kind:function(thumb,size=0x6) addr:0x02223c04 local
+_ZN8cJAO_B0318CraneFinishedSetupEv kind:function(thumb,size=0xf4) addr:0x02223c0c
+_ZN8cJAO_B0322CraneFinishedTimerOverEv kind:function(thumb,size=0x30) addr:0x02223d00
+_ZN8cJAO_B0323CraneFinishedDelayTimerEv kind:function(thumb,size=0x2c) addr:0x02223d30
+_ZN8cJAO_B0310DroppedCarEv kind:function(thumb,size=0x254) addr:0x02223d5c
+_ZN11cMissionCar10GetVehicleEv kind:function(thumb,size=0xc) addr:0x02223fb0
+_ZN11cMissionCar7AddBlipEv kind:function(thumb,size=0x68) addr:0x02223fbc
+_ZN8cJAO_B038MagnetUpEv kind:function(thumb,size=0x2bc) addr:0x02224024
+_ZN8cJAO_B0313MagnetUpDelayEv kind:function(thumb,size=0x4c) addr:0x022242e0
+_ZN8cJAO_B0312MagnetPickupEv kind:function(thumb,size=0x36c) addr:0x0222432c
+_ZN8cJAO_B0313StartedMagnetEv kind:function(thumb,size=0xcc) addr:0x02224698
+_ZN8cJAO_B038SetStartEv kind:function(thumb,size=0x64) addr:0x02224764
+_ZN8cJAO_B0311StartMagnetEv kind:function(thumb,size=0x10) addr:0x022247c8
+_ZN8cJAO_B0312CheckReleaseEv kind:function(thumb,size=0x2c) addr:0x022247d8
+_ZN8cJAO_B0314CraneMoveRightEv kind:function(thumb,size=0x50) addr:0x02224804
+_ZN8cJAO_B0316CraneMovingRightEv kind:function(thumb,size=0x20c) addr:0x02224854
+_ZN8cJAO_B0316MagnetOverCarMsgEv kind:function(thumb,size=0x254) addr:0x02224a60
+_ZN8cJAO_B0321SetupCraneMovingRightEv kind:function(thumb,size=0x1c) addr:0x02224cb4
+_ZN8cJAO_B0313CraneMoveLeftEv kind:function(thumb,size=0x50) addr:0x02224cd0
+_ZN8cJAO_B0315CraneMovingLeftEv kind:function(thumb,size=0x20c) addr:0x02224d20
+_ZN8cJAO_B0320SetupCraneMovingLeftEv kind:function(thumb,size=0x1c) addr:0x02224f2c
+_ZN8cJAO_B0324CraneFinishedBackUpTimerEv kind:function(thumb,size=0x2c) addr:0x02224f48
+_ZN8cJAO_B037DropCarEv kind:function(thumb,size=0x10) addr:0x02224f74
+_ZN8cJAO_B0310CraneStartEv kind:function(thumb,size=0x2e0) addr:0x02224f84
+_ZN8cJAO_B0310CraneSetupEv kind:function(thumb,size=0x2e4) addr:0x02225264
+_ZN8cJAO_B0318CraneMiniGameStartEv kind:function(thumb,size=0x3c) addr:0x02225548
+_ZN8cJAO_B0318PlayerEnteredCraneEv kind:function(thumb,size=0x50) addr:0x02225584
+_ZN8cJAO_B0320CheckSpeedAndHeadingEv kind:function(thumb,size=0x2c) addr:0x022255d4
+_ZN8cJAO_B0319PlayerEnteringCraneEv kind:function(thumb,size=0x9c) addr:0x02225600
+_ZN8cJAO_B0318SetupCraneChevronsEv kind:function(thumb,size=0x44) addr:0x0222569c
+_ZN8cJAO_B0312EnteringCarsEv kind:function(thumb,size=0x190) addr:0x022256e0
+_ZN8cJAO_B0316ReCheckBlockAreaEv kind:function(thumb,size=0x10) addr:0x02225870
+_ZN8cJAO_B0322CheckForLeaveBlockAreaEv kind:function(thumb,size=0x84) addr:0x02225880
+_ZN8cJAO_B0327SetupCheckForLeaveBlockAreaEv kind:function(thumb,size=0x10) addr:0x02225904
+_ZN8cJAO_B0317SetupEnteringCarsEv kind:function(thumb,size=0x70) addr:0x02225914
+_ZN8cJAO_B0310GoodsDead2Ev kind:function(thumb,size=0x80) addr:0x02225984
+_ZN8cJAO_B0313DestroyGoods2Ev kind:function(thumb,size=0x3c) addr:0x02225a04
+_ZN6cGoods12DeadCallBackERK9cCallBack kind:function(thumb,size=0x4c) addr:0x02225a40
+_ZN8cJAO_B0314EnteringGoods2Ev kind:function(thumb,size=0xc0) addr:0x02225a8c
+_ZN6cGoods6DefineE4tv3dI6cFixedILm20ELm12EEEi kind:function(thumb,size=0x10) addr:0x02225b4c
+_ZN6cGoods6CreateEv kind:function(thumb,size=0x6c) addr:0x02225b5c
+_ZN6cGoods7AddBlipEv kind:function(thumb,size=0x7c) addr:0x02225bc8
+_ZN8cJAO_B0319SetupEnteringGoods2Ev kind:function(thumb,size=0x10) addr:0x02225c44
+_ZN8cJAO_B0318SetupEnteringCars2Ev kind:function(thumb,size=0x10) addr:0x02225c54
+_ZN8cJAO_B0319CheckRemainingAreasEv kind:function(thumb,size=0x21c) addr:0x02225c64
+_ZN8cJAO_B0324SetupCheckRemainingAreasEv kind:function(thumb,size=0x10) addr:0x02225e80
+_ZN8cJAO_B039GoodsDeadEv kind:function(thumb,size=0x80) addr:0x02225e90
+_ZN8cJAO_B0312DestroyGoodsEv kind:function(thumb,size=0x3c) addr:0x02225f10
+_ZN8cJAO_B0310IntroSetupEv kind:function(thumb,size=0x50) addr:0x02225f4c
+_ZN8cJAO_B0310IntroEndedEv kind:function(thumb,size=0x424) addr:0x02225f9c
+_ZN12cScriptClock4InitE6cFixedILm20ELm12EES1_ kind:function(thumb,size=0xd8) addr:0x022263c0 local
+_ZN12cScriptClock12RoundUpStartEv kind:function(thumb,size=0xf4) addr:0x02226498 local
+_Zmi6cFixedILm20ELm12EEi kind:function(thumb,size=0x1a) addr:0x0222658c local
+_ZN12cScriptClock13GetOffsetTimeE6cFixedILm20ELm12EES1_ kind:function(thumb,size=0x50) addr:0x022265a8 local
+_ZN12cScriptClock16DisplayObjectiveEmb kind:function(thumb,size=0x94) addr:0x022265f8 local
+_ZN12cScriptClock10AddWarningEm6cFixedILm20ELm12EE9cCallBack kind:function(thumb,size=0x46) addr:0x0222668c local
+_ZN8cJAO_B0313FailedInCraneEv kind:function(thumb,size=0x3c) addr:0x022266d4
+_ZN8cJAO_B0312DeadOrBustedEv kind:function(thumb,size=0x20) addr:0x02226710
+_ZN8cJAO_B039OutOfTimeEv kind:function(thumb,size=0x270) addr:0x02226730
+_ZN8cJAO_B037CarDeadEv kind:function(thumb,size=0xb8) addr:0x022269a0
+_ZN8cJAO_B0310CarInWaterEv kind:function(thumb,size=0xd0) addr:0x02226a58
+_ZN8cJAO_B035IntroEv kind:function(thumb,size=0x44) addr:0x02226b28
+_ZN6cIntro5StartE9cCallBackS0_ kind:function(thumb,size=0x28) addr:0x02226b6c local
+_ZN8cJAO_B0315LoadedResourcesEv kind:function(thumb,size=0x10) addr:0x02226b94
+_ZN12cDoorHandlerD1Ev kind:function(thumb,size=0x24) addr:0x02226ba4 local
+_ZN12cDoorHandlerD0Ev kind:function(thumb,size=0x2a) addr:0x02226bc8 local
+_ZN16cCutsceneBookendD1Ev kind:function(thumb,size=0x54) addr:0x02226bf4 local
+_ZN16cCutsceneBookend7sEntityD1Ev kind:function(thumb,size=0xe) addr:0x02226c48 local
+_ZN16cCutsceneBookendD0Ev kind:function(thumb,size=0x58) addr:0x02226c58 local
+_ZN16FadeOutAndFadeInC1Ev kind:function(thumb,size=0x38) addr:0x02226cb0 local
+_ZN16FadeOutAndFadeInD1Ev kind:function(thumb,size=0x24) addr:0x02226ce8 local
+_ZN16cCutsceneBookendC1Ev kind:function(thumb,size=0x98) addr:0x02226d0c local
+_ZN16cCutsceneBookend7sEntityC1Ev kind:function(thumb,size=0x2e) addr:0x02226da4 local
+_ZN12cDoorHandlerC1Ev kind:function(thumb,size=0x40) addr:0x02226dd4 local
+_ZN9cDoorInfoC1Ev kind:function(thumb,size=0x36) addr:0x02226e14 local
+_ZN8CJAO_B03C1Ev kind:function(thumb,size=0x1c) addr:0x02226e4c
+_ZN6ScriptC2Ev kind:function(thumb,size=0x14) addr:0x02226e68 local
+_ZN6ScriptD2Ev kind:function(thumb,size=0xc) addr:0x02226e7c local
+_ZN8cJAO_B03C1Ev kind:function(thumb,size=0x190) addr:0x02226e88
+_ZN6cIntroC1Ev kind:function(thumb,size=0x44) addr:0x02227018 local
+_ZN15cScriptSequenceILm1EED2Ev kind:function(thumb,size=0xc) addr:0x0222705c local
+_ZN6cIntroD1Ev kind:function(thumb,size=0x34) addr:0x02227068 local
+_ZN12cScriptClockC1Ev kind:function(thumb,size=0x7c) addr:0x0222709c local
+_ZN12cScriptClockD1Ev kind:function(thumb,size=0x28) addr:0x02227118 local
+_ZN5ArrayI4AreaLi4EEC1Ev kind:function(thumb,size=0x24) addr:0x02227140 local
+_ZN5ArrayI4AreaLi4EED1Ev kind:function(thumb,size=0x18) addr:0x02227164 local
+_ZN5ArrayIbLi4EEC1Ev kind:function(thumb,size=0x2) addr:0x0222717c local
+_ZN8cCamHelpC1Ev kind:function(thumb,size=0x14) addr:0x02227180
+_ZN8cCamHelpD1Ev kind:function(thumb,size=0xc) addr:0x02227194
+_ZN5ArrayI6cGoodsLi4EEC1Ev kind:function(thumb,size=0x24) addr:0x022271a0
+_ZN6cGoodsC1Ev kind:function(thumb,size=0x38) addr:0x022271c4
+_ZN6cGoodsD1Ev kind:function(thumb,size=0x24) addr:0x022271fc
+_ZN5ArrayI6cGoodsLi4EED1Ev kind:function(thumb,size=0x18) addr:0x02227220
+_ZN5ArrayI11cMissionCarLi4EEC1Ev kind:function(thumb,size=0x24) addr:0x02227238
+_ZN11cMissionCarC1Ev kind:function(thumb,size=0x40) addr:0x0222725c
+_ZN11cMissionCarD1Ev kind:function(thumb,size=0x2c) addr:0x0222729c
+_ZN5ArrayI11cMissionCarLi4EED1Ev kind:function(thumb,size=0x18) addr:0x022272c8
+_ZN5ArrayI11cMissionCarLi6EEC1Ev kind:function(thumb,size=0x24) addr:0x022272e0
+_ZN5ArrayI11cMissionCarLi6EED1Ev kind:function(thumb,size=0x18) addr:0x02227304
+_ZN5ArrayI17cMissionBulldozerLi2EEC1Ev kind:function(thumb,size=0x24) addr:0x0222731c
+_ZN17cMissionBulldozerC1Ev kind:function(thumb,size=0x2c) addr:0x02227340
+_ZN17cMissionBulldozerD1Ev kind:function(thumb,size=0x1c) addr:0x0222736c
+_ZN5ArrayI17cMissionBulldozerLi2EED1Ev kind:function(thumb,size=0x18) addr:0x02227388
+_ZN6PickupC1Ev kind:function(thumb,size=0x14) addr:0x022273a0 local
+_ZN5ArrayI6MarkerLi4EEC1Ev kind:function(thumb,size=0x24) addr:0x022273b4 local
+_ZN5ArrayI6MarkerLi4EED1Ev kind:function(thumb,size=0x18) addr:0x022273d8 local
+_ZN8cJAO_B03D1Ev kind:function(thumb,size=0x148) addr:0x022273f0
+_ZN8CJAO_B03D1Ev kind:function(thumb,size=0x14) addr:0x02227538
+_ZN9cCallBack9__defctorEv kind:function(thumb,size=0xc) addr:0x0222754c local
+_ZN8CJAO_B034InitEv kind:function(thumb,size=0xc) addr:0x02227558
+_ZN8cJAO_B034InitEv kind:function(thumb,size=0x100) addr:0x02227564
+_ZN12cGateManager8LockGateE4tv3dI6cFixedILm20ELm12EEEb kind:function(thumb,size=0x7c) addr:0x02227664 local
+_ZN5cGate9SetLockedEb kind:function(thumb,size=0x34) addr:0x022276e0 local
+_ZN8cJAO_B0319SetDefaultCallbacksEv kind:function(thumb,size=0x178) addr:0x02227714
+_ZN12cScriptClock5StartERK9cCallBack kind:function(thumb,size=0x58) addr:0x0222788c local
+_ZN15cScriptSequenceILm1EEC2Ev kind:function(thumb,size=0x1c) addr:0x022278e4 local
+_ZN6ScriptD1Ev kind:function(thumb,size=0xc) addr:0x02227900 local
+_ZN6ScriptD0Ev kind:function(thumb,size=0x12) addr:0x0222790c local
+_ZN16FadeOutAndFadeInD0Ev kind:function(thumb,size=0x2a) addr:0x02227920 local
+_ZN6cIntroD0Ev kind:function(thumb,size=0x3a) addr:0x0222794c local
+_ZN12cScriptClockD0Ev kind:function(thumb,size=0x2c) addr:0x02227988 local
+_ZN8cCamHelpD0Ev kind:function(thumb,size=0x12) addr:0x022279b4
+_ZN6cGoodsD0Ev kind:function(thumb,size=0x2a) addr:0x022279c8
+_ZN11cMissionCarD0Ev kind:function(thumb,size=0x32) addr:0x022279f4
+_ZN17cMissionBulldozerD0Ev kind:function(thumb,size=0x22) addr:0x02227a28
+_ZN8cJAO_B03D0Ev kind:function(thumb,size=0x14c) addr:0x02227a4c
+_ZN8CJAO_B03D0Ev kind:function(thumb,size=0x1a) addr:0x02227b98
+_ZN15cScriptSequenceILm1EED0Ev kind:function(thumb,size=0x12) addr:0x02227bb4 local
+_ZN15cScriptSequenceILm1EED1Ev kind:function(thumb,size=0xc) addr:0x02227bc8 local
+data_ov082_02227bd4 kind:data(any) addr:0x02227bd4
+data_ov082_02227bd8 kind:data(any) addr:0x02227bd8
+data_ov082_02227be0 kind:data(any) addr:0x02227be0
+data_ov082_02227bec kind:data(any) addr:0x02227bec
+data_ov082_02227bf8 kind:data(any) addr:0x02227bf8
+data_ov082_02227c04 kind:data(any) addr:0x02227c04
+data_ov082_02227c10 kind:data(any) addr:0x02227c10
+data_ov082_02227c1c kind:data(any) addr:0x02227c1c
+data_ov082_02227c28 kind:data(any) addr:0x02227c28
+data_ov082_02227c34 kind:data(any) addr:0x02227c34
+data_ov082_02227c40 kind:data(any) addr:0x02227c40
+data_ov082_02227c4c kind:data(any) addr:0x02227c4c
+data_ov082_02227c58 kind:data(any) addr:0x02227c58
+data_ov082_02227c64 kind:data(any) addr:0x02227c64
+data_ov082_02227c70 kind:data(any) addr:0x02227c70
+data_ov082_02227c7c kind:data(any) addr:0x02227c7c
+data_ov082_02227c88 kind:data(any) addr:0x02227c88
+data_ov082_02227c94 kind:data(any) addr:0x02227c94
+data_ov082_02227ca0 kind:data(any) addr:0x02227ca0
+data_ov082_02227cac kind:data(any) addr:0x02227cac
+data_ov082_02227cb8 kind:data(any) addr:0x02227cb8
+data_ov082_02227cc4 kind:data(any) addr:0x02227cc4
+data_ov082_02227cd0 kind:data(any) addr:0x02227cd0
+data_ov082_02227cdc kind:data(any) addr:0x02227cdc
+data_ov082_02227ce8 kind:data(any) addr:0x02227ce8
+data_ov082_02227cf4 kind:data(any) addr:0x02227cf4
+data_ov082_02227d00 kind:data(any) addr:0x02227d00
+data_ov082_02227d0c kind:data(any) addr:0x02227d0c
+data_ov082_02227d18 kind:data(any) addr:0x02227d18
+data_ov082_02227d24 kind:data(any) addr:0x02227d24
+data_ov082_02227d30 kind:data(any) addr:0x02227d30
+data_ov082_02227d38 kind:data(any) addr:0x02227d38 ambiguous
+data_ov082_02227d3c kind:data(any) addr:0x02227d3c
+data_ov082_02227d48 kind:data(any) addr:0x02227d48
+data_ov082_02227d54 kind:data(any) addr:0x02227d54
+data_ov082_02227d60 kind:data(any) addr:0x02227d60
+data_ov082_02227d6c kind:data(any) addr:0x02227d6c
+data_ov082_02227d78 kind:data(any) addr:0x02227d78
+data_ov082_02227d84 kind:data(any) addr:0x02227d84
+data_ov082_02227d90 kind:data(any) addr:0x02227d90
+data_ov082_02227d9c kind:data(any) addr:0x02227d9c
+data_ov082_02227da8 kind:data(any) addr:0x02227da8
+data_ov082_02227db4 kind:data(any) addr:0x02227db4
+data_ov082_02227dc0 kind:data(any) addr:0x02227dc0
+data_ov082_02227dcc kind:data(any) addr:0x02227dcc
+data_ov082_02227dd8 kind:data(any) addr:0x02227dd8
+data_ov082_02227de4 kind:data(any) addr:0x02227de4
+data_ov082_02227df0 kind:data(any) addr:0x02227df0
+data_ov082_02227dfc kind:data(any) addr:0x02227dfc
+data_ov082_02227e0c kind:data(any) addr:0x02227e0c
+data_ov082_02227e1c kind:data(any) addr:0x02227e1c
+data_ov082_02227e34 kind:data(any) addr:0x02227e34
+data_ov082_02227e64 kind:data(any) addr:0x02227e64
+data_ov082_02227e94 kind:data(any) addr:0x02227e94
+data_ov082_02227ec4 kind:data(any) addr:0x02227ec4
+data_ov082_02227ecc kind:data(any) addr:0x02227ecc ambiguous
+__sinit_ov082_02227f30 kind:function(thumb,size=0x58) addr:0x02227f30
+.p__sinit_ov082_02227f30 kind:data(word) addr:0x02227f88
+data_ov082_02227fa0 kind:data(any) addr:0x02227fa0
+data_ov082_02227fa8 kind:data(any) addr:0x02227fa8
+data_ov082_02227fb0 kind:data(any) addr:0x02227fb0
+data_ov082_02227fb8 kind:data(any) addr:0x02227fb8
+data_ov082_02227fe8 kind:data(any) addr:0x02227fe8
+data_ov082_02227fec kind:data(any) addr:0x02227fec ambiguous
+data_ov082_02227ff0 kind:data(any) addr:0x02227ff0
+data_ov082_02228008 kind:data(any) addr:0x02228008
+data_ov082_02228050 kind:data(any) addr:0x02228050
+data_ov082_02228058 kind:data(any) addr:0x02228058
+data_ov082_02228060 kind:data(any) addr:0x02228060
+data_ov082_02228068 kind:data(any) addr:0x02228068
+data_ov082_02228070 kind:data(any) addr:0x02228070
+data_ov082_02228078 kind:data(any) addr:0x02228078
+data_ov082_02228080 kind:data(any) addr:0x02228080
+data_ov082_02228088 kind:data(any) addr:0x02228088
+data_ov082_02228090 kind:data(any) addr:0x02228090
+data_ov082_022280a4 kind:data(any) addr:0x022280a4 ambiguous
+data_ov082_022280c8 kind:data(any) addr:0x022280c8
+data_ov082_022280d0 kind:data(any) addr:0x022280d0
+data_ov082_022280d8 kind:data(any) addr:0x022280d8
+data_ov082_022280e0 kind:data(any) addr:0x022280e0
+data_ov082_022280f0 kind:data(any) addr:0x022280f0
+data_ov082_02228128 kind:data(any) addr:0x02228128
+data_ov082_02228130 kind:data(any) addr:0x02228130
+data_ov082_02228138 kind:data(any) addr:0x02228138
+data_ov082_02228140 kind:data(any) addr:0x02228140
+data_ov082_02228148 kind:data(any) addr:0x02228148
+data_ov082_02228158 kind:data(any) addr:0x02228158
+data_ov082_02228160 kind:data(any) addr:0x02228160
+data_ov082_02228168 kind:data(any) addr:0x02228168
+data_ov082_02228170 kind:data(any) addr:0x02228170
+data_ov082_02228178 kind:data(any) addr:0x02228178
+data_ov082_02228180 kind:data(any) addr:0x02228180
+data_ov082_02228188 kind:data(any) addr:0x02228188
+data_ov082_02228190 kind:data(any) addr:0x02228190
+data_ov082_02228198 kind:data(any) addr:0x02228198
+data_ov082_022281a0 kind:data(any) addr:0x022281a0
+data_ov082_022281a8 kind:data(any) addr:0x022281a8
+data_ov082_022281b0 kind:data(any) addr:0x022281b0
+data_ov082_022281b8 kind:data(any) addr:0x022281b8
+data_ov082_022281c0 kind:data(any) addr:0x022281c0
+data_ov082_022281c8 kind:data(any) addr:0x022281c8
+data_ov082_022281d0 kind:data(any) addr:0x022281d0
+data_ov082_022281d8 kind:data(any) addr:0x022281d8
+data_ov082_022281e0 kind:data(any) addr:0x022281e0
+data_ov082_022281f0 kind:data(any) addr:0x022281f0
+data_ov082_022281f8 kind:data(any) addr:0x022281f8
+data_ov082_02228200 kind:data(any) addr:0x02228200
+data_ov082_02228208 kind:data(any) addr:0x02228208
+data_ov082_02228210 kind:data(any) addr:0x02228210
+data_ov082_02228218 kind:data(any) addr:0x02228218
+data_ov082_02228220 kind:data(any) addr:0x02228220
+data_ov082_02228228 kind:data(any) addr:0x02228228
+data_ov082_02228230 kind:data(any) addr:0x02228230
+data_ov082_02228238 kind:data(any) addr:0x02228238
+data_ov082_02228240 kind:data(any) addr:0x02228240
+data_ov082_02228248 kind:data(any) addr:0x02228248
+data_ov082_02228250 kind:data(any) addr:0x02228250
+data_ov082_02228258 kind:data(any) addr:0x02228258
+data_ov082_02228270 kind:data(any) addr:0x02228270
+data_ov082_02228290 kind:data(any) addr:0x02228290
+data_ov082_022282b0 kind:data(any) addr:0x022282b0
+data_ov082_022282d0 kind:data(any) addr:0x022282d0
+data_ov082_022282d8 kind:data(any) addr:0x022282d8
+data_ov082_022282e0 kind:data(any) addr:0x022282e0
+data_ov082_022282e8 kind:data(any) addr:0x022282e8
+data_ov082_022282f0 kind:data(any) addr:0x022282f0
+data_ov082_02228300 kind:data(any) addr:0x02228300
+data_ov082_02228310 kind:data(any) addr:0x02228310
+data_ov082_02228314 kind:data(any) addr:0x02228314 ambiguous
+data_ov082_02228318 kind:data(any) addr:0x02228318
+data_ov082_02228320 kind:data(any) addr:0x02228320
+data_ov082_02228328 kind:data(any) addr:0x02228328
+data_ov082_02228330 kind:data(any) addr:0x02228330
+data_ov082_02228338 kind:data(any) addr:0x02228338
+data_ov082_02228340 kind:data(any) addr:0x02228340
+data_ov082_02228348 kind:data(any) addr:0x02228348
+data_ov082_02228350 kind:data(any) addr:0x02228350
+data_ov082_02228358 kind:data(any) addr:0x02228358
+data_ov082_02228360 kind:data(any) addr:0x02228360
+data_ov082_02228368 kind:data(any) addr:0x02228368
+data_ov082_02228370 kind:data(any) addr:0x02228370
+data_ov082_02228378 kind:data(any) addr:0x02228378
+data_ov082_02228380 kind:data(any) addr:0x02228380
+data_ov082_02228388 kind:data(any) addr:0x02228388
+data_ov082_02228390 kind:data(any) addr:0x02228390
+data_ov082_02228398 kind:data(any) addr:0x02228398
+data_ov082_022283a0 kind:data(any) addr:0x022283a0
+data_ov082_022283a8 kind:data(any) addr:0x022283a8
+data_ov082_022283b0 kind:data(any) addr:0x022283b0
+data_ov082_022283b8 kind:data(any) addr:0x022283b8
+data_ov082_022283c0 kind:data(any) addr:0x022283c0
+data_ov082_022283c8 kind:data(any) addr:0x022283c8
+data_ov082_022283d0 kind:data(any) addr:0x022283d0
+data_ov082_022283d8 kind:data(any) addr:0x022283d8
+data_ov082_022283e0 kind:data(any) addr:0x022283e0
+data_ov082_022283e8 kind:data(any) addr:0x022283e8
+data_ov082_022283f0 kind:data(any) addr:0x022283f0
+data_ov082_022283f8 kind:data(any) addr:0x022283f8
+data_ov082_02228400 kind:data(any) addr:0x02228400
+data_ov082_02228408 kind:data(any) addr:0x02228408
+data_ov082_02228410 kind:data(any) addr:0x02228410
+data_ov082_02228418 kind:data(any) addr:0x02228418
+data_ov082_02228420 kind:data(any) addr:0x02228420
+data_ov082_02228428 kind:data(any) addr:0x02228428
+data_ov082_02228430 kind:data(any) addr:0x02228430
+data_ov082_02228438 kind:data(any) addr:0x02228438
+data_ov082_02228440 kind:data(any) addr:0x02228440
+data_ov082_02228448 kind:data(any) addr:0x02228448
+data_ov082_02228450 kind:data(any) addr:0x02228450
+data_ov082_02228460 kind:data(any) addr:0x02228460
+data_ov082_02228468 kind:data(any) addr:0x02228468
+data_ov082_02228470 kind:data(any) addr:0x02228470
+data_ov082_02228478 kind:data(any) addr:0x02228478
+data_ov082_02228480 kind:data(any) addr:0x02228480
+data_ov082_02228488 kind:data(any) addr:0x02228488
+data_ov082_02228498 kind:data(any) addr:0x02228498
+data_ov082_022284a0 kind:data(any) addr:0x022284a0
+data_ov082_022284a8 kind:data(any) addr:0x022284a8
+data_ov082_022284b8 kind:data(any) addr:0x022284b8
+data_ov082_022284c0 kind:data(any) addr:0x022284c0
+data_ov082_022284c8 kind:data(any) addr:0x022284c8
+data_ov082_022284d0 kind:data(any) addr:0x022284d0
+data_ov082_022284d8 kind:data(any) addr:0x022284d8
+data_ov082_022284e0 kind:data(any) addr:0x022284e0
+data_ov082_022284e8 kind:data(any) addr:0x022284e8
+data_ov082_022284f0 kind:data(any) addr:0x022284f0
+data_ov082_022284f8 kind:data(any) addr:0x022284f8
+data_ov082_02228500 kind:data(any) addr:0x02228500
+data_ov082_02228508 kind:data(any) addr:0x02228508
+data_ov082_02228510 kind:data(any) addr:0x02228510
+data_ov082_02228518 kind:data(any) addr:0x02228518
+data_ov082_02228520 kind:data(any) addr:0x02228520
+data_ov082_02228528 kind:data(any) addr:0x02228528
+data_ov082_0222852c kind:data(any) addr:0x0222852c ambiguous
+data_ov082_02228530 kind:data(any) addr:0x02228530
+data_ov082_02228538 kind:data(any) addr:0x02228538
+data_ov082_02228540 kind:data(any) addr:0x02228540
+data_ov082_02228548 kind:data(any) addr:0x02228548
+data_ov082_02228550 kind:data(any) addr:0x02228550
+data_ov082_02228560 kind:data(any) addr:0x02228560
+data_ov082_02228568 kind:data(any) addr:0x02228568
+data_ov082_02228570 kind:data(any) addr:0x02228570
+data_ov082_02228578 kind:data(any) addr:0x02228578
+data_ov082_02228580 kind:data(any) addr:0x02228580
+data_ov082_02228588 kind:data(any) addr:0x02228588
+data_ov082_02228590 kind:data(any) addr:0x02228590
+data_ov082_022285a0 kind:data(any) addr:0x022285a0
+data_ov082_022285a8 kind:data(any) addr:0x022285a8
+data_ov082_022285b0 kind:data(any) addr:0x022285b0
+data_ov082_022285c0 kind:data(any) addr:0x022285c0
+data_ov082_022285c8 kind:data(any) addr:0x022285c8
+data_ov082_022285d0 kind:data(any) addr:0x022285d0
+data_ov082_022285e0 kind:data(any) addr:0x022285e0
+data_ov082_022285e8 kind:data(any) addr:0x022285e8
+data_ov082_022285f0 kind:data(any) addr:0x022285f0
+data_ov082_02228600 kind:data(any) addr:0x02228600
+data_ov082_02228608 kind:data(any) addr:0x02228608
+data_ov082_02228610 kind:data(any) addr:0x02228610
+data_ov082_02228620 kind:data(any) addr:0x02228620
+data_ov082_02228628 kind:data(any) addr:0x02228628
+data_ov082_02228630 kind:data(any) addr:0x02228630
+data_ov082_02228638 kind:data(any) addr:0x02228638
+data_ov082_02228640 kind:data(any) addr:0x02228640
+data_ov082_02228648 kind:data(any) addr:0x02228648
+data_ov082_02228650 kind:data(any) addr:0x02228650
+data_ov082_02228658 kind:data(any) addr:0x02228658
+data_ov082_02228678 kind:data(any) addr:0x02228678
+data_ov082_02228694 kind:data(any) addr:0x02228694
+data_ov082_022286b0 kind:data(any) addr:0x022286b0
+data_ov082_022286e8 kind:data(any) addr:0x022286e8
+data_ov082_02228720 kind:data(any) addr:0x02228720
+data_ov082_02228758 kind:data(any) addr:0x02228758
+data_ov082_02228790 kind:data(any) addr:0x02228790
+data_ov082_022287c8 kind:data(any) addr:0x022287c8
+data_ov082_02228800 kind:data(any) addr:0x02228800
+data_ov082_02228838 kind:data(any) addr:0x02228838
+data_ov082_02228870 kind:data(any) addr:0x02228870
+data_ov082_022288a8 kind:data(any) addr:0x022288a8
+data_ov082_022288e0 kind:data(any) addr:0x022288e0
+data_ov082_02228920 kind:bss addr:0x02228920
+data_ov082_0222892c kind:bss addr:0x0222892c
+data_ov082_02228938 kind:bss addr:0x02228938
+data_ov082_02228944 kind:bss addr:0x02228944
+data_ov082_02228980 kind:bss addr:0x02228980
+data_ov082_02228b44 kind:bss addr:0x02228b44 ambiguous
+data_ov082_02228b98 kind:bss addr:0x02228b98
+data_ov082_02228c18 kind:bss addr:0x02228c18 ambiguous
+data_ov082_02228f34 kind:bss addr:0x02228f34 ambiguous

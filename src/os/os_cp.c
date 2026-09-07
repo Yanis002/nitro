@@ -10,6 +10,8 @@ void CP_SaveContext(CPContext *param1) {
 #else
 // clang-format off
 asm void CP_SaveContext(CPContext *param1) {
+    #pragma push
+    #pragma thumb off
     ldconst r1, #0x4000290
     stmdb sp!, {r4}
     ldmia r1, {r2, r3, r4, ip}
@@ -25,6 +27,7 @@ asm void CP_SaveContext(CPContext *param1) {
     strh r2, [r0, 2]
     ldmia sp!, {r4}
     bx lr
+    #pragma pop
 }
 // clang-format on
 #endif
@@ -39,6 +42,8 @@ void CPi_RestoreContext(CPContext *param1) {
 #else
 // clang-format off
 asm void CPi_RestoreContext(CPContext *param1) {
+    #pragma push
+    #pragma thumb off
     stmdb sp!, {r4}
     ldconst r1, #0x4000290
     ldmia r0, {r2, r3, r4, ip}
@@ -53,6 +58,7 @@ asm void CPi_RestoreContext(CPContext *param1) {
     stmia r1, {r2, r3}
     ldmia sp!, {r4}
     bx lr
+    #pragma pop
 }
 // clang-format on
 #endif

@@ -1,0 +1,27 @@
+_ZN3Gui13cTollBoothAppC1Ev kind:function(thumb,size=0x78) addr:0x02234cc0
+_ZN3Gui13cTollBoothAppD1Ev kind:function(thumb,size=0xc) addr:0x02234d38
+_ZN3Gui13cTollBoothAppD0Ev kind:function(thumb,size=0x18) addr:0x02234d44
+_ZN3Gui13cTollBoothApp4InitEv kind:function(thumb,size=0x2c4) addr:0x02234d5c
+_ZN3Gui13cTollBoothApp6DeInitEv kind:function(thumb,size=0x140) addr:0x02235020
+_ZN3Gui13cTollBoothApp8ShutdownEv kind:function(thumb,size=0x8) addr:0x02235160
+_ZN3Gui13cTollBoothApp12ProcessOutroEv kind:function(thumb,size=0x8) addr:0x02235168
+_ZNK3Gui13cTollBoothApp10IsFinishedEv kind:function(thumb,size=0x6) addr:0x02235170
+_ZNK3Gui13cTollBoothApp10FinishCodeEv kind:function(thumb,size=0x6) addr:0x02235178
+_ZN3Gui13cTollBoothApp11SetFinishedEv kind:function(thumb,size=0x8) addr:0x02235180
+_ZN3Gui13cTollBoothApp7ProcessEv kind:function(thumb,size=0x604) addr:0x02235188
+cFixed_20ul_12ul_tv3d_cFixed_20ul_12ul__operator_mul_eq_cFixed_20ul_12ul kind:function(thumb,size=0x26) addr:0x0223578c local
+bool_IsA_cPlayerInVehicleWithMiniGameTask kind:function(thumb,size=0x1a) addr:0x022357b4
+_ZN3Gui13cTollBoothApp7OnPressERKNS_14cOnClickParamsE kind:function(thumb,size=0xd4) addr:0x022357d0
+_ZN3Gui13cTollBoothApp17PlayThrowMoneySfxEv kind:function(thumb,size=0x24) addr:0x022358a4
+_ZN3Gui13cTollBoothApp15PlayMoneyHitSfxEv kind:function(thumb,size=0x24) addr:0x022358c8
+_ZN3Gui13cTollBoothApp18PlayMoneyMissedSfxEv kind:function(thumb,size=0x2) addr:0x022358ec
+_ZN3Gui13cTollBoothApp17NotEnoughMoneySfxEv kind:function(thumb,size=0x24) addr:0x022358f0
+data_ov183_02235928 kind:data(any) addr:0x02235928
+data_ov183_022359a8 kind:data(any) addr:0x022359a8
+data_ov183_022359b0 kind:data(any) addr:0x022359b0
+data_ov183_022359cc kind:data(any) addr:0x022359cc
+data_ov183_022359e4 kind:data(any) addr:0x022359e4
+data_ov183_022359fc kind:data(any) addr:0x022359fc
+data_ov183_02235a18 kind:data(any) addr:0x02235a18
+data_ov183_02235a34 kind:data(any) addr:0x02235a34
+data_ov183_02235a4c kind:data(any) addr:0x02235a4c

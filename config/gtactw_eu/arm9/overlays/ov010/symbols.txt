@@ -1,0 +1,244 @@
+_ZNK6cFixedILm20ELm12EE5ValueEv kind:function(thumb,size=0x4) addr:0x02220be0 local
+_ZN6cFixedILm40ELm24EEC1ERKS0_ kind:function(thumb,size=0xa) addr:0x02220be4 local
+_ZN6cFixedILm40ELm24EEaSERKS0_ kind:function(thumb,size=0xa) addr:0x02220bf0 local
+_ZN17cMissionCreatePed17StartCreatingPedsEv kind:function(thumb,size=0x8) addr:0x02220bfc
+_ZN17cMissionCreatePed9CreatePedEv kind:function(thumb,size=0x158) addr:0x02220c04
+_ZN17cMissionCreatePed21CheckFoundPedNodeIsOkE4tv3dI6cFixedILm20ELm12EEE kind:function(thumb,size=0x98) addr:0x02220d5c
+_ZN20cMissionGetRandomPed19AttemptGetRandomPedEv kind:function(thumb,size=0x178) addr:0x02220df4
+_ZN20cMissionGetRandomPed21CheckPassengerIsValidEv kind:function(thumb,size=0x2a) addr:0x02220f6c
+_ZN20cMissionGetRandomPed21StartGettingRandomPedEv kind:function(thumb,size=0x10) addr:0x02220f98
+_ZN19cMissionCheckStates11CheckStatesEv kind:function(thumb,size=0x54) addr:0x02220fa8
+_ZN19cMissionCheckStates16IsWantedRatingOkEv kind:function(thumb,size=0x18) addr:0x02220ffc
+_ZN19cMissionCheckStates14IsTaxiHealthOkEv kind:function(thumb,size=0xa8) addr:0x02221014
+_ZN19cMissionCheckStates16StartCheckStatesEv kind:function(thumb,size=0x14) addr:0x022210bc
+_ZN5cTaxi6FailedEv kind:function(thumb,size=0xd0) addr:0x022210d0
+_ZN5cTaxi7CleanupEv kind:function(thumb,size=0x74) addr:0x022211a0
+_ZN5cTaxi19DeletePassengerBlipEv kind:function(thumb,size=0x1a) addr:0x02221214
+_ZN5cTaxi21DeleteDestinationBlipEv kind:function(thumb,size=0x28) addr:0x02221230
+_ZN5cTaxi12DestroyTimerEv kind:function(thumb,size=0x22) addr:0x02221258
+_ZN5cTaxi15DestroyTipMeterEv kind:function(thumb,size=0x22) addr:0x0222127c
+_ZN17cMissionCreatePed7CleanupEv kind:function(thumb,size=0x20) addr:0x022212a0
+_ZN20cMissionGetRandomPed7CleanupEb kind:function(thumb,size=0x26) addr:0x022212c0
+_ZN20cMissionGetRandomPed16ReleasePassengerEv kind:function(thumb,size=0x20) addr:0x022212e8
+_ZN19cMissionCheckStates7CleanupEv kind:function(thumb,size=0xe) addr:0x02221308
+_ZN5cTaxi18DisplayFailMessageEv kind:function(thumb,size=0x48) addr:0x02221318
+_ZN5cTaxi19DisplayMedalGodTextEv kind:function(thumb,size=0x64) addr:0x02221360
+_ZN5cTaxi13FareCompletedEv kind:function(thumb,size=0x30) addr:0x022213c4
+_ZN5cTaxi24TaxiFareRunIsMultipleOf5Ev kind:function(thumb,size=0xa4) addr:0x022213f4
+_ZN5cTaxi12MedalAwardedEv kind:function(thumb,size=0x60) addr:0x02221498
+_ZN5cTaxi14FareTerminatedEv kind:function(thumb,size=0x1a4) addr:0x022214f8
+_ZN5cTaxi6PassedEv kind:function(thumb,size=0xa4) addr:0x0222169c
+_ZN5cTaxi24IsTaxiFareRunMultipleOf5Ev kind:function(thumb,size=0x1e) addr:0x02221740
+_ZN5cTaxi10FarePassedEv kind:function(thumb,size=0x34) addr:0x02221760
+_ZN5cTaxi15PassengerWanderEv kind:function(thumb,size=0x6c) addr:0x02221794
+_ZN5cTaxi20SetStateToFarePassedEv kind:function(thumb,size=0x10) addr:0x02221800
+_ZN5cTaxi24SetStateToFareTerminatedEv kind:function(thumb,size=0x10) addr:0x02221810
+_ZN5cTaxi14TaxiNowStoppedEv kind:function(thumb,size=0xbc) addr:0x02221820
+_ZN5cTaxi19CheckTaxiHasStoppedEv kind:function(thumb,size=0x98) addr:0x022218dc
+_ZN5cTaxi8StopTaxiEv kind:function(thumb,size=0x6c) addr:0x02221974
+_ZN5cTaxi20WaitUntilTaxiStoppedEv kind:function(thumb,size=0x6c) addr:0x022219e0
+_ZN5cTaxi18UpdateTipObjectiveEv kind:function(thumb,size=0x114) addr:0x02221a4c
+_ZN9TimerImpl13GetFrameCountEv kind:function(thumb,size=0x10) addr:0x02221b60 local
+_ZNK13cFrameCounter10FrameCountEv kind:function(thumb,size=0x4) addr:0x02221b70 local
+_ZN5cTaxi26EnsureTipMeterWithinValuesEv kind:function(thumb,size=0x16) addr:0x02221b74
+_ZN5cTaxi18ReachedDestinationEv kind:function(thumb,size=0xd8) addr:0x02221b8c
+_ZN5cTaxi23CleanUpReachDestinationEv kind:function(thumb,size=0x28) addr:0x02221c64
+_ZN5cTaxi9OutOfTimeEv kind:function(thumb,size=0x34) addr:0x02221c8c
+_ZN5cTaxi16ReachDestinationEv kind:function(thumb,size=0xf8) addr:0x02221cc0
+_ZN5cTaxi17CheckPlayerInTaxiEv kind:function(thumb,size=0x7c) addr:0x02221db8
+_ZN5cTaxi23SetPlayersCurrentIslandEv kind:function(thumb,size=0xc0) addr:0x02221e34
+_ZN5cTaxi19GenerateDestinationEv kind:function(thumb,size=0x1ec) addr:0x02221ef4
+fix_add_traits_40ul_24ul_20ul_12ul__type_cFixed_20ul_12ul__operator_add_40ul_24ul kind:function(thumb,size=0x22) addr:0x022220e0
+_ZN6cFixedILm40ELm24EEpLERKS0_ kind:function(thumb,size=0x16) addr:0x02222104 local
+cFixed_40ul_24ul__cFixed_20ul_12ul kind:function(thumb,size=0xc) addr:0x0222211c local
+_ZN6cFixedILm40ELm24EEaSILm20ELm12EEERS0_RK6cFixedIXT_EXT0_EE kind:function(thumb,size=0x16) addr:0x02222128 local
+fix_convert_up_40ul_24ul_20ul_12ul__operator_call kind:function(thumb,size=0x24) addr:0x02222140 local
+cFixed_40ul_24ul__cFixed_long kind:function(thumb,size=0x16) addr:0x02222164 local
+_ZN5cTaxi26CheckIfPreviousDestinationEv kind:function(thumb,size=0x1e) addr:0x0222217c
+_ZN5cTaxi12GenerateFareEv kind:function(thumb,size=0x110) addr:0x0222219c
+_Zdv6cFixedILm20ELm12EEi kind:function(thumb,size=0x16) addr:0x022222ac local
+_ZN6cFixedILm20ELm12EEdVEi kind:function(thumb,size=0x10) addr:0x022222c4 local
+_ZN5cTaxi21CreateDestinationBlipEv kind:function(thumb,size=0x94) addr:0x022222d4
+_ZN5cTaxi19ShowDestinationTextEv kind:function(thumb,size=0xb4) addr:0x02222368
+_ZN5cTaxi9ShowTimerEv kind:function(thumb,size=0x24) addr:0x0222241c
+_ZN5cTaxi15AddTipObjectiveEv kind:function(thumb,size=0xc4) addr:0x02222440
+_ZN5cTaxi20PassengerEnteredTaxiEv kind:function(thumb,size=0x34) addr:0x02222504
+_ZN5cTaxi20PlayerLeftFareBehindEv kind:function(thumb,size=0x38) addr:0x02222538
+_ZN5cTaxi9EnterTaxiEv kind:function(thumb,size=0x15c) addr:0x02222570
+_Z22GetWhichSideEntityIsOn11SimpleMoverS_ kind:function(thumb,size=0xa0) addr:0x022226cc local
+_ZN4tv2dI6cFixedILm20ELm12EEEC1ES1_S1_ kind:function(thumb,size=0x16) addr:0x0222276c local
+_Z23GetAngleBetween2DPoints4tv2dI6cFixedILm20ELm12EEES1_ kind:function(thumb,size=0x2a) addr:0x02222784 local
+_Z5To360s kind:function(thumb,size=0x16) addr:0x022227b0 local
+_Z5ATan26cFixedILm20ELm12EES0_ kind:function(thumb,size=0x1e) addr:0x022227c8 local
+_ZN4tv2dI6cFixedILm20ELm12EEEC1ERKS1_ kind:function(thumb,size=0x16) addr:0x022227e8 local
+_ZN5cTaxi19SetStateToEnterTaxiEv kind:function(thumb,size=0x10) addr:0x02222800
+_ZN5cTaxi8HailTaxiEv kind:function(thumb,size=0x154) addr:0x02222810
+_ZN5cTaxi14FoundRandomPedEv kind:function(thumb,size=0x60) addr:0x02222964
+_ZN5cTaxi19CreatePassengerBlipEv kind:function(thumb,size=0x78) addr:0x022229c4
+_Z15SetBlipFriendly6Marker kind:function(thumb,size=0x34) addr:0x02222a3c local
+_ZN5cTaxi13FindRandomPedEv kind:function(thumb,size=0x90) addr:0x02222a70
+_ZN20cMissionGetRandomPed12WhenFoundPedE9cCallBack kind:function(thumb,size=0xc) addr:0x02222b00
+_ZN5cTaxi23SetStateToFindRandomPedEv kind:function(thumb,size=0x10) addr:0x02222b0c
+_ZN5cTaxi22ActivateTaxiRoofLightsEb kind:function(thumb,size=0x38) addr:0x02222b1c
+_ZN5cTaxi20PlayerEnteredVehicleEv kind:function(thumb,size=0x1c) addr:0x02222b54
+_ZN5cTaxi9GetInTaxiEv kind:function(thumb,size=0xd8) addr:0x02222b70
+_ZN5cTaxi23PlayerDidntReturnToTaxiEv kind:function(thumb,size=0x34) addr:0x02222c48
+_ZN5cTaxi19SetStateToGetInTaxiEv kind:function(thumb,size=0x10) addr:0x02222c7c
+_ZN5cTaxi31KeepDisplayingRepairTaxiGodTextEv kind:function(thumb,size=0x50) addr:0x02222c8c
+_ZN5cTaxi13TaxiResprayedEv kind:function(thumb,size=0x40) addr:0x02222cdc
+_ZN5cTaxi29KeepDisplayingLoseCopsGodTextEv kind:function(thumb,size=0x50) addr:0x02222d1c
+_ZN5cTaxi16LoseWantedRatingEv kind:function(thumb,size=0x7c) addr:0x02222d6c
+_ZN5cTaxi10RepairTaxiEv kind:function(thumb,size=0xf8) addr:0x02222de8
+_ZN5cTaxi19DisplayFindFareTextEv kind:function(thumb,size=0xac) addr:0x02222ee0
+_ZN5cTaxi24DeleteAnyPedsStillInTaxiEv kind:function(thumb,size=0x154) addr:0x02222f8c
+_ZN5cTaxi19IsTempPedAScriptPedE3Ped kind:function(thumb,size=0x6a) addr:0x022230e0
+_ZN5cTaxi15SetMissionStateEv kind:function(thumb,size=0xec) addr:0x0222314c
+_ZN5cTaxi16IsWantedRatingOkEv kind:function(thumb,size=0x18) addr:0x02223238
+_ZN5cTaxi19CancelFareObjectiveEv kind:function(thumb,size=0x46) addr:0x02223250
+_ZN5cTaxi14IsTaxiHealthOkEv kind:function(thumb,size=0x5c) addr:0x02223298
+_ZN5cTaxi25SetStateToSetMissionStateEv kind:function(thumb,size=0x10) addr:0x022232f4
+_ZN5cTaxi16SetPlayerVehicleEv kind:function(thumb,size=0x4c) addr:0x02223304
+_ZN5cTaxi20ShortInitialWaitOverEv kind:function(thumb,size=0x30) addr:0x02223350
+_ZN5cTaxi18PlayerDeadOrBustedEv kind:function(thumb,size=0x10) addr:0x02223380
+_ZN5cTaxi24MissionCancelledByPlayerEv kind:function(thumb,size=0x30) addr:0x02223390
+_ZN5cTaxi13ExitedVehicleEv kind:function(thumb,size=0xa0) addr:0x022233c0
+_ZN5cTaxi13PassengerDeadEv kind:function(thumb,size=0x30) addr:0x02223460
+_ZN5cTaxi13PassengerHurtEv kind:function(thumb,size=0x58) addr:0x02223490
+_ZN5cTaxi8TaxiSunkEv kind:function(thumb,size=0x34) addr:0x022234e8
+_ZN5cTaxi16ShortInitialWaitEv kind:function(thumb,size=0x74) addr:0x0222351c
+_ZN5cTaxi27SetupTaxiDestinationIslandsEv kind:function(thumb,size=0x130) addr:0x02223590
+_Z23GenerateRectangularAreaR4AreaRK4tv3dI6cFixedILm20ELm12EEES4_ kind:function(thumb,size=0x5a) addr:0x022236c0 local
+cFixed_20ul_12ul_tv3d_cFixed_20ul_12ul__operator_div_eq_int kind:function(thumb,size=0x20) addr:0x0222371c local
+_ZN5CTaxiC1Ev kind:function(thumb,size=0x1c) addr:0x0222373c
+_ZN6ScriptC2Ev kind:function(thumb,size=0x14) addr:0x02223758 local
+_ZN6ScriptD2Ev kind:function(thumb,size=0xc) addr:0x0222376c local
+_ZN5cTaxiC1Ev kind:function(thumb,size=0xbc) addr:0x02223778
+_ZN17cMissionCreatePedC1Ev kind:function(thumb,size=0x2c) addr:0x02223834
+_ZN17cMissionCreatePedD1Ev kind:function(thumb,size=0x24) addr:0x02223860
+_ZN20cMissionGetRandomPedC1Ev kind:function(thumb,size=0x38) addr:0x02223884
+_ZN20cMissionGetRandomPedD1Ev kind:function(thumb,size=0x2c) addr:0x022238bc
+_ZN19cMissionCheckStatesC1Ev kind:function(thumb,size=0x20) addr:0x022238e8
+_ZN19cMissionCheckStatesD1Ev kind:function(thumb,size=0x14) addr:0x02223908
+_ZN12cAmbientQuitC1Ev kind:function(thumb,size=0x20) addr:0x0222391c local
+_ZN12cAmbientQuitD1Ev kind:function(thumb,size=0x14) addr:0x0222393c local
+_ZN5cTaxiD1Ev kind:function(thumb,size=0x88) addr:0x02223950
+_ZN5CTaxiD1Ev kind:function(thumb,size=0x14) addr:0x022239d8
+_ZN5CTaxi4InitEv kind:function(thumb,size=0xc) addr:0x022239ec
+_ZN5cTaxi4InitEv kind:function(thumb,size=0x50) addr:0x022239f8
+_ZN5cTaxi19SetDefaultCallbacksEv kind:function(thumb,size=0x188) addr:0x02223a48
+_ZN12cAmbientQuit11SetCallbackE9cCallBack kind:function(thumb,size=0xc) addr:0x02223bd0 local
+_ZN19cMissionCheckStates21WhenStateChangeNeededE9cCallBack kind:function(thumb,size=0xc) addr:0x02223bdc
+_ZN6ScriptD1Ev kind:function(thumb,size=0xc) addr:0x02223be8 local
+_ZN6ScriptD0Ev kind:function(thumb,size=0x12) addr:0x02223bf4 local
+_ZN12cAmbientQuitD0Ev kind:function(thumb,size=0x1a) addr:0x02223c08 local
+_ZN17cMissionCreatePedD0Ev kind:function(thumb,size=0x2a) addr:0x02223c24
+_ZN20cMissionGetRandomPedD0Ev kind:function(thumb,size=0x32) addr:0x02223c50
+_ZN19cMissionCheckStatesD0Ev kind:function(thumb,size=0x1a) addr:0x02223c84
+_ZN5cTaxiD0Ev kind:function(thumb,size=0x90) addr:0x02223ca0
+_ZN5CTaxiD0Ev kind:function(thumb,size=0x1a) addr:0x02223d30
+data_ov010_02223d4c kind:data(any) addr:0x02223d4c
+data_ov010_02223d58 kind:data(any) addr:0x02223d58
+data_ov010_02223d64 kind:data(any) addr:0x02223d64
+data_ov010_02223d70 kind:data(any) addr:0x02223d70
+data_ov010_02223d7c kind:data(any) addr:0x02223d7c
+data_ov010_02223d88 kind:data(any) addr:0x02223d88
+data_ov010_02223dd0 kind:data(any) addr:0x02223dd0
+data_ov010_02223fac kind:data(any) addr:0x02223fac ambiguous
+__sinit_ov010_02224184 kind:function(thumb,size=0x20) addr:0x02224184
+.p__sinit_ov010_02224184 kind:data(word) addr:0x022241a4
+data_ov010_022241c0 kind:data(any) addr:0x022241c0
+data_ov010_022241c8 kind:data(any) addr:0x022241c8
+data_ov010_02224208 kind:data(any) addr:0x02224208
+data_ov010_02224248 kind:data(any) addr:0x02224248
+data_ov010_02224258 kind:data(any) addr:0x02224258
+data_ov010_02224260 kind:data(any) addr:0x02224260
+data_ov010_02224268 kind:data(any) addr:0x02224268
+data_ov010_022242a8 kind:data(any) addr:0x022242a8
+data_ov010_022242b0 kind:data(any) addr:0x022242b0
+data_ov010_022242c0 kind:data(any) addr:0x022242c0
+data_ov010_022242c8 kind:data(any) addr:0x022242c8
+data_ov010_022242d0 kind:data(any) addr:0x022242d0
+data_ov010_022242d8 kind:data(any) addr:0x022242d8
+data_ov010_022242e0 kind:data(any) addr:0x022242e0
+data_ov010_022242e8 kind:data(any) addr:0x022242e8
+data_ov010_022242f0 kind:data(any) addr:0x022242f0
+data_ov010_022242f8 kind:data(any) addr:0x022242f8
+data_ov010_02224300 kind:data(any) addr:0x02224300
+data_ov010_02224308 kind:data(any) addr:0x02224308
+data_ov010_02224310 kind:data(any) addr:0x02224310
+data_ov010_02224318 kind:data(any) addr:0x02224318
+data_ov010_02224320 kind:data(any) addr:0x02224320
+data_ov010_02224328 kind:data(any) addr:0x02224328
+data_ov010_02224330 kind:data(any) addr:0x02224330
+data_ov010_02224338 kind:data(any) addr:0x02224338
+data_ov010_02224340 kind:data(any) addr:0x02224340
+data_ov010_02224348 kind:data(any) addr:0x02224348
+data_ov010_02224350 kind:data(any) addr:0x02224350
+data_ov010_02224358 kind:data(any) addr:0x02224358
+data_ov010_02224360 kind:data(any) addr:0x02224360
+data_ov010_02224368 kind:data(any) addr:0x02224368
+data_ov010_02224370 kind:data(any) addr:0x02224370
+data_ov010_02224378 kind:data(any) addr:0x02224378
+data_ov010_02224380 kind:data(any) addr:0x02224380
+data_ov010_02224388 kind:data(any) addr:0x02224388
+data_ov010_022243b0 kind:data(any) addr:0x022243b0
+data_ov010_022243b8 kind:data(any) addr:0x022243b8
+data_ov010_022243c0 kind:data(any) addr:0x022243c0
+data_ov010_022243c8 kind:data(any) addr:0x022243c8
+data_ov010_022243d0 kind:data(any) addr:0x022243d0
+data_ov010_022243d8 kind:data(any) addr:0x022243d8
+data_ov010_022243e0 kind:data(any) addr:0x022243e0
+data_ov010_022243e8 kind:data(any) addr:0x022243e8
+data_ov010_022243f0 kind:data(any) addr:0x022243f0
+data_ov010_022243f8 kind:data(any) addr:0x022243f8
+data_ov010_02224400 kind:data(any) addr:0x02224400
+data_ov010_02224408 kind:data(any) addr:0x02224408
+data_ov010_02224410 kind:data(any) addr:0x02224410
+data_ov010_02224418 kind:data(any) addr:0x02224418
+data_ov010_02224428 kind:data(any) addr:0x02224428
+data_ov010_02224430 kind:data(any) addr:0x02224430
+data_ov010_02224438 kind:data(any) addr:0x02224438
+data_ov010_02224440 kind:data(any) addr:0x02224440
+data_ov010_02224448 kind:data(any) addr:0x02224448
+data_ov010_02224450 kind:data(any) addr:0x02224450
+data_ov010_02224458 kind:data(any) addr:0x02224458
+data_ov010_02224460 kind:data(any) addr:0x02224460
+data_ov010_02224468 kind:data(any) addr:0x02224468
+data_ov010_02224470 kind:data(any) addr:0x02224470
+data_ov010_02224478 kind:data(any) addr:0x02224478
+data_ov010_02224488 kind:data(any) addr:0x02224488
+data_ov010_02224490 kind:data(any) addr:0x02224490
+data_ov010_02224498 kind:data(any) addr:0x02224498
+data_ov010_022244b0 kind:data(any) addr:0x022244b0
+data_ov010_022244b8 kind:data(any) addr:0x022244b8
+data_ov010_022244c0 kind:data(any) addr:0x022244c0
+data_ov010_022244c8 kind:data(any) addr:0x022244c8
+data_ov010_022244d0 kind:data(any) addr:0x022244d0
+data_ov010_022244d8 kind:data(any) addr:0x022244d8
+data_ov010_022244e0 kind:data(any) addr:0x022244e0
+data_ov010_022244e8 kind:data(any) addr:0x022244e8
+data_ov010_022244f0 kind:data(any) addr:0x022244f0
+data_ov010_022244f8 kind:data(any) addr:0x022244f8
+data_ov010_02224500 kind:data(any) addr:0x02224500
+data_ov010_02224508 kind:data(any) addr:0x02224508
+data_ov010_02224510 kind:data(any) addr:0x02224510
+data_ov010_02224518 kind:data(any) addr:0x02224518
+data_ov010_02224520 kind:data(any) addr:0x02224520
+data_ov010_02224528 kind:data(any) addr:0x02224528
+data_ov010_02224530 kind:data(any) addr:0x02224530
+data_ov010_02224538 kind:data(any) addr:0x02224538
+data_ov010_02224540 kind:data(any) addr:0x02224540
+data_ov010_02224548 kind:data(any) addr:0x02224548
+data_ov010_02224580 kind:data(any) addr:0x02224580
+data_ov010_02224590 kind:data(any) addr:0x02224590
+data_ov010_022245e8 kind:data(any) addr:0x022245e8
+data_ov010_02224604 kind:data(any) addr:0x02224604
+data_ov010_02224620 kind:data(any) addr:0x02224620
+data_ov010_02224658 kind:data(any) addr:0x02224658
+data_ov010_02224690 kind:data(any) addr:0x02224690
+data_ov010_022246c8 kind:data(any) addr:0x022246c8
+data_ov010_02224700 kind:data(any) addr:0x02224700
+data_ov010_02224740 kind:bss addr:0x02224740
+data_ov010_0222474c kind:bss addr:0x0222474c
+data_ov010_0222490c kind:bss addr:0x0222490c ambiguous
+data_ov010_02224a40 kind:bss addr:0x02224a40 ambiguous

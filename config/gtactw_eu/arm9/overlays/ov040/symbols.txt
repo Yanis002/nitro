@@ -1,0 +1,95 @@
+_ZN14cCreditHandler13SetupNewTitleEv kind:function(thumb,size=0x200) addr:0x02220be0 local
+_ZN12cTextHandler7CleanupEv kind:function(thumb,size=0x2c) addr:0x02220de0 local
+_ZN14cCreditHandler13IsMultiCreditEm kind:function(thumb,size=0x2a) addr:0x02220e0c local
+_ZN12cTextHandler6IsLongEm kind:function(thumb,size=0x20) addr:0x02220e38 local
+_ZN12cTextHandler9GetHeightEv kind:function(thumb,size=0x2c) addr:0x02220e58 local
+_ZN12cTextHandler7DisplayEmibii kind:function(thumb,size=0x128) addr:0x02220e84 local
+_ZN12cTextHandler8GetWidthEv kind:function(thumb,size=0x28) addr:0x02220fac local
+_ZN12cTextHandler15MakePopOnPopOffEv kind:function(thumb,size=0x38) addr:0x02220fd4 local
+_ZN14cCreditHandler6FlyOffEv kind:function(thumb,size=0xc4) addr:0x0222100c local
+_ZN12cTextHandler8MovedOffEv kind:function(thumb,size=0x6) addr:0x022210d0 local
+_ZN12cTextHandler13UpdateFlyAwayEib kind:function(thumb,size=0x24) addr:0x022210d8 local
+_ZN12cTextHandler7FlyAwayEib kind:function(thumb,size=0x72) addr:0x022210fc local
+_ZN12cTextHandler8OnScreenEii kind:function(thumb,size=0x4c) addr:0x02221170 local
+_ZN12cTextHandler8ShowTextEv kind:function(thumb,size=0x90) addr:0x022211bc local
+_ZN14cCreditHandler6UpdateEv kind:function(thumb,size=0x124) addr:0x0222124c local
+_ZN12cTextHandler6ActiveEv kind:function(thumb,size=0x6) addr:0x02221370 local
+_ZN12cTextHandler6UpdateEb kind:function(thumb,size=0x32) addr:0x02221378 local
+_ZN12cTextHandler13UpdateTextPosEb kind:function(thumb,size=0x78) addr:0x022213ac local
+_Z5iLerpiii kind:function(thumb,size=0x20) addr:0x02221424 local
+_ZN14cCreditHandler16DefaultCallbacksEv kind:function(thumb,size=0x8) addr:0x02221444 local
+_ZN14cCameraProcess6UpdateEv kind:function(thumb,size=0x60) addr:0x0222144c
+_ZN14cCameraProcess8DoSwitchEv kind:function(thumb,size=0xd4) addr:0x022214ac
+_ZN14cCameraProcess11GenerateCarEv kind:function(thumb,size=0x128) addr:0x02221580
+_ZN8cEndGame17FinishFadeInDelayEv kind:function(thumb,size=0x60) addr:0x022216a8
+_ZN8cEndGame13FinishDelayedEv kind:function(thumb,size=0x74) addr:0x02221708
+_ZN14cCameraProcess7CleanupEv kind:function(thumb,size=0x38) addr:0x0222177c
+_ZN12cContextHelp19SuppressContextHelpEb kind:function(thumb,size=0x58) addr:0x022217b4 local
+_ZN8cEndGame8FinishedEv kind:function(thumb,size=0x30) addr:0x0222180c
+_ZN8cEndGame6UpdateEv kind:function(thumb,size=0x68) addr:0x0222183c
+_ZN14cCreditHandler8FinishedEv kind:function(thumb,size=0x4) addr:0x022218a4 local
+_ZN8cEndGame10BeginDelayEv kind:function(thumb,size=0x38) addr:0x022218a8
+_ZN8cEndGame5BeginEv kind:function(thumb,size=0x9c) addr:0x022218e0
+_ZN14cCreditHandler18SetMultiCreditListEPmi kind:function(thumb,size=0x6) addr:0x0222197c local
+_ZN14cCreditHandler12SetTitleListEPmi kind:function(thumb,size=0x6) addr:0x02221984
+_ZN14cCreditHandler4InitEPcmmbb kind:function(thumb,size=0x88) addr:0x0222198c
+_ZN8cEndGame9InitDelayEv kind:function(thumb,size=0x54) addr:0x02221a14
+_ZN14cCameraProcess4InitEv kind:function(thumb,size=0xa0) addr:0x02221a68
+_ZN12cTextHandlerD1Ev kind:function(thumb,size=0x14) addr:0x02221b08 local
+_ZN12cTextHandlerD0Ev kind:function(thumb,size=0x1a) addr:0x02221b1c local
+_ZN14cCreditHandlerD1Ev kind:function(thumb,size=0x2c) addr:0x02221b38 local
+_ZN14cCreditHandlerD0Ev kind:function(thumb,size=0x34) addr:0x02221b64 local
+_ZN8CEndGameC1Ev kind:function(thumb,size=0x1c) addr:0x02221b98
+_ZN6ScriptC2Ev kind:function(thumb,size=0x14) addr:0x02221bb4 local
+_ZN6ScriptD2Ev kind:function(thumb,size=0xc) addr:0x02221bc8 local
+_ZN8cEndGameC1Ev kind:function(thumb,size=0x2c) addr:0x02221bd4
+_ZN14cCameraProcessC1Ev kind:function(thumb,size=0x2c) addr:0x02221c00
+_ZN14cCameraProcessD1Ev kind:function(thumb,size=0x24) addr:0x02221c2c
+_ZN14cCreditHandlerC1Ev kind:function(thumb,size=0x60) addr:0x02221c50 local
+_ZN12cTextHandlerC1Ev kind:function(thumb,size=0x24) addr:0x02221cb0 local
+_ZN8cEndGameD1Ev kind:function(thumb,size=0x1c) addr:0x02221cd4
+_ZN8CEndGameD1Ev kind:function(thumb,size=0x14) addr:0x02221cf0
+_ZN8CEndGame4InitEv kind:function(thumb,size=0xc) addr:0x02221d04
+_ZN8cEndGame4InitEv kind:function(thumb,size=0x7c) addr:0x02221d10
+_ZN6ScriptD1Ev kind:function(thumb,size=0xc) addr:0x02221d8c local
+_ZN6ScriptD0Ev kind:function(thumb,size=0x12) addr:0x02221d98 local
+_ZN14cCameraProcessD0Ev kind:function(thumb,size=0x2a) addr:0x02221dac
+_ZN8cEndGameD0Ev kind:function(thumb,size=0x22) addr:0x02221dd8
+_ZN8CEndGameD0Ev kind:function(thumb,size=0x1a) addr:0x02221dfc
+__sinit_ov040_02221e18 kind:function(thumb,size=0x20) addr:0x02221e18
+.p__sinit_ov040_02221e18 kind:data(word) addr:0x02221e38
+data_ov040_02221e40 kind:data(any) addr:0x02221e40
+data_ov040_02221eb0 kind:data(any) addr:0x02221eb0
+data_ov040_02221eb8 kind:data(any) addr:0x02221eb8
+data_ov040_02221ec0 kind:data(any) addr:0x02221ec0
+data_ov040_02221ef0 kind:data(any) addr:0x02221ef0
+data_ov040_02221f30 kind:data(any) addr:0x02221f30
+data_ov040_02221f38 kind:data(any) addr:0x02221f38
+data_ov040_02221f48 kind:data(any) addr:0x02221f48
+data_ov040_02221f50 kind:data(any) addr:0x02221f50
+data_ov040_02221f58 kind:data(any) addr:0x02221f58
+data_ov040_02221f68 kind:data(any) addr:0x02221f68
+data_ov040_02221f70 kind:data(any) addr:0x02221f70
+data_ov040_02221f78 kind:data(any) addr:0x02221f78
+data_ov040_02221f80 kind:data(any) addr:0x02221f80
+data_ov040_02221f98 kind:data(any) addr:0x02221f98
+data_ov040_02221fa0 kind:data(any) addr:0x02221fa0
+data_ov040_02221fa8 kind:data(any) addr:0x02221fa8
+data_ov040_02221fb0 kind:data(any) addr:0x02221fb0
+data_ov040_02221fb8 kind:data(any) addr:0x02221fb8
+data_ov040_02221fc8 kind:data(any) addr:0x02221fc8
+data_ov040_02221fd0 kind:data(any) addr:0x02221fd0
+data_ov040_02222040 kind:data(any) addr:0x02222040
+data_ov040_02222050 kind:data(any) addr:0x02222050
+data_ov040_02222060 kind:data(any) addr:0x02222060
+data_ov040_02222064 kind:data(any) addr:0x02222064
+data_ov040_02222088 kind:data(any) addr:0x02222088
+data_ov040_02222090 kind:data(any) addr:0x02222090
+data_ov040_022220a4 kind:data(any) addr:0x022220a4
+data_ov040_022220c0 kind:data(any) addr:0x022220c0
+data_ov040_022220dc kind:data(any) addr:0x022220dc
+data_ov040_02222114 kind:data(any) addr:0x02222114
+data_ov040_0222214c kind:data(any) addr:0x0222214c
+data_ov040_02222184 kind:data(any) addr:0x02222184
+data_ov040_022221c0 kind:bss addr:0x022221c0
+data_ov040_022221cc kind:bss addr:0x022221cc

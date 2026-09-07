@@ -1,0 +1,49 @@
+_ZN11SimpleMoverC2Ev kind:function(thumb,size=0x14) addr:0x02220be0 local
+_ZN8PhysicalC2Ev kind:function(thumb,size=0x14) addr:0x02220bf4 local
+_ZN11DynamicPropC1Ev kind:function(thumb,size=0x14) addr:0x02220c08 local
+_ZN14cTattooParlour8FinishedEv kind:function(thumb,size=0xa8) addr:0x02220c1c
+_ZN14cTattooParlour11StartOutSeqEv kind:function(thumb,size=0x5c) addr:0x02220cc4
+_ZN14cTattooParlour8DoRewardEv kind:function(thumb,size=0x1c4) addr:0x02220d20
+_ZN14cTattooParlour11EndMiniGameEv kind:function(thumb,size=0x3c) addr:0x02220ee4
+_ZN14cTattooParlour13StartMiniGameEv kind:function(thumb,size=0x60) addr:0x02220f20
+_ZN14cTattooParlour17Set_StartMiniGameEv kind:function(thumb,size=0x10) addr:0x02220f80
+_ZN14cTattooParlour13PrintHelpTextEv kind:function(thumb,size=0x28) addr:0x02220f90
+_ZN14cTattooParlour13EndInSequenceEv kind:function(thumb,size=0x5c) addr:0x02220fb8
+_ZN12cDoorHandlerD1Ev kind:function(thumb,size=0x24) addr:0x02221014 local
+_ZN12cDoorHandlerD0Ev kind:function(thumb,size=0x2a) addr:0x02221038 local
+_ZN14CTattooParlourC1Ev kind:function(thumb,size=0x1c) addr:0x02221064
+_ZN6ScriptC2Ev kind:function(thumb,size=0x14) addr:0x02221080 local
+_ZN6ScriptD2Ev kind:function(thumb,size=0xc) addr:0x02221094 local
+_ZN14cTattooParlourC1Ev kind:function(thumb,size=0x1c) addr:0x022210a0
+_ZN12cDoorHandlerC1Ev kind:function(thumb,size=0x40) addr:0x022210bc local
+_ZN9cDoorInfoC1Ev kind:function(thumb,size=0x36) addr:0x022210fc local
+_ZN14cTattooParlourD1Ev kind:function(thumb,size=0x14) addr:0x02221134
+_ZN14CTattooParlourD1Ev kind:function(thumb,size=0x14) addr:0x02221148
+_ZN14CTattooParlour4InitEv kind:function(thumb,size=0xc) addr:0x0222115c
+_ZN14cTattooParlour4InitEv kind:function(thumb,size=0x110) addr:0x02221168
+_ZN6ScriptD1Ev kind:function(thumb,size=0xc) addr:0x02221278 local
+_ZN6ScriptD0Ev kind:function(thumb,size=0x12) addr:0x02221284 local
+_ZN14cTattooParlourD0Ev kind:function(thumb,size=0x1a) addr:0x02221298
+_ZN14CTattooParlourD0Ev kind:function(thumb,size=0x1a) addr:0x022212b4
+data_ov028_022212d0 kind:data(any) addr:0x022212d0
+data_ov028_022212dc kind:data(any) addr:0x022212dc
+data_ov028_022212e8 kind:data(any) addr:0x022212e8
+data_ov028_022212f4 kind:data(any) addr:0x022212f4
+data_ov028_02221318 kind:data(any) addr:0x02221318
+__sinit_ov028_0222133c kind:function(thumb,size=0x20) addr:0x0222133c
+.p__sinit_ov028_0222133c kind:data(word) addr:0x0222135c
+data_ov028_02221380 kind:data(any) addr:0x02221380
+data_ov028_02221390 kind:data(any) addr:0x02221390
+data_ov028_022213d8 kind:data(any) addr:0x022213d8
+data_ov028_022213e0 kind:data(any) addr:0x022213e0
+data_ov028_022213e8 kind:data(any) addr:0x022213e8
+data_ov028_022213f8 kind:data(any) addr:0x022213f8
+data_ov028_02221400 kind:data(any) addr:0x02221400
+data_ov028_02221408 kind:data(any) addr:0x02221408
+data_ov028_02221418 kind:data(any) addr:0x02221418
+data_ov028_02221430 kind:data(any) addr:0x02221430
+data_ov028_0222144c kind:data(any) addr:0x0222144c
+data_ov028_02221468 kind:data(any) addr:0x02221468
+data_ov028_022214a0 kind:data(any) addr:0x022214a0
+data_ov028_022214e0 kind:bss addr:0x022214e0
+data_ov028_022214ec kind:bss addr:0x022214ec

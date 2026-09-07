@@ -7,13 +7,14 @@ extern "C" {
 
 #include <stdarg.h>
 
-#include "nitro/os/alarm.h"
-#include "nitro/os/cache.h"
-#include "nitro/os/common.h"
-#include "nitro/os/context.h"
-#include "nitro/os/mutex.h"
-#include "nitro/os/owner.h"
-#include "nitro/os/thread.h"
+#include "nitro/os/os_alarm.h"
+#include "nitro/os/os_cache.h"
+#include "nitro/os/os_common.h"
+#include "nitro/os/os_context.h"
+#include "nitro/os/os_irq.h"
+#include "nitro/os/os_mutex.h"
+#include "nitro/os/os_owner.h"
+#include "nitro/os/os_thread.h"
 #include "nitro/reg.h"
 
 #define OS_IE_V_BLANK 1
@@ -37,8 +38,10 @@ extern "C" {
 #define OS_EXMEM_CNT_NDS_SLOT_ACCESS_SHIFT 11
 #define OS_EXMEM_CNT_NDS_SLOT_ACCESS (1 << OS_EXMEM_CNT_NDS_SLOT_ACCESS_SHIFT)
 
-#define OS_CPU_ARM9 0
-#define OS_CPU_ARM7 1
+#define OS_CPU_ARM9 ((OSCpu) 0)
+#define OS_CPU_ARM7 ((OSCpu) 1)
+
+typedef u32 OSCpu;
 
 typedef struct OSMessageQueue {
     /* 00 */ OSLinkedList unk_00;
@@ -64,16 +67,11 @@ typedef struct OSDma {
 typedef u32 OSHeapHandle;
 typedef u64 OSTime;
 
-typedef u32 OSIntrMode;
-
 void OS_Init(void);
 void OS_InitThread(void);
 void OS_InitTick(void);
 void OS_InitAlarm(void);
 void OS_Terminate(void);
-void OS_SetIrqFunction(u32 type, void (*function)());
-
-void OS_EnableIrqMask(u32 mask);
 
 void OS_WaitVBlankIntr(void);
 void _OS_SpinWait(u32 param1);
@@ -137,17 +135,14 @@ u32 OS_GetConsoleType(void);
 
 u32 OS_GetLockID(void);
 
-OSIntrMode OS_DisableInterrupts(void);
-u32 OS_DisableInterrupts_Irq(void);
-void OS_RestoreInterrupts(u32);
-void OS_EnableInterrupts(void);
-
 BOOL OS_func_0206d5ac(u16, u32);
 void OS_func_0206d66c(u16, u32);
 u32 OS_func_0206d3cc(void);
 u32 OS_GetProcMode(void);
 
 void OS_Halt(void);
+
+void OSi_ReferSymbol(void);
 
 void OS_func_0013(s32, void (*)(u32), u32);
 
@@ -164,16 +159,6 @@ BOOL OS_func_0065(void);
 
 void OS_func_0176(u8 *);
 void OS_func_0178(u32);
-
-inline void OS_SetIrqCheckFlag(void) {
-    REG_IRQ |= 1;
-}
-
-inline u16 OS_EnableIrq(void) {
-    u16 oldVal = REG_IME;
-    REG_IME    = 1;
-    return oldVal;
-}
 
 inline u32 OS_GetMainArenaLo(void) {
     return OS_GetArenaLo(OS_ARENA_MAIN);

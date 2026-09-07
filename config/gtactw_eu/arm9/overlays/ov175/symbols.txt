@@ -1,0 +1,40 @@
+_ZN3Gui15cGateLockDebrisC1Ev kind:function(thumb,size=0xa) addr:0x02234cc0 local
+_ZN3Gui15cGateLockDebrisD1Ev kind:function(thumb,size=0x20) addr:0x02234ccc local
+_ZN3Gui15cGateLockDebris4InitEPN5Gfx2d11cSpriteDataE kind:function(thumb,size=0x48) addr:0x02234cec local
+_ZN3Gui15cGateLockDebris4EmitEiimPN5Gfx2d11cSpriteDataE kind:function(thumb,size=0x8c) addr:0x02234d34 local
+_ZN3Gui15cGateLockDebris6UpdateEv kind:function(thumb,size=0x7c) addr:0x02234dc0 local
+_ZN3Gui9cGateLockC1Ell kind:function(thumb,size=0x70) addr:0x02234e3c local
+_ZN3Gui9cGateLock4InitEPN5Gfx2d14cSpriteDataSetENS0_9eLockTypeE kind:function(thumb,size=0x118) addr:0x02234eac local
+_ZN3Gui9cGateLockD1Ev kind:function(thumb,size=0x44) addr:0x02234fc4 local
+_ZN3Gui9cGateLock7ProcessEv kind:function(thumb,size=0x64) addr:0x02235008 local
+_ZN3Gui9cGateLock17ProcessLockMotionEv kind:function(thumb,size=0xf8) addr:0x0223506c local
+_ZN3Gui9cGateLock15ProcessDraggingEv kind:function(thumb,size=0x1f0) addr:0x02235164 local
+_ZN3Gui9cGateLock16SetupSmashedLockE4tv2dI6cFixedILm20ELm12EEE kind:function(thumb,size=0x68) addr:0x02235354 local
+_ZN3Gui9cGateLock19ProcessLockSmashingEv kind:function(thumb,size=0x7c) addr:0x022353bc local
+_ZN3Gui9cGateLock9IsSmashedEv kind:function(thumb,size=0xc) addr:0x02235438 local
+_ZN3Gui9cGateLock11HasFinishedEv kind:function(thumb,size=0xc) addr:0x02235444 local
+_ZN3Gui9cGateLock9PlaySwingEv kind:function(thumb,size=0x30) addr:0x02235450 local
+_ZN3Gui9cGateLock7PlayHitEv kind:function(thumb,size=0x24) addr:0x02235480 local
+_ZN3Gui9cGateLock9PlayBreakEv kind:function(thumb,size=0x24) addr:0x022354a4 local
+_ZN3Gui17cLiftGateSmashAppC1Ev kind:function(thumb,size=0x58) addr:0x022354c8
+_ZN3Gui17cLiftGateSmashAppD1Ev kind:function(thumb,size=0xc) addr:0x02235520
+_ZN3Gui17cLiftGateSmashAppD0Ev kind:function(thumb,size=0x18) addr:0x0223552c
+_ZN3Gui17cLiftGateSmashApp4InitEv kind:function(thumb,size=0x4ec) addr:0x02235544
+_ZN3Gui17cLiftGateSmashApp6DeInitEv kind:function(thumb,size=0x168) addr:0x02235a30
+_ZN3Gui17cLiftGateSmashApp7ProcessEv kind:function(thumb,size=0x274) addr:0x02235b98
+_ZNK3Gui17cLiftGateSmashApp10IsFinishedEv kind:function(thumb,size=0x6) addr:0x02235e0c
+_ZNK3Gui17cLiftGateSmashApp10FinishCodeEv kind:function(thumb,size=0x6) addr:0x02235e14
+_ZN3Gui17cLiftGateSmashApp11SetFinishedEv kind:function(thumb,size=0x30) addr:0x02235e1c
+_ZN3Gui17cLiftGateSmashApp12Lift_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0xa0) addr:0x02235e4c
+_ZN3Gui17cLiftGateSmashApp12PlayOpengateEv kind:function(thumb,size=0x24) addr:0x02235eec
+_ZN3Gui17cLiftGateSmashApp15PlayButtonFlashEv kind:function(thumb,size=0x24) addr:0x02235f10
+data_ov175_02235f48 kind:data(any) addr:0x02235f48
+data_ov175_02235fc8 kind:data(any) addr:0x02235fc8
+data_ov175_02235fe4 kind:data(any) addr:0x02235fe4
+data_ov175_02235ffc kind:data(any) addr:0x02235ffc
+data_ov175_02236018 kind:data(any) addr:0x02236018
+data_ov175_02236034 kind:data(any) addr:0x02236034
+data_ov175_02236048 kind:data(any) addr:0x02236048
+data_ov175_0223605c kind:data(any) addr:0x0223605c
+data_ov175_02236070 kind:data(any) addr:0x02236070
+data_ov175_02236084 kind:data(any) addr:0x02236084

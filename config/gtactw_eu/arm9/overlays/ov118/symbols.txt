@@ -1,0 +1,157 @@
+Gui__cTradeQuantity__cTradeQuantity kind:function(thumb,size=0x1e8) addr:0x02234cc0 local
+_ZN3Gui14cTradeQuantityD1Ev kind:function(thumb,size=0x6c) addr:0x02234ea8 local
+_ZN3Gui14cTradeQuantityD0Ev kind:function(thumb,size=0x78) addr:0x02234f14 local
+_ZN3Gui14cTradeQuantity7ProcessEv kind:function(thumb,size=0x134) addr:0x02234f8c local
+_ZN3Gui14cTradeQuantity4LoadEPN5Gfx2d14cSpriteDataSetEb kind:function(thumb,size=0x2c0) addr:0x022350c0 local
+_ZN3Gui14cTradeQuantity6LaunchEP10cTradeItemmmmmmbb kind:function(thumb,size=0x90c) addr:0x02235380 local
+.L_02235c76 kind:label(thumb) addr:0x02235c76
+_ZN3Gui14cTradeQuantity8SetValueEm kind:function(thumb,size=0x32) addr:0x02235c8c local
+_ZN3Gui14cTradeQuantity8GetValueEv kind:function(thumb,size=0x8) addr:0x02235cc0 local
+_ZN3Gui14cTradeQuantity8IncValueEv kind:function(thumb,size=0x9c) addr:0x02235cc8 local
+_ZN3Gui14cTradeQuantity8DecValueEv kind:function(thumb,size=0x9c) addr:0x02235d64 local
+_ZN3Gui14cTradeQuantity14Cancel_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x64) addr:0x02235e00 local
+_ZN3Gui14cTradeQuantity15Confirm_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0xc0) addr:0x02235e64 local
+_ZN3Gui14cTradeQuantity13Minus_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x60) addr:0x02235f24 local
+_ZN3Gui14cTradeQuantity12Plus_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x60) addr:0x02235f84 local
+_ZN3Gui14cTradeQuantity15Minus_OnReleaseERKNS_14cMessageParamsE kind:function(thumb,size=0x40) addr:0x02235fe4 local
+_ZN3Gui14cTradeQuantity14Plus_OnReleaseERKNS_14cMessageParamsE kind:function(thumb,size=0x42) addr:0x02236024 local
+_ZN3Gui14cTradeQuantity7ClosingEv kind:function(thumb,size=0x14) addr:0x02236068 local
+_ZN3Gui14cTradeQuantity5CloseEb kind:function(thumb,size=0x27c) addr:0x0223607c local
+_ZN3Gui14cTradeQuantity16UpdateProfitLossEv kind:function(thumb,size=0x108) addr:0x022362f8 local
+_ZN3Gui14cTradeQuantity21UpdateQuantityDisplayEm kind:function(thumb,size=0xa4) addr:0x02236400 local
+_ZN3Gui14cTradeQuantity17UpdateCostDisplayEmm kind:function(thumb,size=0xc8) addr:0x022364a4 local
+_ZN3Gui18cCapacityIndicatorC1Ev kind:function(thumb,size=0x80) addr:0x0223656c local
+_ZN3Gui18cCapacityIndicatorD1Ev kind:function(thumb,size=0x38) addr:0x022365ec local
+_ZN3Gui18cCapacityIndicator4InitEPN5Gfx2d14cSpriteDataSetE kind:function(thumb,size=0x64) addr:0x02236624 local
+_ZN3Gui18cCapacityIndicator6UpdateEl kind:function(thumb,size=0x9c) addr:0x02236688 local
+_ZN3Gui18cCapacityIndicator7ProcessEv kind:function(thumb,size=0x48) addr:0x02236724 local
+_ZN3Gui18cCapacityIndicator5FlashEv kind:function(thumb,size=0x30) addr:0x0223676c local
+_ZN3Gui13cBaseTradeAppC2Eh kind:function(thumb,size=0x24c) addr:0x0223679c local
+_ZN3Gui13cBaseTradeAppD1Ev kind:function(thumb,size=0x58) addr:0x022369e8 local
+_ZN3Gui13cBaseTradeAppD0Ev kind:function(thumb,size=0x64) addr:0x02236a40 local
+_ZN3Gui13cBaseTradeAppD2Ev kind:function(thumb,size=0x58) addr:0x02236aa4 local
+_ZN3Gui13cBaseTradeApp4InitEv kind:function(thumb,size=0x3e8) addr:0x02236afc local
+_ZN3Gui13cBaseTradeApp6DeInitEv kind:function(thumb,size=0x2b4) addr:0x02236ee4 local
+_ZN3Gui13cBaseTradeApp7ProcessEv kind:function(thumb,size=0x674) addr:0x02237198 local
+_ZN3Gui13cBaseTradeApp13SetDropButtonEPNS_19cDraggableButtonBoxEPNS_20cBaseDraggableButtonE kind:function(thumb,size=0x10) addr:0x0223780c local
+_ZN3Gui13cBaseTradeApp13GetDropButtonEv kind:function(thumb,size=0xc) addr:0x0223781c local
+_ZN3Gui13cBaseTradeApp10GetDropBoxEv kind:function(thumb,size=0x8) addr:0x02237828 local
+_ZN3Gui13cBaseTradeApp4LockEb kind:function(thumb,size=0x30) addr:0x02237830 local
+_ZN3Gui13cBaseTradeApp12Exit_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0xf0) addr:0x02237860 local
+_ZN3Gui13cBaseTradeApp12Item_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x11c) addr:0x02237950 local
+_ZN3Gui13cBaseTradeApp23QuantityConfirm_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0xf8) addr:0x02237a6c local
+_ZN3Gui13cBaseTradeApp11Box_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x180) addr:0x02237b64 local
+_ZN3Gui13cBaseTradeApp7OpenBoxEPNS_19cDraggableButtonBoxE kind:function(thumb,size=0x138) addr:0x02237ce4 local
+_ZN3Gui13cBaseTradeApp8CloseBoxEPNS_19cDraggableButtonBoxE kind:function(thumb,size=0xc8) addr:0x02237e1c local
+_ZN3Gui13cBaseTradeApp14RemoveItemInfoEv kind:function(thumb,size=0x7c) addr:0x02237ee4 local
+_ZN3Gui13cBaseTradeApp10FindButtonEPNS_19cDraggableButtonBoxEPv kind:function(thumb,size=0x4c) addr:0x02237f60 local
+_ZN3Gui13cBaseTradeApp9NewButtonEPNS_19cDraggableButtonBoxEPvPN5Gfx2d11cSpriteDataEPtP7Vec2d16 kind:function(thumb,size=0xc0) addr:0x02237fac local
+_ZN3Gui13cBaseTradeApp12RemoveButtonEPNS_20cBaseDraggableButtonEb kind:function(thumb,size=0x4c) addr:0x0223806c local
+_ZN3Gui13cBaseTradeApp7RefreshEv kind:function(thumb,size=0x7c) addr:0x022380b8 local
+_ZN3Gui13cBaseTradeApp13SetLabelValueEPNS_20cBaseDraggableButtonEm kind:function(thumb,size=0x98) addr:0x02238134 local
+_ZN3Gui13cBaseTradeApp11SplitButtonEPvS1_ kind:function(thumb,size=0xc0) addr:0x022381cc local
+_ZN3Gui13cBaseTradeApp10MoveButtonEPv kind:function(thumb,size=0x100) addr:0x0223828c local
+_ZN3Gui13cBaseTradeApp18StartTradeQuantityEP10cTradeItemmmmmmb kind:function(thumb,size=0xc8) addr:0x0223838c local
+_ZN3Gui13cBaseTradeApp11UpdateFundsEv kind:function(thumb,size=0xd4) addr:0x02238454 local
+_ZN3Gui13cBaseTradeApp11DrawInfoBoxElllii kind:function(thumb,size=0x2) addr:0x02238528 local
+_ZN3Gui13cBaseTradeApp22DisableTransferButtonsEbb kind:function(thumb,size=0x2) addr:0x0223852c local
+_ZN3Gui13cBaseTradeApp20ProcessTradeTutorialEv kind:function(thumb,size=0x100) addr:0x02238530 local
+_ZN3Gui13cBaseTradeApp18Safehouse1TutorialEv kind:function(thumb,size=0x68c) addr:0x02238630 local
+_ZN3Gui13cBaseTradeApp15Dealer1TutorialEv kind:function(thumb,size=0x658) addr:0x02238cbc local
+_ZN3Gui13cBaseTradeApp15Dealer2TutorialEv kind:function(thumb,size=0x658) addr:0x02239314 local
+_ZN3Gui13cBaseTradeApp18Safehouse2TutorialEv kind:function(thumb,size=0x370) addr:0x0223996c local
+_ZN3Gui13cBaseTradeApp14PlayOpenBagSfxEv kind:function(thumb,size=0x2c) addr:0x02239cdc local
+_ZN3Gui13cBaseTradeApp22PlayOpenBagFlappingSfxEv kind:function(thumb,size=0x28) addr:0x02239d08 local
+_ZN3Gui13cBaseTradeApp15PlayOpenCaseSfxEv kind:function(thumb,size=0x54) addr:0x02239d30 local
+_ZN3Gui13cBaseTradeApp18PlayPickupDrugsSfxEv kind:function(thumb,size=0x2c) addr:0x02239d84 local
+_ZN3Gui13cBaseTradeApp11PlayFillSfxEv kind:function(thumb,size=0x3c) addr:0x02239db0 local
+_ZN3Gui13cBaseTradeApp18DisplayTransferMsgEm kind:function(thumb,size=0x11c) addr:0x02239dec local
+_ZN3Gui13cBaseTradeApp15HideTransferMsgEv kind:function(thumb,size=0x9c) addr:0x02239f08 local
+_ZN3Gui13cBaseTradeApp30SetupForDrugTransferTransitionEv kind:function(thumb,size=0xb8) addr:0x02239fa4 local
+_ZN3Gui13cBaseTradeApp23ProcessTradeTransitionsEv kind:function(thumb,size=0x360) addr:0x0223a05c local
+_ZN3Gui13cBaseTradeApp19SetupDrugBagSpritesEv kind:function(thumb,size=0x1c0) addr:0x0223a3bc local
+_ZN3Gui13cBaseTradeApp14FillPlayersBagEv kind:function(thumb,size=0x2dc) addr:0x0223a57c local
+_ZN3Gui13cBaseTradeApp24ProcessExitButtonPulsingEv kind:function(thumb,size=0xa8) addr:0x0223a858 local
+_ZN3Gui13cBaseTradeApp17TradeInfo_OnClickERKNS_14cMessageParamsE kind:function(thumb,size=0x58) addr:0x0223a900 local
+_ZN3Gui13cBaseTradeApp18UnloadBothClosedBGEv kind:function(thumb,size=0x1a0) addr:0x0223a958 local
+_ZN3Gui13cBaseTradeApp26SetupBackgroundsFromClosedEb kind:function(thumb,size=0x12c) addr:0x0223aaf8 local
+_ZN3Gui13cBaseTradeApp16SetDealerCommentENS0_15eDealerCommentsE kind:function(thumb,size=0x2) addr:0x0223ac24 local
+_ZN3Gui13cBaseTradeApp15TransactionFailERKNS_14cMessageParamsE kind:function(thumb,size=0x68) addr:0x0223ac28 local
+_ZN3Gui9cTradeAppC1Ev kind:function(thumb,size=0x90) addr:0x0223ac90
+_ZN3Gui9cTradeApp4InitEv kind:function(thumb,size=0x3a8) addr:0x0223ad20
+_ZN3Gui9cTradeApp7ProcessEv kind:function(thumb,size=0x2a4) addr:0x0223b0c8
+_ZN3Gui9cTradeApp9ItemClickEPNS_20cBaseDraggableButtonE kind:function(thumb,size=0x3c) addr:0x0223b36c
+_ZN3Gui9cTradeApp12InitQuantityEPNS_20cBaseDraggableButtonEPNS_19cDraggableButtonBoxE kind:function(thumb,size=0x198) addr:0x0223b3a8
+_ZN3Gui9cTradeApp8TransferEPNS_19cDraggableButtonBoxES2_PNS_20cBaseDraggableButtonEm kind:function(thumb,size=0x33c) addr:0x0223b540
+_ZN3Gui9cTradeApp16AddOfferToDealerEP6cOfferm kind:function(thumb,size=0x130) addr:0x0223b87c
+_ZN3Gui9cTradeApp4ExitEv kind:function(thumb,size=0xc0) addr:0x0223b9ac
+_ZN3Gui9cTradeApp7OnPressERKNS_14cOnClickParamsE kind:function(thumb,size=0x8) addr:0x0223ba6c
+_ZN3Gui9cTradeApp11UpdateLabelEPNS_20cBaseDraggableButtonE kind:function(thumb,size=0x10) addr:0x0223ba74
+_ZN3Gui9cTradeApp8IsButtonEPNS_20cBaseDraggableButtonEPv kind:function(thumb,size=0x22) addr:0x0223ba84
+_ZN3Gui9cTradeApp14RemoveItemInfoEv kind:function(thumb,size=0xc8) addr:0x0223baa8
+_ZN3Gui9cTradeApp13SetProfitLossEPNS_20cBaseDraggableButtonEP6cOffer kind:function(thumb,size=0xc2) addr:0x0223bb70
+_ZN3Gui9cTradeApp20DisplayDealerCommentENS_13cBaseTradeApp15eDealerCommentsEP6cOfferm kind:function(thumb,size=0x1a4) addr:0x0223bc34
+_ZN3Gui9cTradeApp11SetHelpTextEb kind:function(thumb,size=0xac) addr:0x0223bdd8
+_ZN3Gui9cTradeApp16SetButtonPaletteEPNS_20cBaseDraggableButtonEPNS_19cDraggableButtonBoxEmm kind:function(thumb,size=0x8c) addr:0x0223be84
+_ZN3Gui9cTradeApp15GetItemQuantityEPv kind:function(thumb,size=0xa) addr:0x0223bf10
+_ZN3Gui9cTradeApp15SetItemQuantityEPvm kind:function(thumb,size=0x8) addr:0x0223bf1c
+_ZN3Gui9cTradeApp26SetupTradeButtonFormattingEPNS_20cBaseDraggableButtonEPNS_19cDraggableButtonBoxE kind:function(thumb,size=0x7c) addr:0x0223bf24
+_ZN3Gui9cTradeApp20SetupDealerTipSpriteEv kind:function(thumb,size=0x144) addr:0x0223bfa0
+_ZN3Gui9cTradeApp22SetupBackgroundPaletteEv kind:function(thumb,size=0x8c) addr:0x0223c0e4
+_ZN3Gui9cTradeApp23PdaHelpRestorePaletteCBEPv kind:function(thumb,size=0x40) addr:0x0223c170
+_ZN3Gui9cTradeApp16SetDealerCommentENS_13cBaseTradeApp15eDealerCommentsE kind:function(thumb,size=0x98) addr:0x0223c1b0
+_ZN3Gui9cTradeApp21GenerateDealerCommentENS_13cBaseTradeApp15eDealerCommentsEP6cOffer kind:function(thumb,size=0x604) addr:0x0223c248
+_ZN3Gui9cTradeApp27WasALargeProfitMadeFromDealElm kind:function(thumb,size=0x68) addr:0x0223c84c
+_ZN3Gui9cTradeApp22SetupDealerCommentTextEv kind:function(thumb,size=0xe0) addr:0x0223c8b4
+_ZN3Gui9cTradeAppD1Ev kind:function(thumb,size=0xc) addr:0x0223c994
+_ZN3Gui9cTradeAppD0Ev kind:function(thumb,size=0x18) addr:0x0223c9a0
+data_ov118_0223c9b8 kind:data(any) addr:0x0223c9b8
+data_ov118_0223c9c4 kind:data(any) addr:0x0223c9c4
+data_ov118_0223c9dc kind:data(any) addr:0x0223c9dc
+data_ov118_0223c9e8 kind:data(any) addr:0x0223c9e8
+data_ov118_0223c9fc kind:data(any) addr:0x0223c9fc
+data_ov118_0223ca10 kind:data(any) addr:0x0223ca10
+data_ov118_0223ca38 kind:data(any) addr:0x0223ca38
+data_ov118_0223ca88 kind:data(any) addr:0x0223ca88
+data_ov118_0223caf4 kind:data(any) addr:0x0223caf4
+data_ov118_0223cbc0 kind:data(any) addr:0x0223cbc0
+data_ov118_0223cc84 kind:data(any) addr:0x0223cc84
+data_ov118_0223cc88 kind:data(any) addr:0x0223cc88
+data_ov118_0223cc90 kind:data(any) addr:0x0223cc90
+data_ov118_0223cca0 kind:data(any) addr:0x0223cca0
+data_ov118_0223ccb8 kind:data(any) addr:0x0223ccb8
+data_ov118_0223ccdc kind:data(any) addr:0x0223ccdc
+data_ov118_0223ccfc kind:data(any) addr:0x0223ccfc
+data_ov118_0223cd1c kind:data(any) addr:0x0223cd1c
+data_ov118_0223cd3c kind:data(any) addr:0x0223cd3c
+data_ov118_0223cd5c kind:data(any) addr:0x0223cd5c
+data_ov118_0223cd74 kind:data(any) addr:0x0223cd74
+data_ov118_0223cd90 kind:data(any) addr:0x0223cd90
+data_ov118_0223cda8 kind:data(any) addr:0x0223cda8
+data_ov118_0223cdc0 kind:data(any) addr:0x0223cdc0
+data_ov118_0223cddc kind:data(any) addr:0x0223cddc
+data_ov118_0223cdf8 kind:data(any) addr:0x0223cdf8
+data_ov118_0223ce10 kind:data(any) addr:0x0223ce10
+data_ov118_0223ce2c kind:data(any) addr:0x0223ce2c
+data_ov118_0223ce48 kind:data(any) addr:0x0223ce48
+data_ov118_0223ce64 kind:data(any) addr:0x0223ce64
+data_ov118_0223ce80 kind:data(any) addr:0x0223ce80
+data_ov118_0223ce9c kind:data(any) addr:0x0223ce9c
+data_ov118_0223ceb8 kind:data(any) addr:0x0223ceb8
+data_ov118_0223ced4 kind:data(any) addr:0x0223ced4
+data_ov118_0223cef8 kind:data(any) addr:0x0223cef8
+data_ov118_0223cf18 kind:data(any) addr:0x0223cf18
+data_ov118_0223cf38 kind:data(any) addr:0x0223cf38
+data_ov118_0223cf58 kind:data(any) addr:0x0223cf58
+data_ov118_0223cf80 kind:data(any) addr:0x0223cf80
+data_ov118_0223cfa8 kind:data(any) addr:0x0223cfa8
+data_ov118_0223cfd0 kind:data(any) addr:0x0223cfd0
+data_ov118_0223cfd8 kind:data(any) addr:0x0223cfd8
+data_ov118_0223cfe0 kind:data(any) addr:0x0223cfe0
+data_ov118_0223cfe8 kind:data(any) addr:0x0223cfe8
+data_ov118_0223cff0 kind:data(any) addr:0x0223cff0
+data_ov118_0223cff8 kind:data(any) addr:0x0223cff8
+data_ov118_0223d000 kind:data(any) addr:0x0223d000
+data_ov118_0223d008 kind:data(any) addr:0x0223d008
+data_ov118_0223d010 kind:data(any) addr:0x0223d010
+data_ov118_0223d018 kind:data(any) addr:0x0223d018

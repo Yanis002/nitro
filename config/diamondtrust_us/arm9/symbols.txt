@@ -17,7 +17,7 @@ IntrWait kind:function(thumb,size=0x4) addr:0x02000676
 RLUnCompReadByCallbackWrite16bit kind:function(thumb,size=0x4) addr:0x020006d2
 HuffUnCompReadByCallback kind:function(thumb,size=0x4) addr:0x02000736
 BitUnPack kind:function(thumb,size=0x4) addr:0x02000796
-Entry kind:function(arm,size=0x13c) addr:0x02000800
+_start kind:function(arm,size=0x13c) addr:0x02000800
 func_0200093c kind:function(arm,size=0x14) addr:0x0200093c
 func_02000950 kind:function(arm,size=0xac) addr:0x02000950
 func_020009fc kind:function(arm,size=0x78) addr:0x020009fc
@@ -1550,7 +1550,7 @@ data_0207b914 kind:data(any) addr:0x0207b914
 data_0207bd14 kind:data(any) addr:0x0207bd14
 data_0207bd18 kind:data(any) addr:0x0207bd18
 FS_data_0001 kind:data(any) addr:0x0207bd20 local
-sFileProcs kind:data(any) addr:0x0207bd60 local
+FS_fileProcs kind:data(any) addr:0x0207bd60 local
 sArchiveFns kind:data(any) addr:0x0207bd94 local
 data_0207be94 kind:data(any) addr:0x0207be94
 data_0207bea4 kind:data(any) addr:0x0207bea4
@@ -2740,7 +2740,7 @@ sLongArchiveNames kind:bss addr:0x0213803c local
 FS_data_0004 kind:bss addr:0x0213813c local
 FS_data_0002 kind:bss addr:0x02138240 local
 FS_data_0005 kind:bss addr:0x0213825c local
-sRomArchive kind:bss addr:0x02138264 local
+FS_romArchive kind:bss addr:0x02138264 local
 FSi_Initialized kind:bss addr:0x021382c0 local
 data_021382c4 kind:bss addr:0x021382c4
 data_021382c6 kind:bss addr:0x021382c6

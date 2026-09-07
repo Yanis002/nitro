@@ -1,4 +1,7 @@
 #include "nitro/fs.h"
+#include "nitro/fs/fs_archive.h"
+#include "nitro/fs/fs_common.h"
+#include "nitro/fs/fs_file.h"
 #include "nitro/os.h"
 
 // clang-format off
@@ -35,7 +38,8 @@ void FSi_ReleaseCommand(FSFile *file, FSResult result) {
     u8 cmdType;
     FSArchive *archive;
 
-    irq     = OS_DisableInterrupts();
+    irq = OS_DisableInterrupts();
+
     archive = file->archive;
     if (archive != NULL) {
         var_r0 = archive->currentFile;
@@ -58,6 +62,7 @@ void FSi_ReleaseCommand(FSFile *file, FSResult result) {
     file->unk_14 = result;
     file->flags  = (u32) (file->flags & ~(FS_FILE_FLAG_SEND_CMD | FS_FILE_FLAG_0x2 | FS_FILE_FLAG_AWAIT_SYNC |
                                           FS_FILE_FLAG_0x8 | FS_FILE_FLAG_0x40 | FS_FILE_FLAG_0x80));
+
     OS_WakeupThread(&file->unk_18);
     OS_RestoreInterrupts(irq);
 }
