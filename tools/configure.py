@@ -549,6 +549,7 @@ def add_mwcc_builds(n: ninja_syntax.Writer, projects: list[Project]):
             for prefix, override_flags in CC_FLAG_OVERRIDES.items():
                 if Path(prefix) in source_file.parents:
                     cc_flags.extend(override_flags)
+            cc_flags.append(f"-d NITRO_VERSION={project.game.sdk_version}")
             n.build(
                 inputs=str(source_file),
                 implicit=project.mwcc_implicit,

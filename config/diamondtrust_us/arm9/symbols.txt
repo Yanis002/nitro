@@ -992,7 +992,7 @@ OS_SetThreadDestructor kind:function(arm,size=0x8) addr:0x0202e874
 OS_InitContext kind:function(arm,size=0x6c) addr:0x0202e87c
 OS_SaveContext kind:function(arm,size=0x4c) addr:0x0202e8e8
 OS_LoadContext kind:function(arm,size=0x44) addr:0x0202e934
-OS_func_0121 kind:function(arm,size=0x34) addr:0x0202e978
+OS_GetConsoleType kind:function(arm,size=0x34) addr:0x0202e978
 OS_func_0122 kind:function(arm,size=0x18) addr:0x0202e9ac
 OS_func_0174 kind:function(arm,size=0x18) addr:0x0202e9c4
 OS_InitMessageQueue kind:function(arm,size=0x28) addr:0x0202e9dc
@@ -1017,13 +1017,13 @@ IC_InvalidateRange kind:function(arm,size=0x1c) addr:0x0202eefc
 OS_func_0069 kind:function(arm,size=0x20) addr:0x0202ef18
 OS_Init kind:function(arm,size=0xc) addr:0x0202ef38
 _OS_Init kind:function(arm,size=0x48) addr:0x0202ef44
-OS_func_0070 kind:function(arm,size=0x11c) addr:0x0202ef8c
-OS_func_0126 kind:function(arm,size=0x48) addr:0x0202f0a8
+OS_InitArena kind:function(arm,size=0x11c) addr:0x0202ef8c
+OS_InitArenaEx kind:function(arm,size=0x48) addr:0x0202f0a8
 OS_GetArenaHi kind:function(arm,size=0x14) addr:0x0202f0f0
 OS_GetArenaLo kind:function(arm,size=0x14) addr:0x0202f104
-OS_func_0072 kind:function(arm,size=0xe0) addr:0x0202f118
-OS_func_0073 kind:function(arm,size=0xa4) addr:0x0202f1f8
-OS_func_0074 kind:function(arm,size=0x14) addr:0x0202f29c
+OS_GetInitArenaHi kind:function(arm,size=0xe0) addr:0x0202f118
+OS_GetInitArenaLo kind:function(arm,size=0xa4) addr:0x0202f1f8
+OS_SetArenaHi kind:function(arm,size=0x14) addr:0x0202f29c
 OS_SetArenaLo kind:function(arm,size=0x14) addr:0x0202f2b0
 OS_func_0075 kind:function(arm,size=0x1c) addr:0x0202f2c4
 OS_func_0076 kind:function(arm,size=0x28) addr:0x0202f2e0
@@ -2779,7 +2779,8 @@ data_021384c4 kind:bss addr:0x021384c4
 sIdleThread kind:bss addr:0x021384d0
 sMainThread kind:bss addr:0x02138590
 sIdleThreadStack kind:bss addr:0x02138650
-data_02138718 kind:bss addr:0x02138718
+OSi_ArenaInitialized kind:bss addr:0x02138718
+sMainExArenaEnabled kind:bss addr:0x0213871c local
 data_02138720 kind:bss addr:0x02138720
 data_02138744 kind:bss addr:0x02138744
 data_02138748 kind:bss addr:0x02138748

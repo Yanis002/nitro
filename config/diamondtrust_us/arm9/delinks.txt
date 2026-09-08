@@ -82,10 +82,14 @@ src/os/os_cache.c:
     .text       start:0x0202ee54 end:0x0202ef18
 
 src/os/os_init.c:
-    .text       start:0x0202ef18 end:0x0202f0f0
+    .text       start:0x0202ef18 end:0x0202ef8c
 
 src/os/os_arena.c:
-    .text       start:0x0202f0f0 end:0x0202f81c
+    .text       start:0x0202ef8c end:0x0202f2c4
+    .bss        start:0x02138718 end:0x02138720
+
+src/os/os_heap.c:
+    .text       start:0x0202f2c4 end:0x0202f81c
 
 src/os/os_unk3.c:
     .text       start:0x0202f81c end:0x0202fb98

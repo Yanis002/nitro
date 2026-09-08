@@ -765,10 +765,24 @@ This table outlines the source of every symbol/macro name used in this decompila
 ||
 | OS_ResetSystem | Function | pm4
 ||
+| OS_InitArena         | Function | gtactw
+| OS_InitArenaEx       | Function | gtactw
+| OS_GetArenaLo        | Function | pm4, diamondtrust | Deduced from OS_GetMainArenaLo and similar functions
+| OS_GetArenaHi        | Function | pm4, diamondtrust | Deduced from OS_GetMainArenaHi and similar functions
+| OS_GetInitArenaHi    | Function | gtactw
+| OS_GetInitArenaHi    | Function | gtactw
+| OS_SetArenaLo        | Function | diamondtrust
+| OS_SetArenaHi        | Function | gtactw
+| OS_EnableMainExArena | Function | gtactw
+| OS_GetDTCMAddress    | Function | gtactw
+||
+| OS_EnableProtectionUnit               | Function | gtactw
+| OS_DisableProtectionUnit              | Function | gtactw
+| OS_SetDPermissionsForProtectionRegion | Function | gtactw
+| OS_SetProtectionRegion1               | Function | gtactw
+| OS_SetProtectionRegion2               | Function | gtactw
+||
 | OS_InitAlloc        | Function | pm4, diamondtrust
-| OS_GetArenaLo       | Function | pm4, diamondtrust | Deduced from OS_GetMainArenaLo and similar functions
-| OS_GetArenaHi       | Function | pm4, diamondtrust | Deduced from OS_GetMainArenaHi and similar functions
-| OS_SetArenaLo       | Function | diamondtrust
 | OS_AllocFromArenaLo | Function | pm4 | Deduced from OS_AllocFromMainArenaLo
 | OS_CreateHeap       | Function | pm4, diamondtrust
 | OS_SetCurrentHeap   | Function | pm4, diamondtrust
@@ -826,7 +840,7 @@ This table outlines the source of every symbol/macro name used in this decompila
 ||
 | OS_GetTick | Function | pm4, diamondtrust
 ||
-| OS_GetConsoleType | Function | pm4
+| OS_GetConsoleType | Function | pm4, gtactw
 ||
 | OS_GetLockID | Function | pm4, GameSpy
 ||

@@ -121,6 +121,9 @@ typedef struct DivParam {
 
 extern u32 __DTCM_LO;
 #define DTCM_LO ((u8 *) &__DTCM_LO)
+extern u32 __CODE_HI;
+#define CODE_HI ((u8 *) (&__CODE_HI))
+
 #define REG_IRQ (*(u32 *) (DTCM_LO + 0x3FF8))
 
 #define _MAIN_REG_BASE REG_BASE

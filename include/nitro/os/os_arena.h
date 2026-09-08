@@ -15,9 +15,9 @@ extern "C" {
 #define OS_ARENA_6 6
 
 extern u32 _OS_unk_linker_1; // 0xffffd9b8
-extern u32 _OS_unk_linker_2; // gtactw_eu: 0x800
+extern u32 _OS_unk_linker_2; // gtactw_eu, diamondtrust_us: 0x800
 extern u32 _OS_unk_linker_3; // 0x027e0080
-extern u32 _OS_unk_linker_4; // gtactw_eu: 0
+extern u32 _OS_unk_linker_4; // gtactw_eu, diamondtrust_us: 0
 #define OS_unk_linker_1 ((s32) (&_OS_unk_linker_1))
 #define OS_unk_linker_2 ((u32) (&_OS_unk_linker_2))
 #define OS_unk_linker_3 ((u8 *) (&_OS_unk_linker_3))

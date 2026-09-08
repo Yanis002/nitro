@@ -30,12 +30,19 @@ void OS_InitArena(void) {
 }
 
 void OS_InitArenaEx(void) {
-    OS_SetArenaHi(2, OS_GetInitArenaHi(2U));
-    OS_SetArenaLo(2, OS_GetInitArenaLo(2U));
+#if NITRO_VERSION >= 0x5057533
+    OS_GetConsoleType();
+#endif
+    OS_SetArenaHi(OS_ARENA_2, OS_GetInitArenaHi(2U));
+    OS_SetArenaLo(OS_ARENA_2, OS_GetInitArenaLo(2U));
+#if NITRO_VERSION >= 0x5057533
+    OS_func_0149(1, 0x2000000, 0x2a);
+#else
     if (!sMainExArenaEnabled || (OS_GetConsoleType() & 3) == 1) {
         OS_SetProtectionRegion1(0x0200002B);
         OS_SetProtectionRegion2(0x023E0021);
     }
+#endif
 }
 
 void *OS_GetArenaHi(u32 arena) {
@@ -53,9 +60,18 @@ void *OS_GetInitArenaHi(u32 arena) {
         case OS_ARENA_MAIN:
             return (void *) 0x023e0000;
         case OS_ARENA_2:
+#if NITRO_VERSION >= 0x5057533
+            if (!sMainExArenaEnabled) {
+                return NULL;
+            }
+            if ((OS_GetConsoleType() & 0xf) == 1) {
+                return NULL;
+            }
+#else
             if ((sMainExArenaEnabled == 0) || ((OS_GetConsoleType() & 3) == 1)) {
                 return NULL;
             }
+#endif
             return (void *) 0x02700000;
         case OS_ARENA_ITCM:
             return (void *) 0x02000000;
@@ -63,16 +79,16 @@ void *OS_GetInitArenaHi(u32 arena) {
             var_r2 = &DTCM_LO[0x3f80] - OS_unk_linker_2;
             if (OS_unk_linker_4 == 0) {
                 if ((u32) DTCM_LO >= 0x027e0a20) {
-                    break;
+                    return DTCM_LO;
                 }
                 return (void *) 0x027e0a20;
             }
             if (OS_unk_linker_4 < 0) {
-                return (void *) 0x027e0a20;
+                return (void *) 0x027e0a20 - OS_unk_linker_4;
             }
             return var_r2 - OS_unk_linker_4;
         case OS_ARENA_5:
-            return (void *) 0x027ff680;
+            return (void *) (_BIOS_REG_BASE | 0x680);
         case OS_ARENA_6:
             return (void *) 0x037f8000;
     }
@@ -82,7 +98,7 @@ void *OS_GetInitArenaHi(u32 arena) {
 void *OS_GetInitArenaLo(u32 arg0) {
     switch (arg0) {
         case OS_ARENA_MAIN:
-            return (void *) 0x0223D160;
+            return CODE_HI;
         case OS_ARENA_2:
             if (!sMainExArenaEnabled || (OS_GetConsoleType() & 3) == 1) {
                 return NULL;

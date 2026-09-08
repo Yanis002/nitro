@@ -151,6 +151,8 @@ BOOL OS_func_0065(void);
 void OS_func_0176(u8 *);
 void OS_func_0178(u32);
 
+void OS_func_0149(u32, u32, u32);
+
 inline void *OS_Alloc(u32 size) {
     return OS_AllocFromHeap(OS_ARENA_MAIN, OS_CURRENT_HEAP_HANDLE, size);
 }
