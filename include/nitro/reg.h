@@ -81,6 +81,8 @@ typedef struct DivParam {
 #define REG_FRAME_COUNTER (*(u32 *) (_BIOS_REG_BASE | 0xC3C))
 #define REG_027FFC40 (*(u16 *) (_BIOS_REG_BASE | 0xC40))
 #define REG_027FFC42 (*(u16 *) (_BIOS_REG_BASE | 0xC42))
+#define REG_027FFDA0 ((void **) (_BIOS_REG_BASE | 0xDA0))
+#define REG_027FFDC4 ((void **) (_BIOS_REG_BASE | 0xDC4))
 #define REG_027FFDE8 (*(u32 *) (_BIOS_REG_BASE | 0xDE8))
 #define REG_027FFDEA (*(u16 *) (_BIOS_REG_BASE | 0xDEA))
 #define REG_027FFDEC (*(u32 *) (_BIOS_REG_BASE | 0xDEC))

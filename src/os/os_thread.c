@@ -197,13 +197,6 @@ static void OSi_RescheduleThread(void) {
     OS_LoadContext(nextThread);
 }
 
-extern u32 _OS_unk_linker_1; // 0xffffd9b8
-extern u32 _OS_unk_linker_2; // 0x800
-extern u32 _OS_unk_linker_3; // 0x027e0080
-#define OS_unk_linker_1 ((s32) (&_OS_unk_linker_1))
-#define OS_unk_linker_2 ((u32) (&_OS_unk_linker_2))
-#define OS_unk_linker_3 ((u8 *) (&_OS_unk_linker_3))
-
 void OS_InitThread(void) {
     u8 *stackLo;
     if (OSi_ThreadInitialized) {
