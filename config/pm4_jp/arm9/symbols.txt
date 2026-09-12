@@ -2244,9 +2244,9 @@ OS_GetInitArenaLo kind:function(arm,size=0xa8) addr:0x0206c57c
 OS_SetArenaHi kind:function(arm,size=0x14) addr:0x0206c624
 OS_SetArenaLo kind:function(arm,size=0x14) addr:0x0206c638
 OS_AllocFromArenaLo kind:function(arm,size=0x6c) addr:0x0206c64c
-OS_AddOccupiedMemoryBlock kind:function(arm,size=0x1c) addr:0x0206c6b8
-OS_RemoveMemoryBlock kind:function(arm,size=0x28) addr:0x0206c6d4
-OS_AddFreeMemoryBlock kind:function(arm,size=0xa8) addr:0x0206c6fc
+OS_AddOccupiedMemoryBlock kind:function(arm,size=0x1c) addr:0x0206c6b8 local
+OS_RemoveMemoryBlock kind:function(arm,size=0x28) addr:0x0206c6d4 local
+OS_AddFreeMemoryBlock kind:function(arm,size=0xa8) addr:0x0206c6fc local
 OS_AllocFromHeap kind:function(arm,size=0x108) addr:0x0206c7a4
 OS_FreeFromHeap kind:function(arm,size=0x68) addr:0x0206c8ac
 OS_SetCurrentHeap kind:function(arm,size=0x30) addr:0x0206c914
@@ -4065,7 +4065,7 @@ sIdleThread kind:bss addr:0x0216a1b0
 sMainThread kind:bss addr:0x0216a270
 sIdleThreadStack kind:bss addr:0x0216a330
 OSi_ArenaInitialized kind:bss addr:0x0216a3f8
-data_0216a400 kind:bss addr:0x0216a400
+sAllocList kind:bss addr:0x0216a400 local
 data_0216a424 kind:bss addr:0x0216a424
 data_0216a428 kind:bss addr:0x0216a428
 data_0216a42c kind:bss addr:0x0216a42c

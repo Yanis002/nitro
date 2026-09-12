@@ -90,7 +90,7 @@ src/os/os_arena.c:
 
 src/os/os_heap.c:
     .text       start:0x0202f2c4 end:0x0202f81c
-    .bss        start:0x02138720 end:0x0213873c
+    .bss        start:0x02138720 end:0x02138744
     complete
 
 src/os/os_protection.c:

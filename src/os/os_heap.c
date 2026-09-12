@@ -1,4 +1,5 @@
 #include "nitro/os.h"
+#include "nitro/os/os_arena.h"
 
 #define ROUND_UP_32(x) (((u32) (x) + 0x1f) & ~0x1f)
 #define ROUND_DOWN_32(x) ((u32) (x) & ~0x1f)
@@ -6,9 +7,9 @@
 
 #define MIN_BLOCK_SIZE ROUND_UP_32(sizeof(OSMemoryBlock) + 0x20)
 
-static OSAlloc *sAllocList[OS_ARENA_COUNT];
+static OSAlloc *sAllocList[9];
 
-OSMemoryBlock *OS_AddOccupiedMemoryBlock(OSMemoryBlock *head, OSMemoryBlock *block) {
+static OSMemoryBlock *OS_AddOccupiedMemoryBlock(OSMemoryBlock *head, OSMemoryBlock *block) {
     block->next = head;
     block->prev = NULL;
     if (head != NULL) {
@@ -17,7 +18,7 @@ OSMemoryBlock *OS_AddOccupiedMemoryBlock(OSMemoryBlock *head, OSMemoryBlock *blo
     return block;
 }
 
-OSMemoryBlock *OS_RemoveMemoryBlock(OSMemoryBlock *head, OSMemoryBlock *block) {
+static OSMemoryBlock *OS_RemoveMemoryBlock(OSMemoryBlock *head, OSMemoryBlock *block) {
     if (block->next != NULL) {
         block->next->prev = block->prev;
     }
@@ -29,7 +30,7 @@ OSMemoryBlock *OS_RemoveMemoryBlock(OSMemoryBlock *head, OSMemoryBlock *block) {
     }
 }
 
-OSMemoryBlock *OS_AddFreeMemoryBlock(OSMemoryBlock *head, OSMemoryBlock *block) {
+static OSMemoryBlock *OS_AddFreeMemoryBlock(OSMemoryBlock *head, OSMemoryBlock *block) {
     OSMemoryBlock *prev;
     OSMemoryBlock *iter;
     OSMemoryBlock *next;
@@ -165,8 +166,8 @@ void *OS_InitAlloc(u32 arena, void *addrLo, void *addrHi, u32 numHeaps) {
 
     alloc             = addrLo;
     irq               = OS_DisableInterrupts();
-    heapsArraySize    = numHeaps * sizeof(*alloc->heaps);
     sAllocList[arena] = alloc;
+    heapsArraySize    = numHeaps * sizeof(*alloc->heaps);
     alloc->heaps      = alloc->heapsArray;
     alloc->numHeaps   = numHeaps;
     for (i = 0; i < alloc->numHeaps; ++i) {
@@ -323,3 +324,5 @@ end:
     OS_RestoreInterrupts(irq);
     return result;
 }
+
+void OS_DumpHeap(u32 arena, OSHeapHandle heap) {}

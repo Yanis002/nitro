@@ -44,6 +44,8 @@ src/os/os_arena.c:
 
 src/os/os_heap.c:
     .text       start:0x0206c6b8 end:0x0206ca88
+    .bss        start:0x0216a400 end:0x0216a424
+    complete
 
 src/os/os_protection.c:
     .text       start:0x0206ca88 end:0x0206ccf4
