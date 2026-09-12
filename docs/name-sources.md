@@ -776,11 +776,33 @@ This table outlines the source of every symbol/macro name used in this decompila
 | OS_EnableMainExArena | Function | gtactw
 | OS_GetDTCMAddress    | Function | gtactw
 ||
-| OS_EnableProtectionUnit               | Function | gtactw
-| OS_DisableProtectionUnit              | Function | gtactw
-| OS_SetDPermissionsForProtectionRegion | Function | gtactw
-| OS_SetProtectionRegion1               | Function | gtactw
-| OS_SetProtectionRegion2               | Function | gtactw
+| OS_EnableProtectionUnit                         | Function | gtactw
+| OS_DisableProtectionUnit                        | Function | gtactw
+| OS_SetICachabilityForProtectionRegion           | Function
+| OS_ClearICachabilityForProtectionRegion         | Function
+| OS_SetDCachabilityForProtectionRegion           | Function
+| OS_ClearDCachabilityForProtectionRegion         | Function
+| OS_SetDPermissionsForProtectionRegion           | Function | gtactw
+| OS_SetDCacheBufferabilityForProtectionRegions   | Function
+| OS_ClearDCacheBufferabilityForProtectionRegions | Function
+| OS_SetProtectionRegion                          | Function
+| OS_GetProtectionRegion                          | Function
+| OS_SetProtectionRegion0                         | Function
+| OS_SetProtectionRegion1                         | Function | gtactw
+| OS_SetProtectionRegion2                         | Function | gtactw
+| OS_SetProtectionRegion3                         | Function
+| OS_SetProtectionRegion4                         | Function
+| OS_SetProtectionRegion5                         | Function
+| OS_SetProtectionRegion6                         | Function
+| OS_SetProtectionRegion7                         | Function
+| OS_GetProtectionRegion0                         | Function
+| OS_GetProtectionRegion1                         | Function
+| OS_GetProtectionRegion2                         | Function
+| OS_GetProtectionRegion3                         | Function
+| OS_GetProtectionRegion4                         | Function
+| OS_GetProtectionRegion5                         | Function
+| OS_GetProtectionRegion6                         | Function
+| OS_GetProtectionRegion7                         | Function
 ||
 | OSAlloc                   | Struct
 | OSHeap                    | Struct
