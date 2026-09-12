@@ -132,6 +132,25 @@ void OS_SetArenaLo(u32 arena, void *addr) {
     REG_027FFDA0[arena] = addr;
 }
 
+void *OS_AllocFromArenaLo(u32 arena, u32 size, u32 align) {
+    void *lo;
+    void *addr;
+    void *end;
+
+    lo = OS_GetArenaLo(arena);
+    if (lo == NULL) {
+        return NULL;
+    }
+    addr = (void *) (((u32) lo + align - 1) & ~(align - 1));
+    end  = addr + size;
+    lo   = (void *) (((u32) end + align - 1) & ~(align - 1));
+    if (lo > OS_GetArenaHi(arena)) {
+        return NULL;
+    }
+    OS_SetArenaLo(arena, lo);
+    return addr;
+}
+
 void OS_EnableMainExArena(void) {
     sMainExArenaEnabled = true;
 }
