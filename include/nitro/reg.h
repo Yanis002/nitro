@@ -81,6 +81,9 @@ typedef struct DivParam {
 #define REG_FRAME_COUNTER (*(u32 *) (_BIOS_REG_BASE | 0xC3C))
 #define REG_027FFC40 (*(u16 *) (_BIOS_REG_BASE | 0xC40))
 #define REG_027FFC42 (*(u16 *) (_BIOS_REG_BASE | 0xC42))
+#define REG_027FFD9C (*(void **) (_BIOS_REG_BASE | 0xD9C))
+#define REG_027FFDA0 ((void **) (_BIOS_REG_BASE | 0xDA0))
+#define REG_027FFDC4 ((void **) (_BIOS_REG_BASE | 0xDC4))
 #define REG_027FFDE8 (*(u32 *) (_BIOS_REG_BASE | 0xDE8))
 #define REG_027FFDEA (*(u16 *) (_BIOS_REG_BASE | 0xDEA))
 #define REG_027FFDEC (*(u32 *) (_BIOS_REG_BASE | 0xDEC))
@@ -118,7 +121,14 @@ typedef struct DivParam {
 #define REG_04100000 (*(PXI_UnkStruct1 *) (REG_BASE | 0x100000))
 
 extern u32 __DTCM_LO;
+extern u32 __DTCM_HI;
+extern u32 __ITCM_HI;
+extern u32 __CODE_HI;
 #define DTCM_LO ((u8 *) &__DTCM_LO)
+#define DTCM_HI ((u8 *) &__DTCM_HI)
+#define ITCM_HI ((u8 *) &__ITCM_HI)
+#define CODE_HI ((u8 *) (&__CODE_HI))
+
 #define REG_IRQ (*(u32 *) (DTCM_LO + 0x3FF8))
 
 #define _MAIN_REG_BASE REG_BASE

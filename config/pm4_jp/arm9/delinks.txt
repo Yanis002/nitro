@@ -37,12 +37,17 @@ src/os/os_cache.c:
     .text       start:0x0206c19c end:0x0206c298
 
 src/os/os_init.c:
-    .text       start:0x0206c298 end:0x0206c470
+    .text       start:0x0206c298 end:0x0206c300
 
 src/os/os_arena.c:
-    .text       start:0x0206c470 end:0x0206ca88
+    .text       start:0x0206c300 end:0x0206c6b8
 
-src/os/os_unk3.c:
+src/os/os_heap.c:
+    .text       start:0x0206c6b8 end:0x0206ca88
+    .bss        start:0x0216a400 end:0x0216a424
+    complete
+
+src/os/os_protection.c:
     .text       start:0x0206ca88 end:0x0206ccf4
 
 src/os/os_tick.c:

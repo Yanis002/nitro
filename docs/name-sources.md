@@ -765,17 +765,59 @@ This table outlines the source of every symbol/macro name used in this decompila
 ||
 | OS_ResetSystem | Function | pm4
 ||
-| OS_InitAlloc        | Function | pm4, diamondtrust
-| OS_GetArenaLo       | Function | pm4, diamondtrust | Deduced from OS_GetMainArenaLo and similar functions
-| OS_GetArenaHi       | Function | pm4, diamondtrust | Deduced from OS_GetMainArenaHi and similar functions
-| OS_SetArenaLo       | Function | diamondtrust
-| OS_AllocFromArenaLo | Function | pm4 | Deduced from OS_AllocFromMainArenaLo
-| OS_CreateHeap       | Function | pm4, diamondtrust
-| OS_SetCurrentHeap   | Function | pm4, diamondtrust
-| OS_DumpHeap         | Function | pm4
-| OS_AllocFromHeap    | Function
-| OS_FreeFromHeap     | Function
-| OS_CheckHeap        | Function | diamondtrust
+| OS_InitArena         | Function | gtactw
+| OS_InitArenaEx       | Function | gtactw
+| OS_GetArenaLo        | Function | pm4, diamondtrust | Deduced from OS_GetMainArenaLo and similar functions
+| OS_GetArenaHi        | Function | pm4, diamondtrust | Deduced from OS_GetMainArenaHi and similar functions
+| OS_GetInitArenaHi    | Function | gtactw
+| OS_GetInitArenaHi    | Function | gtactw
+| OS_SetArenaLo        | Function | diamondtrust
+| OS_SetArenaHi        | Function | gtactw
+| OS_EnableMainExArena | Function | gtactw
+| OS_GetDTCMAddress    | Function | gtactw
+||
+| OS_EnableProtectionUnit                         | Function | gtactw
+| OS_DisableProtectionUnit                        | Function | gtactw
+| OS_SetICachabilityForProtectionRegion           | Function
+| OS_ClearICachabilityForProtectionRegion         | Function
+| OS_SetDCachabilityForProtectionRegion           | Function
+| OS_ClearDCachabilityForProtectionRegion         | Function
+| OS_SetDPermissionsForProtectionRegion           | Function | gtactw
+| OS_SetDCacheBufferabilityForProtectionRegions   | Function
+| OS_ClearDCacheBufferabilityForProtectionRegions | Function
+| OS_SetProtectionRegion                          | Function
+| OS_GetProtectionRegion                          | Function
+| OS_SetProtectionRegion0                         | Function
+| OS_SetProtectionRegion1                         | Function | gtactw
+| OS_SetProtectionRegion2                         | Function | gtactw
+| OS_SetProtectionRegion3                         | Function
+| OS_SetProtectionRegion4                         | Function
+| OS_SetProtectionRegion5                         | Function
+| OS_SetProtectionRegion6                         | Function
+| OS_SetProtectionRegion7                         | Function
+| OS_GetProtectionRegion0                         | Function
+| OS_GetProtectionRegion1                         | Function
+| OS_GetProtectionRegion2                         | Function
+| OS_GetProtectionRegion3                         | Function
+| OS_GetProtectionRegion4                         | Function
+| OS_GetProtectionRegion5                         | Function
+| OS_GetProtectionRegion6                         | Function
+| OS_GetProtectionRegion7                         | Function
+||
+| OSAlloc                   | Struct
+| OSHeap                    | Struct
+| OSMemoryBlock             | Struct
+| OS_InitAlloc              | Function | pm4, diamondtrust
+| OS_AllocFromArenaLo       | Function | pm4 | Deduced from OS_AllocFromMainArenaLo
+| OS_CreateHeap             | Function | pm4, diamondtrust
+| OS_SetCurrentHeap         | Function | pm4, diamondtrust
+| OS_DumpHeap               | Function | pm4
+| OS_AllocFromHeap          | Function
+| OS_FreeFromHeap           | Function
+| OS_CheckHeap              | Function | diamondtrust
+| OS_AddOccupiedMemoryBlock | Function
+| OS_RemoveMemoryBlock      | Function
+| OS_AddFreeMemoryBlock     | Function
 ||
 | OS_Sleep | Function | pm4, diamondtrust
 ||
@@ -826,7 +868,7 @@ This table outlines the source of every symbol/macro name used in this decompila
 ||
 | OS_GetTick | Function | pm4, diamondtrust
 ||
-| OS_GetConsoleType | Function | pm4
+| OS_GetConsoleType | Function | pm4, gtactw
 ||
 | OS_GetLockID | Function | pm4, GameSpy
 ||

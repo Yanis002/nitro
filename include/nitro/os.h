@@ -8,21 +8,20 @@ extern "C" {
 #include <stdarg.h>
 
 #include "nitro/os/os_alarm.h"
+#include "nitro/os/os_arena.h"
 #include "nitro/os/os_cache.h"
 #include "nitro/os/os_common.h"
 #include "nitro/os/os_context.h"
 #include "nitro/os/os_irq.h"
 #include "nitro/os/os_mutex.h"
 #include "nitro/os/os_owner.h"
+#include "nitro/os/os_protection.h"
 #include "nitro/os/os_thread.h"
 #include "nitro/reg.h"
 
 #define OS_IE_V_BLANK 1
 #define OS_IE_H_BLANK 2
 
-#define OS_ARENA_MAIN 0
-#define OS_ARENA_ITCM 3
-#define OS_ARENA_DTCM 4
 #define OS_CURRENT_HEAP_HANDLE -1
 
 #define OS_MESSAGE_NOBLOCK 0
@@ -64,7 +63,6 @@ typedef struct OSDma {
     /* 0c */
 } OSDma;
 
-typedef u32 OSHeapHandle;
 typedef u64 OSTime;
 
 void OS_Init(void);
@@ -96,20 +94,6 @@ void OS_Panic(const char *message) {}
 #endif
 
 void OS_ResetSystem(u32);
-
-void *OS_InitAlloc(u32 arena, u32 addrLo, u32 addrHi, u32);
-u32 OS_GetArenaLo(u32 arena);
-u32 OS_GetArenaHi(u32 arena);
-
-void OS_SetArenaLo(u32 arena, void *addr);
-void *OS_AllocFromArenaLo(u32 arena, u32 size, u32 num);
-
-OSHeapHandle OS_CreateHeap(u32 arena, void *addrLo, void *addrHi);
-void OS_SetCurrentHeap(u32 arena, OSHeapHandle heap);
-void OS_DumpHeap(u32 arena, OSHeapHandle heap);
-void *OS_AllocFromHeap(u32 arena, OSHeapHandle heap, u32 size);
-void OS_FreeFromHeap(u32 arena, OSHeapHandle heap, void *ptr);
-u32 OS_CheckHeap(u32 arena, OSHeapHandle heap);
 
 void OS_Sleep(u32 time);
 
@@ -160,32 +144,7 @@ BOOL OS_func_0065(void);
 void OS_func_0176(u8 *);
 void OS_func_0178(u32);
 
-inline u32 OS_GetMainArenaLo(void) {
-    return OS_GetArenaLo(OS_ARENA_MAIN);
-}
-inline u32 OS_GetMainArenaHi(void) {
-    return OS_GetArenaHi(OS_ARENA_MAIN);
-}
-inline u32 OS_GetITCMArenaLo(void) {
-    return OS_GetArenaLo(OS_ARENA_ITCM);
-}
-inline u32 OS_GetITCMArenaHi(void) {
-    return OS_GetArenaHi(OS_ARENA_ITCM);
-}
-inline u32 OS_GetDTCMArenaLo(void) {
-    return OS_GetArenaLo(OS_ARENA_DTCM);
-}
-inline u32 OS_GetDTCMArenaHi(void) {
-    return OS_GetArenaHi(OS_ARENA_DTCM);
-}
-
-inline void OS_SetMainArenaLo(void *addr) {
-    OS_SetArenaLo(OS_ARENA_MAIN, addr);
-}
-
-inline void *OS_AllocFromMainArenaLo(u32 size, u32 num) {
-    return OS_AllocFromArenaLo(OS_ARENA_MAIN, size, num);
-}
+void OS_func_0149(u32, u32, u32);
 
 inline void *OS_Alloc(u32 size) {
     return OS_AllocFromHeap(OS_ARENA_MAIN, OS_CURRENT_HEAP_HANDLE, size);

@@ -15305,7 +15305,8 @@ data_021f9540 kind:bss addr:0x021f9540
 data_021f95b4 kind:bss addr:0x021f95b4
 data_021f95c0 kind:bss addr:0x021f95c0
 data_021f9640 kind:bss addr:0x021f9640
-data_021f973c kind:bss addr:0x021f973c
+OSi_ArenaInitialized kind:bss addr:0x021f973c
+sMainExArenaEnabled kind:bss addr:0x021f9740 local
 data_021f9744 kind:bss addr:0x021f9744
 data_021f9748 kind:bss addr:0x021f9748
 data_021f974c kind:bss addr:0x021f974c
