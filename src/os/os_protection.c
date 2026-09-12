@@ -27,7 +27,7 @@ BOOL OS_func_0127(u32 arg0) {
     return arg0 >= 0x05000000U && arg0 < 0x07000800U;
 }
 
-THUMB_DISABLE
+THUMB_DISABLE();
 
 s32 OS_GetDTCMAddress(void) {
     u32 address;
@@ -56,17 +56,15 @@ void OS_SetICachabilityForProtectionRegion(u32 arg0) {
     asm("mcr p15, 0, value, c2, c0, 1");
 }
 
-#ifndef __CLANGD__
 // asm needed as mwccarm compiles `x & ~arg0` to `mvn -> and` instead of `bic`
-asm void OS_ClearICachabilityForProtectionRegion(u32 arg0) {
-    // clang-format off
+ASM void OS_ClearICachabilityForProtectionRegion(u32 arg0) {
+#if __MWERKS__ // clang-format off
     mrc p15, 0, r1, c2, c0, 1
     bic r1, r1, r0
     mcr p15, 0, r1, c2, c0, 1
     bx lr
-    // clang-format on
+#endif // clang-format on
 }
-#endif
 
 void OS_SetDCachabilityForProtectionRegion(u32 arg0) {
     u32 value;
@@ -75,28 +73,24 @@ void OS_SetDCachabilityForProtectionRegion(u32 arg0) {
     asm("mcr p15, 0, value, c2, c0, 0");
 }
 
-#ifndef __CLANGD__
-asm void OS_ClearDCachabilityForProtectionRegion(u32 arg0) {
-    // clang-format off
+ASM void OS_ClearDCachabilityForProtectionRegion(u32 arg0){
+#if __MWERKS__ // clang-format off
     mrc p15, 0, r1, c2, c0, 0
     bic r1, r1, r0
     mcr p15, 0, r1, c2, c0, 0
     bx lr
-    // clang-format on
+#endif // clang-format on
 }
-#endif
 
-#ifndef __CLANGD__
-asm void OS_SetDPermissionsForProtectionRegion(s32 arg0, s32 arg1) {
-    // clang-format off
+ASM void OS_SetDPermissionsForProtectionRegion(s32 arg0, s32 arg1) {
+#if __MWERKS__ // clang-format off
     mrc p15, 0, r2, c5, c0, 2
     bic r2, r2, r0
     orr r2, r2, r1
     mcr p15, 0, r2, c5, c0, 2
     bx lr
-    // clang-format on
+#endif // clang-format on
 }
-#endif
 
 void OS_SetDCacheBufferabilityForProtectionRegions(u32 arg0) {
     u32 value;
@@ -105,16 +99,14 @@ void OS_SetDCacheBufferabilityForProtectionRegions(u32 arg0) {
     asm("mcr p15, 0, value, c3, c0, 0");
 }
 
-#ifndef __CLANGD__
-asm void OS_ClearDCacheBufferabilityForProtectionRegions(u32 arg0) {
-    // clang-format off
+ASM void OS_ClearDCacheBufferabilityForProtectionRegions(u32 arg0) {
+#if __MWERKS__ // clang-format off
     mrc p15, 0, r1, c3, c0, 0
     bic r1, r1, r0
     mcr p15, 0, r1, c3, c0, 0
     bx lr
-    // clang-format on
+#endif // clang-format on
 }
-#endif
 
 void OS_SetProtectionRegion(s32 region, s32 value) {
     sSetProtectionRegion[region](value);
@@ -204,7 +196,7 @@ u32 OS_GetProtectionRegion7(void) {
     return value;
 }
 
-THUMB_ENABLE
+THUMB_ENABLE();
 
 void OS_func_0149(u32 region, u32 addr, u32 size) {
     OS_SetProtectionRegion(region, size | (addr & (0xfffff000 << ((size - 22) >> 1))) | OS_PROTECTION_REGION_ENABLE);
@@ -233,12 +225,11 @@ void OS_func_0084(void) {
     data_02138750 = NULL;
 }
 
-THUMB_DISABLE
+THUMB_DISABLE();
 
-#ifndef __CLANGD__
 // asm needed for reading PC and writing SP
-asm void OS_func_0085(void) {
-    // clang-format off
+ASM void OS_func_0085(void){
+#if __MWERKS__ // clang-format off
     lda ip, data_02138744
     ldr ip, [ip]
     cmp ip, 0
@@ -270,27 +261,23 @@ lbl_4:
     ldmia sp!, {r0, r1, r2, r3, ip, lr}
     mov sp, ip
     bx lr
-    // clang-format on
+#endif // clang-format on
 }
-#endif
 
-#ifndef __CLANGD__
 // asm needed because mwccarm always reads directly into `pc` when returning with `ldmia sp!`
-asm void OS_func_0086(s32 arg0) {
-    // clang-format off
+ASM void OS_func_0086(s32 arg0){
+#if __MWERKS__ // clang-format off
     stmdb sp!, {r0, lr}
     bl OS_func_0087
     bl OS_func_0088
     ldmia sp!, {r0, lr}
     bx lr
-    // clang-format on
+#endif // clang-format on
 }
-#endif
 
-#ifndef __CLANGD__
 // asm needed because `ip` is defined by the caller (breaks procedure call standard)
-asm s32 OS_func_0087(s32 arg0) {
-    // clang-format off
+ASM s32 OS_func_0087(s32 arg0){
+#if __MWERKS__ // clang-format off
     lda r1, data_02138774
     str r0, [r1, 0x6c]
     ldr r0, [ip, 0x0]
@@ -322,14 +309,12 @@ asm s32 OS_func_0087(s32 arg0) {
     mrs r2, spsr
     msr cpsr_fsxc, r0
     bx lr
-    // clang-format on
+#endif // clang-format on
 }
-#endif
 
-#ifndef __CLANGD__
 // asm needed due to stack push/pop in the middle of the function
-asm void OS_func_0088(void) {
-    // clang-format off
+ASM void OS_func_0088(void) {
+#if __MWERKS__ // clang-format off
     stmdb sp!, {r3, lr}
     lda r0, data_02138744
     ldr r0, [r0, #0xc]
@@ -356,8 +341,7 @@ lbl_1:
     mov sp, r1
     msr cpsr_fsxc, r2
     ldmia sp!, {r3, pc}
-    // clang-format on
+#endif // clang-format on
 }
-#endif
 
-THUMB_ENABLE
+THUMB_ENABLE();

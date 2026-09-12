@@ -14,10 +14,10 @@ void MTX_Transpose33_(const MtxFx33 *src, MtxFx33 *dst) {
     dst->_21 = src->_12;
     dst->_22 = src->_22;
 }
-#elif __MWERKS__
-THUMB_DISABLE
-// clang-format off
-asm void MTX_Transpose33_(const MtxFx33 *src, MtxFx33 *dst) {
+#else
+THUMB_DISABLE();
+ASM void MTX_Transpose33_(const MtxFx33 *src, MtxFx33 *dst){
+    #if __MWERKS__ // clang-format off
     stmdb sp!, {r4-r9}
     ldmia r0, {r2-r9, ip}
     stmia r1!, {r2, r5, r8}
@@ -25,8 +25,8 @@ asm void MTX_Transpose33_(const MtxFx33 *src, MtxFx33 *dst) {
     stmia r1!, {r4, r7, ip}
     ldmia sp!, {r4-r9}
     bx lr
-}// clang-format on
-THUMB_ENABLE
+    #endif // clang-format on
+} THUMB_ENABLE();
 #endif
 
 void MTX_RotX33_(MtxFx33 *mtx, fx32 sin, fx32 cos) {
@@ -53,7 +53,7 @@ void MTX_RotZ33_(MtxFx33 *mtx, fx32 sin, fx32 cos) {
     mtx->_22 = FX32_ONE;
 }
 
-THUMB_DISABLE
+THUMB_DISABLE();
 void MTX_Concat33(MtxFx33 *a, MtxFx33 *b, MtxFx33 *dst) {
     MtxFx33 temp;
     MtxFx33 *x;
@@ -92,9 +92,7 @@ void MTX_Concat33(MtxFx33 *a, MtxFx33 *b, MtxFx33 *dst) {
 
     *dst = temp;
 }
-THUMB_ENABLE
 
-THUMB_DISABLE
 void MTX_Identity43_(MtxFx43 *mtx) {
     mtx->_00 = FX32_ONE;
     mtx->_01 = 0;
@@ -109,9 +107,7 @@ void MTX_Identity43_(MtxFx43 *mtx) {
     mtx->_31 = 0;
     mtx->_32 = 0;
 }
-THUMB_ENABLE
 
-THUMB_DISABLE
 void MTX_PerspectiveW(fx32 arg0, fx32 arg1, fx32 arg2, fx32 arg3, fx32 arg4, fx32 arg5, MtxFx44 *mtx) {
     s32 temp_r0;
     s32 temp_r2;
@@ -155,9 +151,7 @@ void MTX_PerspectiveW(fx32 arg0, fx32 arg1, fx32 arg2, fx32 arg3, fx32 arg4, fx3
     mtx->_32 = FX_MUL32x64C(var_r0, temp_r3);
     mtx->_00 = FX_GetDivResult();
 }
-THUMB_ENABLE
 
-THUMB_DISABLE
 void MTX_OrthoW(fx32 top, fx32 bottom, fx32 left, fx32 right, fx32 near, fx32 far, fx32 scale, MtxFx44 *mtx) {
     s32 temp_ip;
     s32 temp_r2;
@@ -203,4 +197,3 @@ void MTX_OrthoW(fx32 top, fx32 bottom, fx32 left, fx32 right, fx32 near, fx32 fa
     mtx->_31 = FX_MUL32x64C(var_r5, temp_r3);
     mtx->_32 = FX_MUL32x64C(var_r0, temp_r2);
 }
-THUMB_ENABLE

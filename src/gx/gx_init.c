@@ -4,12 +4,11 @@
 
 static void GX_InitGXState(void);
 
-static u16 data_020a7088 = 1;
-static u32 data_020a708c = 3;
-
-static u16 data_0216a0dc = 0;
-static u16 data_0216a0de = 0;
-static GX_UnkStruct2 data_0216a0e0;
+u16 data_020a7088 = 1;
+u32 data_020a708c = 3;
+u16 data_0216a0dc = 0;
+u16 data_0216a0de = 0;
+GX_UnkStruct2 data_0216a0e0;
 
 void GX_Init(void) {
     REG_POWER_CNT |= 0x8000;

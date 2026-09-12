@@ -34,12 +34,12 @@ static void do_autoload(void);
 static void INITi_CpuClear32(u32 value, s32 addr, u32 size);
 void _start_AutoloadDoneCallback();
 
-THUMB_DISABLE
 #ifdef NITRO_NO_ASM
     #warning _start has no implementation in NITRO_NO_ASM // TODO
-#elif !defined(__CLANGD__)
-// clang-format off
-asm void _start(void) {
+#else
+THUMB_DISABLE();
+ASM void _start(void){
+    #if __MWERKS__ // clang-format off
     mov ip, 0x4000000
     str ip, [ip, 0x208]
 _vcount_wait:
@@ -116,14 +116,12 @@ _invalidate_cache_end:
     tst sp, 0x4
     subne sp, sp, 0x4
     bx r1
-}
-// clang-format on
+    #endif // clang-format on
+} THUMB_ENABLE();
 #endif
-THUMB_ENABLE
 
-THUMB_DISABLE
-static void INITi_CpuClear32(u32 value, s32 addr, u32 size) {
 #ifdef NITRO_NO_ASM
+static void INITi_CpuClear32(u32 value, s32 addr, u32 size) {
     s32 end = addr + size;
     while (true) {
         if (addr >= end) {
@@ -131,8 +129,11 @@ static void INITi_CpuClear32(u32 value, s32 addr, u32 size) {
         }
         *(u32 *) (addr++) = value;
     }
+}
 #else
-    // clang-format off
+THUMB_DISABLE();
+static void INITi_CpuClear32(u32 value, s32 addr, u32 size) {
+    #if __MWERKS__ // clang-format off
     asm {
         add ip, r1, r2
     _loop:
@@ -140,17 +141,17 @@ static void INITi_CpuClear32(u32 value, s32 addr, u32 size) {
         stmltia r1!, {r0}
         blt _loop
     }
-    // clang-format on
-#endif
+    #endif // clang-format on
 }
-THUMB_ENABLE
+THUMB_ENABLE();
+#endif
 
-THUMB_DISABLE
 #ifdef NITRO_NO_ASM
     #warning MIi_UncompressBackward has no implementation in NITRO_NO_ASM
-#elif !defined(__CLANGD__)
-// clang-format off
-asm void MIi_UncompressBackward(void *addr) {
+#else
+THUMB_DISABLE();
+ASM void MIi_UncompressBackward(void *addr){
+    #if __MWERKS__ // clang-format off
     cmp r0, 0
     beq _return
 _uncompress_start:
@@ -204,17 +205,16 @@ _invalidate_cache:
     ldmia sp!, {r4, r5, r6, r7}
 _return:
     bx lr
-}
-// clang-format on
+    #endif // clang-format on
+} THUMB_ENABLE();
 #endif
-THUMB_ENABLE
 
-THUMB_DISABLE
 #ifdef NITRO_NO_ASM
     #warning do_autoload has no implementation in NITRO_NO_ASM
-#elif !defined(__CLANGD__)
-// clang-format off
-static asm void do_autoload(void) {
+#else
+THUMB_DISABLE();
+static ASM void do_autoload(void){
+    #if __MWERKS__ // clang-format off
     lda r0, BuildInfo
     ldr r1, [r0, #0x0]
     ldr r2, [r0, #0x4]
@@ -249,21 +249,20 @@ _invalidate_cache:
     b _next_autoload
 _end:
     b _start_AutoloadDoneCallback
-}
-// clang-format on
+    #endif // clang-format on
+} THUMB_ENABLE();
 #endif
-THUMB_ENABLE
 
-THUMB_DISABLE
+THUMB_DISABLE();
 void _start_AutoloadDoneCallback(void) {}
-THUMB_ENABLE
+THUMB_ENABLE();
 
-THUMB_DISABLE
 #ifdef NITRO_NO_ASM
     #warning init_cp15 has no implementation in NITRO_NO_ASM
-#elif !defined(__CLANGD__)
-// clang-format off
-static asm void init_cp15(void) {
+#else
+THUMB_DISABLE();
+static ASM void init_cp15(void){
+    #if __MWERKS__ // clang-format off
     mrc p15, 0, r0, c1, c0, 0
     ldconst r1, #0xf9005
     bic r0, r0, r1
@@ -310,15 +309,14 @@ static asm void init_cp15(void) {
     orr r0, r0, r1
     mcr p15, 0, r0, c1, c0, 0
     bx lr
-}
-// clang-format on
+    #endif // clang-format on
+} THUMB_ENABLE();
 #endif
-THUMB_ENABLE
 
-THUMB_DISABLE
+THUMB_DISABLE();
 static void NitroStartUp(void) {}
-THUMB_ENABLE
+THUMB_ENABLE();
 
-THUMB_DISABLE
+THUMB_DISABLE();
 void OSi_ReferSymbol(void) {}
-THUMB_ENABLE
+THUMB_ENABLE();

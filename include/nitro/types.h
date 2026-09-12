@@ -53,11 +53,13 @@ typedef s32 BOOL;
 #endif
 
 #ifdef __MWERKS__
-    #define THUMB_DISABLE _Pragma("push") _Pragma("thumb off")
-    #define THUMB_ENABLE _Pragma("pop")
+    #define ASM asm
+    #define THUMB_DISABLE() _Pragma("push") _Pragma("thumb off")
+    #define THUMB_ENABLE() _Pragma("pop")
 #else
-    #define THUMB_DISABLE
-    #define THUMB_ENABLE
+    #define ASM
+    #define THUMB_DISABLE()
+    #define THUMB_ENABLE()
 #endif
 
 #ifdef __cplusplus
