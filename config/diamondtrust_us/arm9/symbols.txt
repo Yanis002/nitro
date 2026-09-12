@@ -1025,9 +1025,9 @@ OS_GetInitArenaHi kind:function(arm,size=0xe0) addr:0x0202f118
 OS_GetInitArenaLo kind:function(arm,size=0xa4) addr:0x0202f1f8
 OS_SetArenaHi kind:function(arm,size=0x14) addr:0x0202f29c
 OS_SetArenaLo kind:function(arm,size=0x14) addr:0x0202f2b0
-OS_func_0075 kind:function(arm,size=0x1c) addr:0x0202f2c4
-OS_func_0076 kind:function(arm,size=0x28) addr:0x0202f2e0
-OS_func_0077 kind:function(arm,size=0xa8) addr:0x0202f308
+OS_AddOccupiedMemoryBlock kind:function(arm,size=0x1c) addr:0x0202f2c4
+OS_RemoveMemoryBlock kind:function(arm,size=0x28) addr:0x0202f2e0
+OS_AddFreeMemoryBlock kind:function(arm,size=0xa8) addr:0x0202f308
 OS_AllocFromHeap kind:function(arm,size=0x108) addr:0x0202f3b0
 OS_FreeFromHeap kind:function(arm,size=0x68) addr:0x0202f4b8
 OS_SetCurrentHeap kind:function(arm,size=0x30) addr:0x0202f520
@@ -1035,20 +1035,20 @@ OS_InitAlloc kind:function(arm,size=0xa8) addr:0x0202f550
 OS_CreateHeap kind:function(arm,size=0xa0) addr:0x0202f5f8
 OS_CheckHeap kind:function(arm,size=0x184) addr:0x0202f698
 OS_func_0127 kind:function(arm,size=0x24) addr:0x0202f81c
-OS_func_0078 kind:function(arm,size=0x14) addr:0x0202f840
-OS_func_0079 kind:function(arm,size=0x10) addr:0x0202f854
-OS_func_0080 kind:function(arm,size=0x10) addr:0x0202f864
+OS_GetDTCMAddress kind:function(arm,size=0x14) addr:0x0202f840
+OS_EnableProtectionUnit kind:function(arm,size=0x10) addr:0x0202f854
+OS_DisableProtectionUnit kind:function(arm,size=0x10) addr:0x0202f864
 OS_func_0128 kind:function(arm,size=0x10) addr:0x0202f874
 OS_func_0129 kind:function(arm,size=0x10) addr:0x0202f884
 OS_func_0130 kind:function(arm,size=0x10) addr:0x0202f894
 OS_func_0131 kind:function(arm,size=0x10) addr:0x0202f8a4
-OS_func_0081 kind:function(arm,size=0x14) addr:0x0202f8b4
+OS_SetDPermissionsForProtectionRegion kind:function(arm,size=0x14) addr:0x0202f8b4
 OS_func_0132 kind:function(arm,size=0x10) addr:0x0202f8c8
 OS_func_0133 kind:function(arm,size=0x10) addr:0x0202f8d8
 OS_func_0134 kind:function(arm,size=0x1c) addr:0x0202f8e8
 OS_func_0135 kind:function(arm,size=0x8) addr:0x0202f904
-OS_func_0082 kind:function(arm,size=0x8) addr:0x0202f90c
-OS_func_0083 kind:function(arm,size=0x8) addr:0x0202f914
+OS_SetProtectionRegion1 kind:function(arm,size=0x8) addr:0x0202f90c
+OS_SetProtectionRegion2 kind:function(arm,size=0x8) addr:0x0202f914
 OS_func_0136 kind:function(arm,size=0x8) addr:0x0202f91c
 OS_func_0137 kind:function(arm,size=0x8) addr:0x0202f924
 OS_func_0138 kind:function(arm,size=0x8) addr:0x0202f92c
@@ -2781,7 +2781,8 @@ sMainThread kind:bss addr:0x02138590
 sIdleThreadStack kind:bss addr:0x02138650
 OSi_ArenaInitialized kind:bss addr:0x02138718
 sMainExArenaEnabled kind:bss addr:0x0213871c local
-data_02138720 kind:bss addr:0x02138720
+sAllocList kind:bss addr:0x02138720 local
+data_0213873c kind:bss addr:0x0213873c
 data_02138744 kind:bss addr:0x02138744
 data_02138748 kind:bss addr:0x02138748
 data_02138750 kind:bss addr:0x02138750

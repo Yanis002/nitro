@@ -138,6 +138,7 @@ src_path         = root_path / "src"
 libs_path        = root_path / "libs"
 extract_path     = root_path / "extract"
 tools_path       = root_path / "tools"
+lock_file_path = root_path / "configure.lock"
 mwcc_root        = args.compiler or tools_path / "mwccarm"
 
 
@@ -268,7 +269,7 @@ def check_can_run_dsd() -> bool:
         return False
 
 
-def main():
+def main() -> int:
     if platform is None:
         return
 
@@ -393,7 +394,7 @@ def main():
                 ], capture_output=True, text=True)
                 if out.returncode != 0:
                     print(f"Error running dsd:\n{out.stderr.strip()}")
-                    return
+                    return 1
                 delinks_json = json.loads(out.stdout)
             project = Project(game=game, delinks_json=delinks_json)
             if project.baserom().exists():
@@ -418,6 +419,8 @@ def main():
             n.default(["objdiff", "delink"])
         else:
             n.default(["download_tools"])
+    
+    return 0
 
 
 def add_download_tool_builds(n: ninja_syntax.Writer, projects: list[Project]):
@@ -851,5 +854,42 @@ def create_compilation_database():
         f.write(json.dumps(db))
 
 
+if os.name == "nt":
+    # Not implemented
+    def acquire_lock(fd: int, *, blocking: bool) -> bool:
+        return True
+    
+    def release_lock(fd: int):
+        pass
+else:
+    import fcntl
+
+    def acquire_lock(fd: int, *, blocking: bool) -> bool:
+        flags = fcntl.LOCK_EX
+        if not blocking:
+            flags |= fcntl.LOCK_NB
+        try:
+            fcntl.flock(fd, flags)
+        except OSError:
+            return False
+        return True
+    
+    def release_lock(fd: int):
+        fcntl.flock(fd, fcntl.LOCK_UN)
+
 if __name__ == "__main__":
-    main()
+    with lock_file_path.open("a") as file:
+        fd = file.fileno()
+        if not acquire_lock(fd, blocking=False):
+            print("Another instance of configure.py is running, waiting...")
+            acquire_lock(fd, blocking=True)
+            release_lock(fd)
+            sys.exit(0)
+        file.seek(0)
+        file.truncate()
+        file.write(str(os.getpid()))
+        file.flush()
+        result = main()
+        release_lock(fd)
+    lock_file_path.unlink()
+    sys.exit(result)

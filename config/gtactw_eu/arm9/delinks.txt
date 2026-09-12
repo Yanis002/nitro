@@ -28,8 +28,11 @@ src/fx/fx_init.c:
     .text       start:0x021333d0 end:0x021333d4
 
 src/os/os_arena.c:
-    .text       start:0x02135e30 end:0x021360cc
+    .text       start:0x02135e30 end:0x02136074
     .bss        start:0x021f973c end:0x021f9744
+
+src/os/os_protection.c:
+    .text       start:0x02136074 end:0x021360cc
 
 src/pxi/pxi.c:
     .text       start:0x02137c4c end:0x02137ea0

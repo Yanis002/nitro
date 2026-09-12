@@ -15,6 +15,7 @@ extern "C" {
 #include "nitro/os/os_irq.h"
 #include "nitro/os/os_mutex.h"
 #include "nitro/os/os_owner.h"
+#include "nitro/os/os_protection.h"
 #include "nitro/os/os_thread.h"
 #include "nitro/reg.h"
 
@@ -62,7 +63,6 @@ typedef struct OSDma {
     /* 0c */
 } OSDma;
 
-typedef u32 OSHeapHandle;
 typedef u64 OSTime;
 
 void OS_Init(void);
@@ -94,13 +94,6 @@ void OS_Panic(const char *message) {}
 #endif
 
 void OS_ResetSystem(u32);
-
-OSHeapHandle OS_CreateHeap(u32 arena, void *addrLo, void *addrHi);
-void OS_SetCurrentHeap(u32 arena, OSHeapHandle heap);
-void OS_DumpHeap(u32 arena, OSHeapHandle heap);
-void *OS_AllocFromHeap(u32 arena, OSHeapHandle heap, u32 size);
-void OS_FreeFromHeap(u32 arena, OSHeapHandle heap, void *ptr);
-u32 OS_CheckHeap(u32 arena, OSHeapHandle heap);
 
 void OS_Sleep(u32 time);
 

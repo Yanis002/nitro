@@ -4,8 +4,6 @@
 
 static void *OS_GetInitArenaHi(u32);
 static void *OS_GetInitArenaLo(u32);
-static void OS_SetProtectionRegion1(u32);
-static void OS_SetProtectionRegion2(u32);
 
 static BOOL sMainExArenaEnabled;
 BOOL OSi_ArenaInitialized;
@@ -78,13 +76,13 @@ void *OS_GetInitArenaHi(u32 arena) {
         case OS_ARENA_DTCM:
             var_r2 = &DTCM_LO[0x3f80] - OS_unk_linker_2;
             if (OS_unk_linker_4 == 0) {
-                if ((u32) DTCM_LO >= 0x027e0a20) {
+                if (DTCM_LO >= DTCM_HI) {
                     return DTCM_LO;
                 }
-                return (void *) 0x027e0a20;
+                return DTCM_HI;
             }
             if (OS_unk_linker_4 < 0) {
-                return (void *) 0x027e0a20 - OS_unk_linker_4;
+                return DTCM_HI - OS_unk_linker_4;
             }
             return var_r2 - OS_unk_linker_4;
         case OS_ARENA_5:
@@ -100,16 +98,25 @@ void *OS_GetInitArenaLo(u32 arg0) {
         case OS_ARENA_MAIN:
             return CODE_HI;
         case OS_ARENA_2:
+#if NITRO_VERSION >= 0x5057533
+            if (!sMainExArenaEnabled) {
+                return NULL;
+            }
+            if ((OS_GetConsoleType() & 0xf) == 1) {
+                return NULL;
+            }
+#else
             if (!sMainExArenaEnabled || (OS_GetConsoleType() & 3) == 1) {
                 return NULL;
             }
+#endif
             return (void *) 0x023E0000;
         case OS_ARENA_ITCM:
-            return (void *) 0x01FFFD60;
+            return ITCM_HI;
         case OS_ARENA_DTCM:
-            return (void *) 0x027E0A20;
+            return DTCM_HI;
         case OS_ARENA_5:
-            return (void *) 0x027FF000;
+            return (void *) _BIOS_REG_BASE;
         case OS_ARENA_6:
             return (void *) 0x037F8000;
         default:
@@ -128,52 +135,3 @@ void OS_SetArenaLo(u32 arena, void *addr) {
 void OS_EnableMainExArena(void) {
     sMainExArenaEnabled = true;
 }
-
-#define M2C_ERROR()
-
-THUMB_DISABLE
-s32 OS_GetDTCMAddress(void) {
-    u32 address;
-    asm("mrc p15, 0, address, c9, c1, 0" : "=r"(address));
-    return address & 0xFFFFF000;
-}
-THUMB_ENABLE
-
-THUMB_DISABLE
-void OS_EnableProtectionUnit(void) {
-    u32 value;
-    asm("mrc p15, 0, value, c1, c0, 0" : "=r"(value));
-    value |= 1;
-    asm("mcr p15, 0, value, c1, c0, 0");
-}
-THUMB_ENABLE
-
-THUMB_DISABLE
-void OS_DisableProtectionUnit() {
-    u32 value;
-    asm("mrc p15, 0, value, c1, c0, 0" : "=r"(value));
-    value &= ~1;
-    asm("mcr p15, 0, value, c1, c0, 0");
-}
-THUMB_ENABLE
-
-THUMB_DISABLE
-void OS_SetDPermissionsForProtectionRegion(s32 arg0, s32 arg1) {
-    u32 value;
-    asm("mrc p15, 0, value, c5, c0, 2" : "=r"(value));
-    value = (value & ~arg0) | arg1;
-    asm("mcr p15, 0, value, c5, c0, 2");
-}
-THUMB_ENABLE
-
-THUMB_DISABLE
-static void OS_SetProtectionRegion1(u32 arg0) {
-    asm("mcr p15, 0, arg0, c6, c1, 0");
-}
-THUMB_ENABLE
-
-THUMB_DISABLE
-void OS_SetProtectionRegion2(u32 arg0) {
-    asm("mcr p15, 0, arg0, c6, c2, 0");
-}
-THUMB_ENABLE

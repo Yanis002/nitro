@@ -782,14 +782,20 @@ This table outlines the source of every symbol/macro name used in this decompila
 | OS_SetProtectionRegion1               | Function | gtactw
 | OS_SetProtectionRegion2               | Function | gtactw
 ||
-| OS_InitAlloc        | Function | pm4, diamondtrust
-| OS_AllocFromArenaLo | Function | pm4 | Deduced from OS_AllocFromMainArenaLo
-| OS_CreateHeap       | Function | pm4, diamondtrust
-| OS_SetCurrentHeap   | Function | pm4, diamondtrust
-| OS_DumpHeap         | Function | pm4
-| OS_AllocFromHeap    | Function
-| OS_FreeFromHeap     | Function
-| OS_CheckHeap        | Function | diamondtrust
+| OSAlloc                   | Struct
+| OSHeap                    | Struct
+| OSMemoryBlock             | Struct
+| OS_InitAlloc              | Function | pm4, diamondtrust
+| OS_AllocFromArenaLo       | Function | pm4 | Deduced from OS_AllocFromMainArenaLo
+| OS_CreateHeap             | Function | pm4, diamondtrust
+| OS_SetCurrentHeap         | Function | pm4, diamondtrust
+| OS_DumpHeap               | Function | pm4
+| OS_AllocFromHeap          | Function
+| OS_FreeFromHeap           | Function
+| OS_CheckHeap              | Function | diamondtrust
+| OS_AddOccupiedMemoryBlock | Function
+| OS_RemoveMemoryBlock      | Function
+| OS_AddFreeMemoryBlock     | Function
 ||
 | OS_Sleep | Function | pm4, diamondtrust
 ||

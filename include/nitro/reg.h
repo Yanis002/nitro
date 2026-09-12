@@ -120,8 +120,12 @@ typedef struct DivParam {
 #define REG_04100000 (*(PXI_UnkStruct1 *) (REG_BASE | 0x100000))
 
 extern u32 __DTCM_LO;
-#define DTCM_LO ((u8 *) &__DTCM_LO)
+extern u32 __DTCM_HI;
+extern u32 __ITCM_HI;
 extern u32 __CODE_HI;
+#define DTCM_LO ((u8 *) &__DTCM_LO)
+#define DTCM_HI ((u8 *) &__DTCM_HI)
+#define ITCM_HI ((u8 *) &__ITCM_HI)
 #define CODE_HI ((u8 *) (&__CODE_HI))
 
 #define REG_IRQ (*(u32 *) (DTCM_LO + 0x3FF8))
