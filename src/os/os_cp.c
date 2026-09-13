@@ -1,4 +1,5 @@
-#include "nitro/os.h"
+#include "nitro/os/os_cp.h"
+#include "nitro/types.h"
 
 #ifdef NITRO_NO_ASM
 void CP_SaveContext(CPContext *param1) {
@@ -8,10 +9,9 @@ void CP_SaveContext(CPContext *param1) {
     param1->sqrtCnt   = REG_SQRT_CNT & 1;
 }
 #else
-// clang-format off
-asm void CP_SaveContext(CPContext *param1) {
-    #pragma push
-    #pragma thumb off
+THUMB_DISABLE();
+ASM void CP_SaveContext(CPContext *param1){
+    #if __MWERKS__ // clang-format off
     ldconst r1, #0x4000290
     stmdb sp!, {r4}
     ldmia r1, {r2, r3, r4, ip}
@@ -27,9 +27,8 @@ asm void CP_SaveContext(CPContext *param1) {
     strh r2, [r0, 2]
     ldmia sp!, {r4}
     bx lr
-    #pragma pop
-}
-// clang-format on
+    #endif // clang-format on
+} THUMB_ENABLE();
 #endif
 
 #ifdef NITRO_NO_ASM
@@ -40,10 +39,9 @@ void CPi_RestoreContext(CPContext *param1) {
     REG_SQRT_CNT   = param1->sqrtCnt;
 }
 #else
-// clang-format off
-asm void CPi_RestoreContext(CPContext *param1) {
-    #pragma push
-    #pragma thumb off
+THUMB_DISABLE();
+ASM void CPi_RestoreContext(CPContext *param1){
+    #if __MWERKS__ // clang-format off
     stmdb sp!, {r4}
     ldconst r1, #0x4000290
     ldmia r0, {r2, r3, r4, ip}
@@ -58,7 +56,6 @@ asm void CPi_RestoreContext(CPContext *param1) {
     stmia r1, {r2, r3}
     ldmia sp!, {r4}
     bx lr
-    #pragma pop
-}
-// clang-format on
+    #endif // clang-format on
+} THUMB_ENABLE();
 #endif

@@ -100,3 +100,4 @@ src/card/card_unk2.c:
 
 src/std/std_string.c:
     .text       start:0x020748d4 end:0x02074948
+    complete

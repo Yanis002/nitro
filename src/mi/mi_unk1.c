@@ -1,6 +1,7 @@
 #include "nitro/mi.h"
 #include "nitro/os.h"
 #include "nitro/reg.h"
+#include "nitro/types.h"
 
 static void MI_func_0001(u8 param1);
 static void MI_func_0004(s32 dmaChannel);
@@ -309,10 +310,9 @@ void _MI_CpuFill(u32 value, void *inBuf, u32 size) {
     }
 }
 #else
-// clang-format off
-asm void _MI_CpuFill(u32 value, void *inBuf, u32 size) {
-    #pragma push
-    #pragma thumb off
+THUMB_DISABLE();
+ASM void _MI_CpuFill(u32 value, void *inBuf, u32 size){
+    #if __MWERKS__ // clang-format off
     stmdb sp!, {r4-r9}
     add r9, r1, r2
     mov ip, r2, lsr #0x5
@@ -335,9 +335,8 @@ remainderLoop:
 end:
     ldmia sp!, {r4-r9}
     bx lr
-    #pragma pop
-}
-// clang-format on
+    #endif // clang-format on
+} THUMB_ENABLE();
 #endif
 
 #ifdef NITRO_NO_ASM
@@ -359,10 +358,9 @@ void MI_func_0007(void *inSrc, void *inDst, u32 size) {
     }
 }
 #else
-// clang-format off
-asm void MI_func_0007(void *inSrc, void *inDst, u32 size) {
-    #pragma push
-    #pragma thumb off
+THUMB_DISABLE();
+ASM void MI_func_0007(void *inSrc, void *inDst, u32 size){
+    #if __MWERKS__ // clang-format off
     stmdb sp!, {r4-r10}
     add r10, r1, r2
     mov ip, r2, lsr #0x5
@@ -380,8 +378,8 @@ remainderLoop:
 end:
     ldmia sp!, {r4-r10}
     bx lr
-    #pragma pop
-}
+    #endif // clang-format on
+} THUMB_ENABLE();
 #endif
 // clang-format on
 

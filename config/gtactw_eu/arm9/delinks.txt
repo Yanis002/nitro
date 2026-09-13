@@ -61,3 +61,10 @@ src/mic/mic.c:
 
 src/mic/mic_wait.c:
     .text       start:0x0213ab4c end:0x0213ab64
+
+src/std/std_string.c:
+    .text       start:0x021424a0 end:0x021425b8
+    complete
+
+src/std/std_io.c:
+    .text       start:0x021425b8 end:0x0214332c
